@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html style="max-height: 100vh; overflow: hidden;">
+
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <title>Mapplic - Custom Interactive Map Plugin - US States Example</title>
+        <!-- Viewport for Responsivity -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <meta name="description" content="Vector Europe map with clickable states and pins, an example of using Mapplic, a premium custom interactive map plugin to display custom image or vector (SVG) maps.">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/map.css">
+        <link rel="stylesheet" type="text/css" href="mapplic/mapplic.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="css/chat.css">
+        <link rel="stylesheet" href="mapplic/menu.css">
+        <link rel="stylesheet" href="mapplic/quiz.css">
+        
+        <!-- Internet Explorer -->
+        <!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="mapplic/mapplic-ie.css">
+			<script type="text/javascript" src="js/html5shiv.js"></script>
+		<![endif]-->
+
+        <style>
+            .carousel-control-next-icon {
+                background-color: #45b5ff !important;
+                opacity: 1 !important;
+                padding: 30px !important;
+                background-size: 65% !important;
+            }
+
+            .carousel-control-prev-icon {
+                background-color: #45b5ff !important;
+                opacity: 1 !important;
+                padding: 30px !important;
+                background-size: 65% !important;
+            }
+
+            .modal-backdrop.show {
+                opacity: .85 !important;
+            }
+
+            /* Estilos para el búho y el mensaje */
+            .owl-container {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .owl {
+                width: 80px;
+                height: 80px;
+                background: #8B4513;
+                border-radius: 50%;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 11vh;
+                left: -6vh;
+                z-index: 99;
+            }
+
+            /* Alas */
+            .owl .wing-left, .owl .wing-right {
+                content: '';
+                position: absolute;
+                width: 40px;
+                height: 60px;
+                background: #8B4513;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .owl .wing-right {
+                transform: translateY(-57%) rotate(335deg);
+                right: -20px;
+                transform-origin: left center;
+                clip-path: polygon(
+                    0 20%, 100% 0,
+                    100% 20%, 80% 30%,
+                    100% 40%, 80% 50%,
+                    100% 60%, 80% 70%,
+                    100% 80%, 0 100%
+                );
+                animation: fly-wing-11 2.9s infinite ease-in-out;
+            }
+
+            .owl .wing-left {
+                transform: translateY(-61%) rotate(25deg);
+                left: -20px;
+                transform-origin: right center;
+                clip-path: polygon(
+                    100% 20%, 0 0,
+                    0 20%, 20% 30%,
+                    0 40%, 20% 50%,
+                    0 60%, 20% 70%,
+                    0 80%, 100% 100%
+                );
+                animation: fly-wing-22 2.9s infinite ease-in-out;
+            }
+
+            @keyframes fly-wing-11 {
+                0%, 100% { transform: translateY(-50%) rotate(-15deg); }
+                50% { transform: translateY(-50%) rotate(30deg); }
+            }
+
+            @keyframes fly-wing-22 {
+                50%  { transform: translateY(-50%) rotate(-30deg); }
+                0%, 100% { transform: translateY(-50%) rotate(15deg); }
+            }
+
+
+            .owl.flying .wing-left {
+                display: block;
+                animation: fly-wing 0.3s infinite ease-in-out;
+            }
+
+            .owl.flying .wing-right {
+                display: block;
+                animation: fly-wing-2 0.3s infinite ease-in-out;
+            }
+
+            @keyframes fly-wing {
+                0%, 100% { transform: translateY(-50%) rotate(-40deg); }
+                50% { transform: translateY(-50%) rotate(40deg); }
+            }
+
+            @keyframes fly-wing-2 {
+                50%  { transform: translateY(-50%) rotate(-40deg); }
+                0%, 100% { transform: translateY(-50%) rotate(40deg); }
+            }
+
+            .owl.flying {
+                animation: float 2s ease-in-out;
+            }
+
+            @keyframes float {
+                0% { transform: translateY(0px) rotate(0deg); }
+                25% { transform: translateY(-15px) rotate(-5deg); }
+                50% { transform: translateY(-20px) rotate(0deg); }
+                75% { transform: translateY(-15px) rotate(5deg); }
+                100% { transform: translateY(0px) rotate(0deg); }
+            }
+
+            /* Patas */
+            .owl .leg-left, .owl .leg-right {
+                position: absolute;
+                bottom: -15px;
+                width: 12px;
+                height: 20px;
+                background: #8B4513;
+                border-radius: 5px;
+                z-index: 1;
+            }
+
+            .owl .leg-right {
+                right: 15px;
+                transform: rotate(15deg);
+            }
+
+            .owl .leg-left {
+                left: 15px;
+                transform: rotate(-15deg);
+            }
+
+            /* Garras */
+            .owl .leg-left::after, .owl .leg-right::after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                width: 15px;
+                height: 8px;
+                background: #FFD700;
+                border-radius: 0 0 10px 10px;
+            }
+
+            .owl .eyes {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                z-index: 2;
+            }
+
+            .owl .eyes .eye {
+                width: 20px;
+                height: 20px;
+                background: #FFD700;
+                border-radius: 50%;
+                position: relative;
+                animation: blink 4s infinite;
+            }
+
+            @keyframes blink {
+                0%, 96%, 98% { transform: scaleY(1); }
+                97% { transform: scaleY(0.1); }
+            }
+
+            .owl .eyes .eye::before {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background: #000;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .owl .beak {
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: #FFD700;
+                clip-path: polygon(50% 100%, 0 0, 100% 0);
+                z-index: 2;
+                bottom: 15px;
+            }
+
+            .speech-bubble {
+                position: relative;
+                background: white;
+                border-radius: 30px;
+                padding: 15px 25px;
+                color: #4a4a4a;
+                font-size: 24px;
+                transition: transform 0.3s;
+                box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+                border: 2px solid #e6e6e6;
+            }
+
+            .speech-bubble:hover {
+                transform: scale(1.05);
+            }
+
+            .speech-bubble::before {
+                content: '';
+                position: absolute;
+                left: -2px;
+                top: 72%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                background: linear-gradient(45deg, white 50%, transparent 50%);
+                border-left: 2px solid #e6e6e6;
+                border-bottom: 2px solid #e6e6e6;
+            }
+
+            .fa-play {
+                color: #4CAF50;
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+
+    <body style="overflow: hidden; max-height: 100vh;">
+        <div id="wrap">
+           
+            <div id="content">
+                <section id="map-section" class="inner over">
+                    <div class="editor-window">
+                        <div class="window-mockup brown"></div>
+                        <div class="editor-body"> <code>
+								{<br>
+								&nbsp;&nbsp;&nbsp;"id": "newlandmark",<br>
+								&nbsp;&nbsp;&nbsp;"title": "New Landmark",<br>
+								&nbsp;&nbsp;&nbsp;"description": "Creating a new landmark is that easy!",<br>
+								&nbsp;&nbsp;&nbsp;"x": "<span class="mapplic-coordinates-x">0.0000</span>",<br>
+								&nbsp;&nbsp;&nbsp;"y": "<span class="mapplic-coordinates-y">0.0000</span>",<br>
+								&nbsp;&nbsp;&nbsp;...<br>
+								}
+							</code> </div>
+                    </div>
+                    <!-- Map -->
+                    <div class="map-container">
+                        
+                        <div id="mapplic"></div>
+                    </div>
+                    
+                </section>
+            </div>
+            
+        </div>
+
+
+        <div class="options scroll-container" id="opciones_mapa">
+            <i onclick="cerrarOpciones()" style="cursor: pointer; color: #c94141; font-size: 27px; position: absolute; right: 4px; top: 24px;" class="fa-solid fa-circle-xmark"></i>
+            <br>
+            <h4 style="color: grey;">CONTENIDO</h4>
+            <hr>
+            <button style="background-color: #c0ffcf !important;" class="accordion">Sitios de interes</button>
+            <div class="panel">
+                <ul style="padding-left: 7px;" id="sitios_interes_panel"></ul>
+            </div>
+
+            <button style="background-color: #bbd7f5 !important;" class="accordion">Festividades</button>
+            <div class="panel">
+                <ul style="padding-left: 7px;" id="festividades_panel"></ul>
+            </div>
+
+            <button style="background-color: #f5e1bb !important;" class="accordion">Etnias</button>
+            <div class="panel">
+                <ul style="padding-left: 7px;" id="etnias_panel"></ul>
+            </div>
+            <br>
+        </div>
+
+        <div id="chat" style="display: none;">
+            <div class="chat_window">
+                <div class="top_menu">
+                    <div class="buttons">
+                        <div class="button close" onclick="cerrarChat()"></div>
+                        <div class="button minimize"></div>
+                        <div class="button maximize"></div>
+                    </div>
+                    <div class="title">Chat</div>
+                </div>
+                <ul class="messages"></ul>
+                
+            </div>
+            <div class="message_template">
+                <li class="message">
+                    <div class="avatar"></div>
+                    <div class="text_wrapper">
+                        <div class="text"></div>
+                    </div>
+                </li>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h3>Para mejorar la experiencia de usuario se recomienda activar la pantalla completa</h3>
+                    <hr>
+                    <button style="font-size: .89rem;" onclick="pantallaCompleta()" class="btn btn-success"><i class="fa-solid fa-expand"></i> Activar pantalla completa</button>
+                    <button style="font-size: .89rem;" data-dismiss="modal" class="btn btn-danger"><i class="fa-solid fa-xmark"></i> No, seguir en modo normal</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal_sitios">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body" style="padding: 0px;">
+                    <button type="button" class="close cerrar_modal" data-dismiss="modal">&times;</button>
+                    <div class="container" style="margin: 0px;">
+                        <div class="row">
+                            <div class="col-lg-12 row bhoechie-tab-container">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
+                                  <div class="list-group">
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item active text-left">
+                                        <i class="fa fa-list-alt" aria-hidden="true"></i> Descripción
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-hourglass-end" aria-hidden="true"></i> Historia
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-globe" aria-hidden="true"></i> Geografía
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-tint" aria-hidden="true"></i> Hidrografía
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i> Clima
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-users" aria-hidden="true"></i> Demografía
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-sitemap" aria-hidden="true"></i> Etnografía
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-paw" aria-hidden="true"></i> Fauna y flora
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-usd" aria-hidden="true"></i> Economía
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-child" aria-hidden="true"></i> Cultura
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-cutlery" aria-hidden="true"></i> Gastronomía
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-music" aria-hidden="true"></i> Festividades
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-map-signs" aria-hidden="true"></i> Sitios
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-user" aria-hidden="true"></i> Personajes célebres
+                                    </a>
+                                    <a href="#" style="padding: .15rem 1.25rem" class="list-group-item text-left">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Capital
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+                                    <h3 style="padding: 10px 20px; margin: 0;margin-top: 0;margin-top: 0;color:#55518a" id="nombreDepartamento"></h3>
+                                    <!-- flight section -->
+                                    <div class="bhoechie-tab-content active">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Descripción</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div class="text-start mt-3">
+                                                    <div id="contenidoDepartameto"></div>
+                                                    <p class="text-muted mb-2 "><strong class="text-dark">Capital :</strong> <span
+                                                            class="ms-2" id="descCapital"></span></p>
+                                                    <p class="text-muted mb-2 "><strong class="text-dark">Población :</strong><span
+                                                            class="ms-2" id="descPoblacion"></span></p>
+                                                    <p class="text-muted mb-2 "><strong class="text-dark">Clima :</strong> <span
+                                                            class="ms-2 " id="descClima"></span></p>
+                                                    <p class="text-muted mb-1 "><strong class="text-dark">Temperatura :</strong> <span
+                                                            class="ms-2" id="descTemperatura"></span></p>
+                                                    <p class="text-muted mb-1 "><strong class="text-dark">Extensión :</strong> <span
+                                                            class="ms-2" id="descExtension"></span></p>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <ul class="nav nav-pills bg-nav-pills nav-fill mt-3 mb-3">
+                                                        <li class="nav-item">
+                                                            <a href="#divBadera" data-toggle="pill" aria-expanded="false" class="nav-link rounded-0 active" id="aBadera">
+                                                                <span class="d-none d-md-block">Bandera</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#divEscudo" data-toggle="pill" aria-expanded="true" class="nav-link rounded-0" id="aEscudo">
+                                                                <span class="d-none d-md-block">Escudo</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                
+                                                    <div class="tab-content px-3">
+                                                        <div class="tab-pane active" id="divBadera">
+                                                            <div id="bandera"></div>
+                                                        </div>
+                                                        <div class="tab-pane" id="divEscudo">
+                                                            <div id="escudo"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- train section -->
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Historia</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div id="desHistoria">
+
+                                                </div>                                         
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- hotel search -->
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Geografía</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div id="contUbi">
+                                                    <div id="desUbicacion"></div>
+                                                </div>
+                                                <div style="display: none;" id="contCoord">
+                                                    <h5 class="card-title fw-600">Coordenadas.</h5>
+                                                    <div id="desCoordenadas"></div>
+                                                </div>
+                                                <div style="display: none;" id="contLimi">
+                                                    <h5 class="card-title fw-600">Limites.</h5>
+                                                    <div id="desLimites"></div>
+                                                </div>
+                                                <div style="display: none;" id="contReli">
+                                                    <h5 class="card-title fw-600">Relieve.</h5>
+                                                    <div id="desRelieve"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- hotel search -->
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Hidrografía</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div id="desHidrografia"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Clima</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div id="desClima"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Demografía</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div id="desPoblacion"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Etnografía</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div id="desEtnografia"></div>
+                                                <div class="tab-content" id="justified-tabs-preview">
+                                                    <ul class="nav nav-pills nav-justified mb-3 bg-light" id="navEtnias">
+                                                    </ul>
+                                                    <div class="tab-content px-2" id="contNavEtnias">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Fauna y flora</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <h5 class="card-title fw-600">Fauna</h5>
+                                                <div id="desFauna"></div>
+                                                <div class="tab-content" id="justified-tabs-preview">
+                                                    <ul class="nav nav-pills nav-justified mb-3 bg-light" id="navFauna">
+                                                    </ul>
+                                                    <div class="tab-content px-2" id="contNavFauna">
+                                                    </div>
+                                                </div>
+                                                <hr class="m-4">
+                                                <h5 class="card-title fw-600">Flora</h5>
+                                                <div id="desFlora"></div>
+                                                <div id="desEtnografia"></div>
+                                                <div class="tab-content" id="justified-tabs-preview">
+                                                    <ul class="nav nav-pills nav-justified mb-3 bg-light" id="navFlora">
+                                                    </ul>
+                                                    <div class="tab-content px-2" id="contNavFlora">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Economía</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div id="desEconomia"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Cultura</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div id="contCultura">
+                                                    <h5 class="card-title fw-600">Descripción.</h5>
+                                                    <div id="desCultura"></div>
+                                                </div>
+                                                <div id="contArte" style="display: none;">
+                                                    <h5 class="card-title fw-600">Arte.</h5>
+                                                    <div id="desArte"></div>
+                                                </div>
+                                                <div id="contDanza" style="display: none;">
+                                                    <h5 class="card-title fw-600">Danza.</h5>
+                                                    <div id="desDanza"></div>
+                                                </div>
+                                                <div id="contMusica" style="display: none;">
+                                                    <h5 class="card-title fw-600">Música.</h5>
+                                                    <div id="desMusica"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Gastronomía</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div id="desGastronomia"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Festividades</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div class="tab-content" id="justified-tabs-preview">
+                                                    <ul class="nav nav-pills nav-justified mb-3 bg-light" id="navFestividades">
+                                                    </ul>
+                                                    <div class="tab-content px-2" id="contNavFestividades">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Sitios de interés</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div class="tab-content" id="justified-tabs-preview">
+                                                    <ul class="nav nav-pills nav-justified mb-3 bg-light" id="navSitios">
+                                                    </ul>
+                                                    <div class="tab-content px-2" id="contNavSitios">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Personajes célebres</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div class="tab-content" id="justified-tabs-preview">
+                                                    <ul class="nav nav-pills nav-justified mb-3 bg-light" id="navPersonajes">
+                                                    </ul>
+                                                    <div class="tab-content px-2" id="contNavPersonajes">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bhoechie-tab-content">
+                                        <div>
+                                            <h4 style="margin-top: 0;color:#55518a">Capital</h4>
+                                            <div class="card-body" style="height: 80vh; overflow-y: auto;">
+                                                <div id="desCapital"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="contenedorVideo">
+            <div class="content" style="background-color: #ffffff00; border: none;">
+                <a style="position: absolute;color: wheat;border-radius: 50%;top: 2vh;right: 2vw;opacity: 1;font-size: 62px;z-index: 333333;" type="button"  onclick="cerrarVideo()">&times;</a>
+                <div style="width: 100%; height: 100vh; top: 0px; left: 0px; position: absolute; display: flex; justify-content: center; align-items: center;">
+                    <video  controls style="width: 60%;" id="video_punto" src=""></video>
+                </div>    
+              </div>
+            </div>
+        </div>
+
+        <div id="contenedorImagenes">
+            <div class="content" style="background-color: #ffffff00; border: none;">
+                <a style="position: absolute;color: wheat;border-radius: 50%;top: 2vh;right: 2vw;opacity: 1;font-size: 62px;z-index: 333333;" type="button"  onclick="cerrarImagenes()">&times;</a>
+                <div id="carouselExampleIndicators" style="display: flex;align-items: center;height: 100vh;" class="carousel slide">
+                    <ol class="carousel-indicators">
+                    </ol>
+                    <div class="carousel-inner">
+                    </div>
+                </div>
+                <div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <input type="hidden" id="departamento_seleccionado">
+
+        <div id="contenedorTest">
+            <div class="content" style="background-color: #ffffff00; border: none; height: 100vh; display: flex ;justify-content: center;align-items: center;">
+                <a style="position: absolute;color: wheat;border-radius: 50%;top: 2vh;right: 2vw;opacity: 1;font-size: 62px;z-index: 333333;" type="button"  onclick="cerrarTest()">&times;</a>
+                <br>
+                <div class="container-fluid">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                            <div class="modal-header" style="align-items: center; justify-content: space-between; padding: .5rem .5rem;">
+                                <div class="alert alert-primary" style="margin: 0px;" role="alert">
+                                    <strong>Departamento: </strong><span id="departamento_nombre"></span>
+                                  </div>
+                                <div class="tiempo_restante">
+                                    Tiempo restante
+                                    <span id="reloj">
+                                        <i style="line-height: inherit; margin-top: 3px;" class="fa fa-clock" aria-hidden="true"></i>
+                                        <p style="margin: 0px; padding-left: 10px;" id="contador">00:00</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="modal-body quizmodal">
+                                <div id="loadbar" style="display: none;">
+                                    <span class="loader"></span>
+                                </div>
+                                <button onclick="comenzarTest()" id="boton_comenzar" class="owl-container" style="background: none; border: none; cursor: pointer; outline: none;">
+                                    <div class="owl">
+                                        <div class="wing-left"></div>
+                                        <div class="wing-right"></div>
+                                        <div class="eyes">
+                                            <div class="eye"></div>
+                                            <div class="eye"></div>
+                                        </div>
+                                        <div class="beak"></div>
+                                    </div>
+                                    <div class="speech-bubble">
+                                        <i class="fa fa-play" aria-hidden="true"></i> Comenzar Evaluación
+                                    </div>
+                                </button>
+                                <div style="display: none; width: 100%;" class="quiz" id="quiz" data-toggle="buttons">
+                                </div>
+                            </div>
+                            <div class="modal-footer text-muted" style="justify-content: space-between;">
+                                <p style="color: rgb(62, 113, 255); font-weight: bold;" id="contador_preguntas">Pregunta 0 de 10</p>
+                                <div style="font-size: 30px;">
+                                    <i id="carita0" class="fa facaritas fa-smile" aria-hidden="true"></i>
+                                    <i id="carita1" class="fa facaritas fa-smile" aria-hidden="true"></i>
+                                    <i id="carita2" class="fa facaritas fa-smile" aria-hidden="true"></i>
+                                    <i id="carita3" class="fa facaritas fa-smile" aria-hidden="true"></i>
+                                    <i id="carita4" class="fa facaritas fa-smile" aria-hidden="true"></i>
+                                    <i id="carita5" class="fa facaritas fa-smile" aria-hidden="true"></i>
+                                    <i id="carita6" class="fa facaritas fa-smile" aria-hidden="true"></i>
+                                    <i id="carita7" class="fa facaritas fa-smile" aria-hidden="true"></i>
+                                    <i id="carita8" class="fa facaritas fa-smile" aria-hidden="true"></i>
+                                    <i id="carita9" class="fa facaritas fa-smile" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="circularMenu" class="circular-menu">
+            <a class="floating-btn custom-button button-orange" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+                <i class="fa fa-plus"></i>
+            </a>
+            
+            <menu class="items-wrapper">
+                <a href="#" class="menu-item itemm1" style="background-color: green;">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="menu-item itemm2" style="background-color: rgb(230, 97, 9);">
+                    <i class="fa fa-gamepad" aria-hidden="true"></i>
+                </a>
+                <a href="#" type="button" onclick="verTest()" class="menu-item itemm3" style="background-color: rgb(2, 0, 128);">
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="menu-item itemm4" style="background-color: rgb(158, 29, 190);">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </a>
+            </menu>
+        </div>
+
+        <div style="display: none; text-align: center;" id="final" class="final">
+            <img id="imagen_final" style="height: 55vh;" src="images/derrota.gif" alt="">
+            <br>
+            <hr>
+            <div class="row" style="padding: 7vh;">
+                <div class="col-12" style="padding-bottom: 6vh; margin-top: 0px;">
+                    <h1 style="color: #5d5656; font-weight: 700; font-size: 25pt; padding-bottom: 0px;" class="borde2" id="texto_final"></h1>
+                    <h1 style="color: #5d5656; font-weight: 700; font-size: 25pt;" class="borde2">¿Quieres intentar nuevamente?</h1>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3 text-center">
+                    <button style="width: 80%;border-radius: 20pt; font-size: 23px;" onclick="window.location.reload(1)"
+                        class="btn btn-success">Si</button>
+                </div>
+                <div class="col-3 text-center">
+                    <button style="width: 80%; border-radius: 20pt; font-size: 23px;" onclick="$('#final').fadeToggle(1000);" class="btn btn-danger">No,
+                        salir</button>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+          
+        <!-- Scripts -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/hammer.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/smoothscroll.js"></script>
+        <script type="text/javascript" src="mapplic/mapplic.js"></script>
+        <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="mapplic/verMas.js"></script>
+        <script type="text/javascript" src="mapplic/js/quiz.js"></script>
+        <script>
+
+            setTimeout(()=>{
+                document.querySelector('.mapplic-levels').style.display = 'none';
+            }, 800)
+
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active_acordion");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = (panel.scrollHeight + 20) + "px";
+                } 
+              });
+            }
+
+
+            (function () {
+                var Message;
+                Message = function (arg) {
+                    this.text = arg.text, this.message_side = arg.message_side;
+                    this.draw = function (_this) {
+                        return function () {
+                            var $message;
+                            $message = $($('.message_template').clone().html());
+                            $message.addClass(_this.message_side).find('.text').html(_this.text);
+                            $('.messages').append($message);
+                            return setTimeout(function () {
+                                return $message.addClass('appeared');
+                            }, 0);
+                        };
+                    }(this);
+                    return this;
+                };
+                $(function () {
+                    var getMessageText, message_side, sendMessage;
+                    message_side = 'right';
+                    getMessageText = function () {
+                        var $message_input;
+                        $message_input = $('.message_input');
+                        return $message_input.val();
+                    };
+                    sendMessage = function (text) {
+                        var $messages, message;
+                        if (text.trim() === '') {
+                            return;
+                        }
+                        $('.message_input').val('');
+                        $messages = $('.messages');
+                        message_side = message_side === 'left' ? 'right' : 'left';
+                        message = new Message({
+                            text: text,
+                            message_side: message_side
+                        });
+                        message.draw();
+                        return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
+                    };
+                    $('.send_message').click(function (e) {
+                        return sendMessage(getMessageText());
+                    });
+                    $('.message_input').keyup(function (e) {
+                        if (e.which === 13) {
+                            return sendMessage(getMessageText());
+                        }
+                    });
+                    sendMessage('Hello Philip! :)');
+                    sendMessage('Hi Sandy! How are you?');
+                    sendMessage('I\'m fine, thank you!');
+                });
+            }.call(this)); 
+
+            function cerrarOpciones(){
+                document.getElementById("opciones_mapa").style.right = "-800px";
+            }
+
+            function mostrarChat(){
+                document.getElementById("opciones_mapa").style.right = "-800px";
+                document.getElementById("chat").style.display = "block";
+                setTimeout(()=>{
+                    document.getElementById("chat").style.bottom = "0px";
+                }, 100)
+            }
+            
+            function cerrarChat(){
+                document.getElementById("chat").style.bottom = "-500px";
+                setTimeout(()=>{
+                    document.getElementById("chat").style.display = "none";
+                }, 700)
+                document.getElementById("opciones_mapa").style.right = "0";
+            }
+        </script>
+
+        <script type="text/javascript">
+
+            function mostrarModal(params) {
+                $('#myModal').modal("show")
+            }
+
+            mostrarModal();
+
+            function pantallaCompleta(){
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.webkitRequestFullscreen) {
+                    document.documentElement.webkitRequestFullscreen();
+                } else if (document.documentElement.msRequestFullscreen) {
+                    document.documentElement.msRequestFullscreen();
+                }
+
+                $('#myModal').modal("hide")
+            }
+
+            $(document).ready(function(){
+                $('#mapplic').mapplic({
+                    source: 'departamentos.json',
+                    mapfill: true,
+                    height: 560,
+                    animate: true,
+                    sidebar: true,
+                    search: true,
+                    minimap: false,
+                    locations: true,
+                    deeplinking: true,
+                    fullscreen: true,
+                    hovertip: true,
+                    developer: true,
+                    maxscale: 20,
+                    minscale: 0.5,
+                    zoom: true, 
+					searchdescription: true,
+					searcheverywhere: true,
+					thumbholder: true,
+					hovertipdesc: true,
+					alphabetical: true,
+                    startscale: 0.9
+                });
+                $('.usage').click(function(e)
+                {
+                    e.preventDefault();
+                    $('.editor-window').slideToggle(200);
+                });
+                $('.editor-window .window-mockup').click(function()
+                {
+                    $('.editor-window').slideUp(200);
+                });
+
+                $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+                    e.preventDefault();
+                    $(this).siblings('a.active').removeClass("active");
+                    $(this).addClass("active");
+                    var index = $(this).index();
+                    $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+                    $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+                });
+            });
+
+            function verVideo(elemento){
+                var link = elemento.getAttribute("link-video");
+                document.getElementById("video_punto").setAttribute("src", link);
+                
+                $('#contenedorVideo').css('display', 'block');
+                setTimeout(()=>{
+                    $('#contenedorVideo').css('opacity', '1');
+                }, 50)
+            }
+
+            function verImagenes(elemento){
+                var link = elemento.getAttribute("link-imagenes");
+                var linksArray = link.split(',');
+
+                $('#carouselExampleIndicators').empty();
+
+                for (var i = 0; i < linksArray.length; i++) {
+                    var carouselItem = $('<div class="carousel-item"></div>');
+                    if (i === 0) {
+                        carouselItem.addClass('active');
+                    }
+                    var img = $('<img class="d-block imagen-carrusel">');
+                    img.attr('src', "multimedia/imagenes/"+linksArray[i]);
+                    carouselItem.append(img);
+                    $('#carouselExampleIndicators').append(carouselItem);
+                }
+
+                $('#contenedorImagenes').css('display', 'block');
+                setTimeout(()=>{
+                    $('#contenedorImagenes').css('opacity', '1');
+                }, 50)
+            }
+
+            function cerrarImagenes(){
+                $('#contenedorImagenes').css('opacity', '0');
+                setTimeout(()=>{
+                    $('#contenedorImagenes').css('display', 'none');
+                }, 500)
+            }
+
+            function cerrarVideo(){
+                $('#contenedorVideo').css('opacity', '0');
+                setTimeout(()=>{
+                    $('#contenedorVideo').css('display', 'none');
+                }, 500)
+            }
+
+            document.getElementById('boton_comenzar').addEventListener('click', function() {
+                const owl = this.querySelector('.owl');
+                owl.classList.add('flying');
+                
+                setTimeout(() => {
+                    owl.classList.remove('flying');
+                }, 2000);
+            });
+
+        </script>
+    </body>
+
+</html>
