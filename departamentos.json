@@ -439,7 +439,7 @@
           "zoom": 5
         },
         {
-          "id_departamento": 31,
+          "id_departamento": 32,
           "id": "vichada",
           "title": "Departamento de Vichada",
           "description": "valle de Vichada.",
@@ -451,7 +451,7 @@
           "zoom": 3
         },
         {
-          "id_departamento": 32,
+          "id_departamento": 31,
           "id": "vaupes",
           "title": "Departamento de Vaupés",
           "description": "valle de Vaupés.",

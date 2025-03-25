@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="css/chat.css">
         <link rel="stylesheet" href="mapplic/menu.css">
         <link rel="stylesheet" href="mapplic/quiz.css">
+        <link rel="stylesheet" href="sweetalert/sweetalert2.min.css">
+        <script src="sweetalert/sweetalert2.all.min.js"></script>
         
         <!-- Internet Explorer -->
         <!--[if lt IE 9]>
@@ -24,242 +26,7 @@
 			<script type="text/javascript" src="js/html5shiv.js"></script>
 		<![endif]-->
 
-        <style>
-            .carousel-control-next-icon {
-                background-color: #45b5ff !important;
-                opacity: 1 !important;
-                padding: 30px !important;
-                background-size: 65% !important;
-            }
-
-            .carousel-control-prev-icon {
-                background-color: #45b5ff !important;
-                opacity: 1 !important;
-                padding: 30px !important;
-                background-size: 65% !important;
-            }
-
-            .modal-backdrop.show {
-                opacity: .85 !important;
-            }
-
-            /* Estilos para el búho y el mensaje */
-            .owl-container {
-                position: relative;
-                display: inline-flex;
-                align-items: center;
-                gap: 20px;
-            }
-
-            .owl {
-                width: 80px;
-                height: 80px;
-                background: #8B4513;
-                border-radius: 50%;
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                top: 11vh;
-                left: -6vh;
-                z-index: 99;
-            }
-
-            /* Alas */
-            .owl .wing-left, .owl .wing-right {
-                content: '';
-                position: absolute;
-                width: 40px;
-                height: 60px;
-                background: #8B4513;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-
-            .owl .wing-right {
-                transform: translateY(-57%) rotate(335deg);
-                right: -20px;
-                transform-origin: left center;
-                clip-path: polygon(
-                    0 20%, 100% 0,
-                    100% 20%, 80% 30%,
-                    100% 40%, 80% 50%,
-                    100% 60%, 80% 70%,
-                    100% 80%, 0 100%
-                );
-                animation: fly-wing-11 2.9s infinite ease-in-out;
-            }
-
-            .owl .wing-left {
-                transform: translateY(-61%) rotate(25deg);
-                left: -20px;
-                transform-origin: right center;
-                clip-path: polygon(
-                    100% 20%, 0 0,
-                    0 20%, 20% 30%,
-                    0 40%, 20% 50%,
-                    0 60%, 20% 70%,
-                    0 80%, 100% 100%
-                );
-                animation: fly-wing-22 2.9s infinite ease-in-out;
-            }
-
-            @keyframes fly-wing-11 {
-                0%, 100% { transform: translateY(-50%) rotate(-15deg); }
-                50% { transform: translateY(-50%) rotate(30deg); }
-            }
-
-            @keyframes fly-wing-22 {
-                50%  { transform: translateY(-50%) rotate(-30deg); }
-                0%, 100% { transform: translateY(-50%) rotate(15deg); }
-            }
-
-
-            .owl.flying .wing-left {
-                display: block;
-                animation: fly-wing 0.3s infinite ease-in-out;
-            }
-
-            .owl.flying .wing-right {
-                display: block;
-                animation: fly-wing-2 0.3s infinite ease-in-out;
-            }
-
-            @keyframes fly-wing {
-                0%, 100% { transform: translateY(-50%) rotate(-40deg); }
-                50% { transform: translateY(-50%) rotate(40deg); }
-            }
-
-            @keyframes fly-wing-2 {
-                50%  { transform: translateY(-50%) rotate(-40deg); }
-                0%, 100% { transform: translateY(-50%) rotate(40deg); }
-            }
-
-            .owl.flying {
-                animation: float 2s ease-in-out;
-            }
-
-            @keyframes float {
-                0% { transform: translateY(0px) rotate(0deg); }
-                25% { transform: translateY(-15px) rotate(-5deg); }
-                50% { transform: translateY(-20px) rotate(0deg); }
-                75% { transform: translateY(-15px) rotate(5deg); }
-                100% { transform: translateY(0px) rotate(0deg); }
-            }
-
-            /* Patas */
-            .owl .leg-left, .owl .leg-right {
-                position: absolute;
-                bottom: -15px;
-                width: 12px;
-                height: 20px;
-                background: #8B4513;
-                border-radius: 5px;
-                z-index: 1;
-            }
-
-            .owl .leg-right {
-                right: 15px;
-                transform: rotate(15deg);
-            }
-
-            .owl .leg-left {
-                left: 15px;
-                transform: rotate(-15deg);
-            }
-
-            /* Garras */
-            .owl .leg-left::after, .owl .leg-right::after {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                width: 15px;
-                height: 8px;
-                background: #FFD700;
-                border-radius: 0 0 10px 10px;
-            }
-
-            .owl .eyes {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 15px;
-                z-index: 2;
-            }
-
-            .owl .eyes .eye {
-                width: 20px;
-                height: 20px;
-                background: #FFD700;
-                border-radius: 50%;
-                position: relative;
-                animation: blink 4s infinite;
-            }
-
-            @keyframes blink {
-                0%, 96%, 98% { transform: scaleY(1); }
-                97% { transform: scaleY(0.1); }
-            }
-
-            .owl .eyes .eye::before {
-                content: '';
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                background: #000;
-                border-radius: 50%;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            .owl .beak {
-                position: absolute;
-                width: 15px;
-                height: 15px;
-                background: #FFD700;
-                clip-path: polygon(50% 100%, 0 0, 100% 0);
-                z-index: 2;
-                bottom: 15px;
-            }
-
-            .speech-bubble {
-                position: relative;
-                background: white;
-                border-radius: 30px;
-                padding: 15px 25px;
-                color: #4a4a4a;
-                font-size: 24px;
-                transition: transform 0.3s;
-                box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-                border: 2px solid #e6e6e6;
-            }
-
-            .speech-bubble:hover {
-                transform: scale(1.05);
-            }
-
-            .speech-bubble::before {
-                content: '';
-                position: absolute;
-                left: -2px;
-                top: 72%;
-                transform: translateY(-50%);
-                width: 40px;
-                height: 40px;
-                background: linear-gradient(45deg, white 50%, transparent 50%);
-                border-left: 2px solid #e6e6e6;
-                border-bottom: 2px solid #e6e6e6;
-            }
-
-            .fa-play {
-                color: #4CAF50;
-                margin-right: 10px;
-            }
-        </style>
+        <link rel="stylesheet" href="css/utilidad.css">
     </head>
 
     <body style="overflow: hidden; max-height: 100vh;">
@@ -363,7 +130,7 @@
                 <!-- Modal body -->
                 <div class="modal-body" style="padding: 0px;">
                     <button type="button" class="close cerrar_modal" data-dismiss="modal">&times;</button>
-                    <div class="container" style="margin: 0px;">
+                    <div class="container" style="margin: 0px; max-width: 100%;">
                         <div class="row">
                             <div class="col-lg-12 row bhoechie-tab-container">
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
@@ -771,6 +538,26 @@
             </menu>
         </div>
 
+        <div id="menuAccesibilidad" style="z-index: 9999999;" class="menu-accesibilidad">
+            <button class="btn-accesibilidad" onclick="toggleMenuAccesibilidad()">
+                <i class="fa fa-universal-access"></i>
+            </button>
+            <div class="contenido-accesibilidad">
+                <h4>Accesibilidad</h4>
+                <div class="opciones-accesibilidad">
+                    <button onclick="aumentarFuente()" class="btn-opcion">
+                        <i class="fa fa-text-height"></i> Aumentar texto
+                    </button>
+                    <button onclick="disminuirFuente()" class="btn-opcion">
+                        <i class="fa fa-text-height"></i> Disminuir texto
+                    </button>
+                    <button onclick="toggleDislexia()" class="btn-opcion">
+                        <i class="fa fa-book"></i> Modo dislexia
+                    </button>
+                </div>
+            </div>
+        </div>
+
         <div style="display: none; text-align: center;" id="final" class="final">
             <img id="imagen_final" style="height: 55vh;" src="images/derrota.gif" alt="">
             <br>
@@ -1022,6 +809,33 @@
                 }, 2000);
             });
 
+            // Funciones para el menú de accesibilidad
+            function toggleMenuAccesibilidad() {
+                const menu = document.getElementById('menuAccesibilidad');
+                menu.classList.toggle('activo');
+            }
+
+            let tamañoTextoActual = 16; // Tamaño base del texto
+
+            function aumentarFuente() {
+                tamañoTextoActual += 3;
+                const elementos = document.querySelectorAll('body *');
+                elementos.forEach(elemento => {
+                    elemento.style.fontSize = `${tamañoTextoActual}px`;
+                });
+            }
+
+            function disminuirFuente() {
+                tamañoTextoActual -= 3;
+                const elementos = document.querySelectorAll('body *');
+                elementos.forEach(elemento => {
+                    elemento.style.fontSize = `${tamañoTextoActual}px`;
+                });
+            }
+
+            function toggleDislexia() {
+                document.body.classList.toggle('modo-dislexia');
+            }
         </script>
     </body>
 

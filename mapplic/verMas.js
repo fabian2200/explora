@@ -1,11 +1,25 @@
 function verMas(element){
     var id_departamento = $(element).attr("id-departamento");
+    let loadingAlert;
 
     $.ajax({
         url: '/mapplic/mapplic/php/consultarInfo.php',
         method: 'GET',
         data: { id: id_departamento },
+        beforeSend: function() {
+            loadingAlert = Swal.fire({
+                position: "center",
+                title: "Consultando información",
+                text: "Por favor espere mientras se carga la información del departamento",
+                allowOutsideClick: false,
+                showConfirmButton: false,
+                willOpen: () => {
+                    Swal.showLoading();
+                }
+            });
+        },
         success: function(response) {
+            loadingAlert.close();
             var responseData = JSON.parse(response);
             mostrarDescripcion(responseData);
             $('#modal_sitios').modal('show');
