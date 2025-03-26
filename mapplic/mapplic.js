@@ -70,12 +70,19 @@
 		}
 
 		function cargarDepartamentos(ruta) {
+
+			var colombia = [];
+			$.getJSON("jsons/colombia.json", function(data2) {
+				colombia = data2;
+			});
+
 			return $.getJSON(ruta).then(function(data) {
 				var promises = [];
 		
 				data.levels[0].locations.forEach(element => {
 					var deferred = $.Deferred();
 					$.getJSON("jsons/" + element.id + ".json", function(data2) {
+						data2.locations.push(...colombia);
 						data.levels.push(data2);
 						deferred.resolve();
 					}).fail(deferred.reject);
@@ -798,22 +805,14 @@
 								});
 
 								// click event
-								$(self.o.selector).on('click touchend', function() {
+								/*
+								$(self.o.selector).on('click', function() {
 									if (!self.dragging) {
 										var id = $(this).attr('id');
 										showLocation(id, 800);
-										/*setTimeout(()=>{
-											leerJson(id)
-											.then(datos_opciones => {
-												document.getElementById("opciones_mapa").style.right = "0px";
-												mapearOpcionesMenu(datos_opciones);
-											})
-											.catch(error => {
-												console.error('Error al obtener los datos del JSON:', error);
-											});
-										}, 800)*/
 									}
 								});
+								*/
 
 								// Support for the old map format
 								$('svg a', this).each(function() {
@@ -877,6 +876,12 @@
 				});
 			}
 
+			$(document).on('click', self.o.selector, function() {
+				if (!self.dragging) {
+					var id = $(this).attr('id');
+					showLocation(id, 800);
+				}
+			});
 			// COMPONENTS
 
 			// Tooltip
@@ -1226,7 +1231,6 @@
 		}
 
 		var showLocation = function(id, duration, check) {
-			console.trace();
 			$.each(self.data.levels, function(index, layer) {
 				if (layer.id == id) {
 					setTimeout(()=>{
@@ -1234,6 +1238,10 @@
 					}, 850)
 					return false;
 				}
+			});
+
+			
+			$.each(self.data.levels, function(index, layer) {
 				$.each(layer.locations, function(index, location) {
 					if (location.id == id) {
 						var ry = 0.5;
@@ -1241,9 +1249,7 @@
 						var zoom = typeof location.zoom !== 'undefined' ? location.zoom : 4;
 						zoomTo(location.x, location.y, zoom, duration, 'easeInOutCubic', ry);
 						document.getElementById("departamento_seleccionado").value = location.id_departamento;
-						
-						switchLevel(layer.id, true);
-
+			
 						setTimeout(()=>{
 							if (!self.o.landmark) {
 								self.tooltip.set(location);
@@ -1261,6 +1267,7 @@
 					}
 				});
 			});
+			
 		};
 
 		var normalizeX = function(x) {
