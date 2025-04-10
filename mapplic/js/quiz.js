@@ -21,7 +21,7 @@ function verTest() {
 function buscarPreguntas(callback) {
     
     var id_departamento = $("#departamento_seleccionado").val();
-    $.getJSON('/mapplic/mapplic/php/buscarPreguntas.php', { id: id_departamento })
+    $.getJSON('mapplic/php/buscarPreguntas.php', { id: id_departamento })
         .done(function (response) {
             departamento = response.departamento;
             $("#departamento_nombre").text(departamento.nombre);

@@ -831,8 +831,32 @@ footer {
 
 .body-puzzle p,
 .body-puzzle a {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: white !important;
     margin-bottom: 0px;
     margin-top: 0px;
+}
+
+.card-juego{
+    background-color: #fff2b2;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    border: 5px dashed rgb(255, 94, 0);
+    font-size: 1.7rem;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    -webkit-text-stroke: 1px #2C3E50;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.card-juego:hover{
+    background-color: #FCD116;
+    border: 5px solid rgb(255, 94, 0);
 }

@@ -90,7 +90,7 @@
                 <div class="puzzle-piece no-action" data-game="lenguaje" data-aos="fade-up" data-aos-delay="200">
                     <div class="flip-card">
                         <div class="flip-side flip-front">
-                            <img src="images/ficha2.png" alt="Banderas" class="puzzle-image">
+                            <img src="images/ficha6.png" alt="Banderas" class="puzzle-image">
                             <div class="header-puzzle">
                                 <div class="puzzle-icon">
                             <img src="images/pinta.png" alt="Banderas" width="80" height="80">
@@ -99,10 +99,10 @@
                             </div>
                         </div>
                         <div class="flip-side flip-back">
-                            <img src="images/ficha2.png" alt="Banderas" class="puzzle-image">
+                            <img src="images/ficha6.png" alt="Banderas" class="puzzle-image">
                             <div class="body-puzzle" style="z-index: 100;">
                                 <p class="puzzle-description">Pinta o adivina las banderas de los departamentos de Colombia.</p>
-                                <a href="#" class="btn btn-success mt-3">¡Jugar!</a>
+                                <a href="juegos/banderas-color/index.html" class="btn btn-success mt-3">¡Jugar!</a>
                             </div>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                             <img src="images/ficha5.png" alt="Banderas" class="puzzle-image">
                             <div class="body-puzzle">
                                 <p class="puzzle-description">Aprende sobre las regiones, ríos y montañas de Colombia.</p>
-                                <a href="#" class="btn btn-info mt-3">¡Jugar!</a>
+                                <a href="#" type="button" class="btn btn-info mt-3" data-bs-toggle="modal" data-bs-target="#myModal">¡Jugar!</a>
                             </div>
                         </div>
                     </div>
@@ -178,19 +178,19 @@
                 <div class="puzzle-piece no-action" data-game="cultura" data-aos="fade-up" data-aos-delay="600">
                     <div class="flip-card">
                         <div class="flip-side flip-front">
-                            <img src="images/ficha6.png" alt="Banderas" class="puzzle-image">
+                            <img src="images/ficha2.png" alt="Banderas" class="puzzle-image">
                             <div class="header-puzzle">
                                 <div class="puzzle-icon">
-                                    <img src="images/cruci.png" alt="Banderas" width="80" height="80">
+                                    <img src="images/cruci.png" alt="Banderas" width="120" height="80">
                                 </div>
-                                <h3 class="puzzle-title" style="text-align: center;">Crucigrama de Colombia</h3>
+                                <h3 class="puzzle-title" style="text-align: center;">Adivina la palabra</h3>
                             </div>
                         </div>
                         <div class="flip-side flip-back">
-                            <img src="images/ficha6.png" alt="Banderas" class="puzzle-image">
+                            <img src="images/ficha2.png" alt="Banderas" class="puzzle-image">
                             <div class="body-puzzle">
-                                <p class="puzzle-description">Descubre la música, danza y tradiciones de Colombia.</p>
-                                <a href="#" class="btn btn-purple mt-3">¡Jugar!</a>
+                                <p class="puzzle-description">Sigue las pistas y completa la palabra, antes de agotar tus intentos.</p>
+                                <a href="juegos/juego_ahorcado/index.html" class="btn btn-purple mt-3">¡Jugar!</a>
                             </div>
                         </div>
                     </div>
@@ -200,6 +200,43 @@
         </div>
     </section>
 
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Selecciona el tipo de juego</h4>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card-juego">
+                                <img src="images/drag.png" alt="Banderas" width="100" height="80">
+                                <p style="line-height: 1.7rem;">Ubica los puntos</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-juego">
+                                <img src="images/completa.png" style="border-radius: 15px; margin-bottom: 10px; border: 6px solid white;" alt="Banderas" width="150" height="80">
+                                <p style="line-height: 1.7rem;">Completa la frase</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fas fa-times"></i> Cerrar</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-white py-4 shadow-sm">

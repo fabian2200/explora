@@ -1,0 +1,227 @@
+[
+    {
+        "nivel": 1,
+        "preguntas": [
+            {
+                "pregunta": "<p>¿En qué año Argentina ganó su primer Mundial de fútbol?</p>",
+                "opciones": [
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>1978</button>",
+                        "correcta": true
+                    },
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>1982</button>",
+                        "correcta": false
+                    },
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>1986</button>",
+                        "correcta": false
+                    },
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>1990</button>",
+                        "correcta": false
+                    }
+                ]
+            },
+            {
+                "pregunta": "<p>¿Cuántas veces ha ganado la selección brasileña el Mundial?</p>",
+                "opciones": [
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>5</button>",
+                        "correcta": true
+                    },
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>3</button>",
+                        "correcta": false
+                    },
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>7</button>",
+                        "correcta": false
+                    },
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>4</button>",
+                        "correcta": false
+                    }
+                ]
+            },
+            {
+                "pregunta": "<p>¿Quién es el máximo goleador de la historia de la Copa del Mundo?</p>",
+                "opciones": [
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Pelé</button>",
+                        "correcta": false
+                    },
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Cristiano Ronaldo</button>",
+                        "correcta": false
+                    },
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>Miroslav Klose</button>",
+                        "correcta": true
+                    },
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Lionel Messi</button>",
+                        "correcta": false
+                    }
+                ]
+            },
+            {
+                "pregunta": "<p>¿Cuántas veces ha ganado la selección brasileña el Mundial?</p>",
+                "opciones": [
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>5</button>",
+                        "correcta": true
+                    },
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>3</button>",
+                        "correcta": false
+                    },
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>7</button>",
+                        "correcta": false
+                    },
+                    {
+                        "opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>4</button>",
+                        "correcta": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "nivel": 2,
+        "preguntas": [
+            {
+                "pregunta": "<p>¿Qué selección ganó la Eurocopa 2020 (jugada en 2021)?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Inglaterra</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>Italia</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>España</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Francia</button>", "correcta": false}
+                ]
+            },
+            {
+                "pregunta": "<p>¿Quién es el máximo goleador de la historia del FC Barcelona?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>Lionel Messi</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Luis Suárez</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>César Rodríguez</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Samuel Eto'o</button>", "correcta": false}
+                ]
+            },
+            {
+                "pregunta": "<p>¿Qué club ha ganado más títulos de la Premier League?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Chelsea</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>Manchester United</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Liverpool</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Arsenal</button>", "correcta": false}
+                ]
+            },
+            {
+                "pregunta": "<p>¿Cuál fue la sede del Mundial de 2018?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Brasil</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Sudáfrica</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>Rusia</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Alemania</button>", "correcta": false}
+                ]
+            }
+        ]
+    },
+    {
+        "nivel": 3,
+        "preguntas": [
+            {
+                "pregunta": "<p>¿Qué equipo ha ganado más títulos de la Liga Colombiana?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>Atlético Nacional</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Millonarios</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>América de Cali</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Deportivo Cali</button>", "correcta": false}
+                ]
+            },
+            {
+                "pregunta": "<p>¿En qué año la selección Colombia ganó su única Copa América?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>1997</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>2001</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>2015</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>1983</button>", "correcta": false}
+                ]
+            },
+            {
+                "pregunta": "<p>¿Quién es el máximo goleador histórico de la selección Colombia?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Radamel Falcao</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>James Rodríguez</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Arnoldo Iguarán</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Carlos Valderrama</button>", "correcta": false}
+                ]
+            },
+            {
+                "pregunta": "<p>¿Qué equipo colombiano ha ganado más veces la Copa Libertadores?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>Atlético Nacional</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>América de Cali</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Millonarios</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Santa Fe</button>", "correcta": false}
+                ]
+            },
+            {
+                "pregunta": "<p>¿Cuál fue el primer equipo colombiano en ganar la Copa Libertadores?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Millonarios</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Deportivo Cali</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>Atlético Nacional</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>América de Cali</button>", "correcta": false}
+                ]
+            },
+            {
+                "pregunta": "<p>¿Quién es considerado el mejor jugador en la historia del fútbol colombiano?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>James Rodríguez</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Radamel Falcao</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Freddy Rincón</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>Carlos Valderrama</button>", "correcta": true}
+                ]
+            },
+            {
+                "pregunta": "<p>¿Qué equipo colombiano es conocido como 'Los Embajadores'?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>Millonarios</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Atlético Nacional</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Deportivo Cali</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Junior de Barranquilla</button>", "correcta": false}
+                ]
+            },
+            {
+                "pregunta": "<p>¿Quién fue el entrenador de Colombia en el Mundial de 2014?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>José Pékerman</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Francisco Maturana</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Hernán Darío Gómez</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Reinaldo Rueda</button>", "correcta": false}
+                ]
+            },
+            {
+                "pregunta": "<p>¿Cuál es el estadio más grande de Colombia?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>Estadio Metropolitano Roberto Meléndez</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Estadio Atanasio Girardot</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Estadio El Campín</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>Estadio Pascual Guerrero</button>", "correcta": false}
+                ]
+            },
+            {
+                "pregunta": "<p>¿En qué Mundial de la FIFA debutó la selección Colombia?</p>",
+                "opciones": [
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>1970</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, true)'>1962</button>", "correcta": true},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>1986</button>", "correcta": false},
+                    {"opcion": "<button class='btn btn-secondary' onclick='verificarRespuesta(this, false)'>1994</button>", "correcta": false}
+                ]
+            }
+        ]
+    }
+]

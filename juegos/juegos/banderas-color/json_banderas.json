@@ -1,0 +1,327 @@
+[
+    {
+        "bandera": "vertical",
+        "Departamento": "Amazonas",
+        "secciones": [
+            ["100", "68", "#078931"],
+            ["100", "9", "#ffff00"],
+            ["100", "23", "#ffffff"]
+        ],
+        "imagen": "banderas/amazonas2.png"
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Antioquia",
+        "secciones": [
+            ["100", "50", "#078931"],
+            ["100", "50", "#ffffff"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Arauca",
+        "secciones": [
+            ["100", "50", "#ff0000"],
+            ["100", "50", "#ffffff"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Atlántico",
+        "secciones": [
+            ["100", "50", "#ffffff"],
+            ["100", "50", "#ff0000"],
+            ["100", "50", "#ffffff"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Bogotá",
+        "secciones": [
+            ["100", "50", "#ffff00"],
+            ["100", "50", "#ff0000"]
+        ],
+        "imagen": "banderas/bogota2.png"
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Bolívar",
+        "secciones": [
+            ["100", "50", "#ffff00"],
+            ["100", "50", "#078931"],
+            ["100", "50", "#ff0000"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Boyacá",
+        "secciones": [
+            ["100", "17", "#078931"],
+            ["100", "17", "#ffffff"],
+            ["100", "32", "#ff0000"],
+            ["100", "17", "#ffffff"],
+            ["100", "17", "#078931"]
+        ],
+        "imagen": "banderas/boyaca2.png"
+    },
+    {
+        "bandera": "horizontal",
+        "Departamento": "Caldas",
+        "secciones": [
+            ["50", "100", "#ffff00"],
+            ["50", "100", "#078931"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Caquetá",
+        "secciones": [
+            ["100", "14.2857", "#078931"],
+            ["100", "14.2857", "#ffffff"],
+            ["100", "14.2857", "#078931"],
+            ["100", "14.2857", "#ffffff"],
+            ["100", "14.2857", "#078931"],
+            ["100", "14.2857", "#ffffff"],
+            ["100", "14.2857", "#078931"]
+        ],
+        "cuadro_extra": ["36", "36", 0, 0,"#ffffff"],
+        "imagen": "banderas/caqueta2.png"
+    },
+    {
+        "bandera": "especial",
+        "Departamento": "Casanare",
+        "secciones": [
+            ["triangulo_uno","#078931"],
+            ["triangulo_dos","#ffff00"]
+        ],
+        "cuadro_extra": ["linea_vertical"],
+        "imagen": "banderas/casanare2.png"
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Cauca",
+        "secciones": [
+            ["100", "33.3333", "#078931"],
+            ["100", "33.3333", "#ffff00"],
+            ["100", "33.3333", "#078931"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Cesar",
+        "secciones": [
+            ["100", "33.3333", "#078931"],
+            ["100", "33.3333", "#ffffff"],
+            ["100", "33.3333", "#078931"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Chocó",
+        "secciones": [
+            ["100", "50", "#078931"],
+            ["100", "25", "#ffff00"],
+            ["100", "25", "#1047ae"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Córdoba",
+        "secciones": [
+            ["100", "33.3333", "#1047ae"],
+            ["100", "33.3333", "#ffffff"],
+            ["100", "33.3333", "#078931"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Cundinamarca",
+        "secciones": [
+            ["100", "33.3333", "#8bc4e2"],
+            ["100", "33.3333", "#ffff00"],
+            ["100", "33.3333", "#ff0000"]
+        ],
+        "imagen": "banderas/cundinamarca2.png"
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Guainía",
+        "secciones": [
+            ["100", "33.3333", "#ffff00"],
+            ["100", "33.3333", "#1047ae"],
+            ["100", "33.3333", "#078931"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Guaviare",
+        "secciones": [
+            ["100", "33.3333", "#078931"],
+            ["100", "33.3333", "#ffffff"],
+            ["100", "33.3333", "#1047ae"]
+        ],
+        "imagen": "banderas/guaviare2.png"
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Huila",
+        "secciones": [
+            ["100", "33.3333", "#ffffff"],
+            ["100", "33.3333", "#078931"],
+            ["100", "33.3333", "#ffff00"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "La Guajira",
+        "secciones": [
+            ["100", "50", "#078931"],
+            ["100", "50", "#ffffff"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Magdalena",
+        "secciones": [
+            ["100", "16.6666", "#ff0000"],
+            ["100", "16.6666", "#1047ae"],
+            ["100", "16.6666", "#ff0000"],
+            ["100", "16.6666", "#1047ae"],
+            ["100", "16.6666", "#ff0000"],
+            ["100", "16.6666", "#1047ae"]       
+        ],
+        "imagen": "banderas/magdalena2.png"
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Meta",
+        "secciones": [
+            ["100", "5.85", "#078931"],
+            ["100", "5.85", "#ffffff"],
+            ["100", "5.85", "#078931"],
+            ["100", "5.85", "#ffffff"],
+            ["100", "5.85", "#078931"],
+            ["100", "5.85", "#ffffff"],
+            ["100", "5.85", "#078931"],
+            ["100", "5.85", "#ffffff"],
+            ["100", "5.85", "#078931"],
+            ["100", "5.85", "#ffffff"],
+            ["100", "5.85", "#078931"],
+            ["100", "5.85", "#ffffff"],
+            ["100", "5.85", "#078931"],
+            ["100", "5.85", "#ffffff"],
+            ["100", "5.85", "#078931"],
+            ["100", "5.85", "#ffffff"],
+            ["100", "5.85", "#078931"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Nariño",
+        "secciones": [
+            ["100", "50", "#ffff00"],
+            ["100", "50", "#078931"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Norte de Santander",
+        "secciones": [
+            ["100", "50", "#ff0000"],
+            ["100", "50", "#000000"]
+        ],
+        "imagen": "banderas/norte_de_santander2.png"
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Putumayo",
+        "secciones": [
+            ["100", "33.3333", "#078931"],
+            ["100", "33.3333", "#ffffff"],
+            ["100", "33.3333", "#000000"]
+        ]
+    },
+    {
+        "bandera": "horizontal",
+        "Departamento": "Quindío",
+        "secciones": [
+            ["33.3333", "100", "#078931"],
+            ["33.3333", "100", "#ffff00"],
+            ["33.3333", "100", "#9400d3"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Risaralda",
+        "secciones": [
+            ["100", "100", "#078931"]
+        ],
+        "imagen": "banderas/risaralda2.png"
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "San Andrés y Providencia",
+        "secciones": [
+            ["100", "100", "#8bc4e2"]
+        ],
+        "extra": [
+            ["diagonal_1", "#ffffff"],
+            ["diagonal_2", "#ffffff"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Santander",
+        "secciones": [
+            ["100", "32", "#078931"],
+            ["100", "12", "#ffff00"],
+            ["100", "11", "#000000"],
+            ["100", "12", "#ffff00"],
+            ["100", "32", "#078931"]
+        ],
+        "cuadro_extra": ["22", "100", 0, 0,"#ff0000"],
+        "imagen": "banderas/santander2.png"
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Sucre",
+        "secciones": [
+            ["100", "50", "#078931"],
+            ["100", "50", "#ffffff"]
+        ],
+        "imagen": "banderas/sucre2.png"
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Tolima",
+        "secciones": [
+            ["100", "50", "#6d080c"],
+            ["100", "50", "#ffff00"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Valle del Cauca",
+        "secciones": [
+            ["100", "50", "#8bc4e2"],
+            ["100", "50", "#ffffff"]
+        ]
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Vaupés",
+        "secciones": [
+            ["100", "50", "#ffffff"],
+            ["100", "50", "#078931"]
+        ],
+        "imagen": "banderas/vaupes2.png"
+    },
+    {
+        "bandera": "vertical",
+        "Departamento": "Vichada",
+        "secciones": [
+            ["100", "50", "#ffff00"],
+            ["100", "50", "#078931"]
+        ]
+    }
+]

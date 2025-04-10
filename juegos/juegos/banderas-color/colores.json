@@ -1,0 +1,50 @@
+[
+    {
+        "hex": "#ffffff",
+        "color": "blanco"
+    },
+    {
+        "hex": "#ff0000",
+        "color": "rojo"
+    },
+    {
+        "hex": "#1047ae",
+        "color": "azul"
+    },
+    {
+        "hex": "#ffff00",
+        "color": "amarillo"
+    },
+    {
+        "hex": "#000000",
+        "color": "negro"
+    },
+    {
+        "hex": "#d3d3d3",
+        "color": "gris claro"
+    },
+    {
+        "hex": "#ff4500",
+        "color": "naranja rojizo"
+    },
+    {
+        "hex": "#078931",
+        "color": "verde lima"
+    },
+    {
+        "hex": "#6d080c",
+        "color": "marrón oscuro"
+    },
+    {
+        "hex": "#9400d3",
+        "color": "violeta oscuro"
+    },
+    {
+        "hex": "#ff69b4",
+        "color": "rosa fuerte"
+    },
+    {
+        "hex": "#8bc4e2",
+        "color": "azul cielo"
+    }
+]

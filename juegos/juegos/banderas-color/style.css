@@ -1,0 +1,407 @@
+.bandera-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 180px;
+    border: 2px solid #000000;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#contenedor_bandera {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.bandera-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    position: relative;
+}
+
+.bandera {
+    width: 100%;
+    height: 180px;
+    border: 1px solid #000000;
+    position: relative;
+    border-radius: 15px;
+}
+
+.triangulo_uno {
+    width: 277px;
+    height: 180px;
+    background-color: rgba(255, 0, 0, 0);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+    border-radius: 15px;
+}
+
+.triangulo_dos {
+    width: 277px;
+    height: 180px;
+    background-color: rgba(255, 0, 0, 0);
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border-radius: 15px;
+}
+
+.bandera-especial {
+    position: relative;
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+
+.cuadro-extra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+.linea_vertical {
+    position: absolute;
+    transform: rotate(327deg);
+    left: -23px;
+    top: 89px;
+    background-color: black !important;
+    height: 2px;
+    width: 116.5%;
+}
+
+.diagonal_1 {
+    position: absolute;
+    top: 74px;
+    left: -36px;
+    width: 125%;
+    height: 30px;
+    border: 1px solid #000000;
+    transform: rotate(31deg);
+    background-color: transparent;
+    z-index: 100;
+}
+
+.diagonal_2 {
+    position: absolute;
+    top: 74px;
+    left: -36px;
+    width: 125%;
+    height: 30px;
+    border: 1px solid #000000;
+    transform: rotate(-31deg);
+    background-color: transparent;
+    z-index: 99;
+}
+
+
+.paleta-colores {
+    width: 77%;
+    height: 150px;
+    overflow-x: auto;
+    background-color: #122182;
+    padding-right: 100px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 100px 100px 0px 0px;
+}
+
+.header {
+    padding-top: 10px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-family: 'fuente_banderas';
+    color: white;
+    -webkit-text-stroke: 2px #050505;
+}
+
+@font-face {
+    font-family: 'fuente_banderas';
+    src: url('assets/fuente.ttf');
+}
+
+
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 6px solid #cecece;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0);
+}
+
+
+.color:hover {
+    transform: scale(1.2);
+}
+
+.color.activo {
+    transform: scale(1.2);
+    border: 6px solid #00ff4c;
+}
+
+#boton_validar {
+    background-color: #389638;
+    border: 3px solid #096109;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton_limpiar {
+    background-color: #ff3d3d;
+    border: 3px solid #a81818;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.boton_acciones {
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.boton_acciones:hover {
+    transform: scale(1.1);
+}
+
+
+body {
+    
+    font-family: 'fuente_banderas' !important;
+}
+
+.bandera-correcta {
+    width: 100%;
+    height: 100%;
+    background-color: #b4ff969d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 104;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bandera-incorrecta {
+    width: 100%;
+    height: 100%;
+    background-color: #ff00009d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 104;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bandera-correcta img, .bandera-incorrecta img {
+    width: 50px;
+    height: 50px;
+    animation: subir_y_bajar 1s ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    transition: all 0.3s ease;
+    transform: rotate(0deg);
+    transform-origin: center;
+    transform-box: fill-box;
+    transform-style: preserve-3d;
+}
+
+@keyframes subir_y_bajar {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.cajon_juego {
+    width: 250px;
+    height: 200px;
+    background-color: #ececec;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cajon_juego:hover {
+    transform: scale(1.1);
+}
+
+
+.text-juego-cajon {
+    position: absolute; 
+    font-size: 20px;
+    width: 93%;
+    top: 70%; 
+    width: 100%; 
+    text-align: center;
+    text-shadow: 2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff;
+}
+
+
+#contenedor_juego1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contenedor_juego2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#departamento_adivinar {
+    font-size: 2.1rem;
+    color: rgb(255, 174, 0);
+    -webkit-text-stroke: 2px #050505;
+}
+
+
+.bandera-adivinar {
+    width: 220px;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.bandera-adivinar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 rgba(255, 157, 9, 0.692);
+}
+
+.bandera-correcta-adivina {
+    width: 220px;
+    height: 150px;
+    background-color: #b4ff969d;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bandera-incorrecta-adivina {
+    width: 220px;
+    height: 150px;
+    background-color: #ff00009d;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bandera-correcta-adivina img, .bandera-incorrecta-adivina img {
+    width: 60px;
+    height: 60px;
+    animation: subir_y_bajar 1s ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    transition: all 0.3s ease;
+    transform: rotate(0deg);
+    transform-origin: center;
+    transform-box: fill-box;
+    transform-style: preserve-3d;
+}
+
+.botones_header button {
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.botones_header {
+    width: 130px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 4vh;
+}
+
+div:where(.swal2-container) div:where(.swal2-html-container) {
+    z-index: 1;
+    justify-content: center;
+    margin: 0;
+    padding: 1em 1.6em .3em;
+    overflow: auto;
+    color: inherit;
+    font-size: 1.125em;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-word;
+    cursor: initial;
+    font-family: cursive !important;
+    display: block;
+    font-size: 25px !important;
+}

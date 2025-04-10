@@ -3,7 +3,7 @@ function verMas(element){
     let loadingAlert;
 
     $.ajax({
-        url: '/mapplic/mapplic/php/consultarInfo.php',
+        url: 'mapplic/php/consultarInfo.php',
         method: 'GET',
         data: { id: id_departamento },
         beforeSend: function() {

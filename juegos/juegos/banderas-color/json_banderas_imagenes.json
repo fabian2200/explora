@@ -1,0 +1,134 @@
+[
+    {
+        "nombre": "Antioquia",
+        "imagen": "imagenes_banderas/antioquia.png"
+    },
+    {
+        "nombre": "Amazonas",
+        "imagen": "imagenes_banderas/amazonas.png"
+    },
+    {
+        "nombre": "Arauca",
+        "imagen": "imagenes_banderas/arauca.png"
+    },
+    {
+        "nombre": "Atlántico",
+        "imagen": "imagenes_banderas/atlantico.png"
+    },
+    {
+        "nombre": "Bolívar",
+        "imagen": "imagenes_banderas/bolivar.png"
+    },
+    {
+        "nombre": "Boyacá",
+        "imagen": "imagenes_banderas/boyaca.png"
+    },
+    {
+        "nombre": "Caldas",
+        "imagen": "imagenes_banderas/caldas.png"
+    },
+    {
+        "nombre": "Caquetá",
+        "imagen": "imagenes_banderas/caqueta.png"
+    },
+    {
+        "nombre": "Casanare",
+        "imagen": "imagenes_banderas/casanare.png"
+    },
+    {
+        "nombre": "Cauca",
+        "imagen": "imagenes_banderas/cauca.png"
+    },
+    {
+        "nombre": "Cesar",
+        "imagen": "imagenes_banderas/cesar.png"
+    },
+    {
+        "nombre": "Chocó",
+        "imagen": "imagenes_banderas/choco.png"
+    },
+    {
+        "nombre": "Córdoba",
+        "imagen": "imagenes_banderas/cordoba.png"
+    },
+    {
+        "nombre": "Cundinamarca",
+        "imagen": "imagenes_banderas/cundinamarca.png"
+    },
+    {
+        "nombre": "Guainía",
+        "imagen": "imagenes_banderas/guainia.png"
+    },
+    {
+        "nombre": "Guaviare",
+        "imagen": "imagenes_banderas/guaviare.png"
+    },
+    {
+        "nombre": "Huila",
+        "imagen": "imagenes_banderas/huila.png"
+    },
+    {
+        "nombre": "La Guajira",
+        "imagen": "imagenes_banderas/la_guajira.png"
+    },
+    {
+        "nombre": "Magdalena",
+        "imagen": "imagenes_banderas/magdalena.png"
+    },
+    {
+        "nombre": "Meta",
+        "imagen": "imagenes_banderas/meta.png"
+    },
+    {
+        "nombre": "Nariño",
+        "imagen": "imagenes_banderas/nariño.png"
+    },
+    {
+        "nombre": "Norte de Santander",
+        "imagen": "imagenes_banderas/norte_de_santander.png"
+    },
+    {
+        "nombre": "Putumayo",
+        "imagen": "imagenes_banderas/putumayo.png"
+    },
+    {
+        "nombre": "Quindío",
+        "imagen": "imagenes_banderas/quindio.png"
+    },
+    {
+        "nombre": "Risaralda",
+        "imagen": "imagenes_banderas/risaralda.png"
+    },
+    {
+        "nombre": "San Andrés y Providencia",
+        "imagen": "imagenes_banderas/san_andres.png"
+    },
+    {
+        "nombre": "Santander",
+        "imagen": "imagenes_banderas/santander.png"
+    },
+    {
+        "nombre": "Sucre",
+        "imagen": "imagenes_banderas/sucre.png"
+    },
+    {
+        "nombre": "Tolima",
+        "imagen": "imagenes_banderas/tolima.png"
+    },
+    {
+        "nombre": "Valle del Cauca",
+        "imagen": "imagenes_banderas/valle_del_cauca.png"
+    },
+    {
+        "nombre": "Vaupés",
+        "imagen": "imagenes_banderas/vaupes.png"
+    },
+    {
+        "nombre": "Vichada",
+        "imagen": "imagenes_banderas/vichada.png"
+    },
+    {
+        "nombre": "Bogotá",
+        "imagen": "imagenes_banderas/bogota.png"
+    }
+]

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto Espacial</title>
+    <link rel="stylesheet" href="css/css2.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div id="contenedor_general" class="contenedor_general">
+    <div class="game-container" id="game-container" style="position: relative;">
+        <table id="mapa"></table>
+        <img id="player" class="player" style="transform: rotate(45deg);" src="css/mario.gif">
+    </div>
+    <div style="display: flex; justify-content: space-around; align-items: center; height: 83vh; flex-direction: column;  width: 240px;">
+        <div id="timer">
+            <h1 id="timer_text" class="borde_letra">5:00</h1>
+            <h5 style="color: #ffffff; font-size: 20px; font-family: 'DS-Digital'; font-weight: bold; width: 100%; text-align: center;">Marcador</h5>
+            <div style="display: flex; justify-content: center; align-items: center; height: 50px; width: 100%;">
+                <div id="marcador1">0</div>
+                <div id="marcador2">0</div>
+            </div>
+        </div>
+    <div class="controles">
+            <div style="top: -6px; left: -6px;position: relative; transform: rotate(-45deg); width: 178px; height: 178px;">
+                <div class="subir" onclick="subir()">
+                </div>
+                <div class="bajar" onclick="bajar()">
+                </div>
+                <div class="izquierda" onclick="izquierda()">
+                </div>
+                <div class="derecha" onclick="derecha()">
+                </div>
+            </div>
+        </div>  
+        <br>
+        <div class="controles2">
+            <div onclick="playPause()" id="play_pause" class="play">
+            </div>
+            <div class="replay" onclick="replay()">
+            </div>
+        </div>
+    </div>    
+</div>
+
+
+<div class="pregunta" id="pregunta">
+    <div class="contenedor_pregunta" style="width: 70%; position: relative;">
+        <img src="css/nave.gif" style="width: 100%;" alt="">
+        <div class="contenedor_respuesta" style="height: 100%; width: 50%; position: absolute; top: 0; right: 3px; padding-right: 5%; padding-left: 5%;">
+            <h1 id="pregunta_text">Pregunta</h1>
+            <div id="opciones_container" style="width: 100%;" class="row"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="miModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background-color: transparent !important; border-radius: 20px; border: 5px solid #ffffff96;">
+            <div class="modal-body" style="background-color: #000000a8 !important; border-radius: 20px;">
+                <h5 class="modal-title" id="miModalLabel" style="color: #ffffff; font-size: 40px; font-family: 'DS-Digital'; font-weight: bold; width: 100%; text-align: center;">Selecciona un nivel</h5>
+                <div style="display: flex; justify-content: space-around; align-items: center; height: 100%; padding: 40px;">
+                    <div class="card_nivel" onclick="seleccionar_nivel(1)" style="background-image: url(css/Recurso_2.png);"></div>
+                    <div class="card_nivel" onclick="seleccionar_nivel(2)" style="background-image: url(css/Recurso_1.png);"></div>
+                    <div class="card_nivel" onclick="seleccionar_nivel(3)" style="background-image: url(css/Recurso_3.png);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/js2.js"></script>
+
+</body>
+</html>

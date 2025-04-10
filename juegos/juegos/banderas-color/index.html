@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="assets/sweetalert/sweetalert.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <title>Banderas Color</title>
+</head>
+<body style="display: flex; justify-content: space-between; align-items: center; height: 100vh !important; margin: 0; flex-direction: column; overflow: hidden;">
+    <div id="contenedor_juego1" style="display: none;">
+        <div class="header" style="background-color: #a2b81b;">
+            <h6 style="width: 99%; text-align: right;">Pregunta <span id="pregunta"></span> de 10</h6>
+            <h3>Pinta la bandera de <span style="color: #e000ff;" id="departamento"></span></h3>
+            <div class="botones_header" style="right: 0px; top: 6vh;">
+                <button id="boton_volver" onclick="location.href='../../index.html'" style="-webkit-text-stroke: transparent;" class="btn btn-danger"><i class="fas fa-arrow-left"></i></button>
+                <button id="boton_actualizar" onclick="location.reload()" style="-webkit-text-stroke: transparent;" class="btn btn-info"><i class="fas fa-sync-alt"></i></button>
+            </div>
+        </div>
+        <div class="contenedor" style="position: relative; margin-top: 4vh;" id="contenedor_bandera" style="width: 280px; height: 180px; margin-top: 20px;"></div>
+        <br>
+        <div class="botones">
+            <button id="boton_validar" onclick="verificarBanderas()" class="boton_acciones"><i class="fas fa-check"></i> Validar</button>
+            <button id="boton_limpiar" onclick="limpiarBanderas()" class="boton_acciones"><i class="fas fa-eraser"></i> Limpiar</button>
+        </div>
+        <div class="paleta-colores">
+            
+        </div>
+    </div>
+    <div id="contenedor_juego2" style="display: none;">
+        <div class="header" style="background-color: #ffd600; padding-top: 10px; height: 130px; display: flex; justify-content: center; align-items: center;">
+            <h1>ADIVINA LA BANDERA</h1>
+            <div class="botones_header">
+                <button id="boton_volver" onclick="location.href='../../index.html'" style="-webkit-text-stroke: transparent;" class="btn btn-danger"><i class="fas fa-arrow-left"></i></button>
+                <button id="boton_actualizar" onclick="location.reload()" style="-webkit-text-stroke: transparent;" class="btn btn-info"><i class="fas fa-sync-alt"></i></button>
+            </div>
+        </div>
+        <div class="row" style="width: 100%; height: 100%;">
+
+            <div class="col-md-3" style="background-color: #004284; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <h4 style="color: #ffffff; -webkit-text-stroke: 2px #012644;">BANDERA <span id="pregunta_adivina"></span>/10</h4>
+                <br>
+                <br>
+                <h3 style="text-align: center; color: #ffffff; -webkit-text-stroke: 2px #012644;">Tiempo restante <br> <span style="font-size: 3rem;" id="timer_text_adivina">00:00</span></h3>
+                <br>
+                <br>
+                <br>
+                <h4 style="color: #ffffff; -webkit-text-stroke: 2px #012644;">Puntuación</h4>
+                <br>
+                <div class="row" style="width: 80%; display: flex; justify-content: center; align-items: center;">
+                   <div class="col-6 text-center" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                        <div style="width: 70px; height: 70px; background-color: #018f37; border-radius: 10px; border: 6px solid #ffffff9c; display: flex; justify-content: center; align-items: center;">
+                            <h2 id="correctas_adivina" style="color: #ffffff; -webkit-text-stroke: 2px #012644; margin: 0;">0</h2>
+                        </div>
+                        <br>
+                        <h6 style="color: #ffffff; -webkit-text-stroke: 2px #012644;">Bien</h6>
+                   </div>
+                   <div class="col-6 text-center" style="display: flex; justify-content: center; align-items: center; flex-direction: column;"> 
+                        <div style="width: 70px; height: 70px; background-color: #ff0000; border-radius: 10px; border: 6px solid #ffffff9c; display: flex; justify-content: center; align-items: center;">
+                            <h2 id="incorrectas_adivina" style="color: #ffffff; -webkit-text-stroke: 2px #012644; margin: 0;">0</h2>
+                        </div>
+                        <br>
+                        <h6 style="color: #ffffff; -webkit-text-stroke: 2px #012644;">Mal</h6>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-9" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <h5 style="-webkit-text-stroke: 2px #012644; width: 75%;color: #ffffff; background-color: #004386;padding: 15px;border-radius: 10px; border: 6px solid #3a3a3a9c; text-align: center;">Selecciona la bandera de <br> <span id="departamento_adivinar">Prueba</span></h5>
+                <br>
+                <div class="contenedor_banderas" style="width: 55%">
+                    <div class="row" id="contenedor_banderas_row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+      
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="border: none; padding: 20px; border-radius: 20px; background-color: #0000007a;">
+                <!-- Modal Header -->
+                <div class="modal-header" style="border: none;">
+                    <h4 class="modal-title text-center" style="font-size: 1.5rem; width: 100%; color: #ffffff;">Selecciona el tipo de juego</h4>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6" style="display: flex; justify-content: center; align-items: center;">
+                            <div class="cajon_juego" onclick="iniciarJuego('adivina')">
+                                <img src="assets/juego2.jpg" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;" alt="bandera correcta">
+                                <h6 class="text-juego-cajon">Adivina la bandera</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="display: flex; justify-content: center; align-items: center;">
+                            <div class="cajon_juego" onclick="iniciarJuego('pinta')">
+                                <img src="assets/juego1.jpg" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;" alt="bandera correcta">
+                                <h6 class="text-juego-cajon">Pinta la bandera</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
