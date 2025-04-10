@@ -1,0 +1,244 @@
+/* Contenedor de nubes */
+.cloud-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: float linear infinite;
+}
+
+.cloud::before,
+.cloud::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+
+.cloud-1 {
+    width: 100px;
+    height: 40px;
+    animation-duration: 30s;
+}
+
+.cloud-1::before {
+    width: 50px;
+    height: 50px;
+    top: -20px;
+    left: 15px;
+}
+
+.cloud-1::after {
+    width: 40px;
+    height: 40px;
+    top: -15px;
+    right: 15px;
+}
+
+.cloud-2 {
+    width: 80px;
+    height: 30px;
+    animation-duration: 25s;
+}
+
+.cloud-2::before {
+    width: 40px;
+    height: 40px;
+    top: -15px;
+    left: 10px;
+}
+
+.cloud-2::after {
+    width: 30px;
+    height: 30px;
+    top: -10px;
+    right: 10px;
+}
+
+.cloud-3 {
+    width: 120px;
+    height: 45px;
+    animation-duration: 35s;
+}
+
+.cloud-3::before {
+    width: 60px;
+    height: 60px;
+    top: -25px;
+    left: 20px;
+}
+
+.cloud-3::after {
+    width: 50px;
+    height: 50px;
+    top: -20px;
+    right: 20px;
+}
+
+.cloud-4 {
+    width: 90px;
+    height: 35px;
+    animation-duration: 28s;
+}
+
+.cloud-4::before {
+    width: 45px;
+    height: 45px;
+    top: -18px;
+    left: 12px;
+}
+
+.cloud-4::after {
+    width: 35px;
+    height: 35px;
+    top: -12px;
+    right: 12px;
+}
+
+.cloud-5 {
+    width: 110px;
+    height: 42px;
+    animation-duration: 32s;
+}
+
+.cloud-5::before {
+    width: 55px;
+    height: 55px;
+    top: -22px;
+    left: 18px;
+}
+
+.cloud-5::after {
+    width: 45px;
+    height: 45px;
+    top: -18px;
+    right: 18px;
+}
+
+.cloud-6 {
+    width: 70px;
+    height: 28px;
+    animation-duration: 27s;
+}
+
+.cloud-6::before {
+    width: 35px;
+    height: 35px;
+    top: -14px;
+    left: 8px;
+}
+
+.cloud-6::after {
+    width: 25px;
+    height: 25px;
+    top: -10px;
+    right: 8px;
+}
+
+.cloud-7 {
+    width: 95px;
+    height: 38px;
+    animation-duration: 29s;
+}
+
+.cloud-7::before {
+    width: 48px;
+    height: 48px;
+    top: -19px;
+    left: 14px;
+}
+
+.cloud-7::after {
+    width: 38px;
+    height: 38px;
+    top: -14px;
+    right: 14px;
+}
+
+.cloud-8 {
+    width: 85px;
+    height: 33px;
+    animation-duration: 31s;
+}
+
+.cloud-8::before {
+    width: 43px;
+    height: 43px;
+    top: -17px;
+    left: 11px;
+}
+
+.cloud-8::after {
+    width: 33px;
+    height: 33px;
+    top: -13px;
+    right: 11px;
+}
+
+.cloud-9 {
+    width: 105px;
+    height: 41px;
+    animation-duration: 33s;
+}
+
+.cloud-9::before {
+    width: 53px;
+    height: 53px;
+    top: -21px;
+    left: 17px;
+}
+
+.cloud-9::after {
+    width: 43px;
+    height: 43px;
+    top: -17px;
+    right: 17px;
+}
+
+.cloud-10 {
+    width: 75px;
+    height: 29px;
+    animation-duration: 26s;
+}
+
+.cloud-10::before {
+    width: 38px;
+    height: 38px;
+    top: -15px;
+    left: 9px;
+}
+
+.cloud-10::after {
+    width: 28px;
+    height: 28px;
+    top: -11px;
+    right: 9px;
+}
+
+@keyframes float {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(100vw - 100%));
+    }
+}
+
+@keyframes float-reverse {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100vw + 100%));
+    }
+} 

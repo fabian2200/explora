@@ -1,0 +1,95 @@
+{
+    "mapwidth": "1200",
+    "mapheight": "1200",
+    "categories": [
+        {
+            "id": "climatico",
+            "title": "Mapa Climático de Colombia",
+            "about": "",
+            "color": "#FF9595",
+            "show": "true"
+        }
+    ],
+    "levels": [
+        {
+            "id": "climatico",
+            "title": "Mapa Climático de Colombia",
+            "map": "maps_climatico/climatico.svg",
+            "zoom": 4,
+            "locations": [
+                {
+                    "id": "amazonia",
+                    "title": "Amazonía",
+                    "description": "<p><strong>Clima:</strong> Ecuatorial h&uacute;medo, con altas temperaturas y lluvias constantes.</p><p><strong>Departamentos:</strong> Amazonas, Caquet&aacute;, Guain&iacute;a, Guaviare, Putumayo, Vaup&eacute;s.</p>",
+                    "pin": "hidden",
+                    "fill": "#e5181800",
+                    "x": "0.5651",
+                    "y": "0.6904",
+                    "zoom": 2,
+                    "category": "climatico",
+                    "show": "true"
+                },
+                {
+                    "id": "andina",
+                    "title": "Región Andina",
+                    "description": "<p><strong>Clima:</strong> altas, con lluvias moderadas.</p><p><strong>Departamentos:</strong> Antioquia, Boyac&aacute;, Caldas, Cundinamarca, Huila, Nari&ntilde;o, Norte de Santander, Quind&iacute;o, Risaralda, Santander, Tolima, Valle del Cauca.</p>",
+                    "pin": "hidden",
+                    "fill": "#e5181800",
+                    "x": "0.4050",
+                    "y": "0.4341",
+                    "zoom": 2,
+                    "category": "climatico",
+                    "show": "true"
+                },
+                {
+                    "id": "orinoquia",
+                    "title": "Región Orinoquía",
+                    "description": "<p><strong>Clima:</strong> Tropical de sabana, con estaciones secas y lluviosas.</p><p><strong>Departamentos:</strong> Arauca, Casanare, Meta, Vichada.</p>",
+                    "pin": "hidden",
+                    "fill": "#e5181800",
+                    "x": "0.6477",
+                    "y": "0.4414",
+                    "zoom": 2,
+                    "category": "climatico",
+                    "show": "true"
+                },
+                {
+                    "id": "pacifica",
+                    "title": "Región Pacífica",
+                    "description": "<p><strong>Clima:</strong> Muy h&uacute;medo, con lluvias intensas todo el a&ntilde;o.</p><p><strong>Departamentos:</strong> Choc&oacute;, Valle del Cauca, Cauca, Nari&ntilde;o.</p>",
+                    "pin": "hidden",
+                    "fill": "#e5181800",
+                    "x": "0.2534",
+                    "y": "0.4791",
+                    "zoom": 2,
+                    "category": "climatico",
+                    "show": "true"
+                },
+                {
+                    "id": "insular",
+                    "title": "San Andrés, Providencia y Santa Catalina",
+                    "description": "<p><strong>Clima:</strong> Tropical mar&iacute;timo, con influencia de los vientos alisios.</p><p><strong>Departamentos:</strong> San Andr&eacute;s, Providencia y Santa Catalina.</p>",
+                    "pin": "hidden",
+                    "fill": "#e5181800",
+                    "x": "0.1080",
+                    "y": "0.0785",
+                    "zoom": 2,
+                    "category": "climatico",
+                    "show": "true"
+                },
+                {
+                    "id": "caribe",
+                    "title": "Región Caribe",
+                    "description": "<p><strong>Clima:</strong> C&aacute;lido, seco y h&uacute;medo en algunas zonas.</p><p><strong>Departamentos:</strong> La Guajira, Cesar, Magdalena, Atl&aacute;ntico, Bol&iacute;var, Sucre, C&oacute;rdoba.</p>",
+                    "pin": "hidden",
+                    "fill": "#e5181800",
+                    "x": "0.3950",
+                    "y": "0.1736",
+                    "zoom": 2,
+                    "category": "climatico",
+                    "show": "true"
+                }
+            ]
+        }
+    ]
+}

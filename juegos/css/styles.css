@@ -1,0 +1,838 @@
+/* Variables de colores */
+:root {
+    --primary-color: #FF6B6B;
+    --secondary-color: #4ECDC4;
+    --accent-color: #FFE66D;
+    --background-color: #f8f9fa;
+    --text-color: #2C3E50;
+    --colombian-yellow: #FCD116;
+    --colombian-blue: #003087;
+    --colombian-red: #CE1126;
+    --purple-color: #9B59B6;
+    --info-color: #3498DB;
+    --danger-color: #E74C3C;
+}
+
+.navbar>.container {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
+/* Efecto Parallax y Fondos */
+.parallax-section {
+    position: relative;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#inicio.parallax-section {
+    background-image: url('../images/colombia.png');
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: cornflowerblue;
+    background-size: cover;
+}
+
+#inicio.parallax-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 1;
+}
+
+#inicio.parallax-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+#inicio.parallax-section h1 {
+    color: var(--colombian-blue);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#inicio.parallax-section .lead {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Bandera Colombiana */
+.colombian-flag {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 120px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flag-stripe {
+    height: 33.33%;
+    width: 100%;
+}
+
+.flag-stripe.yellow {
+    background-color: var(--colombian-yellow);
+}
+
+.flag-stripe.blue {
+    background-color: var(--colombian-blue);
+}
+
+.flag-stripe.red {
+    background-color: var(--colombian-red);
+}
+
+/* Navbar */
+.navbar {
+    background-color: white !important;
+    height: 60px;
+}
+
+.navbar-brand {
+    color: var(--colombian-blue) !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--colombian-red) !important;
+}
+
+.btn-back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--colombian-blue);
+    border-color: var(--colombian-blue);
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: var(--colombian-blue);
+    color: white;
+}
+
+.btn-back i {
+    font-size: 1.1rem;
+}
+
+/* Lista de Juegos */
+.games-list {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--colombian-yellow);
+}
+
+.game-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 5px solid var(--colombian-blue);
+}
+
+.game-item:hover {
+    background-color: var(--background-color);
+    border-left-color: var(--colombian-red);
+}
+
+.game-item.active {
+    background-color: var(--colombian-blue);
+    color: white;
+    border-left-color: var(--colombian-yellow);
+}
+
+.game-icon {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.game-title {
+    font-weight: bold;
+}
+
+/* Detalles del Juego */
+.game-details {
+    position: relative;
+}
+
+.game-content {
+    display: none;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.game-content.active {
+    display: block;
+    opacity: 1;
+}
+
+.game-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.feature {
+    background-color: var(--background-color);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 2px solid var(--colombian-yellow);
+}
+
+/* Botones */
+.btn {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-success {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-warning {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+.btn-info {
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+    color: white;
+}
+
+.btn-purple {
+    background-color: var(--purple-color);
+    border-color: var(--purple-color);
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Card */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 3px solid var(--colombian-blue);
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: var(--colombian-blue);
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .parallax-section {
+        height: 60vh;
+    }
+
+    .games-list {
+        margin-bottom: 30px;
+    }
+
+    .game-item {
+        padding: 10px;
+    }
+
+    .game-features {
+        gap: 5px;
+    }
+
+    .feature {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .colombian-flag {
+        width: 150px;
+        height: 90px;
+    }
+}
+
+/* Indicador de Scroll */
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+.scroll-indicator::before {
+    content: '↓';
+    font-size: 2.5rem;
+    color: var(--colombian-blue);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0) translateX(-50%);
+    }
+
+    40% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+
+    60% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+}
+
+/* Sección de Juegos con Fondo */
+#juegos {
+    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+        url('../images/coordilleras.png');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    position: relative;
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#juegos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+/* Contenedor de nubes y aves */
+.cloud-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: float linear infinite;
+}
+
+.cloud::before,
+.cloud::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+
+.cloud-1 {
+    width: 100px;
+    height: 40px;
+    top: 10%;
+    animation-duration: 30s;
+}
+
+.cloud-1::before {
+    width: 50px;
+    height: 50px;
+    top: -20px;
+    left: 15px;
+}
+
+.cloud-1::after {
+    width: 40px;
+    height: 40px;
+    top: -15px;
+    right: 15px;
+}
+
+.cloud-2 {
+    width: 80px;
+    height: 30px;
+    top: 30%;
+    animation-duration: 25s;
+}
+
+.cloud-2::before {
+    width: 40px;
+    height: 40px;
+    top: -15px;
+    left: 10px;
+}
+
+.cloud-2::after {
+    width: 30px;
+    height: 30px;
+    top: -10px;
+    right: 10px;
+}
+
+.cloud-3 {
+    width: 120px;
+    height: 45px;
+    top: 50%;
+    animation-duration: 35s;
+}
+
+.cloud-3::before {
+    width: 60px;
+    height: 60px;
+    top: -25px;
+    left: 20px;
+}
+
+.cloud-3::after {
+    width: 50px;
+    height: 50px;
+    top: -20px;
+    right: 20px;
+}
+
+.cloud-4 {
+    width: 90px;
+    height: 35px;
+    top: 20%;
+    animation-duration: 28s;
+}
+
+.cloud-4::before {
+    width: 45px;
+    height: 45px;
+    top: -18px;
+    left: 12px;
+}
+
+.cloud-4::after {
+    width: 35px;
+    height: 35px;
+    top: -12px;
+    right: 12px;
+}
+
+.cloud-5 {
+    width: 110px;
+    height: 42px;
+    top: 40%;
+    animation-duration: 32s;
+}
+
+.cloud-5::before {
+    width: 55px;
+    height: 55px;
+    top: -22px;
+    left: 18px;
+}
+
+.cloud-5::after {
+    width: 45px;
+    height: 45px;
+    top: -18px;
+    right: 18px;
+}
+
+.cloud-6 {
+    width: 70px;
+    height: 28px;
+    top: 60%;
+    animation-duration: 27s;
+}
+
+.cloud-6::before {
+    width: 35px;
+    height: 35px;
+    top: -14px;
+    left: 8px;
+}
+
+.cloud-6::after {
+    width: 25px;
+    height: 25px;
+    top: -10px;
+    right: 8px;
+}
+
+/* Contenedor de aves */
+.birds-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.bird {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    animation: fly linear infinite;
+}
+
+.bird::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23000000"><path d="M12 2L8 6l4 4-4 4 4 4 4-4-4-4 4-4z"/></svg>') no-repeat center/contain;
+    transform: scaleX(-1);
+}
+
+.bird-1 {
+    top: 15%;
+    animation-duration: 20s;
+}
+
+.bird-2 {
+    top: 25%;
+    animation-duration: 25s;
+}
+
+.bird-3 {
+    top: 35%;
+    animation-duration: 22s;
+}
+
+.bird-4 {
+    top: 45%;
+    animation-duration: 28s;
+}
+
+@keyframes float {
+    from {
+        left: -150px;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes fly {
+    from {
+        left: -50px;
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(20px);
+    }
+
+    to {
+        left: 100%;
+        transform: translateY(0);
+    }
+}
+
+/* Asegurarse de que el contenido principal esté por encima de las nubes y aves */
+.navbar,
+.container,
+footer {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos para las piezas del rompecabezas */
+.puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.puzzle-piece {
+    perspective: 1000px;
+    position: relative;
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.5s ease;
+    overflow: visible;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flip-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.puzzle-piece:hover .flip-card {
+    transform: rotateY(180deg) !important;
+}
+
+.flip-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 12px;
+}
+
+.flip-front {
+    color: white !important;
+}
+
+.flip-back {
+    color: white !important;
+    transform: rotateY(180deg);
+}
+
+.puzzle-image {
+    width: 172%;
+    height: 176%;
+    position: absolute;
+    top: -43%;
+    left: -35%;
+    z-index: -100;
+    pointer-events: none !important;
+}
+
+.no-action {
+    pointer-events: none !important;
+}
+
+.puzzle-piece:hover {
+    cursor: pointer;
+    transform: scale(1.07) !important;
+}
+
+.puzzle-container.expanded {
+    gap: 30px;
+}
+
+.puzzle-container.initial {
+    gap: 5px;
+}
+
+
+.puzzle-piece.active {
+    border-color: var(--colombian-yellow);
+    background: linear-gradient(135deg, white 0%, #f8f9fa 100%);
+}
+
+.puzzle-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--colombian-blue);
+}
+
+.puzzle-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.puzzle-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.puzzle-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.puzzle-feature {
+    background-color: var(--background-color);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 2px solid var(--colombian-yellow);
+}
+
+/* Sección de Juegos con Fondo y Parallax */
+#juegos {
+    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+        url('../images/coordilleras.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#juegos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+/* Indicador de expansión */
+.expansion-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    color: var(--colombian-blue);
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.expansion-indicator:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateX(-50%) scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .puzzle-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .puzzle-container.initial {
+        transform: translateZ(-200px) scale(0.8);
+    }
+}
+
+@media (max-width: 480px) {
+    .puzzle-container {
+        grid-template-columns: 1fr;
+    }
+
+    .puzzle-container.initial {
+        transform: translateZ(-150px) scale(0.9);
+    }
+}
+
+#juegos h2 {
+    margin-bottom: 2rem !important;
+}
+
+.header-puzzle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.body-puzzle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 70%;
+    position: relative;
+    top: -14px;
+}
+
+.body-puzzle p,
+.body-puzzle a {
+    font-size: 0.9rem;
+    color: white !important;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}

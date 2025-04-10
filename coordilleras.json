@@ -1,0 +1,143 @@
+{
+  "mapwidth": "1200",
+  "mapheight": "1200",
+  "categories": [
+    {
+      "id": "coordilleras",
+      "title": "Sistema Montañoso Colombiano",
+      "about": "",
+      "color": "#FF9595",
+      "show": "true"
+    }
+  ],
+  "levels": [
+    {
+      "id": "coordilleras",
+      "title": "Mapa de Colombia",
+      "map": "maps_coordilleras/coordilleras.svg",
+      "zoom": 4,
+      "locations": [
+        {
+          "id": "occidental",
+          "title": "Cordillera Occidental",
+          "description": "<p>Ubicada al oeste del país.</p> <p>Tiene una longitud de 1.200 kilómetros y es la más baja de las tres cordilleras.</p> <p>En ella se encuentran los volcanes Chiles, Cumbal y Azufral.</p> <p>Termina en Antioquia, donde se divide en serranías más pequeñas como Abibe, San Jerónimo y Ayapel.</p>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.3072",
+          "y": "0.4538",
+          "zoom": 2,
+          "category": "coordilleras",
+          "show": "true"
+        },
+        {
+          "id": "oriental",
+          "title": "Cordillera Oriental",
+          "description": "<p>Es la más ancha de las tres cordilleras.</p><p>Su longitud es de 1.200 kilómetros</p><p>Se divide en dos partes cerca de la frontera con Venezuela:</p><ul class='one'><li>Serranía de los Motilones (entre Cesar y La Guajira).</li><li>Serranía de Mérida (que entra a Venezuela).</li></ul>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.4518",
+          "y": "0.4748",
+          "zoom": 2,
+          "category": "coordilleras",
+          "show": "true"
+        },
+        {
+          "id": "central",
+          "title": "Cordillera Central",
+          "description": "<p>Ubicada entre la Cordillera Occidental y la Cordillera Oriental.</p><p>Su longitud es de 1.100 kilómetros.</p><p>Es la más alta de las tres y aquí se encuentran nevados como el Nevado del Ruiz, Santa Isabel y el Tolima.</p><p>Divide los dos valles más grandes de Colombia: el Valle del Cauca y el Valle del Magdalena.</p>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.3438",
+          "y": "0.5206",
+          "zoom": 2,
+          "category": "coordilleras",
+          "show": "true"
+        },
+        {
+          "id": "maquira",
+          "title": "La Serranía de la Macuira",
+          "description": "<p>Ubicada en el departamento de la Guajira.</p><p>La Serranía de la Macuira está consagrada como un Parque Natural Nacional de Colombia y es el único lugar del mundo con bosques de niebla en medio del desierto. Desconocía su existencia hasta hace menos de un año y tampoco sabía si podía incluir este destino dentro de mi viaje por Colombia, ya que se encuentra en medio del desierto en el extremo nororiental del país y su acceso no es tan fácil.</p>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.5900",
+          "y": "0.0250",
+          "zoom": 2,
+          "category": "coordilleras",
+          "show": "true"
+        },
+        {
+          "id": "darien",
+          "title": "La Serranía del Darién",
+          "description": "<p>Ubicada en la frontera con Panamá.</p><p>La serranía del Darién actúa como la frontera natural entre Colombia y Panamá en América Central. Se origina en la costa del océano Pacífico, alcanzando una altura máxima de 500 metros, y se extiende hacia el norte, formando la división entre las cuencas de los ríos Atrato y Tuira. Su punto más alto es el cerro Tacarcuna, que se eleva a 1.875 metros sobre el nivel del mar.</p>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.2405",
+          "y": "0.2542",
+          "zoom": 2,
+          "category": "coordilleras",
+          "show": "true"
+        },
+        {
+          "id": "baudo",
+          "title": "La Serranía del Baudó",
+          "description": "<p>Ubicada en la región del Pacífico, su punto más alto es el Alto del Buey (1.810 m).</p><p>La serranía del Baudó es una sierra del Pacífico colombiano y de Panamá. Separada de la Cordillera Occidental por el río Atrato, valle en el que se encuentran los municipios de Bojayá, Medio Atrato, Murindó, Vigía del Fuerte y Quibdó.</p>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.2441",
+          "y": "0.3868",
+          "zoom": 2,
+          "category": "coordilleras",
+          "show": "true"
+        },
+        {
+          "id": "chiribiquete",
+          "title": "La Serranía de Chiribiquete",
+          "description": "<p>Ubicada entre los departamentos la Guaviare y Caquetá</p><p>La Serranía de Chiribiquete es importante por su riqueza natural y cultural, y por ser el área protegida más grande de Colombia. </p>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.5100",
+          "y": "0.6973",
+          "zoom": 2,
+          "category": "coordilleras",
+          "show": "true"
+        },
+        {
+          "id": "sierra_nevada_santa_marta",
+          "title": "Sierra Nevada de Santa Marta",
+          "description": "<p>ubicada entre los departamentos de Magdalena, Cesar y la Guajira.</p><p>Es la montaña más alta del mundo cerca al mar y contiene los picos más altos de Colombia: Pico Cristóbal Colón y Pico Simón Bolívar (5.775 m).</p> <p>La Sierra Nevada de Santa Marta es la montaña costera más alta del mundo. Allí se esconde el parque arqueológico Ciudad Perdida, conocido como Teyuna, corazón de la civilización Tayrona.</p>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.4605",
+          "y": "0.1010",
+          "zoom": 2,
+          "category": "coordilleras",
+          "show": "true"
+        },
+        {
+          "id": "macarena",
+          "title": "La Serranía de Macarena",
+          "description": "<p>Ubicada en el departamento de Meta.</p><p>Se trata de un área extraordinaria por sus condiciones de serranía aislada, lo que sugiere la presencia de especies únicas y un importante índice de diversidad en flora y fauna. Se puede observar también muestras arqueológicas sobre los ríos Duda y Guayabero, en donde se encuentran petroglifos y pictogramas de culturas indígenas que habitaron la zona.</p>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.4400",
+          "y": "0.5788",
+          "zoom": 2,
+          "category": "coordilleras",
+          "show": "true"
+        },
+        {
+          "id": "montes_maria",
+          "title": "Los Montes de Maria",
+          "description": "<p>Se encuentran en la región Caribe y alcanzan 810 metros de altura.</p><p>Montes de María es una cadena montañosa de baja altitud localizada al norte de Colombia. La propia serranía y la zona circundante forma una subregión del Caribe colombiano de 6466 km², ubicada entre los departamentos de Sucre y Bolívar.</p>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.3700",
+          "y": "0.1584",
+          "zoom": 2,
+          "category": "coordilleras",
+          "show": "true"
+        }
+      ]
+    }
+  ]
+}

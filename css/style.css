@@ -6,6 +6,12 @@ body {
 	margin: 0;
 }
 
+.mapplic-tooltip-description, .mapplic-tooltip p {
+	color: #424242 !important;
+	font-size: 15px;
+	line-height: 20px !important;
+}
+
 ul, ol {
 	padding-left: 40px;
 	margin: 0;

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos Educativos Explora</title>
+    <!-- Bootstrap CSS -->
+    <link href="librerias/bootstrap-5.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="librerias/fontawesome/css/all.min.css" rel="stylesheet">
+    <!-- AOS CSS para animaciones -->
+    <link href="librerias/aos/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/clouds.css">
+    <link rel="shortcut icon" href="images/Isotipo.png" type="image/x-icon">
+</head>
+<body class="bg-light">
+    <!-- Contenedor de nubes -->
+    <div class="cloud-container">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+        <div class="cloud cloud-4"></div>
+        <div class="cloud cloud-5"></div>
+        <div class="cloud cloud-6"></div>
+        <div class="cloud cloud-7"></div>
+        <div class="cloud cloud-8"></div>
+        <div class="cloud cloud-9"></div>
+        <div class="cloud cloud-10"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" style="display: flex; align-items: center;" href="#">
+                <img src="images/logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+                Juegos Educativos Explora
+            </a>
+            <a href="../index.html" class="btn btn-outline-primary btn-back">
+                <i class="fas fa-arrow-left"></i> Volver
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section con Parallax -->
+    <section id="inicio" class="parallax-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold">¡Explora Colombia Jugando!</h1>
+                    <p class="lead">Descubre las maravillas de nuestro país mientras aprendes y te diviertes</p>
+                    <div class="colombian-flag">
+                        <span class="flag-stripe yellow"></span>
+                        <span class="flag-stripe blue"></span>
+                        <span class="flag-stripe red"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('juegos').scrollIntoView({behavior: 'smooth'})"></div>
+    </section>
+
+    <!-- Sección de Juegos -->
+    <section id="juegos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-2" id="letrerojuegos" style="color: black !important; opacity: 0 !important;" data-aos="fade-up">Nuestros Juegos</h2>
+            <div class="puzzle-container initial">
+                <!-- Pieza 1 -->
+                <div class="puzzle-piece no-action" data-game="matematicas" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flip-card">
+                        <div class="flip-side flip-front">
+                            <img src="images/ficha1.png" alt="Banderas" class="puzzle-image">
+                            <div class="header-puzzle">
+                                <div class="puzzle-icon">🚀</div>
+                                <h3 class="puzzle-title">Navega y aprende</h3>
+                            </div>
+                        </div>
+                        <div class="flip-side flip-back">
+                            <img src="images/ficha1.png" alt="Banderas" class="puzzle-image">
+                            <div class="body-puzzle" style="z-index: 100;">
+                                <p class="puzzle-description">LLeva la nave a las estaciones espaciales y responde las preguntas.</p>
+                                <a href="#" class="btn btn-warning mt-3" style="color: black !important">¡Jugar!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pieza 2 -->
+                <div class="puzzle-piece no-action" data-game="lenguaje" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flip-card">
+                        <div class="flip-side flip-front">
+                            <img src="images/ficha2.png" alt="Banderas" class="puzzle-image">
+                            <div class="header-puzzle">
+                                <div class="puzzle-icon">
+                            <img src="images/pinta.png" alt="Banderas" width="80" height="80">
+                        </div>
+                                <h3 class="puzzle-title">Conoce las banderas</h3>
+                            </div>
+                        </div>
+                        <div class="flip-side flip-back">
+                            <img src="images/ficha2.png" alt="Banderas" class="puzzle-image">
+                            <div class="body-puzzle" style="z-index: 100;">
+                                <p class="puzzle-description">Pinta o adivina las banderas de los departamentos de Colombia.</p>
+                                <a href="#" class="btn btn-success mt-3">¡Jugar!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pieza 3 -->
+                <div class="puzzle-piece no-action" data-game="ciencias" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flip-card">
+                        <div class="flip-side flip-front">
+                            <img src="images/ficha3.png" alt="Banderas" class="puzzle-image">
+                            <div class="header-puzzle">
+                                <div class="puzzle-icon">
+                                    <img src="images/arma.png" alt="Banderas" width="80" height="80">
+                                </div>
+                                <h3 class="puzzle-title">Rompecabezas</h3>
+                            </div>
+                        </div>
+                        <div class="flip-side flip-back">
+                            <img src="images/ficha3.png" alt="Banderas" class="puzzle-image">
+                            <div class="body-puzzle" style="z-index: 100;">
+                                <p class="puzzle-description">Sigue las instrucciones y arma el rompecabezas.</p>
+                                <a href="#" class="btn btn-info mt-3">¡Jugar!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pieza 4 -->
+                <div class="puzzle-piece no-action" data-game="historia" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flip-card">
+                        <div class="flip-side flip-front">
+                            <img src="images/ficha4.png" alt="Banderas" class="puzzle-image">
+                            <div class="header-puzzle">
+                                <div class="puzzle-icon">
+                                    <img src="images/sopa.png" alt="Banderas" width="80" height="80">
+                                </div>
+                                <h3 class="puzzle-title">Sopa de letras</h3>
+                            </div>
+                        </div>
+                        <div class="flip-side flip-back">
+                            <img src="images/ficha4.png" alt="Banderas" class="puzzle-image">
+                            <div class="body-puzzle">
+                                <p class="puzzle-description">Explora la rica historia de Colombia a través de juegos interactivos.</p>
+                                <a href="#" class="btn btn-danger mt-3">¡Jugar!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pieza 5 -->
+                <div class="puzzle-piece no-action" data-game="geografia" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flip-card">
+                        <div class="flip-side flip-front">
+                            <img src="images/ficha5.png" alt="Banderas" class="puzzle-image">
+                            <div class="header-puzzle">
+                                <div class="puzzle-icon">
+                                    <img src="images/arrastra.png" alt="Banderas" width="97" height="80">
+                                </div>
+                                <h3 class="puzzle-title">Ubica los puntos</h3>
+                            </div>
+                        </div>
+                        <div class="flip-side flip-back">
+                            <img src="images/ficha5.png" alt="Banderas" class="puzzle-image">
+                            <div class="body-puzzle">
+                                <p class="puzzle-description">Aprende sobre las regiones, ríos y montañas de Colombia.</p>
+                                <a href="#" class="btn btn-info mt-3">¡Jugar!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pieza 6 -->
+                <div class="puzzle-piece no-action" data-game="cultura" data-aos="fade-up" data-aos-delay="600">
+                    <div class="flip-card">
+                        <div class="flip-side flip-front">
+                            <img src="images/ficha6.png" alt="Banderas" class="puzzle-image">
+                            <div class="header-puzzle">
+                                <div class="puzzle-icon">
+                                    <img src="images/cruci.png" alt="Banderas" width="80" height="80">
+                                </div>
+                                <h3 class="puzzle-title" style="text-align: center;">Crucigrama de Colombia</h3>
+                            </div>
+                        </div>
+                        <div class="flip-side flip-back">
+                            <img src="images/ficha6.png" alt="Banderas" class="puzzle-image">
+                            <div class="body-puzzle">
+                                <p class="puzzle-description">Descubre la música, danza y tradiciones de Colombia.</p>
+                                <a href="#" class="btn btn-purple mt-3">¡Jugar!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h6 style="opacity: 0;">PO</h6>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 shadow-sm">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Juegos Educativos Colombia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="librerias/bootstrap-5.3/js/bootstrap.bundle.js"></script>
+    <script src="librerias/aos/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/clouds.js"></script>
+</body>
+</html> 

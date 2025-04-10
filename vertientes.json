@@ -1,0 +1,358 @@
+{
+  "mapwidth": "1200",
+  "mapheight": "1200",
+  "categories": [
+    {
+      "id": "vertientes",
+      "title": "Vertientes",
+      "about": "",
+      "color": "#FF9595",
+      "show": "true"
+    }
+  ],
+  "levels": [
+    {
+      "id": "vertientes",
+      "title": "Mapa de Colombia",
+      "map": "maps_vertientes/vertientes.svg",
+      "zoom": 4,
+      "locations": [
+        {
+          "id": "caribe",
+          "title": "Vertiente del Caribe",
+          "description": "<p>La vertiente del Caribe alcanza una superficie aproximada de 389.000 km2, sus r&iacute;os son de curso largo y de f&aacute;cil navegaci&oacute;n. Est&aacute; formada por las siguientes cuencas hidrogr&aacute;ficas:</p><ul class='one'><li>Cuenca del sistema r&iacute;o Magdalena-r&iacute;o Cauca (270.000 km&sup2;)</li><li>Cuenca del r&iacute;o Atrato (45.000 km&sup2;)</li><li>Cuencas de la Sierra Nevada de Santa Marta y la Guajira (30.000km&sup2;)</li><li>Cuenca del r&iacute;o Sinú (17.000 km&sup2;).</li></ul>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.3925",
+          "y": "0.3614",
+          "zoom": 2,
+          "category": "vertientes",
+          "show": "true"
+        },
+        {
+          "id": "amazonas",
+          "title": "Vertiente del Amazonas",
+          "description": "<p>Tiene un área de 345.000 km&sup2;. Está formada por las siguientes cuencas:</p><ul class='one'><li>Cuenca del r&iacute;o Caquetá (200.000 km&sup2;)</li><li>Cuenca del r&iacute;o Putumayo (parte colombiana) (54.000 km&sup2;)</li><li>Cuenca del r&iacute;o Vaupés (parte colombiana) (38.000 km&sup2;)</li><li>Otras cuencas menores (53.000 km&sup2;)</li></ul>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.5462",
+          "y": "0.7484",
+          "zoom": 2,
+          "category": "vertientes",
+          "show": "true"
+        },
+        {
+          "id": "catatumbo",
+          "title": "Vertiente del Catatumbo",
+          "description": "<p>La vertiente del Catatumbo con 18.700 km&sup2;, vierte en el lago Maracaibo, con las siguientes cuencas:</p><ul class='one'><li>Cuenca del r&iacute;o Catatumbo (parte colombiana) (7.300 km&sup2;)</li><li>Cuenca del r&iacute;o Zulia (Parte colombiana) (4.800 km&sup2;)</li><li>Cuenca del r&iacute;o Sardinata (3.400 km&sup2;)</li></ul>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.5000",
+          "y": "0.2662",
+          "zoom": 4,
+          "category": "vertientes",
+          "show": "true"
+        },
+        {
+          "id": "pacifico",
+          "title": "Vertiente del Pacifico",
+          "description": "<p>La vertiente del Pac&iacute;fico abarca aproximadamente 88.000 km&sup2;. Sus r&iacute;os atraviesan zonas selv&aacute;ticas y por la alta pluviosidad son torrentosos, sus cursos son cortos y de grandes pendientes que favorece el arrastre de gran carga de sedimentos, los cuales al ser depositados en las zonas bajas propician la formaci&oacute;n de deltas. Est&aacute; formada por las siguientes cuencas:</p><ul class='one'><li>Cuenca del r&iacute;o Pat&iacute;a (24.000 km&sup2;)</li><li>Cuenca del r&iacute;o San Juan (Colombia) (20.000 km&sup2;) </li> <li> Cuenca del r&iacute;o Mira (11.000 km&sup2;)</li><li>Cuenca del r&iacute;o Baudǫ (8.000 km&sup2;)</li><li>Otras cuencas menores, incluidas las del Micay y Guapi (25.000 km&sup2;)</li></ul>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.2732",
+          "y": "0.5267",
+          "zoom": 2,
+          "category": "vertientes",
+          "show": "true"
+        },
+        {
+          "id": "orinoco",
+          "title": "Vertiente del Orinoco",
+          "description": "<p>Tiene 328.000 km&sup2;, incluye grandes r&iacute;os como el R&iacute;o Orinoco, el Guaviare, el Meta, el In&iacute;rida y otros mąs peque&ntilde;os como el Tomo y el Vichada. La mayor parte de los r&iacute;os de esta vertiente nacen en la cordillera oriental y descienden a la llanura donde se explayan y generan amplias zonas de inundaci&oacute;n. Est&aacute; formada por las siguientes cuencas:</p><ul class='one'><li>Cuenca del r&iacute;o Guaviare (140.000 km&sup2;)</li><li>Cuenca del r&iacute;o Meta (112.000 km&sup2;)</li><li>Cuenca del r&iacute;o Vichada (26.000 km&sup2;)</li><li>Cuenca del r&iacute;o Tomo (20.000 km&sup2;)</li><li>Cuenca del r&iacute;o Arauca (parte colombiana) (8.000 km&sup2;)</li><li>Otras cuencas menores (22.000 km&sup2;)</li></ul>",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.6163",
+          "y": "0.4869",
+          "zoom": 2,
+          "category": "vertientes",
+          "show": "true"
+        }
+      ]
+    },
+    {
+      "id": "caribe",
+      "title": "Vertiente del Caribe",
+      "map": "maps_vertientes/caribe.svg",
+      "locations": [
+        {
+          "id": "amazonas",
+          "title": "Vertiente del Amazonas",
+          "description": "Vertiente del Amazonas.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.5462",
+          "y": "0.7484",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "catatumbo",
+          "title": "Vertiente del Catatumbo",
+          "description": "Vertiente del Catatumbo.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.5000",
+          "y": "0.2662",
+          "zoom": 4,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "pacifico",
+          "title": "Vertiente del Pacifico",
+          "description": "Vertiente del Pacifico.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.2732",
+          "y": "0.5267",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "orinoco",
+          "title": "Vertiente del Orinoco",
+          "description": "Vertiente del Orinoco.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.6163",
+          "y": "0.4869",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        }
+      ]
+    },
+    {
+      "id": "amazonas",
+      "title": "Vertiente del Amazonas",
+      "map": "maps_vertientes/amazonas.svg",
+      "locations": [
+        {
+          "id": "caribe",
+          "title": "Vertiente del Caribe",
+          "description": "Vertiente del Caribe.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.3925",
+          "y": "0.3614",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "catatumbo",
+          "title": "Vertiente del Catatumbo",
+          "description": "Vertiente del Catatumbo.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.5000",
+          "y": "0.2662",
+          "zoom": 4,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "pacifico",
+          "title": "Vertiente del Pacifico",
+          "description": "Vertiente del Pacifico.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.2732",
+          "y": "0.5267",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "orinoco",
+          "title": "Vertiente del Orinoco",
+          "description": "Vertiente del Orinoco.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.6163",
+          "y": "0.4869",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        }
+      ]
+    },
+    {
+      "id": "catatumbo",
+      "title": "Vertiente del Catatumbo",
+      "map": "maps_vertientes/catatumbo.svg",
+      "locations": [
+        {
+          "id": "caribe",
+          "title": "Vertiente del Caribe",
+          "description": "Vertiente del Caribe.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.3925",
+          "y": "0.3614",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "amazonas",
+          "title": "Vertiente del Amazonas",
+          "description": "Vertiente del Amazonas.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.5462",
+          "y": "0.7484",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "pacifico",
+          "title": "Vertiente del Pacifico",
+          "description": "Vertiente del Pacifico.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.2732",
+          "y": "0.5267",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "orinoco",
+          "title": "Vertiente del Orinoco",
+          "description": "Vertiente del Orinoco.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.6163",
+          "y": "0.4869",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        }
+      ]
+    },
+    {
+      "id": "orinoco",
+      "title": "Vertiente del Orinoco",
+      "map": "maps_vertientes/orinoco.svg",
+      "locations": [
+        {
+          "id": "caribe",
+          "title": "Vertiente del Caribe",
+          "description": "Vertiente del Caribe.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.3925",
+          "y": "0.3614",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "amazonas",
+          "title": "Vertiente del Amazonas",
+          "description": "Vertiente del Amazonas.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.5462",
+          "y": "0.7484",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "pacifico",
+          "title": "Vertiente del Pacifico",
+          "description": "Vertiente del Pacifico.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.2732",
+          "y": "0.5267",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "catatumbo",
+          "title": "Vertiente del Catatumbo",
+          "description": "Vertiente del Catatumbo.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.5000",
+          "y": "0.2662",
+          "zoom": 4,
+          "category": "hidden",
+          "show": "false"
+        }
+      ]
+    },
+    {
+      "id": "pacifico",
+      "title": "Vertiente del Pacifico",
+      "map": "maps_vertientes/pacifico.svg",
+      "locations": [
+        {
+          "id": "caribe",
+          "title": "Vertiente del Caribe",
+          "description": "Vertiente del Caribe.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.3925",
+          "y": "0.3614",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "amazonas",
+          "title": "Vertiente del Amazonas",
+          "description": "Vertiente del Amazonas.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.5462",
+          "y": "0.7484",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "orinoco",
+          "title": "Vertiente del Orinoco",
+          "description": "Vertiente del Orinoco.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.6163",
+          "y": "0.4869",
+          "zoom": 2,
+          "category": "hidden",
+          "show": "false"
+        },
+        {
+          "id": "catatumbo",
+          "title": "Vertiente del Catatumbo",
+          "description": "Vertiente del Catatumbo.",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "x": "0.5000",
+          "y": "0.2662",
+          "zoom": 4,
+          "category": "hidden",
+          "show": "false"
+        }
+      ]
+    }
+  ]
+}

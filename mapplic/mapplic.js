@@ -31,6 +31,8 @@
 			zoom: true
 		};
 
+		self.colombia = [];
+
 		self.init = async function(el, params) {
 			// Extend options
 			self.o = $.extend(self.o, params);
@@ -70,10 +72,8 @@
 		}
 
 		function cargarDepartamentos(ruta) {
-
-			var colombia = [];
 			$.getJSON("jsons/colombia.json", function(data2) {
-				colombia = data2;
+				self.colombia = data2;
 			});
 
 			return $.getJSON(ruta).then(function(data) {
@@ -82,7 +82,7 @@
 				data.levels[0].locations.forEach(element => {
 					var deferred = $.Deferred();
 					$.getJSON("jsons/" + element.id + ".json", function(data2) {
-						data2.locations.push(...colombia);
+						data2.locations.push(...self.colombia);
 						data.levels.push(data2);
 						deferred.resolve();
 					}).fail(deferred.reject);
@@ -112,7 +112,7 @@
 					e.preventDefault();
 					$('.mapplic-active', self.el).attr('class', 'mapplic-clickable');
 					if (self.deeplinking) self.deeplinking.clear();
-					if (!self.o.zoom) zoomTo(0.5, 0.5, 1, 800, 'easeInOutCubic');
+					if (!self.o.zoom) zoomTo(0.5, 0.5, 1, 1500, 'easeInOutCubic');
 					s.hide();
 				});
 
@@ -386,6 +386,7 @@
 		// Deeplinking
 		function Deeplinking() {
 			this.param = 'location';
+			this.param_departamento = 'departamento';
 
 			this.init = function() {
 				var s = this;
@@ -393,7 +394,7 @@
 
 				window.onpopstate = function(e) {
 					if (e.state) {
-						s.check(800);
+						s.check(1500);
 					}
 					return false;
 				}
@@ -401,6 +402,11 @@
 
 			this.check = function(ease) {
 				var id = this.getUrlParam(this.param);
+				var id_departamento = 1 * this.getUrlParam(this.param_departamento);
+				var dep = self.colombia.find(x => x.id_departamento == id_departamento);
+				if(id_departamento && dep) {
+					switchLevel(dep.id);
+				}
 				showLocation(id, ease, true);
 			}
 
@@ -411,14 +417,14 @@
 				return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 			}
 
-			this.update = function(id) {
-				var url = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + this.param + '=' + id;
+			this.update = function(id, id_departamento) {
+				var url = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + this.param + '=' + id + '&departamento=' + id_departamento;
 				window.history.pushState({path: url}, '', url);
 			}
 
 			// Clear
 			this.clear = function() {
-				history.pushState('', document.title, window.location.pathname);
+				//history.pushState('', document.title, window.location.pathname);
 			}
 		}
 
@@ -431,7 +437,7 @@
 				this.check(0);
 
 				$(window).on('hashchange', function() {
-					s.check(800);
+					s.check(1500);
 				});
 			}
 
@@ -503,7 +509,7 @@
 				clearTimeout(this.opacity);
 				this.opacity = setTimeout(function() {
 					s.el.css('opacity', 0);
-					setTimeout(function() { s.el.hide(); }, 800);
+					setTimeout(function() { s.el.hide(); }, 1500);
 				}, 2000);
 			}
 		}
@@ -565,8 +571,11 @@
 				var item = $('<li></li>').addClass('mapplic-list-location').addClass('mapplic-list-shown');
 				var link = $('<a></a>').attr('href', '#').click(function(e) {
 					e.preventDefault();
-					showLocation(data.id, 800);
-
+					if(data.category != "departamentos"){
+						showLocation(data.id, 1500, null, data.id_departamento);
+					}else{
+						showLocation(data.id, 1500);
+					}
 					// Scroll back to map on mobile
 					if ($(window).width() < 668) {
 						$('html, body').animate({
@@ -809,7 +818,7 @@
 								$(self.o.selector).on('click', function() {
 									if (!self.dragging) {
 										var id = $(this).attr('id');
-										showLocation(id, 800);
+										showLocation(id, 1500);
 									}
 								});
 								*/
@@ -825,7 +834,7 @@
 
 								$('svg a', this).click(function(e) {
 									var id = $(this).attr('xlink:href').substr(1);
-									showLocation(id, 800);
+									showLocation(id, 1500);
 									e.preventDefault();
 								});
 							}).appendTo(layer);
@@ -859,7 +868,7 @@
 								var pin = $('<a></a>').attr('href', target).addClass('mapplic-pin').css({'top': top + '%', 'left': left + '%'}).appendTo(layer);
 								pin.on('click touchend', function(e) {
 									e.preventDefault();
-									showLocation(value.id, 800);
+									showLocation(value.id, 1500);
 								});
 								if (value.fill) pin.css('background-color', value.fill);
 								pin.attr('data-location', value.id);
@@ -879,7 +888,7 @@
 			$(document).on('click', self.o.selector, function() {
 				if (!self.dragging) {
 					var id = $(this).attr('id');
-					showLocation(id, 800);
+					showLocation(id, 1500);
 				}
 			});
 			// COMPONENTS
@@ -1230,16 +1239,23 @@
 			return data;
 		}
 
-		var showLocation = function(id, duration, check) {
-			$.each(self.data.levels, function(index, layer) {
-				if (layer.id == id) {
-					setTimeout(()=>{
-						switchLevel(layer.id, false);
-					}, 850)
-					return false;
-				}
-			});
-
+		var showLocation = function(id, duration, check, id_departamento_padre) {
+			console.trace();
+			if(id_departamento_padre){
+				var dep = self.colombia.find(item => item.id_departamento == id_departamento_padre);
+				setTimeout(()=>{
+					switchLevel(dep.id, false);
+				}, 0)
+			}else{
+				$.each(self.data.levels, function(index, layer) {
+					if (layer.id == id) {
+						setTimeout(()=>{
+							switchLevel(layer.id, false);
+						}, 1550)
+						return false;
+					}
+				});
+			}
 			
 			$.each(self.data.levels, function(index, layer) {
 				$.each(layer.locations, function(index, location) {
@@ -1247,7 +1263,7 @@
 						var ry = 0.5;
 
 						var zoom = typeof location.zoom !== 'undefined' ? location.zoom : 4;
-						zoomTo(location.x, location.y, zoom, duration, 'easeInOutCubic', ry);
+						zoomTo(location.x, location.y, zoom, duration + 100, 'easeInOutCubic', ry);
 						document.getElementById("departamento_seleccionado").value = location.id_departamento;
 			
 						setTimeout(()=>{
@@ -1260,7 +1276,7 @@
 							$('.mapplic-active', self.el).attr('class', 'mapplic-clickable');
 							if (location.onmap) location.onmap.attr('class', 'mapplic-active');
 
-							if ((self.o.deeplinking) && (!check)) self.deeplinking.update(id);
+							if ((self.o.deeplinking) && (!check)) self.deeplinking.update(id, location.id_departamento);
 						}, duration)
 						
 						return false;
