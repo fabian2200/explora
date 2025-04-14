@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completa la Oración</title>
+    <link href="../../librerias/bootstrap-5.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../librerias/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../assets/bootstrap/sweetalert.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header del Juego -->
+       
+
+        <!-- Sección de Categorías -->
+        <section id="seccion-categorias" style="position: relative;" class="seccion">
+            <h1>Selecciona una Categoría</h1>
+            <button id="btn-volver" onclick="location.href = '../../index.html'" style="position: absolute; top: -13px; right: -10px;" class="btn-menu"></button>
+            <div id="categorias-container" class="categorias row">
+                <!-- Las categorías se cargarán dinámicamente aquí -->
+            </div>
+        </section>
+
+        <!-- Sección de Niveles -->
+        <section id="seccion-niveles" class="seccion oculto">
+            <h2 style="font-size: 3.5rem; width: 100%; margin-bottom: 9rem !important;">Selecciona un Nivel</h2>
+            <div id="niveles-container" class="niveles row" style="width: 100%;">
+                <!-- Los niveles se cargarán dinámicamente aquí -->
+            </div>
+        </section>
+        <!-- Sección del Juego -->
+        <section id="seccion-juego" style="height: 100%; padding: 4vh;" class="seccion oculto">
+            <div class="row" style="height: 100%;">
+                <div class="col-9" style="padding-right: 20px; display: flex;flex-direction: column;justify-content: space-between;">
+                    <div class="pregunta-container">
+                        <div id="pregunta-actual"></div>
+                    </div>
+                    <div id="opciones-container" class="opciones-container"></div>
+                    <button id="btn-siguiente" class="btn-siguiente" disabled>Siguiente</button>
+                </div>
+                <div class="col-3" style="padding: 0px;">
+                    <div class="game-header oculto">
+                        <div style="width: 100%; display: flex; justify-content: space-around;">
+                            <button id="btn-volver" class="btn-menu">
+                            </button>
+                            <button id="btn-actualizar" class="btn-menu">
+                            </button>
+                        </div>
+                        <div class="pregunta-counter" style="width: 100%;">
+                            Pregunta <br> <span id="pregunta-actual-numero">1</span> de 10
+                        </div>
+                        <div class="juego-header" style="width: 100%;">
+                            <div id="puntuacion">Puntaje <br> <span id="puntuacion-numero">0</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Resultados -->
+        <section id="seccion-resultados" class="seccion oculto">
+            <h2>¡Juego Terminado!</h2>
+            <div id="resultado-final"></div>
+            <button id="btn-reiniciar" class="btn-reiniciar">Jugar de Nuevo</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

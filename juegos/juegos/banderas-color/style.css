@@ -123,11 +123,11 @@
 .header {
     padding-top: 10px;
     width: 100%;
-    height: 100px;
+    height: 105px;
     text-align: center;
     font-family: 'fuente_banderas';
     color: white;
-    -webkit-text-stroke: 2px #050505;
+    -webkit-text-stroke: 1px #050505;
 }
 
 @font-face {
@@ -188,7 +188,10 @@
 
 
 body {
-    
+    background-image: url(assets/fondo2.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: 'fuente_banderas' !important;
 }
 
@@ -310,10 +313,10 @@ body {
     width: 220px;
     height: 150px;
     border-radius: 15px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
     margin-bottom: 25px;
     cursor: pointer;
+    border: 4px dashed #303030a1;
 }
 
 .bandera-adivinar:hover {
@@ -404,4 +407,8 @@ div:where(.swal2-container) div:where(.swal2-html-container) {
     font-family: cursive !important;
     display: block;
     font-size: 25px !important;
+}
+
+.modal-lg, .modal-xl {
+    max-width: 650px !important;
 }

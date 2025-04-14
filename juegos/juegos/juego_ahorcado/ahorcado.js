@@ -31,8 +31,6 @@ var hueco = document.getElementById("palabra");
 var cont = 6;
 // Botones de letras
 var buttons = document.getElementsByClassName('letra');
-// Boton de reset
-var btnInicio = document.getElementById("reset");
 
 const acentos = {'á':'a','é':'e','í':'i','ó':'o','ú':'u','Á':'A','É':'E','Í':'I','Ó':'O','Ú':'U', 'Ü': 'U'};
 
@@ -73,7 +71,7 @@ function generaABC (a,z) {
     letra = String.fromCharCode(i).toUpperCase();
     document.getElementById("abcdario").innerHTML += "<button value='" + letra + "' onclick='intento(\"" + letra + "\")' class='letra' id='"+letra+"'>" + letra + "</button>";
     if(i==110) {
-      document.getElementById("abcdario").innerHTML += "<button value='Ñ' onclick='intento(\"Ñ\")' class='letra' id='"+letra+"'>Ñ</button>";
+      document.getElementById("abcdario").innerHTML += "<button value='Ñ' onclick='intento(\"Ñ\")' class='letra' id='Ñ'>Ñ</button>";
     }
   }
 
@@ -127,14 +125,12 @@ function compruebaFin() {
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }
-    document.getElementById("reset").innerHTML = "Empezar";
     btnInicio.onclick = function() { location.reload() };
   }else if( cont == 0 ) {
     mensaje_final(0);
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }
-    document.getElementById("reset").innerHTML = "Empezar";
     btnInicio.onclick = function () { location.reload() };
   }
 }
@@ -301,13 +297,13 @@ function elegir(){
     Swal.fire({
       title: 'Selecciona una Categoria',
       html: '<div style="padding-top: 20px"  class="row">'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 1)">Mapa Politico de Colombia</div></div>'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 2)">Evolución de la Bandera de Colombia</div></div>'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 3)">Parques Nacionales de Colombia</div></div>'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 4)">Hidrografía de Colombia</div></div>'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 5)">Etnias de Colombia</div></div>'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 6)">Relieve de Colombia</div></div>'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 7)">Clima de Colombia</div></div>'+
+        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 1)"><img src="../mapas/politico.png" class="img-vocal" alt="Mapa Politico de Colombia"> Mapa Politico de Colombia</div></div>'+
+        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 2)"><img src="../mapas/bandera.png" class="img-vocal" alt="Evolución de la Bandera de Colombia">Evolución de la Bandera de Colombia</div></div>'+
+        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 3)"><img src="../mapas/parques.png" class="img-vocal" alt="Parques Nacionales de Colombia">Parques Nacionales de Colombia</div></div>'+
+        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 4)"><img src="../mapas/hidrografia.png" class="img-vocal" alt="Hidrografía de Colombia">Hidrografía de Colombia</div></div>'+
+        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 5)"><img src="../mapas/etnias.png" class="img-vocal" alt="Etnias de Colombia">Etnias de Colombia</div></div>'+
+        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 6)"><img src="../mapas/relieve.png" class="img-vocal" alt="Relieve de Colombia">Relieve de Colombia</div></div>'+
+        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 7)"><img src="../mapas/clima.png" class="img-vocal" alt="Clima de Colombia">Clima de Colombia</div></div>'+
       '</div>',
       showCloseButton: false,
       showCancelButton: false,
@@ -318,195 +314,74 @@ function elegir(){
 }
 
 
+var palabras_categoria = [];
 function seleccionar(elemento, tipo) {
 	elemento.classList.add("seleccionado");
-	setTimeout(()=>{
-    switch (tipo) {
-      case 1:
-        Swal.close();
-        Swal.fire({
-          title: 'Selecciona el nivel de dificultad',
-            icon: 'info',
-            showCloseButton: false,
-            showCancelButton: true,
-            showConfirmButton: true,
-            allowOutsideClick: false,
-            focusConfirm: false,
-            confirmButtonColor: '#d29000',
-            cancelButtonColor: '#ff5722',
-            confirmButtonText: 'Principiante',
-            cancelButtonText: 'Experto',
-        }).then((result) => {
-          if (result.isConfirmed) {
-            palabras = palabras_mapa_politico.nivel_1;
-          } else {
-            palabras = palabras_mapa_politico.nivel_2;
-          }
-  
-          palabras = palabras.sort(function() {return Math.random() - 0.5});
-          document.getElementById("categoria").innerText = palabras_mapa_politico.categoria;
-          inicio();
-        });
-      break;
-      case 2:
-        Swal.close();
-        Swal.fire({
-          title: 'Selecciona el nivel de dificultad',
-          icon: 'info',
-          showCloseButton: false,
-          showCancelButton: true,
-          showConfirmButton: true,
-          allowOutsideClick: false,
-          focusConfirm: false,
-          confirmButtonColor: '#ff951c',
-          cancelButtonColor: '#ff5722',
-          confirmButtonText: 'Principiante',
-          cancelButtonText: 'Experto',
-        }).then((result) => {
-          if (result.isConfirmed) {
-            palabras = palabras_bandera_colombia.nivel_1;
-          } else {
-            palabras = palabras_bandera_colombia.nivel_2;
-          }
-  
-          palabras = palabras.sort(function() {return Math.random() - 0.5});
-          document.getElementById("categoria").innerText = palabras_bandera_colombia.categoria;
-          inicio();
-        })
-      break;
-      case 3:
-        Swal.close();
-        Swal.fire({
-          title: 'Selecciona el nivel de dificultad',
-          icon: 'info',
-          showCloseButton: false,
-          showCancelButton: true,
-          showConfirmButton: true,
-          allowOutsideClick: false,
-          focusConfirm: false,
-          confirmButtonColor: '#d29000',
-          cancelButtonColor: '#ff5722',
-          confirmButtonText: 'Principiante',
-          cancelButtonText: 'Experto',
-        }).then((result) => {
-          if (result.isConfirmed) {
-            palabras = palabras_parques_nacionales.nivel_1;
-          } else {
-            palabras = palabras_parques_nacionales.nivel_2;
-          }
-  
-          palabras = palabras.sort(function() {return Math.random() - 0.5});
-          document.getElementById("categoria").innerText = palabras_parques_nacionales.categoria;
-          inicio();
-        });
-      break;
-      case 4:
-        Swal.close();
-        Swal.fire({
-          title: 'Selecciona el nivel de dificultad',
-          icon: 'info',
-          showCloseButton: false,
-          showCancelButton: true,
-          showConfirmButton: true,
-          allowOutsideClick: false,
-          focusConfirm: false,
-          confirmButtonColor: '#d29000',
-          cancelButtonColor: '#ff5722',
-          confirmButtonText: 'Principiante',
-          cancelButtonText: 'Experto',
-        }).then((result) => {
-          if (result.isConfirmed) {
-            palabras = palabras_hidrografia_colombia.nivel_1;
-          } else {
-            palabras = palabras_hidrografia_colombia.nivel_2;
-          }  
-  
-          palabras = palabras.sort(function() {return Math.random() - 0.5});
-          document.getElementById("categoria").innerText = palabras_hidrografia_colombia.categoria;
-          inicio();
-        });
-      break;
-      case 5:
-        Swal.close();
-        Swal.fire({
-          title: 'Selecciona el nivel de dificultad',
-          icon: 'info',
-          showCloseButton: false,
-          showCancelButton: true, 
-          showConfirmButton: true,
-          allowOutsideClick: false,
-          focusConfirm: false,
-          confirmButtonColor: '#d29000',
-          cancelButtonColor: '#ff5722',
-          confirmButtonText: 'Principiante',
-          cancelButtonText: 'Experto',
-        }).then((result) => { 
-          if (result.isConfirmed) {
-            palabras = palabras_etnias_de_colombia.nivel_1;
-          } else {
-            palabras = palabras_etnias_de_colombia.nivel_2;
-          } 
-  
-          palabras = palabras.sort(function() {return Math.random() - 0.5});
-          document.getElementById("categoria").innerText = palabras_etnias_de_colombia.categoria;
-          inicio();
-        });
-      break;
-      case 6:
-        Swal.close();
-        Swal.fire({
-          title: 'Selecciona el nivel de dificultad',
-          icon: 'info',
-          showCloseButton: false,
-          showCancelButton: true, 
-          showConfirmButton: true,
-          allowOutsideClick: false,
-          focusConfirm: false,
-          confirmButtonColor: '#d29000',
-          cancelButtonColor: '#ff5722',
-          confirmButtonText: 'Principiante',
-          cancelButtonText: 'Experto',
-        }).then((result) => {
-          if (result.isConfirmed) {
-            palabras = palabras_relieve_de_colombia.nivel_1;
-          } else {
-            palabras = palabras_relieve_de_colombia.nivel_2;
-          }
 
-          palabras = palabras.sort(function() {return Math.random() - 0.5});
-          document.getElementById("categoria").innerText = palabras_relieve_de_colombia.categoria;
-          inicio();
-        }); 
-      break;
-      case 7:
-        Swal.close();
-        Swal.fire({
-          title: 'Selecciona el nivel de dificultad',
-          icon: 'info',
-          showCloseButton: false,
-          showCancelButton: true, 
-          showConfirmButton: true,
-          allowOutsideClick: false,
-          focusConfirm: false,
-          confirmButtonColor: '#d29000',
-          cancelButtonColor: '#ff5722',
-          confirmButtonText: 'Principiante',
-          cancelButtonText: 'Experto',
-        }).then((result) => {
-          if (result.isConfirmed) {
-            palabras = palabras_clima_de_colombia.nivel_1;
-          } else {
-            palabras = palabras_clima_de_colombia.nivel_2;
-          }
+  palabras_categoria = [];
 
-          palabras = palabras.sort(function() {return Math.random() - 0.5});
-          document.getElementById("categoria").innerText = palabras_clima_de_colombia.categoria;
-          inicio();
-        });
+  switch (tipo) {
+    case 1:
+      palabras_categoria = palabras_mapa_politico;
+    break;
+    case 2:
+      palabras_categoria = palabras_bandera_colombia;
       break;
-      default:
-        break;
-    }
-	}, 1000);
- 
+    case 3:
+      palabras_categoria = palabras_parques_nacionales;
+      break;
+    case 4:
+      palabras_categoria = palabras_hidrografia_colombia;
+      break;
+    case 5:
+      palabras_categoria = palabras_etnias_de_colombia;
+      break;
+    case 6:
+      palabras_categoria = palabras_relieve_de_colombia;
+      break;
+    case 7:
+      palabras_categoria = palabras_clima_de_colombia;
+      break;
+  }   
+
+  setTimeout(()=>{
+    modalSeleccionarNivel();
+  }, 400)
+}       
+
+function modalSeleccionarNivel(){
+  Swal.fire({
+    title: 'Selecciona el nivel de dificultad',
+    showCloseButton: false,
+    showCancelButton: false,
+    showConfirmButton: false,
+    allowOutsideClick: false,
+    focusConfirm: false,
+    html: '<div style="padding-top: 20px"  class="row">'+
+      '<div class="col-1"></div>'+
+      '<div class="col-5"><div class="imagen_Nivel" onclick="seleccionarNivel(this, 1)"><img src="img/nivel_2.png" class="img-nivel" alt="Nivel 1"> Principiante</div></div>'+
+      '<div class="col-5"><div class="imagen_Nivel" onclick="seleccionarNivel(this, 2)"><img src="img/nivel_1.png" class="img-nivel" alt="Nivel 2"> Experto</div></div>'+
+      '<div class="col-1"></div>'+
+    '</div>',
+  })
+}
+
+function seleccionarNivel(elemento, nivel){
+  elemento.classList.add("seleccionado");
+  switch(nivel){
+    case 1:
+      palabras = palabras_categoria.nivel_1;
+      break;
+    case 2:
+      palabras = palabras_categoria.nivel_2;
+      break;
+  }
+
+  palabras = palabras.sort(() => Math.random() - 0.5);
+  document.getElementById("categoria").innerText = palabras_categoria.categoria;
+
+  setTimeout(()=>{
+    Swal.close();
+    inicio();
+  }, 400)
 }
