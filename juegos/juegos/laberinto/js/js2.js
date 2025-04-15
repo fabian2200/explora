@@ -375,8 +375,19 @@ function iniciarTimer() {
         $timer.html(`${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`);
 
         if (minutos === 0 && segundos === 0) {
-            generarMapaLose(2);
+            var pregunta = $('#pregunta');
+
             clearInterval(intervaloTimer);
+            pregunta.css('background-color', 'transparent');
+            setTimeout(() => {
+                var left = pregunta.css('left');
+                if(left == '0px'){
+                    pregunta.css('left', '-100vw');
+                }
+                setTimeout(() => {
+                    generarMapaLose(2);
+                }, 3500);
+            }, 1800);
         }
     }, 1000);
 }
@@ -389,6 +400,78 @@ function pauseTimer() {
 function replay() {
     window.location.reload();
 }
+
+var preguntas = [];
+var preguntas_array = [];
+
+// Cargar los datos del juego
+var datosJuego;
+fetch('js/preguntas.json')
+    .then(response => response.json())
+    .then(data => {
+        datosJuego = data;
+        cargarCategorias();
+    })
+    .catch(error => console.error('Error cargando los datos:', error));
+
+
+function cargarCategorias() {
+    var categoriasContainer = document.getElementById('categorias_container');
+    categoriasContainer.innerHTML = '';
+    Object.keys(datosJuego).forEach(categoria => {
+        var col4 = document.createElement('div');
+        col4.className = 'col-4';
+        var button = document.createElement('button');  
+        var imagen = document.createElement('img');
+        imagen.className = 'img-categoria';
+        imagen.src = datosJuego[categoria].mapa;
+        button.appendChild(imagen);
+        button.className = 'btn-categoria';
+
+        var p = document.createElement('p');
+        p.className = 'nombre-categoria';
+        p.style.width = '80%';
+        p.textContent = datosJuego[categoria].nombre;
+        button.appendChild(p);
+        
+        button.dataset.categoria = categoria;
+        button.addEventListener('click', () => seleccionarCategoria(categoria));
+        col4.appendChild(button);
+        categoriasContainer.appendChild(col4);
+    });
+
+    $('#miModal2').modal('show');
+    preguntas = datosJuego;
+}
+
+function seleccionarCategoria(categoria) {
+    $('#miModal2').modal('hide');
+    preguntas = datosJuego[categoria];
+    $('#miModal').modal('show');
+}
+
+
+function seleccionar_nivel(nivel) {
+    preguntas_array = preguntas["nivel_"+nivel];
+    preguntas_array = desordenar_opciones(preguntas_array);
+    
+    preguntas_array.forEach(pregunta_item => {
+        pregunta_item.opciones = desordenar_opciones(pregunta_item.opciones);
+    });
+
+    $('#miModal').modal('hide');
+    
+    createMap(nivel + 3);
+
+    setTimeout(() => {
+        $("#contenedor_general").css("opacity", "1");
+    }, 500);
+}
+
+function desordenar_opciones(opciones) {
+    return opciones.sort(() => Math.random() - 0.5);
+}
+
 
 var pregunta = 0;
 function mostrar_pregunta() {
@@ -407,7 +490,7 @@ function mostrar_pregunta() {
 
     var html_opciones = '';
     opciones.forEach(opcion => {
-        html_opciones += `<div class="col-md-6">${opcion.opcion}</div>`;
+        html_opciones += `<div class="col-md-6"><button class="btn_opcion" onclick="verificarRespuesta(this, ${opcion.correcta})">${opcion.texto}</button></div>`;
     })
 
     $opciones_container.html(html_opciones);
@@ -420,36 +503,6 @@ function mostrar_pregunta() {
     pregunta++;
 }
 
-var preguntas = [];
-var preguntas_array = [];
-function cargarJsonPreguntas() {
-    $.getJSON('js/preguntas.json', function(data) {
-        preguntas = data;
-    });
-}
-
-function seleccionar_nivel(nivel) {
-    preguntas_array = preguntas.find(pregunta => pregunta.nivel === nivel);
-    preguntas_array = desordenar_opciones(preguntas_array.preguntas);
-    
-    preguntas_array.forEach(pregunta => {
-        pregunta.opciones = desordenar_opciones(pregunta.opciones);
-    });
-
-    $('#miModal').modal('hide');
-    
-    createMap(nivel + 3);
-
-    setTimeout(() => {
-        $("#contenedor_general").css("opacity", "1");
-    }, 500);
-}
-
-function desordenar_opciones(opciones) {
-    return opciones.sort(() => Math.random() - 0.5);
-}
-
-
 var contador_preguntas = 0;
 var preguntas_correctas = 0;
 var preguntas_incorrectas = 0;
@@ -457,23 +510,19 @@ var $marcador1 = $('#marcador1');
 var $marcador2 = $('#marcador2');
 function verificarRespuesta(boton, respuesta) {
     contador_preguntas++;
-    var clase = "";
+    var div = $('<div></div>');
     if (respuesta) {
-        $(boton).removeClass('btn-secondary');  
-        $(boton).addClass('btn-success');
-
-        clase = "state_success";
+        div.addClass('respuesta_correcta');
         preguntas_correctas++;
         $marcador1.html(preguntas_correctas);
     } else {
-        $(boton).removeClass('btn-secondary');
-        $(boton).addClass('btn-danger');
-
-        clase = "state_danger";
+        div.addClass('respuesta_incorrecta');
         preguntas_incorrectas++;
         $marcador2.html(preguntas_incorrectas);
     }
 
+    $(boton).append(div);
+    
     const $contenedor_pregunta = $('#pregunta');
     $contenedor_pregunta.css('background-color', 'rgba(0, 0, 0, 0)');
 
@@ -505,18 +554,28 @@ function mostrar_finalJuego() {
     $pregunta.addClass('pregunta_animacion');
     const $opciones_container = $('#opciones_container');
     
-    var pregunta_text = 'has contestado ' + preguntas_correctas + ' de 4 preguntas correctamente, <br> ¿deseas volver a intentarlo?';
-    var opciones = ['Si', 'No'];
+    var pregunta_text = 'Has contestado ' + preguntas_correctas + ' de 4 preguntas correctamente <br>';
+    var opciones = ['Si, Jugar', 'No, salir'];
     
+    var html_opciones = '';
+    html_opciones += `<div class="col-md-6"><button style="font-size: 25px; font-weight: bold;" class="btn btn-warning" onclick="replay()">${opciones[0]}</button></div>`;
+    html_opciones += `<div class="col-md-6"><button style="font-size: 25px; font-weight: bold;" class="btn btn-dark" onclick="location.href='../../index.html'">${opciones[1]}</button></div>`;
+    
+    $opciones_container.html(html_opciones);
+
+    var imagen_perdio_gano = $('#perdio_gano');
+    imagen_perdio_gano.css('display', 'block');
+
+    if(preguntas_correctas > 2 ){
+        imagen_perdio_gano.attr('src', 'css/gano.png');
+        pregunta_text += '¡Felicidades! Has ganado el juego <br> ¿deseas jugar de nuevo?';
+    }else{
+        imagen_perdio_gano.attr('src', 'css/perdio.png');
+        pregunta_text += 'Lo sentimos no has alcanzado el objetivo <br> ¿deseas volver a intentarlo?';
+    }
+
     $pregunta.html('');
     $pregunta.append(pregunta_text);
-
-    var html_opciones = '';
-    html_opciones += `<div class="col-md-6"><button class="btn btn-warning" onclick="replay()">${opciones[0]}</button></div>`;
-    html_opciones += `<div class="col-md-6"><button class="btn btn-dark" onclick="replay()">${opciones[1]}</button></div>`;
-    
-
-    $opciones_container.html(html_opciones);
 
     $contenedor_pregunta.addClass('pregunta_animacion');
     $contenedor_pregunta.css('left', '0');
@@ -528,8 +587,3 @@ function mostrar_finalJuego() {
         $contenedor_pregunta.css('background-color', 'rgba(0, 0, 0, 0.6)');
     }, 4000);
 }
-
-$(document).ready(function() {
-    cargarJsonPreguntas();
-    $("#miModal").modal("show"); // Abre el modal
-}); 

@@ -15,6 +15,8 @@ td {
     text-align: center;
 }
 
+
+
 tr {
     margin: 0;
     padding: 0;
@@ -168,6 +170,7 @@ body {
     background-size: 100% 100%;
     background-position: center;
     overflow: hidden;
+    font-family: 'DS-Digital';
 }
 
 
@@ -262,17 +265,27 @@ body {
     transition: top 4s linear, left 4s linear, background-color 1s linear;
 }
 
+
 .contenedor_respuesta {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 60vh;
+    width: 75%;
+    position: absolute;
+    top: -131%;
+    right: 3px;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-radius: 10px;
 }
 
 #pregunta_text {
     color: rgb(32, 32, 32);
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
+    text-align: center;
 }
 
 .card_nivel {
@@ -368,4 +381,96 @@ body {
     100% {
         transform: scale(1);
     }
+}
+
+.img-categoria {
+    width: 20%;
+    max-height: 110%;
+    filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white);
+}
+
+.btn-categoria {
+    background-image: url(opcion.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    margin: 15px;
+    height: 117px;
+    padding: 25px;
+    padding-left: 40px;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DS-Digital';
+    font-weight: bolder;
+    font-size: 22px;
+    line-height: normal;
+}
+
+
+.btn-categoria p{
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.btn-categoria:hover {
+    transform: scale(1.05);
+}
+
+.btn_opcion {
+    background-image: url(opcion.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 100%;
+    min-height: 100px;
+    border: none;
+    font-weight: bold;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    color: #424242;
+    position: relative;
+}
+
+.btn_opcion:hover {
+    transform: scale(1.05);
+}
+
+.respuesta_correcta {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 0, 0.315);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15pt;
+}
+
+.respuesta_incorrecta {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.315);
+    position: absolute;
+    top: 0;
+    left: 0;    
+    border-radius: 15pt;
+}
+
+
+#perdio_gano {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 141px;
+    height: 150px;
+    z-index: -1;
+    pointer-events: none;
+    display: none;
+    margin-bottom: 10px;
 }
