@@ -292,25 +292,32 @@ function cerrar_anuncio() {
   }
 }
 
-function elegir(){
+
+var categorias_array = [];
+function cargar_categorias(){
+  return $.getJSON("pistas.json", function(data){
+    categorias_array = data;
+  });
+}
+
+async function elegir(){
+  await cargar_categorias();
+  var categorias_html = "";
+  var index = 1;
+  Object.keys(categorias_array).forEach(categoria => {
+    categorias_html += '<div style="display: flex; justify-content: center; align-items: center;" class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, '+index+')"><img src="'+categorias_array[categoria].mapa+'" class="img-vocal" alt="'+categorias_array[categoria].categoria+'"> '+categorias_array[categoria].categoria+'</div></div>';
+    index++;
+  });
   
-    Swal.fire({
-      title: 'Selecciona una Categoria',
-      html: '<div style="padding-top: 20px"  class="row">'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 1)"><img src="../mapas/politico.png" class="img-vocal" alt="Mapa Politico de Colombia"> Mapa Politico de Colombia</div></div>'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 2)"><img src="../mapas/bandera.png" class="img-vocal" alt="Evolución de la Bandera de Colombia">Evolución de la Bandera de Colombia</div></div>'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 3)"><img src="../mapas/parques.png" class="img-vocal" alt="Parques Nacionales de Colombia">Parques Nacionales de Colombia</div></div>'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 4)"><img src="../mapas/hidrografia.png" class="img-vocal" alt="Hidrografía de Colombia">Hidrografía de Colombia</div></div>'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 5)"><img src="../mapas/etnias.png" class="img-vocal" alt="Etnias de Colombia">Etnias de Colombia</div></div>'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 6)"><img src="../mapas/relieve.png" class="img-vocal" alt="Relieve de Colombia">Relieve de Colombia</div></div>'+
-        '<div class="col-4"><div class="imagen_Vocal" onclick="seleccionar(this, 7)"><img src="../mapas/clima.png" class="img-vocal" alt="Clima de Colombia">Clima de Colombia</div></div>'+
-      '</div>',
-      showCloseButton: false,
-      showCancelButton: false,
-      showConfirmButton: false,
-      allowOutsideClick: false,
-      focusConfirm: false,
-    });
+  Swal.fire({
+    title: 'Selecciona una Categoria',
+    html: '<div style="padding-top: 20px"  class="row">'+categorias_html+'</div>',
+    showCloseButton: false,
+    showCancelButton: false,
+    showConfirmButton: false,
+    allowOutsideClick: false,
+    focusConfirm: false,
+  });
 }
 
 
@@ -346,7 +353,7 @@ function seleccionar(elemento, tipo) {
 
   setTimeout(()=>{
     modalSeleccionarNivel();
-  }, 400)
+  }, 100)
 }       
 
 function modalSeleccionarNivel(){
@@ -383,5 +390,5 @@ function seleccionarNivel(elemento, nivel){
   setTimeout(()=>{
     Swal.close();
     inicio();
-  }, 400)
+  }, 100)
 }

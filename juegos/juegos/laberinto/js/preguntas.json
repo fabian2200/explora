@@ -1,6 +1,6 @@
 {
     "mapa_politico": {
-        "mapa": "../mapas/politico.png",
+        "mapa": "../mapas/gris/politico.png",
         "nombre": "Mapa Político de Colombia",
         "nivel_1": [
             {
@@ -1268,7 +1268,7 @@
         ]
     },
     "evolucion_bandera_colombia": {
-        "mapa": "../mapas/bandera.png",
+        "mapa": "../mapas/gris/bandera.png",
         "nombre": "Evolución de la Bandera de Colombia",
         "nivel_1": [
             {
@@ -2536,7 +2536,7 @@
         ]
     },
     "parques_nacionales": {
-        "mapa": "../mapas/parques.png",
+        "mapa": "../mapas/gris/parques.png",
         "nombre": "Parques Nacionales de Colombia",
         "nivel_1": [
             {
@@ -2964,7 +2964,7 @@
         ]
     },
     "hidrografia_colombia": {
-        "mapa": "../mapas/hidrografia.png",
+        "mapa": "../mapas/gris/hidrografia.png",
         "nombre": "Hidrografía de Colombia",
         "nivel_1": [
             {
@@ -4232,7 +4232,7 @@
         ]
     },
     "etnias_de_colombia": {
-        "mapa": "../mapas/etnias.png",
+        "mapa": "../mapas/gris/etnias.png",
         "nombre": "Etnias de Colombia",
         "nivel_1": [
             {
@@ -5500,7 +5500,7 @@
         ]
     },
     "relieve_de_colombia": {
-        "mapa": "../mapas/relieve.png",
+        "mapa": "../mapas/gris/relieve.png",
         "nombre": "Relieve de Colombia",
         "nivel_1": [
             {
@@ -6768,7 +6768,7 @@
         ]
     },
     "clima_de_colombia": {
-        "mapa": "../mapas/clima.png",
+        "mapa": "../mapas/gris/clima.png",
         "nombre": "Clima de Colombia",
         "nivel_1": [
             {

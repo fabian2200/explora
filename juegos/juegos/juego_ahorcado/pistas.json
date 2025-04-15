@@ -1,5 +1,6 @@
 {
     "mapa_politico": {
+        "mapa": "../mapas/marron/politico.png",
         "categoria": "Mapa Político de Colombia",
         "nivel_1": [
             ["1819", "¿En qué año se creó la Gran Colombia?"],
@@ -58,6 +59,7 @@
         ]
     },
     "etapas_bandera_colombia": {
+        "mapa": "../mapas/marron/bandera.png",
         "categoria": "Evolución de la Bandera de Colombia",
         "nivel_1": [
             ["amarillo azul rojo", "¿De qué colores es la bandera de Colombia?"],
@@ -114,6 +116,7 @@
         ]
     },
     "parques_nacionales": {
+        "mapa": "../mapas/marron/parques.png",
         "categoria": "Parques Nacionales de Colombia",
         "nivel_1": [
             ["Chingaza", "Es hogar del oso de anteojos."],
@@ -179,6 +182,7 @@
         ]
     },
     "hidrografia_de_colombia": {
+        "mapa": "../mapas/marron/hidrografia.png",
         "categoria": "Hidrografía de Colombia",
         "nivel_1": [
             ["Río Magdalena", "Principal río de Colombia."],
@@ -246,6 +250,7 @@
         ]  
     },
     "etnias_de_colombia": {
+        "mapa": "../mapas/marron/etnias.png",
         "categoria": "Etnias de Colombia",
         "nivel_1": [
             ["Etnia", "Un grupo de personas con cultura, idioma y costumbres propias."],
@@ -313,6 +318,7 @@
         ]
     },
     "relieve_de_colombia": {
+        "mapa": "../mapas/marron/relieve.png",
         "categoria": "Relieve de Colombia",
         "nivel_1": [
             ["Sierra Nevada", "Montaña nevada más alta de Colombia."],
@@ -380,6 +386,7 @@
         ]
     },
     "clima_de_colombia": {
+        "mapa": "../mapas/marron/clima.png",
         "categoria": "Clima de Colombia",
         "nivel_1": [
             ["Caribe", "Región donde hace calor y está cerca del mar."],

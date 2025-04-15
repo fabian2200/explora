@@ -385,7 +385,7 @@ body {
 
 .img-categoria {
     width: 20%;
-    max-height: 110%;
+    height: auto;
     filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white);
 }
 

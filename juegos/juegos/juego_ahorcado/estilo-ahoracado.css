@@ -314,21 +314,20 @@ img {
   background-image: url(img/categoria.png);
   background-size: 99% 100%;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 90pt;
+  width: 95%;
   cursor: pointer;
   padding: 14px;
   height: 99pt !important;
   margin-bottom: 10px;
-  padding-left: 20%;
-  padding-right: 19%;
-  font-size: 16px;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 1.1rem;
   display: flex;
   color: white;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
-  -webkit-text-stroke: 0.097em #000000;
+  -webkit-text-stroke: 0.08em #381c0a;
 }
 
 .imagen_Vocal:hover {
@@ -336,9 +335,9 @@ img {
 }
 
 .img-vocal {
-  width: 32%;
-  height: 62%;
-  filter: drop-shadow(0 0 1px #ffd5a5) drop-shadow(0 0 1px #ffd5a5);
+  width: 25%;
+  height: auto;
+  filter: drop-shadow(0 0 1px #eb9d76) drop-shadow(0 0 1px #eb9d76);
 }
 
 

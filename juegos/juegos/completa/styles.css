@@ -59,9 +59,14 @@ h1, h2 {
 }
 
 .img-categoria {
-    width: 30%;
-    max-height: 130%;
-    filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white);
+    width: auto;
+    max-height: 115%;
+    filter: drop-shadow(0px 0px 1px #eb9d76) drop-shadow(0px 0px 1px #eb9d76);
+}
+
+.nombre-categoria {
+    margin-bottom: 0px !important;
+    font-size: 1.2rem;
 }
 
 .swal2-title {
@@ -124,7 +129,7 @@ h1, h2 {
     padding: 25px;
     width: 100%;
     font-size: 1.2rem;
-    -webkit-text-stroke: 0.015rem #ffe5cc;
+    -webkit-text-stroke: 0.015rem #ffc892;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     display: flex;
@@ -146,6 +151,7 @@ h1, h2 {
     border: none;
     margin: 15px;
     color: #3d2011;
+    -webkit-text-stroke: 0.015rem #ffc892;
     height: 100px;
     width: 97%;
     font-size: 2.1rem;
@@ -258,7 +264,7 @@ h1, h2 {
     transition: all 0.3s;
     font-size: 1.3rem;
     color: #3d2011;
-    -webkit-text-stroke: 0.03rem #f8f0e7;
+    -webkit-text-stroke: 0.018rem #ffc892;
 }
 
 .opcion:hover {
