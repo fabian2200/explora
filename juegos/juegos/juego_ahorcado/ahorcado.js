@@ -205,11 +205,11 @@ function inicio() {
       document.getElementById("texto_final").innerText = "Has adivinado "+palabras_adivinadas+" palabras de 10"
 
       if(palabras_adivinadas >= 6){
-        var audio = new Audio('../sounds/victory.mp3');
-        audio.play();
+        //var audio = new Audio('../sounds/victory.mp3');
+        //audio.play();
       }else{
-        var audio = new Audio('../sounds/game_over.mp3');
-        audio.play();
+        //var audio = new Audio('../sounds/game_over.mp3');
+        //audio.play();
       }
   }
 }
@@ -271,9 +271,9 @@ function maquina2(contenedor, texto, intervalo, n) {
 let cerrardo = false;
 function cerrar_anuncio() {
   if (!cerrardo) {
-    let audio2 = new Audio('../sounds/fondo.mp3');
-    audio2.play(); 
-    audio2.volume = 0.2;
+    //let audio2 = new Audio('../sounds/fondo.mp3');
+    //audio2.play(); 
+    //audio2.volume = 0.2;
 
     cerrardo = true;
     const divAnimado2 = document.querySelector('.nube');

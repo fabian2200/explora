@@ -8,5 +8,7 @@ function seleccionarTipoMapa(tipo) {
         window.location.href = 'coordilleras.html';
     } else if (tipo == 'climatico') {
         window.location.href = 'climatico.html';
+    } else if (tipo == 'parques_naturales') {
+        window.location.href = 'parques_naturales.html';
     }
 }

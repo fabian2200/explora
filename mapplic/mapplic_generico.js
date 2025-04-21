@@ -111,7 +111,7 @@
 				this.el2.appendTo(this.el);
 				
 				this.audio = $('<audio></audio>').addClass('mapplic-tooltip-audio').appendTo(this.el);
-				this.content = $('<div></div>').addClass('mapplic-tooltip-content').appendTo(this.el);
+				this.content = $('<div></div>').addClass('mapplic-tooltip-content').attr('id', 'contenido_texto').appendTo(this.el);
 				this.desc = $('<div></div>').addClass('mapplic-tooltip-description').appendTo(this.content);
 				this.link = $('<a>More</a>').addClass('mapplic-tooltip-link').attr('href', '#').hide().appendTo(this.el);
 				this.triangle = $('<div></div>').addClass('mapplic-tooltip-triangle').prependTo(this.el);
@@ -128,15 +128,16 @@
 					if (location.image) this.image.attr('src', location.image).show();
 					else this.image.hide();
 
+					if(location.imagenes) this.imagenes.attr('link-imagenes', location.imagenes).attr('carpeta', location.id).show();
+					else this.imagenes.hide();
+
+
 					if (location.link) this.link.attr('href', location.link).show();
 					else this.link.hide();
 
 					if(location.audio) this.audio.attr('src', location.audio);
 					if(location.audio) this.play.show();
 					else this.play.hide();
-
-					if(location.imagenes) this.imagenes.show();
-					else this.imagenes.hide();
 
 					this.title.text(location.title);
 					this.desc.html(location.description);
@@ -186,7 +187,7 @@
 					if(location.audio) this.play.show();
 					else this.play.hide();
 
-					if(location.imagenes) this.imagenes.show();
+					if(location.imagenes) this.imagenes.attr('link-imagenes', location.imagenes).show();
 					else this.imagenes.hide();
 
 					this.title.text(location.title);

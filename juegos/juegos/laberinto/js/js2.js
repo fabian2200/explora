@@ -121,7 +121,7 @@ function generarMapaLose(tipo) {
                 $table.css("opacity", "1");
             }, 300);
         }, 1000);
-    }, 1000)
+    }, 200)
 }
 
 function createMap(numero_dragones) {
@@ -311,6 +311,7 @@ function actualizarMapadragones(nuevaFila, nuevaColumna, viejaFila, viejaColumna
             generarMapaLose(1);
             clearInterval(intervaloDragones);
             clearInterval(intervaloTimer);
+            clearInterval(intervalo_colision);
         }
     }, 1500);
 }
@@ -360,6 +361,8 @@ function iniciarTimer() {
     juego_iniciado = true;
     const $timer = $('#timer_text');
 
+    intervalo_colision = setInterval(verificar_naves_colision, 100);
+
     intervaloTimer = setInterval(() => {
         if (segundos === 0) {
             if (minutos === 0) {
@@ -378,6 +381,7 @@ function iniciarTimer() {
             var pregunta = $('#pregunta');
 
             clearInterval(intervaloTimer);
+            clearInterval(intervalo_colision);
             pregunta.css('background-color', 'transparent');
             setTimeout(() => {
                 var left = pregunta.css('left');
@@ -394,6 +398,7 @@ function iniciarTimer() {
 
 function pauseTimer() {
     juego_iniciado = false;
+    clearInterval(intervalo_colision);
     clearInterval(intervaloTimer);
 }
 
@@ -540,6 +545,7 @@ function verificarRespuesta(boton, respuesta) {
                     mostrar_finalJuego();
                     clearInterval(intervaloDragones);
                     clearInterval(intervaloTimer);
+                    clearInterval(intervalo_colision);
                 }, 2000);
             }else{
                 seleccionarCoordenadaAzar();
@@ -586,4 +592,29 @@ function mostrar_finalJuego() {
     setTimeout(() => {
         $contenedor_pregunta.css('background-color', 'rgba(0, 0, 0, 0.6)');
     }, 4000);
+}
+
+
+var intervalo_colision = null;
+
+function verificar_naves_colision(){
+    const naves = Array.from(document.querySelectorAll('.dragon'));
+    const jugador = document.querySelector('.player');
+    const colision = naves.some(nave => {
+        const naveRect = nave.getBoundingClientRect();
+        const jugadorRect = jugador.getBoundingClientRect();
+        return (
+            naveRect.left <= jugadorRect.right &&
+            naveRect.right >= jugadorRect.left &&
+            naveRect.top <= jugadorRect.bottom &&
+            naveRect.bottom >= jugadorRect.top
+        );
+    });
+
+    if(colision){
+        generarMapaLose(1);
+        clearInterval(intervaloDragones);
+        clearInterval(intervaloTimer);
+        clearInterval(intervalo_colision);
+    }
 }
