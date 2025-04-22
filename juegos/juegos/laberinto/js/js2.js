@@ -382,15 +382,13 @@ function iniciarTimer() {
 
             clearInterval(intervaloTimer);
             clearInterval(intervalo_colision);
+            generarMapaLose(2);
             pregunta.css('background-color', 'transparent');
             setTimeout(() => {
                 var left = pregunta.css('left');
                 if(left == '0px'){
                     pregunta.css('left', '-100vw');
                 }
-                setTimeout(() => {
-                    generarMapaLose(2);
-                }, 3500);
             }, 1800);
         }
     }, 1000);
