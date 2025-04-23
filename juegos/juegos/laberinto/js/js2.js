@@ -361,7 +361,7 @@ function iniciarTimer() {
     juego_iniciado = true;
     const $timer = $('#timer_text');
 
-    intervalo_colision = setInterval(verificar_naves_colision, 100);
+    intervalo_colision = setInterval(verificar_naves_colision, 500);
 
     intervaloTimer = setInterval(() => {
         if (segundos === 0) {
@@ -443,7 +443,9 @@ function cargarCategorias() {
         categoriasContainer.appendChild(col4);
     });
 
-    $('#miModal2').modal('show');
+    pantalla_completa('#2d2d2d', '#7b7b7b', 'bold').then(function(result) {
+        $('#miModal2').modal('show');
+    });
     preguntas = datosJuego;
 }
 

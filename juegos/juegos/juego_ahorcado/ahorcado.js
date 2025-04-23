@@ -216,6 +216,12 @@ function inicio() {
 
 // Iniciar
 $(document).ready(function() {
+  pantalla_completa('#8a5025', '#422612').then(function(result) {
+    iniciar_animacion();
+  });
+});
+
+function iniciar_animacion(){
   cargarPalabras();
 	setTimeout(()=>{
     $('#principal').fadeToggle(1000);
@@ -237,7 +243,7 @@ $(document).ready(function() {
       }, 2000)
     })
   }, 200)
-});
+}
 
 function maquina2(contenedor, texto, intervalo, n) {
   var i = 0,

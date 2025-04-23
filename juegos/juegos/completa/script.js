@@ -38,24 +38,13 @@ fetch('completa.json')
 // Event Listeners
 btnSiguiente.addEventListener('click', siguientePregunta);
 btnReiniciar.addEventListener('click', reiniciarJuego);
+
 btnVolver.addEventListener('click', () => {
     location.href = '../../index.html';
 });
+
 btnActualizar.addEventListener('click', () => {
-    Swal.fire({
-        title: '¿Estás seguro?',
-        text: '¿Estás seguro de que quieres reiniciar el juego?',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonText: 'Sí, reiniciar',
-        cancelButtonText: 'No, cancelar',
-        cancelButtonColor: '#692a16',
-        confirmButtonColor: '#9c5111',
-    }).then((result) => {
-        if (result.isConfirmed) {
-            location.reload();
-        }
-    });
+    location.reload();
 });
 
 function cargarCategorias() {
@@ -288,7 +277,11 @@ function finalizarJuego() {
     seccionJuego.classList.add('oculto');
     seccionResultados.classList.remove('oculto');
     gameHeader.classList.add('oculto');
-    resultadoFinal.textContent = `Tu puntuación final es: ${puntuacion}`;
+    if (puntuacion >= 60) {
+        resultadoFinal.textContent = `¡Felicidades! Has completado el juego con ${puntuacion} puntos.`;
+    } else {
+        resultadoFinal.textContent = `¡No te rindas! Has completado el juego con ${puntuacion} puntos.`;
+    }
 }
 
 function reiniciarJuego() {
@@ -302,3 +295,7 @@ function reiniciarJuego() {
 function actualizarContadorPreguntas() {
     preguntaActualNumero.textContent = preguntaActualIndex + 1;
 } 
+
+$(document).ready(function() {
+    pantalla_completa('#9f4d2a', '#250d06', '100');
+});

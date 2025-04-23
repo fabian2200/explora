@@ -10,7 +10,39 @@
     <script src="assets/sweetalert/sweetalert.js"></script>
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
     <script src="bootstrap/popper.min.js"></script>
+    <link rel="stylesheet" href="../../css/pantalla_completa.css">
     <title>Banderas Color</title>
+    <style>
+        .swal2-popup {
+            display: none;
+            position: relative;
+            box-sizing: border-box;
+            grid-template-columns: minmax(0, 100%);
+            width: 32em;
+            max-width: 100%;
+            padding: 0 0 1.25em;
+            border: none;
+            border-radius: 44px !important;
+            background: #ffca33cb !important;
+            color: #545454;
+            font-family: inherit;
+            font-size: 1rem;
+            border: 10px solid #bf6100e0 !important;
+            color: black !important;
+            width: 75vw !important;
+        }
+
+        div:where(.swal2-icon).swal2-question {
+            border-color: #bf6100e0;
+            color: #bf6100e0;
+        }
+        
+        .swal2-styled.swal2-confirm, .swal2-styled.swal2-cancel {
+           border: 4px solid white !important;
+           font-family: cursive !important;
+           font-size: 1.7rem !important;
+        }
+    </style>
 </head>
 <body style="display: flex; justify-content: space-between; align-items: center; height: 100vh !important; margin: 0; flex-direction: column; overflow: hidden;">
     <div id="contenedor_juego1" style="display: none;">
@@ -109,6 +141,7 @@
             </div>
         </div>
     </div>
+    <script src="../../js/pantalla_completa.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

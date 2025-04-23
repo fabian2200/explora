@@ -234,7 +234,7 @@
             $('#final').fadeToggle(1000);
           }, 500)
           
-          document.getElementById("final").style.backgroundImage = "url(../../images/ciencia/victoria.gif)";
+          document.getElementById("final").style.backgroundImage = "url(../assets/images/victoria.gif)";
           document.getElementById("texto_final").innerText = "Felicitaciones, has encontrado todas las palabras"
           //var audio = new Audio('../../sounds/victory.mp3');
           //audio.play();

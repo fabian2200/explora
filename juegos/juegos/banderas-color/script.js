@@ -57,7 +57,7 @@ function mostrarBanderas() {
         }
         numeroPregunta++;
     }else{
-        if((respondidas_correctas / respondidas) >= 0.7) {
+        if((respondidas_correctas / respondidas) >= 0.6) {
             Swal.fire({
                 icon: 'success',
                 title: '¡Felicidades!',
@@ -197,7 +197,9 @@ function limpiarBanderas() {
 
 
 $(document).ready(function() {
-    $('#myModal').modal('show');
+    pantalla_completa('#201dab', '#e30e0e', 'bold').then(function(result) {
+        $('#myModal').modal('show');
+    });
 });
 
 
@@ -316,7 +318,7 @@ function seleccionarBandaAdivinar(bandera, div) {
 
     if(respondidas_correctas_adivina + respondidas_incorrectas_adivina == 10) {
         clearInterval(intervaloTimer);
-        if(respondidas_correctas_adivina >= 7) {
+        if(respondidas_correctas_adivina >= 6) {
             Swal.fire({
                 icon: 'success',
                 title: '¡Felicidades!',
