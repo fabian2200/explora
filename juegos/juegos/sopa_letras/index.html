@@ -212,9 +212,6 @@
     let cerrardo = false;
     function cerrar_anuncio() {
       if(!cerrardo){
-        //let audio2 = new Audio("../assets/sounds/fondo.mp3");
-        //audio2.play();
-        //audio2.volume = 0.2;
         cerrardo = true;
         const divAnimado2 = document.querySelector('.nube');
         divAnimado2.style.animationName = 'moverabajo';
@@ -268,12 +265,15 @@
 
       var categoria = categorias[tipo];
       var palabras = randomValueGenerator(categoria.palabras);
+
+      let audio2 = new Audio("../sounds/fondo_sopa_letras.mp3");
+      audio2.play();
+      audio2.loop = true;
+      audio2.volume = 0.2;
       
       setTimeout(() => {
         swal.close();
-        
         words = [];
-
         for (i = 0; i < 10; i++) {
           words.push( palabras[i].toLowerCase());
         }

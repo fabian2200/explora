@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     font-family: 'TitanOne';
     background: linear-gradient(to bottom, #bfd7f5, #4a94e9);
+    overflow: hidden;
 }
 
 @font-face {
@@ -220,4 +221,52 @@ body {
     color: #0e50b3;
     padding: 1rem;
     margin-bottom: -4px;
+}
+
+.cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.cloud::before,
+.cloud::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+
+.cloud::before {
+    width: 50%;
+    height: 100%;
+    top: -50%;
+    left: 25%;
+}
+
+.cloud::after {
+    width: 30%;
+    height: 60%;
+    top: -30%;
+    right: 25%;
+}
+
+@keyframes moveCloudleft {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -100px;
+    }
+}
+
+@keyframes moveCloudright {
+    from {
+        right: 100%;
+    }
+    to {
+        right: -100px;
+    }
 }

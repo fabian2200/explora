@@ -83,7 +83,10 @@ function generaABC (a,z) {
 // Chequear intento
 function intento(letra) {
   document.getElementById(letra).disabled = true;
+
+  var ruta_audio = '';
   if(palabra.indexOf(letra) != -1) {
+    ruta_audio = '../sounds/ok.mp3';
     for(var i=0; i<palabra.length; i++) {
       if(palabra[i]==letra) oculta[i] = letra;
     }
@@ -91,6 +94,7 @@ function intento(letra) {
     document.getElementById("acierto").innerHTML = "Bien!";
     document.getElementById("acierto").className += "acierto verde";
   }else{
+    ruta_audio = '../sounds/over.mp3';
     cont--;
     document.getElementById("intentos").innerHTML = cont;
     document.getElementById("acierto").innerHTML = "Fallo!";
@@ -106,6 +110,12 @@ function intento(letra) {
       }
     }
   }
+
+  if(ruta_audio != ''){
+    let audio2 = new Audio(ruta_audio);
+    audio2.play();
+  }
+
   compruebaFin();
   setTimeout(function () { 
     document.getElementById("acierto").className = ""; 
@@ -196,21 +206,19 @@ function inicio() {
       setTimeout(()=>{
         $('#final').fadeToggle(1000);
       }, 500)
+
+      var ruta_audio = '';
       if(palabras_adivinadas < 6 ){
         document.getElementById("final").style.backgroundImage = "url(../assets/images/derrota.gif)";
+        ruta_audio = '../sounds/game_over.mp3';
       }else{
         document.getElementById("final").style.backgroundImage = "url(../assets/images/victoria.gif)";
+        ruta_audio = '../sounds/victory.mp3';
       }
 
       document.getElementById("texto_final").innerText = "Has adivinado "+palabras_adivinadas+" palabras de 10"
-
-      if(palabras_adivinadas >= 6){
-        //var audio = new Audio('../sounds/victory.mp3');
-        //audio.play();
-      }else{
-        //var audio = new Audio('../sounds/game_over.mp3');
-        //audio.play();
-      }
+      let audio2 = new Audio(ruta_audio);
+      audio2.play();
   }
 }
 
@@ -277,10 +285,6 @@ function maquina2(contenedor, texto, intervalo, n) {
 let cerrardo = false;
 function cerrar_anuncio() {
   if (!cerrardo) {
-    //let audio2 = new Audio('../sounds/fondo.mp3');
-    //audio2.play(); 
-    //audio2.volume = 0.2;
-
     cerrardo = true;
     const divAnimado2 = document.querySelector('.nube');
     divAnimado2.style.animationName = 'moverabajo';
@@ -372,8 +376,8 @@ function modalSeleccionarNivel(){
     focusConfirm: false,
     html: '<div style="padding-top: 20px"  class="row">'+
       '<div class="col-1"></div>'+
-      '<div class="col-5"><div class="imagen_Nivel" onclick="seleccionarNivel(this, 1)"><img src="img/nivel_2.png" class="img-nivel" alt="Nivel 1"> Principiante</div></div>'+
-      '<div class="col-5"><div class="imagen_Nivel" onclick="seleccionarNivel(this, 2)"><img src="img/nivel_1.png" class="img-nivel" alt="Nivel 2"> Experto</div></div>'+
+      '<div class="col-5"><div class="imagen_Nivel" onclick="seleccionarNivel(this, 1)"><img src="img/nivel_1.png" class="img-nivel" alt="Nivel 1"> Principiante</div></div>'+
+      '<div class="col-5"><div class="imagen_Nivel" onclick="seleccionarNivel(this, 2)"><img src="img/nivel_2.png" class="img-nivel" alt="Nivel 2"> Experto</div></div>'+
       '<div class="col-1"></div>'+
     '</div>',
   })
@@ -392,6 +396,12 @@ function seleccionarNivel(elemento, nivel){
 
   palabras = palabras.sort(() => Math.random() - 0.5);
   document.getElementById("categoria").innerText = palabras_categoria.categoria;
+
+
+  let audio2 = new Audio('../sounds/fondo.mp3');
+  audio2.play(); 
+  audio2.loop = true;
+  audio2.volume = 0.1;
 
   setTimeout(()=>{
     Swal.close();

@@ -57,7 +57,9 @@ function mostrarBanderas() {
         }
         numeroPregunta++;
     }else{
+        var ruta_audio = '';
         if((respondidas_correctas / respondidas) >= 0.6) {
+            ruta_audio = '../sounds/victory.mp3';
             Swal.fire({
                 icon: 'success',
                 title: '¡Felicidades!',
@@ -76,6 +78,7 @@ function mostrarBanderas() {
                 }
             });
         }else{
+            ruta_audio = '../sounds/game_over.mp3';
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
@@ -96,6 +99,9 @@ function mostrarBanderas() {
         }
     }
 
+    setTimeout(function() {
+        reproducir_audio(ruta_audio);
+    }, 300);
 }
 
 function desordenarBanderas(array) {
@@ -172,19 +178,24 @@ function verificarBanderas() {
     respondidas++;
 
     var bandera = $('#contenedor_bandera').children().first();
+    var ruta_audio = '';
     if(correctas_pintadas == seccionesPintadas.length) {
         respondidas_correctas++;
         bandera.append("<div class='bandera-correcta'><img width='60' height='50' src='assets/bandera_correcta.png' alt='bandera correcta'></div>");
+        ruta_audio = '../sounds/ok.mp3';
         setTimeout(function() {
             mostrarBanderas();        
         }, 1500);
         
     }else{
         bandera.append("<div class='bandera-incorrecta'><img width='60' height='50' src='assets/bandera_incorrecta.png' alt='bandera incorrecta'></div>");
+        ruta_audio = '../sounds/over.mp3';
         setTimeout(function() {
             mostrarBanderas();        
         }, 1500);
     }
+
+    reproducir_audio(ruta_audio);
 }
 
 function limpiarBanderas() {
@@ -205,6 +216,7 @@ $(document).ready(function() {
 
 function iniciarJuego(tipo) {
     $('#myModal').modal('hide');
+    reproducir_audio_loop();
     if(tipo == 'pinta') {
         $('#contenedor_juego1').show();
         $('#contenedor_juego2').hide();
@@ -297,6 +309,9 @@ function iniciarTimer() {
                 showConfirmButton: true,
                 confirmButtonText: 'Intentar de nuevo',
             });
+
+            ruta_audio = '../sounds/game_over.mp3';
+            reproducir_audio(ruta_audio);
         }
     }, 1000);
 }
@@ -306,19 +321,26 @@ var respondidas_incorrectas_adivina = 0;
 
 function seleccionarBandaAdivinar(bandera, div) {
     div = $(div).parent();
+
+    var ruta_audio = '';
     if(bandera_adivinar.nombre == bandera) {
         respondidas_correctas_adivina++;
         $('#correctas_adivina').html(respondidas_correctas_adivina);
         $(div).append("<div class='bandera-correcta-adivina'><img src='assets/bandera_correcta.png' alt='bandera correcta'></div>");
+        ruta_audio = '../sounds/ok.mp3';
     }else{
         respondidas_incorrectas_adivina++;
         $('#incorrectas_adivina').html(respondidas_incorrectas_adivina);
         $(div).append("<div class='bandera-incorrecta-adivina'><img src='assets/bandera_incorrecta.png' alt='bandera incorrecta'></div>");
+        ruta_audio = '../sounds/over.mp3';
     }
+
+    reproducir_audio(ruta_audio);
 
     if(respondidas_correctas_adivina + respondidas_incorrectas_adivina == 10) {
         clearInterval(intervaloTimer);
         if(respondidas_correctas_adivina >= 6) {
+            ruta_audio = '../sounds/victory.mp3';   
             Swal.fire({
                 icon: 'success',
                 title: '¡Felicidades!',
@@ -339,6 +361,7 @@ function seleccionarBandaAdivinar(bandera, div) {
                 }
             });
         }else{
+            ruta_audio = '../sounds/game_over.mp3';
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
@@ -359,9 +382,29 @@ function seleccionarBandaAdivinar(bandera, div) {
                 }
             }); 
         }
+
+        setTimeout(function() {
+            reproducir_audio(ruta_audio);
+        }, 300);
     }else{
         setTimeout(function() {
             MapearBanderas();
         }, 1300);
     }
+}
+
+var audio_nave = document.createElement('audio');
+function reproducir_audio_loop(){
+    audio_nave.pause();
+    audio_nave.src = '../sounds/fondo.mp3';
+    audio_nave.loop = true;
+    audio_nave.volume = 0.09;
+    audio_nave.play();
+}
+
+function reproducir_audio(ruta){
+    var audio = document.createElement('audio');
+    audio.pause();
+    audio.src = ruta;
+    audio.play();
 }

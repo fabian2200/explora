@@ -27,6 +27,12 @@
             border: 10px solid #919090cf !important;
             width: 75vw !important;
         }
+
+        .swal2-title {
+            color: #ffffff !important;
+            font-size: 2em !important;
+            font-family: 'DS-Digital' !important;
+        }
         
         .swal2-styled.swal2-confirm, .swal2-styled.swal2-cancel {
            border: 4px solid white !important;
@@ -35,7 +41,7 @@
         
     </style>
 </head>
-<body>
+<body style="overflow: hidden;">
 <div id="contenedor_general" class="contenedor_general">
     <div class="game-container" id="game-container" style="position: relative;">
         <table id="mapa"></table>
@@ -52,13 +58,13 @@
         </div>
     <div class="controles">
             <div style="top: -6px; left: -6px;position: relative; transform: rotate(-45deg); width: 178px; height: 178px;">
-                <div class="subir" onclick="subir()">
+                <div class="subir" onclick="mover_nave('ArrowUp')">
                 </div>
-                <div class="bajar" onclick="bajar()">
+                <div class="bajar" onclick="mover_nave('ArrowDown')">
                 </div>
-                <div class="izquierda" onclick="izquierda()">
+                <div class="izquierda" onclick="mover_nave('ArrowLeft')">
                 </div>
-                <div class="derecha" onclick="derecha()">
+                <div class="derecha" onclick="mover_nave('ArrowRight')">
                 </div>
             </div>
         </div>  
@@ -74,8 +80,8 @@
 
 
 <div class="pregunta" id="pregunta">
-    <div class="contenedor_pregunta" style="width: 70%; position: relative; z-index: 10;">
-        <img src="css/nave2.gif" style="width: 25%;" alt="">
+    <div class="contenedor_pregunta" style="width: 70%; position: relative; z-index: 10; display: flex; align-items: center;">
+        <img src="css/nave2.gif" style="width: 25%; height: 25%;" alt="">
         <div class="contenedor_respuesta">
             <img src="css/bandera.png" style="width: 115%; height: 100%; z-index: -1; position: absolute; top: 0; left: 0; pointer-events: none;" alt="">
             <img src="css/perdio_gano.png" id="perdio_gano" alt="">

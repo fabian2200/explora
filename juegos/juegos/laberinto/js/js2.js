@@ -308,6 +308,8 @@ function actualizarMapadragones(nuevaFila, nuevaColumna, viejaFila, viejaColumna
 
     setTimeout(() => {
         if (nuevaFila === playerPosition.row && nuevaColumna === playerPosition.col) {
+            ruta_audio = '../sounds/explosion.mp3';
+            reproducir_audio(ruta_audio);
             generarMapaLose(1);
             clearInterval(intervaloDragones);
             clearInterval(intervaloTimer);
@@ -382,6 +384,8 @@ function iniciarTimer() {
 
             clearInterval(intervaloTimer);
             clearInterval(intervalo_colision);
+            ruta_audio = '../sounds/game_over.mp3';
+            reproducir_audio(ruta_audio);
             generarMapaLose(2);
             pregunta.css('background-color', 'transparent');
             setTimeout(() => {
@@ -401,7 +405,19 @@ function pauseTimer() {
 }
 
 function replay() {
-    window.location.reload();
+    Swal.fire({
+        title: '¿Seguro que quieres volver al menu principal?',
+        icon: 'warning',
+        showCancelButton: true, 
+        confirmButtonColor: '#000000',
+        cancelButtonColor: '#9d9d9d',
+        confirmButtonText: 'Si',
+        cancelButtonText: 'No',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '../../index.html';
+        }
+    });
 }
 
 var preguntas = [];
@@ -467,6 +483,7 @@ function seleccionar_nivel(nivel) {
     $('#miModal').modal('hide');
     
     createMap(nivel + 3);
+    reproducir_audio_loop();
 
     setTimeout(() => {
         $("#contenedor_general").css("opacity", "1");
@@ -516,15 +533,20 @@ var $marcador2 = $('#marcador2');
 function verificarRespuesta(boton, respuesta) {
     contador_preguntas++;
     var div = $('<div></div>');
+    var ruta_audio = '';
     if (respuesta) {
+        ruta_audio = '../sounds/ok.mp3';
         div.addClass('respuesta_correcta');
         preguntas_correctas++;
         $marcador1.html(preguntas_correctas);
     } else {
+        ruta_audio = '../sounds/over.mp3';
         div.addClass('respuesta_incorrecta');
         preguntas_incorrectas++;
         $marcador2.html(preguntas_incorrectas);
     }
+
+    reproducir_audio(ruta_audio);
 
     $(boton).append(div);
     
@@ -572,11 +594,15 @@ function mostrar_finalJuego() {
     var imagen_perdio_gano = $('#perdio_gano');
     imagen_perdio_gano.css('display', 'block');
 
+    var ruta_audio = '';
+
     if(preguntas_correctas > 2 ){
         imagen_perdio_gano.attr('src', 'css/gano.png');
+        ruta_audio = '../sounds/victory.mp3';
         pregunta_text += '¡Felicidades! Has ganado el juego <br> ¿deseas jugar de nuevo?';
     }else{
         imagen_perdio_gano.attr('src', 'css/perdio.png');
+        ruta_audio = '../sounds/game_over.mp3';
         pregunta_text += 'Lo sentimos no has alcanzado el objetivo <br> ¿deseas volver a intentarlo?';
     }
 
@@ -590,6 +616,7 @@ function mostrar_finalJuego() {
     $pregunta.css('text-align', 'center');
     $pregunta.css('font-family', 'DS-Digital');
     setTimeout(() => {
+        reproducir_audio(ruta_audio);
         $contenedor_pregunta.css('background-color', 'rgba(0, 0, 0, 0.6)');
     }, 4000);
 }
@@ -612,9 +639,46 @@ function verificar_naves_colision(){
     });
 
     if(colision){
+        ruta_audio = '../sounds/explosion.mp3';
+        reproducir_audio(ruta_audio);
         generarMapaLose(1);
         clearInterval(intervaloDragones);
         clearInterval(intervaloTimer);
         clearInterval(intervalo_colision);
     }
+}
+
+function mover_nave(movimiento){
+    if (!juego_iniciado) return;
+
+    const { row, col } = playerPosition;
+    let newRow = row;
+    let newCol = col;
+
+    switch(movimiento) {
+        case "ArrowUp": newRow--; break;
+        case "ArrowLeft": newCol--; break;
+        case "ArrowDown": newRow++; break;
+        case "ArrowRight": newCol++; break;
+    }
+
+    const sigue_igual = $player.css("transform") === `rotate(${rotaciones[movimiento]})`;
+    if (!sigue_igual) $player.css("transform", `rotate(${rotaciones[movimiento]})`);
+    mover(newRow, newCol, sigue_igual);
+}
+
+var audio_nave = document.createElement('audio');
+function reproducir_audio_loop(){
+    audio_nave.pause();
+    audio_nave.src = '../sounds/fondo_nave.mp3';
+    audio_nave.loop = true;
+    audio_nave.play();
+    audio_nave.volume = 0.5;
+}
+
+function reproducir_audio(ruta){
+    var audio = document.createElement('audio');
+    audio.pause();
+    audio.src = ruta;
+    audio.play();
 }

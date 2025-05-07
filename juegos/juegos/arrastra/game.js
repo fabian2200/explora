@@ -150,4 +150,43 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-}); 
+
+    // Función para crear nubes
+    function createCloud() {
+        const cloud = document.createElement('div');
+        cloud.className = 'cloud';
+        
+        // Posición vertical aleatoria
+        const top = Math.random() * 100; // 0-30% desde arriba
+        cloud.style.top = `${top}%`;
+        
+        // Dirección aleatoria
+        const direction = Math.random() > 0.5 ? 'left' : 'right';
+        cloud.style[direction] = '-100px';
+        
+        // Velocidad aleatoria
+        const speed = 30 + Math.random() * 40; // 30-70 segundos
+        cloud.style.animation = `moveCloud${direction} ${speed}s linear`;
+        
+        // Tamaño aleatorio
+        const size = 70 + Math.random() * 100; // 50-150px
+        cloud.style.width = `${size}px`;
+        cloud.style.height = `${size * 0.6}px`;
+        
+        document.body.appendChild(cloud);
+        
+        // Eliminar la nube después de que termine su animación
+        cloud.addEventListener('animationend', () => {
+            cloud.remove();
+        });
+    }
+
+    // Crear nubes periódicamente
+    setInterval(createCloud, 3000); // Nueva nube cada 3 segundos
+
+ 
+});
+
+function resetGame() {
+    location.reload();
+}

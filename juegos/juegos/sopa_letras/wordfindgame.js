@@ -219,8 +219,8 @@
         if (wordList[i] === curWord) {
           $('.selected').addClass('found');
 
-          //let audio2 = new Audio('../../sounds/ok.mp3');
-          //audio2.play(); 
+          let audio2 = new Audio('../sounds/ok.mp3');
+          audio2.play(); 
 
           wordList.splice(i,1);
           $('.' + curWord).addClass('wordFound');
@@ -236,8 +236,8 @@
           
           document.getElementById("final").style.backgroundImage = "url(../assets/images/victoria.gif)";
           document.getElementById("texto_final").innerText = "Felicitaciones, has encontrado todas las palabras"
-          //var audio = new Audio('../../sounds/victory.mp3');
-          //audio.play();
+          let audio = new Audio('../sounds/victory.mp3');
+          audio.play();
         }
       }
 
