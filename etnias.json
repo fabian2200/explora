@@ -1,0 +1,323 @@
+{
+  "mapwidth": "1200",
+  "mapheight": "1200",
+  "categories": [
+    {
+      "id": "etnias",
+      "title": "Etnias de Colombia",
+      "about": "",
+      "color": "#5ca340",
+      "show": "true"
+    }
+  ],
+  "levels": [
+    {
+      "id": "etnias",
+      "title": "Etnias de Colombia",
+      "map": "maps_etnias/etnias.svg",
+      "zoom": 4,
+      "locations": [
+        {
+          "id": "guahibos",
+          "title": "GUAHIBOS",
+          "description": "<p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Ubicación:</strong> Vichada, Meta y Arauca.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Economía:</strong> Caza, pesca, recolección de frutos y agricultura itinerante.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Costumbres:</strong> Son seminómadas y practican rituales con chamanes.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Situación actual:</strong> Presionados por el avance de la ganadería y el narcotráfico.</span></p>",
+          "x": "0.5959",
+          "y": "0.2595",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "mokana",
+          "title": "MOKANÁ",
+          "description": "<p data-start=\"341\" data-end=\"503\"><strong data-start=\"341\" data-end=\"361\">Ubicación actual</strong>: Sus comunidades se encuentran principalmente en municipios como <strong data-start=\"427\" data-end=\"480\">Tubará, Galapa, Baranoa, Malambo, Piojó, Usiacurí</strong> y otros del Atlántico.</p><p data-start=\"507\" data-end=\"721\"><strong data-start=\"507\" data-end=\"517\">Lengua</strong>: Antiguamente hablaban la lengua <strong data-start=\"551\" data-end=\"561\">mokaná</strong>, hoy extinta. Actualmente, su idioma principal es el <strong data-start=\"615\" data-end=\"626\">español</strong>, aunque se están haciendo esfuerzos por recuperar y preservar aspectos de su lengua ancestral.</p><p data-start=\"1122\" data-end=\"1364\"><strong data-start=\"1122\" data-end=\"1150\">Cultura y espiritualidad</strong>: Conservan prácticas culturales como la <strong data-start=\"1191\" data-end=\"1253\">medicina tradicional, danzas, música, rituales ancestrales</strong> y conocimientos sobre plantas. Tienen una identidad fuerte basada en su herencia y relación con el territorio.</p><p data-start=\"1368\" data-end=\"1491\"><strong data-start=\"1368\" data-end=\"1391\">Organización social</strong>: Se agrupan en <strong data-start=\"1407\" data-end=\"1429\">cabildos indígenas</strong>, y tienen representación política e identitaria en la región.</p><p data-start=\"1495\" data-end=\"1611\"><strong data-start=\"1495\" data-end=\"1507\">Economía</strong>: Se dedican a actividades como la agricultura, pesca artesanal, comercio local y oficios tradicionales.</p><p data-start=\"1615\" data-end=\"1771\"><strong data-start=\"1615\" data-end=\"1636\">Desafíos actuales</strong>: Buscan fortalecer su cultura, proteger sus derechos territoriales y educativos, y superar los efectos de la discriminación histórica.</p>",
+          "x": "0.3726",
+          "y": "0.0711",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "zenu",
+          "title": "ZENÚ",
+          "description": "<p data-start=\"113\" data-end=\"148\"><strong data-start=\"113\" data-end=\"127\">Ubicación:</strong> Vaupés y Amazonas.</p><p data-start=\"151\" data-end=\"219\"><strong data-start=\"151\" data-end=\"164\">Economía:</strong> Agricultura de chagra, pesca y producción artesanal.</p><p data-start=\"222\" data-end=\"320\"><strong data-start=\"222\" data-end=\"237\">Costumbres:</strong> Practican la transmisión oral de conocimientos y celebran ceremonias colectivas.</p><p data-start=\"323\" data-end=\"431\"><strong data-start=\"323\" data-end=\"344\">Situación actual:</strong> En riesgo de perder su idioma y costumbres por el contacto con la sociedad occidental.</p>",
+          "x": "0.3270",
+          "y": "0.1982",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "muisca",
+          "title": "MUISCAS",
+          "description": "<p data-start=\"119\" data-end=\"225\"><strong data-start=\"119\" data-end=\"133\">Ubicación:</strong> Altiplano Cundiboyacense, en los actuales departamentos de <strong data-start=\"193\" data-end=\"209\">Cundinamarca</strong> y <strong data-start=\"212\" data-end=\"222\">Boyacá</strong>.</p><p data-start=\"228\" data-end=\"334\"><strong data-start=\"228\" data-end=\"241\">Economía:</strong> Agricultura (especialmente maíz y papa), minería de sal y esmeraldas, y comercio regional.</p><p data-start=\"337\" data-end=\"464\"><strong data-start=\"337\" data-end=\"352\">Costumbres:</strong> Practican rituales agrícolas, veneración de la naturaleza, y transmisión oral de mitos y saberes ancestrales.</p><p data-start=\"467\" data-end=\"621\"><strong data-start=\"467\" data-end=\"488\">Situación actual:</strong> En proceso de <strong data-start=\"503\" data-end=\"544\">revitalización cultural y lingüística</strong>, pero enfrentan retos por la urbanización y pérdida de territorio ancestral.</p>",
+          "x": "0.5119",
+          "y": "0.4571",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "nasa",
+          "title": "PAECES (NASA)",
+          "description": "<p style=\"line-height:107%;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\"><strong>Ubicación:</strong> Cauca, Tolima y Huila.</span></p><p style=\"line-height:107%;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\"><strong>Economía:</strong> Agricultura (maíz, café y fríjol), ganadería y comercio artesanal.</span></p><p style=\"line-height:107%;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\"><strong>Costumbres:</strong> Tienen una fuerte estructura comunitaria y liderazgo político, con su propia guardia indígena.</span></p><p style=\"line-height:107%;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\"><strong>Situación actual:</strong> Son de los pueblos indígenas más organizados en Colombia, pero enfrentan violencia por el conflicto armado.</span></p>",
+          "x": "0.3098",
+          "y": "0.4869",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "kankuamos",
+          "title": "KANKUAMOS",
+          "description": "<p data-start=\"123\" data-end=\"229\"><strong data-start=\"123\" data-end=\"137\">Ubicación:</strong> Sierra Nevada de Santa Marta, principalmente en el departamento del <strong data-start=\"206\" data-end=\"215\">Cesar</strong> (Colombia).</p><p data-start=\"232\" data-end=\"350\"><strong data-start=\"232\" data-end=\"245\">Economía:</strong> Agricultura de chagra (yuca, plátano, café, maíz), ganadería menor, artesanías y medicina tradicional.</p><p data-start=\"353\" data-end=\"520\"><strong data-start=\"353\" data-end=\"368\">Costumbres:</strong> Practican ceremonias espirituales ligadas a la Madre Tierra, la transmisión oral del conocimiento y el respeto a los <strong data-start=\"486\" data-end=\"495\">mamos</strong> (sabios espirituales).</p><p data-start=\"523\" data-end=\"707\"><strong data-start=\"523\" data-end=\"544\">Situación actual:</strong> Han avanzado en la recuperación cultural e identidad étnica tras años de violencia y desplazamiento, pero siguen enfrentando amenazas territoriales y ambientales.</p>",
+          "x": "0.4709",
+          "y": "0.1282",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "arhuacos",
+          "title": "ARHUACOS",
+          "description": "<p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:11pt;\"><strong>Ubicación:</strong> Sierra Nevada de Santa Marta, departamentos de Magdalena, Cesar y La Guajira.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:11pt;\"><strong>Economía:</strong> Agricultura de café, maíz y papa; artesanías textiles.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:11pt;\"><strong>Costumbres:</strong> Cosmovisión centrada en la armonía con la naturaleza; uso del poporo.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:11pt;\"><strong>Situación actual:</strong> Defensa activa de su territorio y cultura frente a amenazas externas.</span></p>",
+          "x": "0.4334",
+          "y": "0.0894",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "nukak",
+          "title": "NUKAK",
+          "description": "<p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Ubicación:</strong> Guaviare.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Economía:</strong> Caza, pesca, recolección y trueque con otros grupos.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Costumbres:</strong> Son nómadas de la selva y practican el chamanismo.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Situación actual:</strong> En peligro de extinción por el desplazamiento forzado y enfermedades traídas por el contacto con foráneos.</span></p>",
+          "x": "0.5441",
+          "y": "0.5947",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "wayuus",
+          "title": "WAYÚUS",
+          "description": "<p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Ubicación:</strong> La Guajira.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Economía:</strong> Pastoreo, pesca y artesanías (mochilas y tejidos).</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Costumbres:</strong> Son una sociedad matrilineal, donde la mujer tiene un papel central en la comunidad.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Situación actual:</strong> Afectados por la crisis humanitaria debido a la escasez de agua y la falta de apoyo gubernamental.</span></p>",
+          "x": "0.5337",
+          "y": "0.0586",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "quillacinga",
+          "title": "QUILLACINGA",
+          "description": "<p data-start=\"131\" data-end=\"323\"><strong data-start=\"131\" data-end=\"145\">Ubicación:</strong> Región andina del suroccidente colombiano, especialmente en el departamento de <strong data-start=\"225\" data-end=\"235\">Nariño</strong>, en municipios como Pasto, Tangua, Yacuanquer y otros cercanos al <strong data-start=\"302\" data-end=\"320\">Volcán Galeras</strong>.</p><p data-start=\"326\" data-end=\"446\"><strong data-start=\"326\" data-end=\"339\">Economía:</strong> Agricultura de productos como papa, maíz, frijol y cebolla; cría de animales; y actividades artesanales.</p><p data-start=\"449\" data-end=\"631\"><strong data-start=\"449\" data-end=\"464\">Costumbres:</strong> Conservan prácticas espirituales relacionadas con la naturaleza, celebraciones tradicionales como el Inti Raymi, y la transmisión oral de conocimientos ancestrales.</p><p data-start=\"634\" data-end=\"794\"><strong data-start=\"634\" data-end=\"655\">Situación actual:</strong> En proceso de fortalecimiento cultural y territorial, aunque enfrentan riesgos de pérdida de identidad por la urbanización y el mestizaje.</p>",
+          "x": "0.2020",
+          "y": "0.6193",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "bari",
+          "title": "BARÍ",
+          "description": "<p data-start=\"123\" data-end=\"263\"><strong data-start=\"123\" data-end=\"137\">Ubicación:</strong> Frontera entre Colombia y Venezuela, principalmente en el <strong data-start=\"196\" data-end=\"234\">departamento de Norte de Santander</strong> (ríos Catatumbo y de Oro).</p><p data-start=\"266\" data-end=\"397\"><strong data-start=\"266\" data-end=\"279\">Economía:</strong> Agricultura de subsistencia (yuca, plátano, maíz), caza, pesca y recolección; algunos practican comercio artesanal.</p><p data-start=\"400\" data-end=\"548\"><strong data-start=\"400\" data-end=\"415\">Costumbres:</strong> Fuerte tradición oral, prácticas espirituales ligadas al territorio, rituales de iniciación, y respeto a los sabios tradicionales.</p><p data-start=\"551\" data-end=\"746\"><strong data-start=\"551\" data-end=\"572\">Situación actual:</strong> Amenazados por la violencia armada, la explotación petrolera y la pérdida de territorio; sin embargo, mantienen una organización fuerte para defender su cultura y autonomía.</p>",
+          "x": "0.4971",
+          "y": "0.2171",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "ingas",
+          "title": "INGAS",
+          "description": "<p style=\"line-height:107%;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\"><strong>Ubicación</strong>: Putumayo y Nariño.</span></p><p style=\"line-height:107%;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\"><strong>Economía:</strong> Agricultura, medicina tradicional y artesanías.</span></p><p style=\"line-height:107%;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\"><strong>Costumbres:</strong> Descendientes de los incas, practican rituales con yagé.</span></p><p style=\"line-height:107%;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\"><strong>Situación actual:</strong> Luchan por la preservación de su cultura ante la modernización.</span></p>",
+          "x": "0.3276",
+          "y": "0.6219",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "embera-chami",
+          "title": "CHAMÍES (EMBERÁ-CHAMÍ)",
+          "description": "<p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:Calibri, sans-serif;font-size:12.0pt;\"><strong>Ubicación:</strong></span><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"> Antioquia, Risaralda, Valle del Cauca.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:Calibri, sans-serif;font-size:12.0pt;\"><strong>Economía:</strong></span><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"> Agricultura, cestería, pesca y producción de oro artesanal.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:Calibri, sans-serif;font-size:12.0pt;\"><strong>Costumbres:</strong></span><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"> Habitan en resguardos, practican rituales con plantas y tienen una fuerte espiritualidad.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:Calibri, sans-serif;font-size:12.0pt;\"><strong>Situación actual:</strong></span><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"> Desplazamiento forzado por el conflicto armado y amenazas a su cultura.</span></p>",
+          "x": "0.3489",
+          "y": "0.3133",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "raizales",
+          "title": "Raizales de San Andrés",
+          "description": "<p data-start=\"146\" data-end=\"253\"><strong data-start=\"146\" data-end=\"160\">Ubicación:</strong> Archipiélago de <strong data-start=\"177\" data-end=\"221\">San Andrés, Providencia y Santa Catalina</strong>, en el mar Caribe colombiano.</p><p data-start=\"256\" data-end=\"345\"><strong data-start=\"256\" data-end=\"269\">Economía:</strong> Turismo, pesca artesanal, comercio local y agricultura en pequeña escala.</p><p data-start=\"348\" data-end=\"548\"><strong data-start=\"348\" data-end=\"363\">Costumbres:</strong> Conservan tradiciones afro-anglófonas, como la música reggae y calipso, el idioma <strong data-start=\"446\" data-end=\"456\">creole</strong>, la cocina típica, festividades religiosas protestantes, y una fuerte identidad cultural.</p><p data-start=\"551\" data-end=\"779\"><strong data-start=\"551\" data-end=\"572\">Situación actual:</strong> Enfrentan pérdida de territorio y cultura por la expansión turística y migración continental; luchan por el reconocimiento pleno de sus derechos como <strong data-start=\"723\" data-end=\"778\">pueblo étnico afrodescendiente con identidad propia</strong>.</p>",
+          "x": "0.1393",
+          "y": "0.0366",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "uwa",
+          "title": "Uwa",
+          "description": "<p data-start=\"154\" data-end=\"316\"><strong data-start=\"154\" data-end=\"168\">Ubicación:</strong> Regiones montañosas de la <strong data-start=\"195\" data-end=\"218\">Cordillera Oriental</strong> en los departamentos de <strong data-start=\"243\" data-end=\"303\">Boyacá, Arauca, Santander, Norte de Santander y Casanare</strong>, Colombia.</p><p data-start=\"319\" data-end=\"482\"><strong data-start=\"319\" data-end=\"332\">Economía:</strong> Agricultura de subsistencia (yuca, maíz, papa, frijol), recolección, caza, pesca y uso sostenible de recursos naturales; también practican trueque.</p><p data-start=\"485\" data-end=\"702\"><strong data-start=\"485\" data-end=\"500\">Costumbres:</strong> Tienen una profunda espiritualidad basada en el equilibrio con la naturaleza; realizan rituales sagrados guiados por los <strong data-start=\"622\" data-end=\"634\">Werjayás</strong> (líderes espirituales) y valoran fuertemente la transmisión oral.</p><p data-start=\"705\" data-end=\"926\"><strong data-start=\"705\" data-end=\"726\">Situación actual:</strong> Han liderado una destacada lucha contra la explotación petrolera y minera en sus territorios, lo que ha puesto en riesgo su seguridad y entorno; continúan defendiendo su cultura, lengua y territorio.</p>",
+          "x": "0.4782",
+          "y": "0.3332",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "pijaos",
+          "title": "PIJAOS",
+          "description": "<p data-start=\"121\" data-end=\"244\"><strong data-start=\"121\" data-end=\"135\">Ubicación:</strong> Principalmente en los departamentos de <strong data-start=\"175\" data-end=\"185\">Tolima</strong>, <strong data-start=\"187\" data-end=\"196\">Huila</strong> y <strong data-start=\"199\" data-end=\"208\">Cauca</strong>, en la región andina de Colombia.</p><p data-start=\"247\" data-end=\"379\"><strong data-start=\"247\" data-end=\"260\">Economía:</strong> Agricultura (especialmente maíz, frijol, yuca y papa), caza, pesca y producción artesanal (como tejidos y cerámica).</p><p data-start=\"382\" data-end=\"645\"><strong data-start=\"382\" data-end=\"397\">Costumbres:</strong> Conservan rituales y ceremonias relacionadas con la agricultura y la naturaleza, así como la transmisión oral de mitos y conocimientos ancestrales. Tienen una fuerte relación con la <strong data-start=\"580\" data-end=\"596\">madre tierra</strong> y celebran diversas festividades comunitarias.</p><p data-start=\"648\" data-end=\"844\"><strong data-start=\"648\" data-end=\"669\">Situación actual:</strong> A pesar de haber sufrido un importante proceso de colonización y desplazamiento, los Pijaos luchan por mantener su cultura, identidad y recuperar sus territorios ancestrales.</p>",
+          "x": "0.4239",
+          "y": "0.5445",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "cubeo",
+          "title": "CUBEO",
+          "description": "<p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Ubicación:</strong> Se encuentran principalmente en el departamento del Vaupés, a lo largo del río Vaupés y sus afluentes, en la región de la Amazonía colombiana.</span></p><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Economía:</strong>&nbsp;</span></p><ul style=\"padding-left:24px;\"><li><p style=\"line-height:normal;margin-bottom:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\">Basada en la agricultura de chagra, un sistema tradicional de cultivo en el que siembran yuca brava, plátano, maíz y otras especies nativas.</span></p></li><li><p style=\"line-height:normal;margin-bottom:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\">Complementan su alimentación con pesca, caza y recolección de frutos silvestres.</span></p></li><li><p style=\"line-height:normal;margin-bottom:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\">Practican el trueque con otras comunidades indígenas vecinas.</span></p></li></ul><p style=\"line-height:normal;margin-bottom:0cm;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\"><strong>Costumbres:</strong>&nbsp;</span></p><ul style=\"padding-left:24px;\"><li><p style=\"line-height:normal;margin-bottom:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\">Su organización social está basada en malocas (grandes casas comunales), donde habitan varias familias y se realizan rituales colectivos.</span></p></li><li><p style=\"line-height:normal;margin-bottom:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\">Su cosmovisión está ligada a la naturaleza y creen en espíritus protectores que habitan los ríos, montañas y selvas.</span></p></li><li><p style=\"line-height:107%;margin-bottom:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\">La chamanería juega un papel fundamental en su cultura, utilizando plantas sagradas como el yagé (ayahuasca) en rituales espirituales y de sanación.</span></p></li><li><p style=\"line-height:107%;margin-bottom:8pt;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\">Son hábiles tejedores de canastos y cerámica, empleando técnicas tradicionales transmitidas de generación en generación.</span></p></li></ul><p style=\"line-height:107%;margin-bottom:8pt;margin-left:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\">&nbsp;<strong>Situación actual:</strong></span></p><ul style=\"padding-left:24px;\"><li><p style=\"line-height:107%;margin-bottom:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\">Han logrado preservar su lengua Cubeo, perteneciente a la familia lingüística Tukano Oriental.</span></p></li><li><p style=\"line-height:107%;margin-bottom:0cm;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\">Enfrentan amenazas como la deforestación, minería ilegal y presencia de grupos armados en sus territorios.</span></p></li><li><p style=\"line-height:107%;margin-bottom:8pt;margin-right:0cm;margin-top:0cm;\"><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;line-height:107%;\">Algunos han migrado a centros urbanos como Mitú en busca de educación y mejores condiciones de vida, aunque siguen luchando por la protección de su identidad cultural y territorio ancestral.</span></p></li></ul>",
+          "x": "0.7408",
+          "y": "0.3457",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "rrom",
+          "title": "Rrom",
+          "description": "<p data-start=\"158\" data-end=\"423\"><strong data-start=\"158\" data-end=\"172\">Ubicación:</strong> Aunque los <strong data-start=\"184\" data-end=\"192\">Rrom</strong> no son originarios de Colombia, se han establecido en varias regiones del país, especialmente en las <strong data-start=\"294\" data-end=\"306\">ciudades</strong> de <strong data-start=\"310\" data-end=\"320\">Bogotá</strong>, <strong data-start=\"322\" data-end=\"334\">Medellín</strong>, <strong data-start=\"336\" data-end=\"344\" data-is-only-node=\"\">Cali</strong> y otras áreas urbanas, donde han formado comunidades nómadas o semi-nómadas.</p><p data-start=\"426\" data-end=\"633\"><strong data-start=\"426\" data-end=\"439\">Economía:</strong> Tradicionalmente se dedican a la venta de artesanías, música, danza, comercio ambulante y trabajos de metalurgia. Algunas comunidades también se dedican al reciclaje y otros oficios manuales.</p><p data-start=\"636\" data-end=\"941\"><strong data-start=\"636\" data-end=\"651\">Costumbres:</strong> La familia tiene un rol central en la sociedad gitana, con un sistema social estructurado basado en <strong data-start=\"752\" data-end=\"776\">costumbres y códigos</strong> propios, entre ellos la transmisión oral de tradiciones, la música y danzas como el <strong data-start=\"861\" data-end=\"873\">flamenco</strong> y el <strong data-start=\"879\" data-end=\"897\">romance gitano</strong>, y una fuerte identidad de <strong data-start=\"925\" data-end=\"938\">movilidad</strong>.</p><p data-start=\"944\" data-end=\"1188\"><strong data-start=\"944\" data-end=\"965\">Situación actual:</strong> Los Rrom en Colombia enfrentan <strong data-start=\"997\" data-end=\"1029\">discriminación y marginación</strong> social, dificultades para acceder a servicios básicos y el riesgo de perder sus tradiciones y su lengua <strong data-start=\"1134\" data-end=\"1144\">romani</strong> debido a la globalización y la vida urbana.</p>",
+          "x": "0.3820",
+          "y": "0.4427",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "palenqueros",
+          "title": "PALENQUEROS",
+          "description": "<p data-start=\"130\" data-end=\"347\"><strong data-start=\"130\" data-end=\"144\">Ubicación:</strong> Principalmente en <strong data-start=\"163\" data-end=\"190\">San Basilio de Palenque</strong>, corregimiento del municipio de <strong data-start=\"223\" data-end=\"234\">Mahates</strong>, en el departamento de <strong data-start=\"258\" data-end=\"269\">Bolívar</strong>, Colombia. También hay presencia en ciudades como Cartagena y Barranquilla.</p><p data-start=\"350\" data-end=\"486\"><strong data-start=\"350\" data-end=\"363\">Economía:</strong> Agricultura, venta de productos tradicionales (como dulces típicos), turismo cultural, música y actividades artesanales.</p><p data-start=\"489\" data-end=\"751\"><strong data-start=\"489\" data-end=\"504\">Costumbres:</strong> Conservan tradiciones africanas como la música <strong data-start=\"552\" data-end=\"564\">champeta</strong> y los <strong data-start=\"571\" data-end=\"583\">tambores</strong>, celebraciones religiosas sincréticas, prácticas de medicina tradicional y el uso del idioma <strong data-start=\"677\" data-end=\"691\">palenquero</strong>, un criollo de base léxica española con influencia bantú.</p><p data-start=\"754\" data-end=\"967\"><strong data-start=\"754\" data-end=\"775\">Situación actual:</strong> Reconocidos como <strong data-start=\"793\" data-end=\"851\">comunidad afrodescendiente con herencia africana única</strong>, luchan por preservar su lengua, cultura e identidad frente a la presión cultural del entorno moderno y el turismo.</p>",
+          "x": "0.4221",
+          "y": "0.2280",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "piapoco",
+          "title": "PIAPOCOS",
+          "description": "<p data-start=\"123\" data-end=\"314\"><strong data-start=\"123\" data-end=\"137\">Ubicación:</strong> Principalmente en los departamentos de <strong data-start=\"177\" data-end=\"188\">Vichada</strong>, <strong data-start=\"190\" data-end=\"201\">Guainía</strong> y <strong data-start=\"204\" data-end=\"212\">Meta</strong>, en la región de la Orinoquía colombiana; también hay presencia en zonas fronterizas con Venezuela.</p><p data-start=\"317\" data-end=\"457\"><strong data-start=\"317\" data-end=\"330\">Economía:</strong> Agricultura de chagra (yuca, plátano, maíz), pesca, caza, recolección y elaboración de artesanías (como hamacas y cestería).</p><p data-start=\"460\" data-end=\"636\"><strong data-start=\"460\" data-end=\"475\">Costumbres:</strong> Practican rituales tradicionales, transmisión oral de mitos y saberes, y mantienen una espiritualidad estrechamente ligada a la naturaleza y al ciclo del río.</p><p data-start=\"639\" data-end=\"893\"><strong data-start=\"639\" data-end=\"660\">Situación actual:</strong> Enfrentan amenazas por el avance del extractivismo, la pérdida del territorio ancestral y la presión cultural externa; sin embargo, mantienen viva su lengua <strong data-start=\"818\" data-end=\"829\">piapoco</strong> (de la familia arawak) y sus tradiciones en muchas comunidades.</p>",
+          "x": "0.6204",
+          "y": "0.4754",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "afrocolombianos",
+          "title": "AFROCOLOMBIANOS",
+          "description": "<p data-start=\"142\" data-end=\"372\"><strong data-start=\"142\" data-end=\"156\">Ubicación:</strong> Presencia en todo el país, con mayor concentración en la región <strong data-start=\"221\" data-end=\"233\">Pacífica</strong> (Chocó, Valle del Cauca, Cauca, Nariño), región Caribe (Bolívar, Atlántico, Magdalena), y en zonas urbanas como Bogotá, Medellín y Cali.</p><p data-start=\"375\" data-end=\"621\"><strong data-start=\"375\" data-end=\"388\">Economía:</strong> Agricultura (arroz, plátano, caña), pesca, minería artesanal, comercio informal, y trabajos en el sector de servicios y construcción. En algunas regiones también participan en procesos de turismo comunitario y producción cultural.</p><p data-start=\"624\" data-end=\"931\"><strong data-start=\"624\" data-end=\"639\">Costumbres:</strong> Ricas expresiones culturales como la <strong data-start=\"677\" data-end=\"699\">música tradicional</strong> (currulao, mapalé, bullerengue), la <strong data-start=\"736\" data-end=\"748\">oralidad</strong>, danzas, cocina típica, celebraciones religiosas como las <strong data-start=\"807\" data-end=\"831\">fiestas de San Pacho</strong> y el <strong data-start=\"837\" data-end=\"857\">Petronio Álvarez</strong>. Fuertes lazos comunitarios y defensa de la tierra y la identidad afro.</p><p data-start=\"934\" data-end=\"1179\"><strong data-start=\"934\" data-end=\"955\">Situación actual:</strong> Históricamente marginados, enfrentan problemas de <strong data-start=\"1006\" data-end=\"1024\">discriminación</strong>, pobreza y desplazamiento forzado, pero mantienen una lucha activa por el reconocimiento de sus derechos, su territorio colectivo y su identidad cultural.</p>",
+          "x": "0.2747",
+          "y": "0.3980",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "puinave",
+          "title": "PUINAVE",
+          "description": "<p data-start=\"123\" data-end=\"342\"><strong data-start=\"123\" data-end=\"137\">Ubicación:</strong> Región amazónica de Colombia, especialmente en el <strong data-start=\"188\" data-end=\"215\">departamento de Guainía</strong>, a lo largo de los ríos <strong data-start=\"240\" data-end=\"251\">Inírida</strong>, <strong data-start=\"253\" data-end=\"265\">Guaviare</strong> y sus afluentes; también hay presencia en zonas fronterizas con Venezuela.</p><p data-start=\"345\" data-end=\"494\"><strong data-start=\"345\" data-end=\"358\">Economía:</strong> Agricultura de chagra (yuca brava, piña, plátano), pesca, caza y recolección; también elaboran artesanías como canastos y cerbatanas.</p><p data-start=\"497\" data-end=\"771\"><strong data-start=\"497\" data-end=\"512\">Costumbres:</strong> Practican rituales ancestrales, tienen una cosmovisión profundamente ligada al río y la selva, y conservan sus mitos y saberes a través de la transmisión oral. La lengua <strong data-start=\"683\" data-end=\"694\">puinave</strong>, de filiación lingüística discutida, es un elemento vital de su identidad.</p><p data-start=\"774\" data-end=\"1027\"><strong data-start=\"774\" data-end=\"795\">Situación actual:</strong> Amenazados por la presión de actores externos (minería ilegal, narcotráfico, evangelización forzada), la pérdida de territorio y el debilitamiento cultural; sin embargo, mantienen esfuerzos de resistencia y revitalización cultural.</p>",
+          "x": "0.7513",
+          "y": "0.5429",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "tukano",
+          "title": "TUKANO",
+          "description": "<p data-start=\"150\" data-end=\"328\"><strong data-start=\"150\" data-end=\"164\">Ubicación:</strong> Región del <strong data-start=\"176\" data-end=\"186\">Vaupés</strong>, en la Amazonía colombiana, especialmente a lo largo del <strong data-start=\"244\" data-end=\"258\">río Vaupés</strong> y sus afluentes; también presentes en zonas fronterizas con Brasil.</p><p data-start=\"331\" data-end=\"480\"><strong data-start=\"331\" data-end=\"344\">Economía:</strong> Agricultura de chagra (yuca brava, plátano, piña), pesca, caza y recolección; también fabrican canoas, cerbatanas y objetos rituales.</p><p data-start=\"483\" data-end=\"716\"><strong data-start=\"483\" data-end=\"498\">Costumbres:</strong> Sociedad multilingüe y exogámica (los matrimonios se hacen entre personas de diferentes grupos lingüísticos); practican rituales colectivos, danzas, uso del yajé (ayahuasca) y transmisión oral de mitos cosmogónicos.</p><p data-start=\"719\" data-end=\"1011\"><strong data-start=\"719\" data-end=\"740\">Situación actual:</strong> Aunque enfrentan amenazas por la presión externa (evangelización, minería, desplazamiento), han logrado preservar muchas de sus lenguas y prácticas tradicionales; su <strong data-start=\"907\" data-end=\"943\">sistema de conocimiento indígena</strong> es reconocido como uno de los más complejos y organizados del país.</p>",
+          "x": "0.6362",
+          "y": "0.6579",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "coreguaje",
+          "title": "COREGUAJE",
+          "description": "<p data-start=\"165\" data-end=\"336\"><strong data-start=\"165\" data-end=\"179\">Ubicación:</strong> Región amazónica de Colombia, principalmente en los departamentos de <strong data-start=\"249\" data-end=\"260\">Caquetá</strong> y <strong data-start=\"263\" data-end=\"275\">Putumayo</strong>, en zonas cercanas a los ríos Orteguaza, Caquetá y Peneya.</p><p data-start=\"339\" data-end=\"490\"><strong data-start=\"339\" data-end=\"352\">Economía:</strong> Agricultura de chagra (yuca, maíz, plátano), caza, pesca, recolección y producción artesanal (canastos, hamacas, utensilios de madera).</p><p data-start=\"493\" data-end=\"758\"><strong data-start=\"493\" data-end=\"508\">Costumbres:</strong> Fuerte tradición oral, prácticas chamánicas con plantas sagradas como el yajé, rituales comunitarios y un profundo respeto por la naturaleza. Mantienen su lengua <strong data-start=\"671\" data-end=\"684\">Coreguaje</strong> (de la familia tucano oriental) como parte fundamental de su identidad.</p><p data-start=\"761\" data-end=\"958\"><strong data-start=\"761\" data-end=\"782\">Situación actual:</strong> Afectados por el conflicto armado, la deforestación y el narcotráfico; sin embargo, avanzan en procesos de fortalecimiento cultural, educación propia y defensa del territorio.</p>",
+          "x": "0.4584",
+          "y": "0.6684",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        },
+        {
+          "id": "yagua",
+          "title": "YAGUA",
+          "description": "<p data-start=\"119\" data-end=\"295\"><strong data-start=\"119\" data-end=\"133\">Ubicación:</strong> Región amazónica, principalmente en el departamento del <strong data-start=\"190\" data-end=\"202\">Amazonas</strong> en Colombia, cerca del río Amazonas y sus afluentes; también tienen presencia en <strong data-start=\"284\" data-end=\"292\">Perú</strong>.</p><p data-start=\"298\" data-end=\"499\"><strong data-start=\"298\" data-end=\"311\">Economía:</strong> Agricultura de chagra (yuca brava, plátano, maíz), pesca, caza, recolección de frutos silvestres y elaboración de artesanías (como cerbatanas, collares y textiles con tintes naturales).</p><p data-start=\"502\" data-end=\"736\"><strong data-start=\"502\" data-end=\"517\">Costumbres:</strong> Conservan su lengua <strong data-start=\"538\" data-end=\"547\">yagua</strong> (de la familia peba-yagua), practican rituales tradicionales, danzas ceremoniales y mitos transmitidos oralmente; algunos usan pintura corporal y vestimenta tradicional en celebraciones.</p><p data-start=\"739\" data-end=\"1010\"><strong data-start=\"739\" data-end=\"760\">Situación actual:</strong> En riesgo de pérdida cultural y lingüística por el contacto con la sociedad mayoritaria, el turismo sin control y las presiones externas sobre sus territorios; sin embargo, algunas comunidades trabajan activamente en la recuperación de su identidad.</p>",
+          "x": "0.5672",
+          "y": "0.7877",
+          "pin": "hidden",
+          "fill": "#e5181800",
+          "zoom": 2,
+          "category": "etnias",
+          "show": "true"
+        }
+      ]
+    }
+  ]
+}

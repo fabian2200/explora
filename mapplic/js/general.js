@@ -1,7 +1,7 @@
 function seleccionarTipoMapa(tipo) {
     console.log(tipo);
     if (tipo == 'general') {
-        window.location.href = 'departamentos.html';
+        window.location.href = 'index.html';
     } else if (tipo == 'hidrico') {
         window.location.href = 'vertientes.html';
     } else if (tipo == 'coordilleras') {

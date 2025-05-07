@@ -78,7 +78,7 @@ body {
 }
 
 :-webkit-full-screen .mapplic-container {
-	width: 80%;
+	width: 70%;
 }
 
 .mapplic-map {
@@ -411,7 +411,7 @@ a.mapplic-zoomout-button {
 }
 
 :-webkit-full-screen .mapplic-sidebar {
-	width: 20%;
+	width: 30%;
 }
 
 /* Search */
@@ -750,7 +750,7 @@ a.mapplic-zoomout-button {
 	padding: 4px 6px;
 	font-size: 14px;
 	top: 0;
-	left: 50%;
+	left: 90%;
 	pointer-events: none;
 }
 

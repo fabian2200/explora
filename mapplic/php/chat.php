@@ -361,14 +361,13 @@ if($resultado['success'] == true){
         $respuesta['mensaje'] = $conexion_mysql->query("SELECT contenido as descripcion FROM departamento_descripcion WHERE departamento = $departamento[id]");
         $respuesta['mensaje'] = $respuesta['mensaje']->fetch_assoc();
     }else{
-        if($tabla_bd != 0){
+        if($tabla_bd !== 0){
             $respuesta['mensaje'] = $conexion_mysql->query("SELECT $campo_bd as descripcion FROM departamento_$tabla_bd WHERE departamento = $descripcion[id]");
             $respuesta['mensaje'] = $respuesta['mensaje']->fetch_assoc();
         }
     }
-    
 
-    if($tabla_bd_list != 0){
+    if($tabla_bd_list !== 0){
         $respuesta["array_list"] = $conexion_mysql->query("SELECT * FROM departamento_$tabla_bd_list WHERE departamento = $descripcion[id]");
         $respuesta["array_list"] = $respuesta["array_list"]->fetch_all(MYSQLI_ASSOC);
     }
