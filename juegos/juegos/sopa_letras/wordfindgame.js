@@ -220,6 +220,7 @@
           $('.selected').addClass('found');
 
           let audio2 = new Audio('../sounds/ok.mp3');
+          audio2.volume = 0.29;
           audio2.play(); 
 
           wordList.splice(i,1);

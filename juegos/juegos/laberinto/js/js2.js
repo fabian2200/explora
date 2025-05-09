@@ -680,5 +680,6 @@ function reproducir_audio(ruta){
     var audio = document.createElement('audio');
     audio.pause();
     audio.src = ruta;
+    audio.volume = 0.29;
     audio.play();
 }

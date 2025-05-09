@@ -106,6 +106,7 @@ function seleccionarNivel(nivel) {
 }
 
 function iniciarJuego() {
+    reproducir_audio_loop();
     preguntasActuales = obtenerPreguntasAleatorias();
     preguntaActualIndex = 0;
     puntuacion = 0;
@@ -219,12 +220,17 @@ function verificarRespuesta(respuesta, espacioRespuesta) {
     const pregunta = preguntasActuales[preguntaActualIndex];
     const esCorrecta = respuesta === pregunta.respuesta;
     
+    var ruta_audio = '';
     if (esCorrecta) {
         espacioRespuesta.classList.add('correcta');
         puntuacion += 10;
+        ruta_audio = '../sounds/ok.mp3';
     } else {
         espacioRespuesta.classList.add('incorrecta');
+        ruta_audio = '../sounds/over.mp3';
     }
+
+    reproducir_audio(ruta_audio);
 
     // Deshabilitar todas las opciones
     document.querySelectorAll('.opcion').forEach(opcion => {
@@ -277,11 +283,16 @@ function finalizarJuego() {
     seccionJuego.classList.add('oculto');
     seccionResultados.classList.remove('oculto');
     gameHeader.classList.add('oculto');
+    var ruta_audio = '';
     if (puntuacion >= 60) {
         resultadoFinal.textContent = `¡Felicidades! Has completado el juego con ${puntuacion} puntos.`;
+        ruta_audio = '../sounds/victory.mp3';
     } else {
         resultadoFinal.textContent = `¡No te rindas! Has completado el juego con ${puntuacion} puntos.`;
+        ruta_audio = '../sounds/game_over.mp3';
     }
+
+    reproducir_audio(ruta_audio);
 }
 
 function reiniciarJuego() {
@@ -299,3 +310,21 @@ function actualizarContadorPreguntas() {
 $(document).ready(function() {
     pantalla_completa('#9f4d2a', '#250d06', '100');
 });
+
+
+var audio_nave = document.createElement('audio');
+function reproducir_audio_loop(){
+    audio_nave.pause();
+    audio_nave.src = '../sounds/fondo_arrastra.mp3';
+    audio_nave.loop = true;
+    audio_nave.volume = 0.09;
+    audio_nave.play();
+}
+
+function reproducir_audio(ruta){
+    var audio = document.createElement('audio');
+    audio.pause();
+    audio.src = ruta;
+    audio.volume = 0.29;
+    audio.play();
+}

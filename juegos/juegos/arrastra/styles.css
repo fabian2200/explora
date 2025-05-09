@@ -12,7 +12,11 @@ body {
     background-color: #f0f0f0;
     flex-direction: column;
     font-family: 'TitanOne';
-    background: linear-gradient(to bottom, #bfd7f5, #4a94e9);
+    background: url(img/fondo.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
     overflow: hidden;
 }
 
@@ -35,8 +39,8 @@ body {
 
 .modal-title {
     font-family: 'TitanOne';
-    color: #393939;
-    font-size: 1.5rem;
+    color: #3f1c05;
+    font-size: 2rem;
 }
 
 .modal-body {
@@ -45,20 +49,21 @@ body {
 
 /* Estilos de las tarjetas de categoría */
 .category-card {
-    background-color: #fff;
-    border: 2px solid #f0f0f0;
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
     height: 100%;
+    background-image: url(img/tabla.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .category-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-color: #4CAF50;
+    box-shadow: 0 5px 15px rgba(68, 43, 11, 0.829);
 }
 
 .img-categoria {
@@ -66,13 +71,15 @@ body {
     height: 70px;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
+    margin-top: 10px;
 }
 
 .nombre-categoria {
-    color: #393939;
+    color: #3f1c05;
     font-size: 1.2rem;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .game-header {
@@ -94,11 +101,13 @@ body {
 .game-area {
     width: 555px;
     height: 585px;
-    border: 3px solid #d7edff;
     position: relative;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .game-area img {
@@ -110,17 +119,25 @@ body {
     width: 400px;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 1rem;
+    padding-top: 1.7em;
     padding-bottom: 1rem;
-    background-color: #f8f8f8;
-    overflow-y: auto;
-    max-height: 525px;
-    overflow-x: hidden;
-    background-image: url(card.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 400px;
+    overflow-y: visible;
+    max-height: 280px;
+    overflow-x: visible;
+    min-height: 322px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flotante2 {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    bottom: -56%;
 }
 
 .draggable {
@@ -135,7 +152,8 @@ body {
 }
 
 .item {
-    background-color: #3873a6;
+    border: 2px solid #573b15;
+    background-color: #cf9568;
     padding: 0.3rem;
     height: 100%;
     display: flex;
@@ -143,6 +161,8 @@ body {
     align-items: center;
     text-align: center;
     font-size: 0.85rem;
+    color: #452e13;
+    border-radius: 5px;
 }
 
 .draggable:hover {
@@ -167,38 +187,77 @@ body {
 }
 
 .target-point.correct {
-    background-color: rgba(76, 175, 80, 0.8);
+    background-color: rgb(76, 175, 79);
 }
 
 .target-point.incorrect {
-    background-color: rgba(255, 68, 68, 0.8);
+    background-color: rgb(255, 68, 68);
     animation: shake 0.5s;
 }
 
 @keyframes shake {
-    0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
-    25% { transform: translate(-50%, -50%) rotate(-5deg); }
-    75% { transform: translate(-50%, -50%) rotate(5deg); }
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(-50%, -50%) rotate(-5deg);
+    }
+
+    75% {
+        transform: translate(-50%, -50%) rotate(5deg);
+    }
 }
 
 .menu {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 200px;
     height: 250px;
     padding: 1rem;
     position: absolute;
-    top: 27%;
+    top: -3%;
     right: 3rem;
-    background-image: url(card.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #0e50b3;
+    color: #573b15;
+    z-index: 1;
+    transition: all 0.3s ease;
+    animation: flotante 5s infinite;
+}
+
+@keyframes flotante {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.cartel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -0;
+    pointer-events: none;
+}
+
+.flotante {
+    width: 130%;
+    height: 50%;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    bottom: -53%;
 }
 
 .menu button {
@@ -214,13 +273,17 @@ body {
 
 
 #categoryTitle {
-    background-image: url(title.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #0e50b3;
-    padding: 1rem;
+    padding: 2rem;
     margin-bottom: -4px;
+}
+
+.title_imagen {
+    width: 100%;
+    height: 105%;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    top: 0px;
 }
 
 .cloud {
@@ -257,6 +320,7 @@ body {
     from {
         left: 100%;
     }
+
     to {
         left: -100px;
     }
@@ -266,7 +330,105 @@ body {
     from {
         right: 100%;
     }
+
     to {
         right: -100px;
     }
+}
+
+.panControls {
+    position: absolute;
+    top: 73%;
+    right: 3rem;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panControlsContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.panControlsContainer div {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: transform 0.5s;
+}
+
+.panControlsContainer div:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+#panUp {
+    background-image: url(img/arr.png);
+    left: 36%;
+    top: -9%;
+}
+
+#panLeft {
+    background-image: url(img/izq.png);
+    top: 13%;
+    left: 9%;
+}
+
+#panRight {
+    background-image: url(img/der.png);
+    left: 64%;
+    top: 13%;
+}
+
+#panDown {
+    background-image: url(img/aba.png);
+    left: 36%;
+    top: 37%;
+}
+
+.zoomControls {
+    position: absolute;
+    top: 90%;
+    right: 0.5rem;
+    width: 85px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.5s;
+    background-color: #f9cfac9c;
+    padding: 6px;
+    border: 4px solid #613910a6;
+    border-radius: 16px;
+}
+
+.zoomControls div:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.zoomControls div {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: transform 0.5s;
+}
+
+.zoomIn {
+    background-image: url(img/zoom_mas.png);
+}
+
+.zoomOut {
+    background-image: url(img/zoom_menos.png);
 }

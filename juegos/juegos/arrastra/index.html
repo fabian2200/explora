@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +11,49 @@
     <script type="text/javascript" src="../assets/bootstrap/jquery.min.js"></script>
     <link rel="stylesheet" href="../../librerias/fontawesome/css/all.min.css">
 
+    <script src="../assets/bootstrap/sweetalert.js"></script>
+
     <link rel="stylesheet" href="styles.css">
+
+    <script src="panzoom.min.js"></script>
+
+    <style>
+        .swal2-container.swal2-center>.swal2-popup {
+            grid-column: 2;
+            grid-row: 2;
+            align-self: center;
+            justify-self: center;
+            background-color: #9d6a41 !important;
+            border: 5px solid #4b331a !important;
+            border-radius: 25px !important;
+        }
+
+        .modal-content {
+            background-image: url(img/modal.png);
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 25px !important;
+            border: none !important;
+            border: 5px solid #4b331a !important;
+        }
+
+        .modal-header {
+            border-bottom: 2px solid #f0f0f000;
+            padding: 0.7rem;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Modal Bootstrap -->
-    <div class="modal fade" id="categoryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
+    <div class="modal fade" id="categoryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="categoryModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="categoryModalLabel">Selecciona una Categoría</h5>
+                    <h3 class="modal-title" style="width: 100%; text-align: center;" id="categoryModalLabel">Selecciona
+                        una Categoría</h3>
                 </div>
                 <div class="modal-body">
                     <div class="row row-cols-1 row-cols-md-2 g-4" id="categoriesGrid">
@@ -29,34 +64,61 @@
         </div>
     </div>
 
-    <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; position: relative;">
         <div class="game-container" style="margin-right: 20vw;">
             <div class="game-content">
-                <div>
-                    <h5 id="categoryTitle" style="color: #3873a6; text-align: center;">Arrastra y Suelta</h5>
+                <div style="position: relative; margin-bottom: 8%;">
+                    <h5 id="categoryTitle" style="position: relative; z-index: 2; color: #573b15; text-align: center;">
+                        Arrastra y Suelta</h5>
                     <div class="options-container text-center">
-                        <div class="row"  id="optionsContainer">
-                            
+                        <div class="row" id="optionsContainer">
+
                         </div>
                     </div>
+                    <img src="img/title.png" class="title_imagen" alt="">
+                    <img src="img/flotante2.png" class="flotante2" alt="">
                 </div>
-                
 
-                <div class="game-area" id="gameArea">
-                   
+                <div id="contenedorGameArea"
+                    style="border: 3px solid #d7edff; overflow: hidden; border-radius: 10px; position: relative;  width: 555px; height: 585px;">
+                    <div class="game-area" id="gameArea">
+
+                    </div>
+                    <div class="zoomControls">
+                        <div class="zoomOut" id="zoomOut"></div>
+                        <div class="zoomIn" id="zoomIn"></div>
+                    </div>
                 </div>
-               
             </div>
         </div>
 
         <div class="menu">
-            <h3>MENÚ</h3>
-            <button onclick="resetGame()" id="resetGame" class="btn btn-warning"><i class="fas fa-sync-alt"></i> REINICIAR</button>
-            <button onclick="window.location.href='../../index.html'" id="checkAnswers" class="btn btn-danger"><i class="fas fa-arrow-left"></i> SALIR</button>
+            <img src="img/cartel.png" class="cartel" alt="">
+            <div
+                style="z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 60%;">
+                <br>
+                <h3>MENÚ</h3>
+                <button onclick="resetGame()" id="resetGame" class="btn btn-warning"><i class="fas fa-sync-alt"></i>
+                    REINICIAR</button>
+                <button onclick="window.location.href='../../index.html'" id="checkAnswers" class="btn btn-danger"><i
+                        class="fas fa-arrow-left"></i> SALIR</button>
+            </div>
+            <img src="img/flotante.png" class="flotante" alt="">
+        </div>
+
+        <div class="panControls">
+            <div class="panControlsContainer">
+                <div id="panUp"></div>
+                <div id="panLeft"></div>
+                <div id="panRight"></div>
+                <div id="panDown"></div>
+            </div>
         </div>
     </div>
-   
+
+    <script src="../../js/pantalla_completa.js"></script>
     <script src="data.js"></script>
     <script src="game.js"></script>
 </body>
-</html> 
+
+</html>

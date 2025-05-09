@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            const archivos = [
+                "amazonas",
+                "antioquia",
+                "arauca",
+                "atlantico",
+                "bolivar",
+                "boyaca",
+                "caldas",
+                "caqueta",
+                "casanare",
+                "cauca",
+                "cesar",
+                "choco",
+                "cordoba",
+                "cundinamarca",
+                "guainia",
+                "guaviare",
+                "huila",
+                "guajira",
+                "magdalena",
+                "meta",
+                "narino",
+                "norte_santander",
+                "putumayo",
+                "quindio",
+                "risaralda",
+                "san_andres",
+                "santander",
+                "sucre",
+                "tolima",
+                "valle_cauca",
+                "vaupes",
+                "vichada"
+            ];
+
+
+            const jsonUnido = [];
+
+            let cargados = 0;
+
+            archivos.forEach(function (url) {
+                $.getJSON(url+".json", function (data) {
+                    var locations = data.locations;
+                    locations.forEach(function (location) {
+                        jsonUnido.push({
+                            name: location.title,
+                            x: location.x,
+                            y: location.y
+                        });
+                    });
+                }).always(function () {
+                    cargados++;
+                    if (cargados === archivos.length) {
+                        console.log("JSON unido:", jsonUnido);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

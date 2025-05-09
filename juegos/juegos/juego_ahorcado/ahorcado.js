@@ -111,10 +111,11 @@ function intento(letra) {
     }
   }
 
-  if(ruta_audio != ''){
-    let audio2 = new Audio(ruta_audio);
-    audio2.play();
-  }
+  
+  let audio2 = new Audio(ruta_audio);
+  audio2.volume = 0.29;
+  audio2.play();
+  
 
   compruebaFin();
   setTimeout(function () { 
@@ -398,7 +399,7 @@ function seleccionarNivel(elemento, nivel){
   document.getElementById("categoria").innerText = palabras_categoria.categoria;
 
 
-  let audio2 = new Audio('../sounds/fondo.mp3');
+  let audio2 = new Audio('../sounds/fondo_pirata.mp3');
   audio2.play(); 
   audio2.loop = true;
   audio2.volume = 0.1;
