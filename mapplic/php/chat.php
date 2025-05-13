@@ -430,25 +430,29 @@ function procesarConsulta($consulta) {
     $palabraClaveEncontrada = null;
    
     foreach ($departamentos as $departamento) {
-        $departamento = strtolower($departamento);
-        $posicion = strpos($consulta, $departamento);
+        $departamento_minuscula = strtolower($departamento);
+        $posicion = strpos($consulta, $departamento_minuscula);
 
         if($posicion !== false){
-            $departamentoEncontrado = $departamento;
-            $cadena = str_replace($departamento, "", $consulta);
+            $departamentoEncontrado = $departamento;  
             break;
         }else{
-            $departamento = quitarTildes($departamento);
-            $posicion = strpos($consulta, $departamento);
+            $departamento_minuscula = quitarTildes($departamento);
+            $departamento_minuscula = strtolower($departamento_minuscula);
+            $posicion = strpos($consulta, $departamento_minuscula);
             
             if($posicion !== false){
                 $departamentoEncontrado = $departamento;
-                $cadena = str_replace($departamento, "", $consulta);
                 break;
             }
         }
 
+        if(strpos($consulta, "san andres") !== false || strpos($consulta, "providencia") !== false || strpos($consulta, "santa catalina") !== false){
+            $departamentoEncontrado = "San Andrés, Providencia y Santa Catalina";
+            break;
+        }
     }
+
 
     $palabras = explode(" ", $consulta);
 

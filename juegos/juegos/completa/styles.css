@@ -177,8 +177,9 @@ h1, h2 {
     width: 60%;
     object-fit: cover;
     position: absolute;
-    top: -17vh;
+    top: -19vh;
     left: 22%;
+    filter: drop-shadow(0 0 10px rgba(65, 41, 7, 0.747));
 }
 
 .niveles {

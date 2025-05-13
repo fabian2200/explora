@@ -75,6 +75,8 @@ function mostrarBanderas() {
             }).then((result) => {
                 if(result.isConfirmed) {
                     location.reload();
+                }else{
+                    location.href = '../../index.html';
                 }
             });
         }else{
@@ -94,6 +96,8 @@ function mostrarBanderas() {
             }).then((result) => {
                 if(result.isConfirmed) {
                     location.reload();
+                }else{
+                    location.href = '../../index.html';
                 }
             });
         }
@@ -303,11 +307,23 @@ function iniciarTimer() {
         if (minutos === 0 && segundos === 0) {
             clearInterval(intervaloTimer);
             Swal.fire({
+                allowOutsideClick: false,
+                allowEscapeKey: false,
                 icon: 'error',
                 title: 'Oops, se te acabo el tiempo',
                 text: 'Has respondido correctamente ' + respondidas_correctas_adivina + ' de ' + (respondidas_correctas_adivina + respondidas_incorrectas_adivina) + ' preguntas, animo, puedes intentarlo de nuevo.',
                 showConfirmButton: true,
                 confirmButtonText: 'Intentar de nuevo',
+                showCancelButton: true,
+                cancelButtonText: 'Salir',
+                cancelButtonColor: '#d33',
+                confirmButtonColor: '#3085d6',
+            }).then((result) => {
+                if(result.isConfirmed) {
+                    location.reload();
+                }else{
+                    location.href = '../../index.html';
+                }
             });
 
             ruta_audio = '../sounds/game_over.mp3';

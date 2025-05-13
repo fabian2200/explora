@@ -4,6 +4,7 @@ const optionsContainer = document.getElementById('optionsContainer');
 const categoryModal = new bootstrap.Modal(document.getElementById('categoryModal'));
 const categoriesGrid = document.getElementById('categoriesGrid');
 const categoryTitle = document.getElementById('categoryTitle');
+const nivelModal = new bootstrap.Modal(document.getElementById('nivelModal'));
 let draggedItem = null;
 
 
@@ -37,12 +38,19 @@ gameData.categories.forEach(category => {
 function selectCategory(category) {
     gameData.currentCategory = category;
     categoryTitle.textContent = category.name;
+    nivelModal.show();
+}
+
+function selectNivel(nivel) {
+    nivelModal.hide();
+    iniciarContador(nivel);
     initializeGame();
 }
 
 var locations_array = [];
 
 function initializeGame() {
+    reproducir_audio_loop();
     // Limpiar área de juego
     gameArea.innerHTML = '';
     optionsContainer.innerHTML = '';
@@ -136,6 +144,9 @@ gameArea.addEventListener('drop', (e) => {
         );
 
         if (draggedItem.dataset.name === closestPoint.name) {
+            reproducir_audio('../sounds/ok.mp3');
+
+            targetPoint.classList.remove('target-point');
             targetPoint.classList.add('correct');
             targetPoint.classList.remove('incorrect');
             draggedItem.style.display = 'none';
@@ -143,11 +154,30 @@ gameArea.addEventListener('drop', (e) => {
             // Verificar si se completó el juego
             const remainingDraggables = document.querySelectorAll('.draggable:not([style*="display: none"])');
             if (remainingDraggables.length === 0) {
+                reproducir_audio('../sounds/victory.mp3');
                 setTimeout(() => {
-                    alert('¡Felicidades! Has completado el juego.');
-                }, 500);
+                    Swal.fire({
+                        allowOutsideClick: false,
+                        title: '¡Felicidades!',
+                        text: 'Has completado el juego antes de que se acabe el tiempo.',
+                        icon: 'success',
+                        confirmButtonText: 'Volver a Jugar',
+                        confirmButtonColor: '#34230d',
+                        cancelButtonText: 'Salir',
+                        showCancelButton: true,
+                        cancelButtonColor: '#5a391f',
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            resetGame();
+                        } else {
+                            window.location.href = '../../index.html';
+                        }
+                    });
+                }, 700);
             }
         } else {
+            reproducir_audio('../sounds/over.mp3');
+
             targetPoint.classList.add('incorrect');
             targetPoint.classList.remove('correct');
             setTimeout(() => {
@@ -268,3 +298,59 @@ document.getElementById('panRight').addEventListener('click', () => {
     const pan = panzoom.getPan();
     panzoom.pan(pan.x - panStep, pan.y, { animate: true });
 });
+
+
+var audio_nave = document.createElement('audio');
+function reproducir_audio_loop() {
+    audio_nave.pause();
+    audio_nave.src = '../sounds/fondo_arrastra.mp3';
+    audio_nave.loop = true;
+    audio_nave.volume = 0.09;
+    audio_nave.play();
+}
+
+function reproducir_audio(ruta) {
+    var audio = document.createElement('audio');
+    audio.pause();
+    audio.src = ruta;
+    audio.volume = 0.29;
+    audio.play();
+}
+
+var minuto_inicial = 5;
+var segundo_inicial = 0;
+
+function iniciarContador(minutos) {
+    let tiempo = minutos * 60;
+
+    const intervalo = setInterval(() => {
+        const min = String(Math.floor(tiempo / 60)).padStart(2, '0');
+        const seg = String(tiempo % 60).padStart(2, '0');
+        var tiempo_actual = `${min}:${seg}`;
+        document.getElementById('contador').innerHTML = tiempo_actual;
+        tiempo--;
+        
+        if (tiempo < 0) {
+            reproducir_audio('../sounds/game_over.mp3');
+            clearInterval(intervalo);
+
+            Swal.fire({
+                title: '¡Opps, se ha acabado el tiempo!',
+                text: '¿Quieres volver a intentarlo?',
+                icon: 'error',
+                confirmButtonText: 'Si, jugar',
+                confirmButtonColor: '#34230d',
+                cancelButtonText: 'No, salir',
+                showCancelButton: true,
+                cancelButtonColor: '#5a391f',
+                allowOutsideClick: false,
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    resetGame();
+                } else {
+                    window.location.href = '../../index.html';
+                }
+            });
+        }
+    }, 1000);
+}

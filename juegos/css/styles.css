@@ -840,7 +840,7 @@ footer {
 .card-juego{
     background-color: #fff2b2;
     border-radius: 25px;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     border: 5px dashed rgb(255, 94, 0);
     font-size: 1.7rem;
@@ -854,9 +854,12 @@ footer {
     transition: all 0.3s ease;
     cursor: pointer;
     flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .card-juego:hover{
     background-color: #FCD116;
     border: 5px solid rgb(255, 94, 0);
+    transform: scale(1.05);
 }

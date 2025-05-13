@@ -36,14 +36,41 @@ const gameData = {
         {
             id: "capitales",
             name: "Capitales de Colombia",
-            image: "https://via.placeholder.com/500x500",
+            image: "img/capitales.webp",
             mapa: "../mapas/marron/politico.png",
             locations: [
-                { x: 0.25, y: 0.25, name: "Madrid" },
-                { x: 0.75, y: 0.25, name: "París" },
-                { x: 0.25, y: 0.75, name: "Roma" },
-                { x: 0.75, y: 0.75, name: "Berlín" },
-                { x: 0.5, y: 0.5, name: "Lisboa" }
+                { "name": "Bogotá", "x": "0.4200", "y": "0.5000" },
+                { "name": "Medellín", "x": "0.3500", "y": "0.3500" },
+                { "name": "Cali", "x": "0.2800", "y": "0.5300" },
+                { "name": "Barranquilla", "x": "0.3750", "y": "0.1200" },
+                { "name": "Cartagena", "x": "0.4200", "y": "0.2600" },
+                { "name": "Bucaramanga", "x": "0.4700", "y": "0.3500" },
+                { "name": "Cúcuta", "x": "0.5000", "y": "0.2700" },
+                { "name": "Pereira", "x": "0.3150", "y": "0.4400" },
+                { "name": "Manizales", "x": "0.3600", "y": "0.4300" },
+                { "name": "Armenia", "x": "0.3350", "y": "0.4800" },
+                { "name": "Ibagué", "x": "0.3600", "y": "0.5100" },
+                { "name": "Neiva", "x": "0.3450", "y": "0.5900" },
+                { "name": "Villavicencio", "x": "0.5000", "y": "0.5400" },
+                { "name": "Tunja", "x": "0.4900", "y": "0.4150" },
+                { "name": "Popayán", "x": "0.2600", "y": "0.6000" },
+                { "name": "Pasto", "x": "0.1900", "y": "0.6500" },
+                { "name": "Montería", "x": "0.3300", "y": "0.2600" },
+                { "name": "Sincelejo", "x": "0.3700", "y": "0.2100" },
+                { "name": "Riohacha", "x": "0.5100", "y": "0.0900" },
+                { "name": "Santa Marta", "x": "0.4100", "y": "0.1500" },
+                { "name": "Valledupar", "x": "0.4700", "y": "0.1600" },
+                { "name": "Florencia", "x": "0.4300", "y": "0.6900" },
+                { "name": "Mocoa", "x": "0.3300", "y": "0.7100" },
+                { "name": "San José del Guaviare", "x": "0.5400", "y": "0.6200" },
+                { "name": "Mitú", "x": "0.6400", "y": "0.7000" },
+                { "name": "Puerto Inírida", "x": "0.7400", "y": "0.5800" },
+                { "name": "Leticia", "x": "0.6000", "y": "0.8200" },
+                { "name": "Quibdó", "x": "0.2700", "y": "0.4300" },
+                { "name": "Yopal", "x": "0.5700", "y": "0.4300" },
+                { "name": "Arauca", "x": "0.6100", "y": "0.3550" },
+                { "name": "Puerto Carreño", "x": "0.7100", "y": "0.4600" },
+                { "name": "San Andrés", "x": "0.0900", "y": "0.0900" }
             ]
         },
         {
@@ -274,5 +301,4 @@ const gameData = {
             ]
         }
     ],
-    currentCategory: null
 }; 
