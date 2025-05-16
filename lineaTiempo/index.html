@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Tiempo Histórica</title>
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!--fabicon-->
+    <link rel="icon" type="image/jpg" href="favicon.png" />
+
+</head>
+
+<body>
+    <div class="timeline-container">
+        <div class="pattern-overlay pattern-ancient"></div>
+        <div class="timeline-header">
+            <div class="header">
+                <img src="img/explora.png" width="100" alt="Colombia">
+                <div class="timeline-header-content">
+                    <h1>Línea de Tiempo Histórica de Colombia</h1>
+                    <p>Explora la evolución de Colombia desde sus orígenes, pasando por sus momentos clave hasta la
+                        actualidad.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline" id="timeline">
+            <div class="loading-message">
+                <i class="fas fa-spinner fa-spin"></i> Cargando línea de tiempo...
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para información detallada -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content" id="modalContent">
+                <!-- El contenido del modal se generará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cargar GSAP primero -->
+    <script src="gsap.min.js"></script>
+    <!-- Luego cargar ScrollTrigger -->
+    <script src="ScrollTrigger.min.js"></script>
+
+    <!-- Botones de navegación flotantes -->
+    <div class="nav-buttons">
+        <button class="nav-button go-top" id="goTop" title="Ir arriba">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <div class="owl-menu-button" id="toggleMenu" title="Menú de navegación">
+            <div class="owl">
+                <div class="owl-face">
+                    <div class="owl-eyes">
+                        <div class="owl-eye left"></div>
+                        <div class="owl-eye right"></div>
+                    </div>
+                    <div class="owl-beak"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menú de navegación -->
+    <div class="nav-menu" id="navMenu">
+        <ul class="nav-menu-list" id="navMenuList">
+            <!-- Los items del menú se generarán dinámicamente -->
+        </ul>
+    </div>
+
+    <!-- Finalmente cargar nuestro script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

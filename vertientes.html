@@ -169,36 +169,55 @@
         </div>
 
         <div class="modal fade" id="modalOpcionesAtlas" data-backdrop="static" data-keyboard="false">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
               <div class="modal-content modal-opciones-atlas">
                 <div class="modal-body">
+                    <button class="close cerrar_modal" data-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
                     <h4 class="textto_con_borde" style="text-align: center; width: 100%;">SELECCIONE EL MAPA QUE DESEA EXPLORAR</h4>
-                    <hr>
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="opcion_atlas general" onclick="seleccionarTipoMapa('general')">
-                                <h5 class="textto_con_borde" style="background-color: #ffffff; border-radius: 10px; padding: 5px;">MAPA GENERAL</h5>
+                                <div class="div_borroso"></div>
+                                <h5 class="textto_con_borde texto_cat_mapa">MAPA GENERAL</h5>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="opcion_atlas hidrico" onclick="seleccionarTipoMapa('hidrico')">
-                                <h5 class="textto_con_borde" style="background-color: #ffffff; border-radius: 10px; padding: 5px;">MAPA HÍDRICO</h5>
+                                <div class="div_borroso"></div>
+                                <h5 class="textto_con_borde texto_cat_mapa">MAPA HÍDRICO</h5>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="opcion_atlas coordilleras" onclick="seleccionarTipoMapa('coordilleras')">
-                                <h5 class="textto_con_borde" style="background-color: #ffffff; border-radius: 10px; padding: 5px;">SISTEMA MONTAÑOSO ANDINO</h5>
+                                <div class="div_borroso"></div>
+                                <h5 class="textto_con_borde texto_cat_mapa">SISTEMA MONTAÑOSO</h5>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="opcion_atlas climatico" onclick="seleccionarTipoMapa('climatico')">
-                                <h5 class="textto_con_borde" style="background-color: #ffffff; border-radius: 10px; padding: 5px;">MAPA CLIMÁTICO</h5>
+                                <div class="div_borroso"></div>
+                                <h5 class="textto_con_borde texto_cat_mapa">MAPA CLIMÁTICO</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="opcion_atlas parques_naturales" onclick="seleccionarTipoMapa('parques_naturales')">
+                                <div class="div_borroso"></div>
+                                <h5 class="textto_con_borde texto_cat_mapa">PARQUES NATURALES</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="opcion_atlas etnias" onclick="seleccionarTipoMapa('etnias')">
+                                <div class="div_borroso"></div>
+                                <h5 class="textto_con_borde texto_cat_mapa">MAPA ÉTNICO</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="opcion_atlas volcanes" onclick="seleccionarTipoMapa('volcanes')">
+                                <div class="div_borroso"></div>
+                                <h5 class="textto_con_borde texto_cat_mapa">VOLCANES DE COLOMBIA</h5>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer" style="border-top: none;">
-                    <button style="font-size: .89rem;" data-dismiss="modal" class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Cerrar </button>
                 </div>
               </div>
             </div>
@@ -288,17 +307,17 @@
             </a>
             
             <menu class="items-wrapper">
-                <a href="#" class="menu-item itemm1" data-toggle="modal" data-target="#modalOpcionesAtlas" style="background-color: green;">
-                    <i class="fa fa-globe" aria-hidden="true"></i>
+                <a href="#" class="menu-item itemm1" data-toggle="modal" data-target="#modalOpcionesAtlas">
                 </a>
-                <a href="juegos/index.html" class="menu-item itemm2" style="background-color: rgb(230, 97, 9);">
-                    <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <a href="juegos/index.html" target="_blank" class="menu-item itemm2">
                 </a>
-                <a href="#" type="button" onclick="verTest()" class="menu-item itemm3" style="background-color: rgb(2, 0, 128);">
-                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                <a href="#" class="menu-item itemm3" type="button" onclick="verTest()">
                 </a>
-                <a href="#" class="menu-item itemm4" onclick="mostrarChat()" style="background-color: rgb(158, 29, 190);">
-                    <i class="fa fa-comments" aria-hidden="true"></i>
+                <a href="#" class="menu-item itemm4" onclick="mostrarChat()">
+                </a>
+                <a href="lineaTiempo/index.html" target="_blank" class="menu-item itemm5">
+                </a>
+                <a href="ViajaPED/index.html" target="_blank" class="menu-item itemm6">
                 </a>
             </menu>
         </div>

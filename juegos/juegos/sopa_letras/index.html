@@ -6,6 +6,7 @@
 
   <link rel="stylesheet" type="text/css" href="style.css" media="all">
   <link rel="stylesheet" href="../../librerias/bootstrap-5.3/css/bootstrap.min.css">
+  <script src="../../librerias/bootstrap-5.3/js/bootstrap.bundle.min.js"></script>
 
   <script type="text/javascript" src="../assets/bootstrap/jquery.min.js"></script>
   <script type="text/javascript" src="wordfind.js"></script>
@@ -59,18 +60,48 @@
       font-family: inherit;
       font-size: 1rem;
       border: 10px solid #95724ccf !important;
-  }
+    }
 
-  .swal2-styled.swal2-confirm,  .swal2-styled.swal2-cancel{
-    border: 4px solid #ffd49e61;
-    font-size: 1.7em !important; 
-  }
+    .swal2-styled.swal2-confirm,
+    .swal2-styled.swal2-cancel {
+      border: 4px solid #ffd49e61;
+      font-size: 1.7em !important;
+    }
+
+    .modal-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: #ffffff;
+      pointer-events: auto;
+      background-color: #3b1f0ae0;
+      background-clip: padding-box;
+      border: 10px solid #95724ccf;
+      border-radius: 44px;
+      outline: 0;
+    }
+
+    .swal2-html-container {
+      z-index: 1;
+      justify-content: center;
+      margin: 1em 1.6em .3em;
+      padding: 0;
+      overflow: auto;
+      color: #ffffff;
+      font-size: 1.825em;
+      font-weight: normal;
+      line-height: normal;
+      text-align: center;
+      word-wrap: break-word;
+      word-break: break-word;
+    }
   </style>
 
 </head>
 
 <body style="display: flex; align-items: center; min-height: 100vh !important; overflow: hidden;">
-  
+
   <div style="display: none" class="overlay">
     <div class="nube">
       <p class="borde2" id="bienvenida"></p>
@@ -97,12 +128,12 @@
       </div>
       <div class="col-3"></div>
       <div class="col-3 text-center">
-        <button style="width: 80%;border-radius: 20pt; font-size: 23px; -webkit-text-stroke: 1px #1a3b0c;" onclick="window.location.reload(1)"
-          class="btn btn-success">Si, jugar</button>
+        <button style="width: 80%;border-radius: 20pt; font-size: 23px; -webkit-text-stroke: 1px #1a3b0c;"
+          onclick="window.location.reload(1)" class="btn btn-success">Si, jugar</button>
       </div>
       <div class="col-3 text-center">
-        <button style="width: 80%; border-radius: 20pt; font-size: 23px; -webkit-text-stroke: 1px #4d0d0d;" onclick="location.href='../../index.html'"
-          class="btn btn-danger">No,
+        <button style="width: 80%; border-radius: 20pt; font-size: 23px; -webkit-text-stroke: 1px #4d0d0d;"
+          onclick="location.href='../../index.html'" class="btn btn-danger">No,
           salir</button>
       </div>
       <div class="col-3"></div>
@@ -112,7 +143,8 @@
     <div class="row text-center">
       <div style="margin-top: 20px; width: 100%;">
         <div class="row">
-          <div class="panel panel-default" style="width: 100%; background-color: transparent; border-color: transparent; width: 1000pt;">
+          <div class="panel panel-default"
+            style="width: 100%; background-color: transparent; border-color: transparent; width: 1000pt;">
             <div class="panel-body">
               <div class="row" style="width: 98%;">
                 <div id="pal" class="col-2">
@@ -125,15 +157,21 @@
                 <div class="col-7">
                   <div id='juego' style="background-color: white"></div>
                 </div>
-                <div class="col-3" style="display: flex; justify-content: center; align-items: flex-start;">
+                <div class="col-3" style="display: flex; justify-content: flex-start; align-items: center; flex-direction: column;">
+
+                  <h2 id="contador" style="font-size: 40pt; color: rgb(255, 255, 255); -webkit-text-stroke: 1px #47260f;">00:00</h2>
+                  
                   <div class="opciones text-center">
-                    <h3 style="font-size: 19pt; color: rgb(255, 255, 255); -webkit-text-stroke: 1px #47260f;">Opciones</h3>
+                    <h3 style="font-size: 19pt; color: rgb(255, 255, 255); -webkit-text-stroke: 1px #47260f;">Opciones
+                    </h3>
                     <hr>
-                    <button onclick="elegir();" class="btn btn-success btn-lg"> <i class="fa fa-gamepad"></i> Crear Juego</button>
+                    <button onclick="elegir();" class="btn btn-success btn-lg"> <i class="fa fa-gamepad"></i> Crear
+                      Juego</button>
                     <br>
                     <button id='solve' class="btn btn-warning btn-lg"> <i class="fa fa-check"></i> Resolver</button>
                     <br>
-                    <button onclick="location.href='../../index.html'" class="btn btn-danger btn-lg"> <i class="fa fa-arrow-left"></i> Volver</button>
+                    <button onclick="location.href='../../index.html'" class="btn btn-danger btn-lg"> <i
+                        class="fa fa-arrow-left"></i> Volver</button>
                   </div>
                 </div>
               </div>
@@ -144,6 +182,37 @@
     </div>
   </div>
 
+
+  <div class="modal fade" id="nivelModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="nivelModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom: none;">
+          <h3 class="modal-title" style="width: 100%; text-align: center;" id="nivelModalLabel">
+            Selecciona un Nivel
+          </h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6" style="display: flex; justify-content: center; align-items: center;">
+              <div class="nivel-container" onclick="selectNivel(10)">
+                <img src="img/nivel1.png" class="nivel-imagen" alt="">
+                <p>Principiante</p>
+              </div>
+            </div>
+            <div class="col-lg-6" style="display: flex; justify-content: center; align-items: center;">
+              <div class="nivel-container" onclick="selectNivel(1)">
+                <img src="img/nivel2.png" class="nivel-imagen" alt="">
+                <p>Experto</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <script src="../../js/pantalla_completa.js"></script>
 
   <script>
@@ -151,8 +220,8 @@
     var gamePuzzle;
     $(document).ready(function () {
 
-      pantalla_completa('#422612', '#8a5025', 'none').then(function(result) {
-          iniciar_animacion();
+      pantalla_completa('#422612', '#8a5025', 'none').then(function (result) {
+        iniciar_animacion();
       });
 
 
@@ -211,7 +280,7 @@
 
     let cerrardo = false;
     function cerrar_anuncio() {
-      if(!cerrardo){
+      if (!cerrardo) {
         cerrardo = true;
         const divAnimado2 = document.querySelector('.nube');
         divAnimado2.style.animationName = 'moverabajo';
@@ -233,9 +302,9 @@
 
     function cargar_categorias() {
       return new Promise((resolve, reject) => {
-        $.getJSON("datos.json", function(data){
+        $.getJSON("datos.json", function (data) {
           resolve(data);
-        }).fail(function(jqXHR, textStatus, error) {
+        }).fail(function (jqXHR, textStatus, error) {
           reject(error);
         });
       });
@@ -247,12 +316,12 @@
       var categorias_html = "";
 
       Object.keys(categorias).forEach(key => {
-        categorias_html += '<div onclick="seleccionar(this, \'' + key + '\')"  class="col-4"><div class="contenedor_categoria"><div class="icono_vocal"><img src="' + categorias[key].mapa + '" alt=""></div> <p class="nombre_categoria">' + categorias[key].nombre + '</p> </div></div>';
+        categorias_html += '<div onclick="seleccionar(\'' + key + '\')"  class="col-4"><div class="contenedor_categoria"><div class="icono_vocal"><img src="' + categorias[key].mapa + '" alt=""></div> <p class="nombre_categoria">' + categorias[key].nombre + '</p> </div></div>';
       });
 
       Swal.fire({
         title: 'Seleccione una Categoria',
-        html: '<div style="padding-top: 20px; height: 60vh; margin: 0px"  class="row">' + categorias_html + '</div>',  
+        html: '<div style="padding-top: 20px; height: 60vh; margin: 0px"  class="row">' + categorias_html + '</div>',
         showCloseButton: false,
         showCancelButton: false,
         showConfirmButton: false,
@@ -261,21 +330,73 @@
       });
     }
 
-    function seleccionar(elemento, tipo) {
+    var tipo_de_juego = null;
+    function seleccionar(tipo) {
+      Swal.close();
+      tipo_de_juego = tipo;
+      $('#nivelModal').modal('show');
+    }
 
-      var categoria = categorias[tipo];
+    function selectNivel(tiempo) {
+      $('#nivelModal').modal('hide');
+      iniciar_juego();
+      iniciarContador(tiempo);
+    }
+
+
+    var intervalo;
+    var tiempo;
+    function iniciarContador(minutos) {
+      tiempo = minutos * 60;
+
+      intervalo = setInterval(() => {
+        const min = String(Math.floor(tiempo / 60)).padStart(2, '0');
+        const seg = String(tiempo % 60).padStart(2, '0');
+        var tiempo_actual = `${min}:${seg}`;
+        document.getElementById('contador').innerHTML = tiempo_actual;
+        tiempo--;
+
+        if (tiempo < 0) {
+          let audio2 = new Audio("../sounds/game_over.mp3");
+          audio2.volume = 0.29;
+          audio2.play(); 
+          clearInterval(intervalo);
+
+          Swal.fire({
+            title: '¡Opps, se ha acabado el tiempo!',
+            text: '¿Quieres volver a intentarlo?',
+            icon: 'error',
+            confirmButtonText: 'Si, jugar',
+            confirmButtonColor: '#34230d',
+            cancelButtonText: 'No, salir',
+            showCancelButton: true,
+            cancelButtonColor: '#5a391f',
+            allowOutsideClick: false,
+          }).then((result) => {
+            if (result.isConfirmed) {
+              resetGame();
+            } else {
+              window.location.href = '../../index.html';
+            }
+          });
+        }
+      }, 1000);
+    }
+
+    function iniciar_juego() {
+      var categoria = categorias[tipo_de_juego];
       var palabras = randomValueGenerator(categoria.palabras);
 
       let audio2 = new Audio("../sounds/fondo_sopa_letras.mp3");
       audio2.play();
       audio2.loop = true;
       audio2.volume = 0.2;
-      
+
       setTimeout(() => {
         swal.close();
         words = [];
         for (i = 0; i < 10; i++) {
-          words.push( palabras[i].toLowerCase());
+          words.push(palabras[i].toLowerCase());
         }
 
         $('#Juegos').show();
@@ -303,7 +424,7 @@
 
   </script>
 
-  
+
 </body>
 
 </html>

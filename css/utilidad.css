@@ -245,7 +245,7 @@
 .menu-accesibilidad {
     position: fixed;
     right: -250px;
-    top: 50%;
+    top: 20%;
     transform: translateY(-50%);
     background: #d7d7d7;
     padding: 20px;

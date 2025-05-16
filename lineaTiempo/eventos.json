@@ -1,0 +1,189 @@
+[
+    {
+        "periodo": "Período Prehispánico",
+        "rango_fecha": "12000 a.C. - 1499 d.C.",
+        "eventos": [
+            {
+                "fecha": "12000 a.C.",
+                "titulo": "Primeras ocupaciones humanas",
+                "descripcion": "<p>Alrededor del <strong>12000 a.C.</strong>, encontramos las primeras evidencias claras de presencia humana en Colombia. Correal Urrego (1990) señala que <em>“en El Abra, Cundinamarca, se han encontrado herramientas líticas y restos óseos que demuestran la presencia de cazadores-recolectores en la región”</em> (p. 78). Estos primeros habitantes se adaptaron a diversos ecosistemas, desde las costas hasta las tierras altas de los Andes.</p>",
+                "fuente": "Correal Urrego, 1990",
+                "imagen": "img/prehispanico.png",
+                "color": "#376867"
+            },
+            {
+                "fecha": "5000 a.C.",
+                "titulo": "Desarrollo de la agricultura",
+                "descripcion": "<p>Un hito crucial en la historia prehispánica fue el desarrollo de la agricultura. Según Reichel-Dolmatoff (1997), <em>“hacia el 5000 a.C., las comunidades en la región andina comenzaron a domesticar plantas como la papa, el maíz y la quinua, lo que permitió el establecimiento de asentamientos más permanentes”</em> (p. 123). Este cambio en el modo de vida sentó las bases para el desarrollo de sociedades más complejas.</p>",
+                "fuente": "Reichel-Dolmatoff, 1997",
+                "imagen": "img/agricultura.png",
+                "color": "#FFAA33"
+            },
+            {
+                "fecha": "1000 a.C. - 1500 d.C.",
+                "titulo": "Florecimiento de culturas indígenas",
+                "descripcion": "<p>Entre el 1000 a.C. y el 1500 d.C., Colombia fue testigo del surgimiento y desarrollo de diversas culturas indígenas avanzadas. Langebaek (2019) destaca que <em> los Muiscas en el altiplano cundiboyacense, los Taironas en la Sierra Nevada de Santa Marta, y los Quimbayas en el eje cafetero, entre otros, desarrollaron complejos sistemas sociales, políticos y económicos</em> (p. 45).</p><p>Estas culturas se caracterizaron por su avanzada orfebrería, cerámica, arquitectura y organización social. Los Muiscas, por ejemplo, establecieron una confederación de cacicazgos en el altiplano, con una economía basada en la agricultura y el comercio. Los Taironas, por su parte, construyeron impresionantes ciudades de piedra en las laderas de la Sierra Nevada, demostrando un dominio excepcional de la ingeniería y la arquitectura. Los Quimbayas son reconocidos por su extraordinaria orfebrería, produciendo algunas de las piezas de oro más finas de la América prehispánica.</p><p>Estas culturas, junto con muchas otras, sentaron las bases de la diversidad cultural que caracteriza a Colombia hasta el día de hoy.</p>",
+                "fuente": "Langebaek, 2019",
+                "imagen": "img/florecimiento.png",
+                "color": "#C12218"
+            }
+        ]
+    },
+    {
+        "periodo": "Período de Conquista y Colonia",
+        "rango_fecha": "1499 - 1810",
+        "eventos": [
+            {
+                "fecha": "1499",
+                "titulo": "Exploración de Alonso de Ojeda",
+                "descripcion": "<p>En 1499, <strong>Alonso de Ojeda</strong>, acompañado por <strong>Américo Vespucio</strong> y <strong>Juan de la Cosa</strong>, realizó el primer viaje de exploración a lo largo de la <strong>costa caribeña colombiana</strong>. Este viaje marcó el inicio de la presencia española en el territorio y abrió el camino para futuras expediciones.</p>",
+                "fuente": "Acosta, 1848",
+                "imagen": "img/conquista1.png",
+                "color": "#4BB5E3"
+            },
+            {
+                "fecha": "1525",
+                "titulo": "Fundación de Santa Marta",
+                "descripcion": "<p>A medida que avanzaba la exploración, los españoles comenzaron a establecer <strong>asentamientos permanentes</strong>.    Lemaitre (1983) destaca que <em>en 1525, Rodrigo de Bastidas fundó Santa Marta, la primera ciudad permanente en territorio colombiano</em> (p. 78). </p>",
+                "fuente": "Lemaitre, 1983",
+                "imagen": "img/conquista2.png",
+                "color": "#FFB56B"
+            },
+            {
+                "fecha": "1538",
+                "titulo": "Fundación de Bogotá",
+                "descripcion": "<p>En 1538, <strong>Gonzalo Jiménez de Quesada</strong> fundó <strong>Santa Fe de Bogotá</strong> en el altiplano cundiboyacense, en el corazón del territorio muisca. Esta región era habitada por una de las civilizaciones indígenas más organizadas del territorio colombiano. </p>  <p>La fundación de Bogotá marcó un momento clave en la consolidación del dominio español en el interior del país. La ciudad se convirtió rápidamente en un centro administrativo, político y religioso, y sentó las bases de lo que posteriormente sería la capital del Virreinato de Nueva Granada.</p><p>Esta ciudad desempeñó un papel central durante la época colonial y, con el paso del tiempo, se transformó en la actual capital de Colombia, conservando hasta hoy su relevancia histórica y política.</p>",
+                "fuente": "Friede, 1960",
+                "imagen": "img/conquista3.png",
+                "color": "#DA442A"
+            },
+            {
+                "fecha": "1717",
+                "titulo": "Establecimiento del Virreinato de Nueva Granada ",
+                "descripcion": "<p>En 1717, el rey Felipe V de España estableció el <strong>Virreinato de Nueva Granada</strong>, un territorio que abarcaba gran parte de lo que hoy es Colombia. Este virreinato permitió una mejor administración de los recursos, la implementación de políticas económicas, el fortalecimiento del sistema colonial y para protegerlas de las incursiones de los indígenas y otras potencias europeas.</p><p>El virreinato se extendía desde el río Magdalena hasta el río Orinoco, y desde el Caribe hasta el Pacífico. Incluía las actuales regiones de Boyacá, Cundinamarca, Santander, Antioquia, Risaralda, Quindío, Caldas, Tolima, Huila, Caquetá, Putumayo, Amazonas, Vichada, Meta, Casanare, Arauca, César, Nariño, y el territorio de la actual Venezuela, Ecuador y Panamá</p>",
+                "fuente": "McFarlane, 1993",
+                "imagen": "img/conquista4.png",
+                "color": "#C87622"
+            }
+            
+        ]
+    },
+    {
+        "periodo": "Período de Independencia",
+        "rango_fecha": "1810 - 1819",
+        "eventos": [
+            {
+                "fecha": "1810",
+                "titulo": "Grito de Independencia",
+                "descripcion": " <p>El 20 de julio de 1810 marca el inicio simbólico de la independencia colombiana. Bushnell (1993) describe este día como el momento en que los criollos de Bogotá, aprovechando la crisis de la monarquía española, establecieron una Junta de Gobierno proclamando su derecho a autogobernarse. </p><p>Este evento, conocido como el <strong>Grito de Independencia</strong>, no fue una ruptura total con España, sino el comienzo de un proceso que llevaría a la independencia completa.</p>",
+                "fuente": "Bushnell, 1993",
+                "imagen": "img/independencia1.png",
+                "color": "#863116"
+            },
+            {
+                "fecha": "1811",
+                "titulo": "Declaración de independencia de Cartagena ",
+                "descripcion": "<p>Es importante entender que el movimiento independentista no se limitó a Bogotá. Múnera (1998) señala que <em>el 11 de noviembre de 1811, Cartagena se declaró independiente de España, convirtiéndose en la primera provincia de la Nueva Granada en hacerlo de manera absoluta</em> (p. 173).</p><p>Este acto demostró la propagación de las ideas independentistas por todo el territorio y la diversidad de procesos que llevaron a la independencia.</p>",
+                "fuente": "Múnera, 1998",
+                "imagen": "img/independencia2.png",
+                "color": "#F9AF3C"
+            },
+            {
+                "fecha": "1819",
+                "titulo": "Batalla de Boyacá",
+                "descripcion": "<p>Después de años de conflicto, conocidos como la Patria Boba y la Reconquista española, el momento decisivo llegó el 7 de agosto de 1819 con la Batalla de Boyacá. Lynch (2006) afirma: <em>“La Batalla de Boyacá fue el punto de inflexión que aseguró la independencia de la Nueva Granada”</em> (p. 217).</p><p>Esta batalla, liderada por Simón Bolívar, marcó la derrota definitiva del ejército realista y abrió el camino para la liberación de Bogotá y la consolidación de la independencia.</p>",
+                "fuente": "Lynch, 2006",
+                "imagen": "img/independencia3.png",
+                "color": "#CE5800"
+            }
+            
+
+        ]
+    },
+    {
+        "periodo": "La Gran Colombia y la República de la Nueva Granada ",
+        "rango_fecha": "1819 - 1886",
+        "eventos": [
+            {
+                "fecha": "1819-1831",
+                "titulo": "Período de la Gran Colombia ",
+                "descripcion": "<p>Tras la independencia, Simón Bolívar lideró la creación de la Gran Colombia, un ambicioso proyecto que buscaba unir los territorios liberados del dominio español. Bushnell (1993) describe este período así: <em>“La Gran Colombia fue un intento de crear una nación fuerte y unida que pudiera resistir cualquier intento de reconquista española”</em> (p. 50). Esta entidad política incluía los territorios de las actuales Colombia, Venezuela, Ecuador y Panamá.</p><p>Sin embargo, la unión fue efímera. Las diferencias regionales, los conflictos de intereses y las ambiciones personales de los líderes llevaron a su disolución. Como señala Bushnell (1993), <em>“las tensiones entre centralistas y federalistas, junto con las rivalidades personales entre los líderes, hicieron insostenible el proyecto bolivariano”</em>.</p>",
+                "fuente": "Bushnell, 1993",
+                "imagen": "img/gran_colombia1.png",
+                "color": "#DF274F"
+            },
+            {
+                "fecha": "1831",
+                "titulo": "Disolución de la Gran Colombia y formación de la República de la Nueva",
+                "descripcion": " <p>Tras la disolución de la Gran Colombia en 1831, se formó la República de la Nueva Granada, que básicamente correspondía al territorio de la Colombia actual. Safford y Palacios (2002) explican que <em>“este período se caracterizó por la búsqueda de una identidad nacional propia y la consolidación de las instituciones republicanas”</em> (p. 212).</p><p>Durante este tiempo, el país experimentó con diferentes formas de gobierno, alternando entre tendencias centralistas y federalistas. Se produjeron importantes reformas, como la abolición de la esclavitud en 1851 y la separación de la Iglesia y el Estado.</p>",
+                "fuente": "Safford & Palacios, 2002",
+                "imagen": "img/gran_colombia2.png",
+                "color": "#8E2103"
+            },
+            {
+                "fecha": "1863",
+                "titulo": "Constitución de Rionegro y formación de los Estados Unidos de Colombia ",
+                "descripcion": " <p>En 1863, con la Constitución de Rionegro, se desarrolló un sistema federal radical, dando origen a los Estados Unidos de Colombia. Tirado Mejía (1989) señala que <em>“esta constitución fue una de las más liberales de su tiempo, estableciendo una forma de gobierno descentralizada y garantizando amplias libertades individuales”</em></p>",
+                "fuente": "Tirado Mejía, 1989",
+                "imagen": "img/gran_colombia3.png",
+                "color": "#C99531"
+            }
+        ]
+    },
+    {
+        "periodo": "La República de Colombia",
+        "rango_fecha": "1886 - Presente",
+        "eventos": [
+            {
+                "fecha": "1886",
+                "titulo": "Constitución centralista y formación de la República de Colombia",  
+                "descripcion": "<p>El punto de partida de este período es la Constitución de 1886, que estableció un gobierno centralista y fortaleció la relación entre la Iglesia y el Estado. Bushnell (1993) señala que <em>“esta constitución buscaba poner fin a décadas de inestabilidad política y guerras civiles, centralizando el poder en Bogotá”</em> (p. 141). Esta carta magna rigió al país por más de un siglo, sentando las bases del estado colombiano moderno.</p>",
+                "fuente": "Bushnell, 1993",
+                "imagen": "img/republica1.png",
+                "color": "#3D2212"
+            },
+            {
+                "fecha": "1903",
+                "titulo": "Separación de Panamá",
+                "descripcion": "<p>Un evento traumático para Colombia fue la separación de Panamá en 1903. Randall (1992) explica que <em>“la pérdida de Panamá, con el apoyo de Estados Unidos, fue un duro golpe para la identidad nacional colombiana y tuvo profundas repercusiones políticas y económicas”</em> (p. 79). Este evento marcó las relaciones internacionales de Colombia durante gran parte del siglo XX.</p>",
+                "fuente": "Randall, 1992",
+                "imagen": "img/republica2.png",
+                "color": "#CC8800"
+            },
+            {
+                "fecha": "1948-1958",
+                "titulo": "La Violencia",
+                "descripcion": "<p>Entre 1948 y 1958, Colombia vivió un período de intensa violencia política conocido simplemente como <strong>“La Violencia”</strong>. Guzmán et al. (1962) describen este período como <em>“una guerra civil no declarada que dejó un saldo de más de 200,000 muertos y profundas heridas en la sociedad colombiana”</em> (p. 15). Este conflicto entre liberales y conservadores sentó las bases para futuros conflictos.</p>",
+                "fuente": "Guzmán et al., 1962",
+                "imagen": "img/republica3.png",
+                "color": "#735643"
+            },
+            {
+                "fecha": "1964",
+                "titulo": "Surgimiento de las guerrillas FARC y ELN",
+                "descripcion": "<p>En la década de 1960, surgieron grupos guerrilleros como las FARC y el ELN. Pécaut (2008) observa: <em>“El surgimiento de las guerrillas en los años 60 marcó el inicio de un conflicto armado que duraría más de cinco décadas”</em> (p. 33). Este conflicto ha sido uno de los más largos y complejos de la historia reciente de América Latina.</p>",
+                "fuente": "Pécaut, 2008",
+                "imagen": "img/republica4.png",
+                "color": "#283A25"
+            },
+            {
+                "fecha": "1991",
+                "titulo": "Nueva Constitución",
+                "descripcion": "<p>Un punto de inflexión en la historia reciente de Colombia fue la promulgación de la Constitución de 1991. Uprimny (2011) destaca que <em>“esta nueva carta magna buscaba modernizar el Estado colombiano, ampliando los derechos ciudadanos y reconociendo la diversidad étnica y cultural del país”</em> (p. 1590). Esta constitución sigue vigente y ha sido fundamental en la transformación del país.</p>",
+                "fuente": "Uprimny, 2011",
+                "imagen": "img/republica5.png",
+                "color": "#6F4829"
+            },
+            {
+                "fecha": "2016",
+                "titulo": "Acuerdo de Paz con las FARC",
+                "descripcion": "<p>En 2016, el gobierno colombiano firmó un histórico acuerdo de paz con las FARC, el grupo guerrillero más antiguo y numeroso. Según el documento oficial (Gobierno de Colombia & FARC-EP, 2016), <em>“este acuerdo busca poner fin a décadas de conflicto armado y sentar las bases para una paz estable y duradera”</em>.</p>",
+                "fuente": "Gobierno de Colombia & FARC-EP, 2016",
+                "imagen": "img/republica6.png",
+                "color": "#051A5D"
+            }
+        ]
+    }
+    
+
+]

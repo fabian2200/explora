@@ -432,3 +432,40 @@ span.f {
 .contenedor_categoria:hover {
   transform: scale(1.05);
 }
+
+.nivel-container {
+  max-width: 200px;
+  width: 100%;
+  height: 91px;
+  background-image: url(img/opcion.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-top: 60px;
+  color: #3f1c05;
+  font-size: 1.5rem;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.nivel-container:hover {
+  transform: scale(1.05);
+}
+
+.nivel-container p {
+  margin-bottom: 0;
+}
+
+.nivel-imagen {
+  width: 85%;
+  position: absolute;
+  top: -63px;
+  left: 7.5%;
+  filter: drop-shadow(0 0 10px rgba(65, 41, 7, 0.747));
+}

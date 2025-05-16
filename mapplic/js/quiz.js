@@ -4,8 +4,20 @@ var arrayPreguntas = [];
 var buenas = 0;
 var departamento = {};
 var pregunta = null;
+var id_departamento = null;
 
 function verTest() {
+    id_departamento = $("#departamento_seleccionado").val();
+    if(id_departamento == ""){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Debe seleccionar un departamento o un sitio de interés para poder realizar el test',
+            confirmButtonColor: '#3085d6'
+        });
+        return;
+    }
+
     $('#loadbar').show();
     $('#boton_comenzar').hide();
     $('#quiz').hide();
@@ -19,8 +31,7 @@ function verTest() {
 }
 
 function buscarPreguntas(callback) {
-    
-    var id_departamento = $("#departamento_seleccionado").val();
+   
     $.getJSON('mapplic/php/buscarPreguntas.php', { id: id_departamento })
         .done(function (response) {
             departamento = response.departamento;

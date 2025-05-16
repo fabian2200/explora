@@ -1,1714 +1,4198 @@
 {
-    "mapa_politico": {
-        "mapa": "../mapas/marron/politico.png",
-        "nombre": "Mapa Político de Colombia",
-        "nivel1": [
-            {
-              "oracion": "La _div_blanco_ fue un país que se creó en 1819.",
-              "respuesta": "Gran Colombia"
-            },
-            {
-              "oracion": "_div_blanco_ fue el libertador que ayudó a crear la Gran Colombia.",
-              "respuesta": "Simón Bolívar"
-            },
-            {
-              "oracion": "La Gran Colombia se creó el 17 de _div_blanco_ de 1819.",
-              "respuesta": "diciembre"
-            },
-            {
-              "oracion": "El Congreso de _div_blanco_ aprobó la creación de la Gran Colombia.",
-              "respuesta": "Angostura"
-            },
-            {
-              "oracion": "La capital de la Gran Colombia fue _div_blanco_.",
-              "respuesta": "Bogotá"
-            },
-            {
-              "oracion": "En la Gran Colombia había tres _div_blanco_ grandes.",
-              "respuesta": "países"
-            },
-            {
-              "oracion": "_div_blanco_, Ecuador y Colombia fueron parte de la Gran Colombia.",
-              "respuesta": "Venezuela"
-            },
-            {
-              "oracion": "_div_blanco_ fue el primer vicepresidente de la Gran Colombia.",
-              "respuesta": "Francisco de Paula Santander"
-            },
-            {
-              "oracion": "En 1830, la Gran Colombia se _div_blanco_.",
-              "respuesta": "separó"
-            },
-            {
-              "oracion": "_div_blanco_ es el país que se independizó de Colombia en 1903.",
-              "respuesta": "Panamá"
-            },
-            {
-              "oracion": "La Batalla de _div_blanco_ en 1819 ayudó a liberar a la Nueva Granada.",
-              "respuesta": "Boyacá"
-            },
-            {
-              "oracion": "En 1821 se aprobó la Constitución de _div_blanco_.",
-              "respuesta": "Cúcuta"
-            },
-            {
-              "oracion": "_div_blanco_ fue un gran militar que ayudó a Bolívar en la independencia.",
-              "respuesta": "Antonio José de Sucre"
-            },
-            {
-              "oracion": "Nueva _div_blanco_ era el nombre de Colombia antes de la independencia.",
-              "respuesta": "Granada"
-            },
-            {
-              "oracion": "La moneda de la Gran Colombia era el _div_blanco_.",
-              "respuesta": "peso"
-            },
-            {
-              "oracion": "La batalla que hizo posible la independencia de Ecuador fue _div_blanco_.",
-              "respuesta": "Pichincha"
-            },
-            {
-              "oracion": "_div_blanco_ se separó de la Gran Colombia en 1830.",
-              "respuesta": "Venezuela"
-            },
-            {
-              "oracion": "Ecuador y _div_blanco_ también se separaron de la Gran Colombia en 1830.",
-              "respuesta": "Venezuela"
-            },
-            {
-              "oracion": "_div_blanco_ fue el último gobernante de la Gran Colombia.",
-              "respuesta": "Domingo Caicedo"
-            },
-            {
-              "oracion": "El Congreso de Angostura se realizó en la ciudad de _div_blanco_.",
-              "respuesta": "Angostura"
-            },
-            {
-              "oracion": "Hoy la ciudad de Angostura se llama _div_blanco_.",
-              "respuesta": "Ciudad Bolívar"
-            },
-            {
-              "oracion": "Simón Bolívar soñaba con una América _div_blanco_.",
-              "respuesta": "unida"
-            },
-            {
-              "oracion": "La Gran Colombia tuvo su constitución en el año _div_blanco_.",
-              "respuesta": "1821"
-            },
-            {
-              "oracion": "El Istmo de _div_blanco_ era parte de la Gran Colombia.",
-              "respuesta": "Panamá"
-            },
-            {
-              "oracion": "La Gran Colombia tenía tres _div_blanco_ principales.",
-              "respuesta": "departamentos"
-            },
-            {
-              "oracion": "La Batalla de _div_blanco_ fue clave para la independencia de Venezuela.",
-              "respuesta": "Carabobo"
-            },
-            {
-              "oracion": "La Batalla de _div_blanco_ fue importante para la independencia de Ecuador.",
-              "respuesta": "Pichincha"
-            },
-            {
-              "oracion": "La Batalla de _div_blanco_ fue decisiva para la independencia del Perú.",
-              "respuesta": "Ayacucho"
-            },
-            {
-              "oracion": "El Congreso de _div_blanco_ en 1829 intentó mantener la unión de la Gran Colombia.",
-              "respuesta": "Guayaquil"
-            },
-            {
-              "oracion": "Simón Bolívar fue llamado el _div_blanco_ de América.",
-              "respuesta": "Libertador"
-            }
-        ],
-        "nivel2": [
-            {
-              "oracion": "La _div_blanco_ fue la unión política creada en 1819 por Simón Bolívar y sus aliados.",
-              "respuesta": "Gran Colombia"
-            },
-            {
-              "oracion": "La creación de la Gran Colombia fue aprobada en el _div_blanco_ en 1819.",
-              "respuesta": "Congreso de Angostura"
-            },
-            {
-              "oracion": "La Gran Colombia estaba compuesta por los territorios de _div_blanco_, _div_blanco_ y _div_blanco_.",
-              "respuesta": "Colombia, Venezuela y Ecuador"
-            },
-            {
-              "oracion": "Simón Bolívar fue el _div_blanco_ de la Gran Colombia.",
-              "respuesta": "presidente"
-            },
-            {
-              "oracion": "El primer vicepresidente de la Gran Colombia fue _div_blanco_.",
-              "respuesta": "Francisco de Paula Santander"
-            },
-            {
-              "oracion": "La Constitución de la Gran Colombia se promulgó en _div_blanco_ en 1821.",
-              "respuesta": "Cúcuta"
-            },
-            {
-              "oracion": "La Gran Colombia se dividió en tres _div_blanco_ principales.",
-              "respuesta": "departamentos"
-            },
-            {
-              "oracion": "El _div_blanco_ formaba parte de la Gran Colombia hasta su separación en 1903.",
-              "respuesta": "Istmo de Panamá"
-            },
-            {
-              "oracion": "_div_blanco_ fue el líder militar que dirigió la Batalla de Pichincha en 1822.",
-              "respuesta": "Antonio José de Sucre"
-            },
-            {
-              "oracion": "La separación de la Gran Colombia comenzó en el año _div_blanco_.",
-              "respuesta": "1830"
-            },
-            {
-              "oracion": "En 1828, Bolívar asumió poderes _div_blanco_ tras la Convención de Ocaña.",
-              "respuesta": "dictatoriales"
-            },
-            {
-              "oracion": "La _div_blanco_, ocurrida en 1819, aseguró la independencia de la Nueva Granada.",
-              "respuesta": "Batalla de Boyacá"
-            },
-            {
-              "oracion": "El Congreso de Angostura fue convocado por _div_blanco_ para establecer la nueva república.",
-              "respuesta": "Simón Bolívar"
-            },
-            {
-              "oracion": "La ciudad que hoy se conoce como Ciudad Bolívar, en Venezuela, antes se llamaba _div_blanco_.",
-              "respuesta": "Angostura"
-            },
-            {
-              "oracion": "La Gran Colombia enfrentó conflictos internos debido a diferencias entre _div_blanco_ y _div_blanco_.",
-              "respuesta": "Centralista y federalistas"
-            },
-            {
-              "oracion": "En 1829, el _div_blanco_ intentó salvar la unión de la Gran Colombia sin éxito.",
-              "respuesta": "Congreso de Guayaquil"
-            },
-            {
-              "oracion": "_div_blanco_ lideró la separación de Ecuador en 1830.",
-              "respuesta": "Juan José Flores"
-            },
-            {
-              "oracion": "En 1830, José Antonio Páez lideró la separación de _div_blanco_ de la Gran Colombia.",
-              "respuesta": "Venezuela"
-            },
-            {
-              "oracion": "La _div_blanco_ en 1821 fue decisiva para la independencia de Venezuela.",
-              "respuesta": "Batalla de Carabobo"
-            },
-            {
-              "oracion": "La _div_blanco_ en 1824 aseguró la independencia del Perú.",
-              "respuesta": "Batalla de Ayacucho"
-            },
-            {
-              "oracion": "La crisis política de la Gran Colombia se agravó tras el atentado contra Bolívar en el año _div_blanco_.",
-              "respuesta": "1828"
-            },
-            {
-              "oracion": "En el año _div_blanco_ murió Simón Bolívar en Santa Marta.",
-              "respuesta": "17 de diciembre de 1830"
-            },
-            {
-              "oracion": "La moneda oficial de la Gran Colombia fue el _div_blanco_.",
-              "respuesta": "peso"
-            },
-            {
-              "oracion": "La _div_blanco_ en 1822 consolidó la independencia de Ecuador.",
-              "respuesta": "Batalla de Pichincha"
-            },
-            {
-              "oracion": "Bolívar redactó la _div_blanco_ en la que renunciaba a la presidencia de la Gran Colombia en 1830.",
-              "respuesta": "Carta de Jamaica"
-            },
-            {
-              "oracion": "La Convención de Ocaña de 1828 intentó reformar la Constitución de _div_blanco_.",
-              "respuesta": "Cúcuta"
-            },
-            {
-              "oracion": "En 1822, Bolívar y San Martín se reunieron en _div_blanco_ para discutir la independencia del Perú.",
-              "respuesta": "Guayaquil"
-            },
-            {
-              "oracion": "Domingo Caicedo asumió el poder de la Gran Colombia tras la renuncia de _div_blanco_.",
-              "respuesta": "Simón Bolívar"
-            },
-            {
-              "oracion": "Tras la disolución de la Gran Colombia, Colombia, Ecuador y Venezuela formaron naciones _div_blanco_.",
-              "respuesta": "independientes"
-            },
-            {
-              "oracion": "La Gran Colombia fue un modelo de unión política que influenció a otros países de _div_blanco_.",
-              "respuesta": "América Latina"
-            }
+  "mapa_politico": {
+    "mapa": "../mapas/marron/politico.png",
+    "nombre": "Mapa Político de Colombia",
+    "nivel1": [
+      {
+        "oracion": "La _div_blanco_ fue un país que se creó en 1819.",
+        "respuesta": "Gran Colombia",
+        "opciones": [
+          "Gran Colombia",
+          "Nueva Granada",
+          "Panamá",
+          "Ecuador"
         ]
-    },
-    "evolucion_bandera_colombia": {
-        "mapa": "../mapas/marron/bandera.png",
-        "nombre": "Evolución de la Bandera de Colombia",
-        "nivel1": [
-            {
-              "oracion": "El Nuevo Reino de Granada era parte del _div_blanco_.",
-              "respuesta": "Imperio español"
-            },
-            {
-              "oracion": "La capital del Nuevo Reino de Granada era _div_blanco_.",
-              "respuesta": "Santa Fe de Bogotá"
-            },
-            {
-              "oracion": "La Gran Colombia se creó en el año _div_blanco_.",
-              "respuesta": "1819"
-            },
-            {
-              "oracion": "La bandera de Colombia tiene tres colores: _div_blanco_.",
-              "respuesta": "Amarillo, azul y rojo"
-            },
-            {
-              "oracion": "El color amarillo representa la _div_blanco_ del suelo colombiano.",
-              "respuesta": "Riqueza"
-            },
-            {
-              "oracion": "El color azul representa el _div_blanco_ que cubre la Patria.",
-              "respuesta": "Cielo"
-            },
-            {
-              "oracion": "El color rojo representa la _div_blanco_ derramada por los patriotas.",
-              "respuesta": "Sangre"
-            },
-            {
-              "oracion": "La provincia de _div_blanco_ se independizó en 1810.",
-              "respuesta": "Cartagena"
-            },
-            {
-              "oracion": "La bandera de la Gran Colombia fue diseñada por _div_blanco_.",
-              "respuesta": "Francisco de Miranda"
-            },
-            {
-              "oracion": "La Gran Colombia estaba formada por Colombia, Venezuela, Ecuador y _div_blanco_.",
-              "respuesta": "Panamá"
-            },
-            {
-              "oracion": "En 1834, el país se llamó República de la _div_blanco_.",
-              "respuesta": "Nueva Granada"
-            },
-            {
-              "oracion": "La Confederación Granadina existió entre 1858 y _div_blanco_.",
-              "respuesta": "1861"
-            },
-            {
-              "oracion": "El nombre del país cambió a Estados Unidos de Colombia en _div_blanco_.",
-              "respuesta": "1861"
-            },
-            {
-              "oracion": "La bandera de Colombia tiene _div_blanco_ franjas.",
-              "respuesta": "Tres"
-            },
-            {
-              "oracion": "La franja más grande de la bandera es de color _div_blanco_.",
-              "respuesta": "Amarillo"
-            },
-            {
-              "oracion": "En 1861, el país tomó el nombre de República de _div_blanco_.",
-              "respuesta": "Colombia"
-            },
-            {
-              "oracion": "La bandera se divide en tres colores de forma _div_blanco_.",
-              "respuesta": "Horizontal"
-            },
-            {
-              "oracion": "El primer diseño de la bandera tricolor fue en el año _div_blanco_.",
-              "respuesta": "1801"
-            },
-            {
-              "oracion": "La actual bandera de Colombia fue adoptada en el año _div_blanco_.",
-              "respuesta": "1861"
-            },
-            {
-              "oracion": "El juramento a la bandera se encuentra en el decreto _div_blanco_ de 1948.",
-              "respuesta": "2388"
-            },
-            {
-              "oracion": "El creador de la bandera de Colombia era de nacionalidad _div_blanco_.",
-              "respuesta": "Venezolana"
-            },
-            {
-              "oracion": "La bandera de la Gran Colombia tenía los mismos colores que la de _div_blanco_.",
-              "respuesta": "Colombia"
-            },
-            {
-              "oracion": "El azul de la bandera también representa los _div_blanco_ que bañan el territorio colombiano.",
-              "respuesta": "Ríos y océanos"
-            },
-            {
-              "oracion": "La Constitución de 1858 estableció la Confederación _div_blanco_.",
-              "respuesta": "Granadina"
-            },
-            {
-              "oracion": "La Gran Colombia se disolvió en el año _div_blanco_.",
-              "respuesta": "1830"
-            },
-            {
-              "oracion": "En 1863, la Constitución estableció el sistema _div_blanco_ en Colombia.",
-              "respuesta": "Federalista"
-            },
-            {
-              "oracion": "El rojo de la bandera también simboliza el _div_blanco_, poder y progreso.",
-              "respuesta": "Amor"
-            },
-            {
-              "oracion": "El Virreinato de la Nueva Granada existió antes de la independencia de _div_blanco_.",
-              "respuesta": "Colombia"
-            },
-            {
-              "oracion": "La bandera de la Confederación Granadina tenía un _div_blanco_ en el centro.",
-              "respuesta": "Escudo"
-            },
-            {
-              "oracion": "La bandera de Colombia fue reglamentada por decretos en 1924 y _div_blanco_.",
-              "respuesta": "1934"
-            }
-        ],
-        "nivel2": [
-            {
-              "oracion": "¿En qué año se estableció el Nuevo Reino de Granada? _div_blanco_",
-              "respuesta": "1538"
-            },
-            {
-              "oracion": "¿Qué rey de España creó el Virreinato de Nueva Granada en 1717? _div_blanco_",
-              "respuesta": "Felipe V"
-            },
-            {
-              "oracion": "¿Quién ondeó por primera vez la bandera tricolor en 1806? _div_blanco_",
-              "respuesta": "Francisco de Miranda"
-            },
-            {
-              "oracion": "¿Qué batalla selló la independencia de la Gran Colombia? _div_blanco_",
-              "respuesta": "Batalla de Boyacá"
-            },
-            {
-              "oracion": "¿En qué fecha se creó oficialmente la Gran Colombia? _div_blanco_",
-              "respuesta": "17 de diciembre de 1819"
-            },
-            {
-              "oracion": "¿Cuál fue el primer país en independizarse de la Gran Colombia? _div_blanco_",
-              "respuesta": "Venezuela"
-            },
-            {
-              "oracion": "¿Qué país se separó de Colombia en 1903? _div_blanco_",
-              "respuesta": "Panamá"
-            },
-            {
-              "oracion": "¿Cómo se llamaba Colombia entre 1858 y 1861? _div_blanco_",
-              "respuesta": "Confederación Granadina"
-            },
-            {
-              "oracion": "¿En qué año se adoptó el nombre de Estados Unidos de Colombia? _div_blanco_",
-              "respuesta": "1861"
-            },
-            {
-              "oracion": "¿Qué presidente lideró la transición a la República de Colombia en 1861? _div_blanco_",
-              "respuesta": "Tomás Cipriano de Mosquera"
-            },
-            {
-              "oracion": "¿En qué documento se oficializó el uso de la bandera actual? _div_blanco_",
-              "respuesta": "Decreto 861 de 1924"
-            },
-            {
-              "oracion": "¿Qué significaba el escudo en la bandera de la Confederación Granadina? _div_blanco_",
-              "respuesta": "Símbolos nacionales y federales"
-            },
-            {
-              "oracion": "¿Por qué se abandonó el modelo federal de los Estados Unidos de Colombia? _div_blanco_",
-              "respuesta": "Inestabilidad política y conflictos internos"
-            },
-            {
-              "oracion": "¿Cuál fue la principal razón de la disolución de la Gran Colombia? _div_blanco_",
-              "respuesta": "Diferencias políticas y regionales"
-            },
-            {
-              "oracion": "¿Qué constitución estableció oficialmente la bandera tricolor en 1834? _div_blanco_",
-              "respuesta": "Constitución de la República de la Nueva Granada"
-            },
-            {
-              "oracion": "¿Cuál fue el nombre oficial de Colombia en la Constitución de 1863? _div_blanco_",
-              "respuesta": "Estados Unidos de Colombia"
-            },
-            {
-              "oracion": "¿Qué característica especial tenía la bandera de la República de la Nueva Granada? _div_blanco_",
-              "respuesta": "Escudo en el centro"
-            },
-            {
-              "oracion": "¿Quién fue el último presidente de la Gran Colombia? _div_blanco_",
-              "respuesta": "Domingo Caycedo - interino"
-            },
-            {
-              "oracion": "¿Qué documento estableció la Confederación Granadina en 1858? _div_blanco_",
-              "respuesta": "Constitución de 1858"
-            },
-            {
-              "oracion": "¿Qué guerra civil interna afectó a los Estados Unidos de Colombia entre 1899 y 1902? _div_blanco_",
-              "respuesta": "Guerra de los Mil Días"
-            },
-            {
-              "oracion": "¿Qué nombre recibió la bandera en 1819? _div_blanco_",
-              "respuesta": "Bandera de la Gran Colombia"
-            },
-            {
-              "oracion": "¿Qué presidente promulgó la Constitución de 1863? _div_blanco_",
-              "respuesta": "Tomás Cipriano de Mosquera"
-            },
-            {
-              "oracion": "¿Qué diferencia existía entre la bandera de los Estados Unidos de Colombia y la actual? _div_blanco_",
-              "respuesta": "Tenía un escudo en el centro"
-            },
-            {
-              "oracion": "¿En qué año se ratificó la disposición actual de la bandera? _div_blanco_",
-              "respuesta": "26 de noviembre de 1861"
-            },
-            {
-              "oracion": "¿Qué documento reglamentó el uso de la bandera en 1934? _div_blanco_",
-              "respuesta": "Decreto 62 del 11 de enero de 1934"
-            },
-            {
-              "oracion": "¿Cuál fue el motivo del cambio de nombre a República de Colombia en 1886? _div_blanco_",
-              "respuesta": "Regreso al centralismo"
-            },
-            {
-              "oracion": "¿En qué año se creó el Virreinato de Nueva Granada? _div_blanco_",
-              "respuesta": "1717"
-            },
-            {
-              "oracion": "¿Qué colores tiene la bandera de Colombia? _div_blanco_",
-              "respuesta": "Amarillo, azul y rojo"
-            },
-            {
-              "oracion": "¿Cómo se llama el símbolo en el centro de algunas banderas históricas de Colombia? _div_blanco_",
-              "respuesta": "Escudo de armas"
-            },
-            {
-              "oracion": "¿Qué significa el amarillo en la bandera de Colombia? _div_blanco_",
-              "respuesta": "Riqueza, soberanía, luz y justicia"
-            }
+      },
+      {
+        "oracion": "_div_blanco_ fue el libertador que ayudó a crear la Gran Colombia.",
+        "respuesta": "Simón Bolívar",
+        "opciones": [
+          "Simón Bolívar",
+          "Antonio Nariño",
+          "José de San Martín",
+          "Francisco Miranda"
         ]
-    },
-    "parques_nacionales": {
-        "mapa": "../mapas/marron/parques.png",
-        "nombre": "Parques Nacionales de Colombia",
-        "nivel1": [
-            {
-              "oracion": "Es el más grande de Colombia. _div_blanco_",
-              "respuesta": "Chiribiquete"
-            },
-            {
-              "oracion": "Podemos encontrar flamencos rosados. _div_blanco_",
-              "respuesta": "Los Flamencos"
-            },
-            {
-              "oracion": "Es el páramo más grande del mundo. _div_blanco_",
-              "respuesta": "Sumapaz"
-            },
-            {
-              "oracion": "Habita el oso de anteojos. _div_blanco_",
-              "respuesta": "Chingaza"
-            },
-            {
-              "oracion": "Protege los ecosistemas de los Llanos Orientales. _div_blanco_",
-              "respuesta": "El Tuparro"
-            },
-            {
-              "oracion": "Es famoso por sus montañas de colores. _div_blanco_",
-              "respuesta": "Serranía de la Macarena"
-            },
-            {
-              "oracion": "Se pueden encontrar delfines rosados. _div_blanco_",
-              "respuesta": "Amacayacu"
-            },
-            {
-              "oracion": "Es conocido por la flora y fauna del Pacífico. _div_blanco_",
-              "respuesta": "Utría"
-            },
-            {
-              "oracion": "Protege la selva del Chocó y la Amazonía. _div_blanco_",
-              "respuesta": "Los Katíos"
-            },
-            {
-              "oracion": "La Sierra Nevada de Santa Marta está protegida por el Parque Nacional Natural _div_blanco_",
-              "respuesta": "Sierra Nevada de Santa Marta"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ tiene arrecifes de coral en el Caribe.",
-              "respuesta": "Old Providence y McBean Lagoon"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es famoso por la migración de ballenas jorobadas.",
-              "respuesta": "Uramba Bahía Málaga"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ podemos encontrar manatíes.",
-              "respuesta": "Puerto Gaitán"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ protege los bosques secos del Caribe.",
-              "respuesta": "Macuira"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ se encuentra en la región amazónica y protege comunidades indígenas.",
-              "respuesta": "Yaigojé Apaporis"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es el hogar del cóndor de los Andes.",
-              "respuesta": "El Cocuy"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentra la Laguna de Iguaque.",
-              "respuesta": "Iguaque"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es conocido por su diversidad de orquídeas.",
-              "respuesta": "Munchique"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ protege los manglares del Pacífico.",
-              "respuesta": "Sanquianga"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentran pictografías indígenas.",
-              "respuesta": "Chiribiquete"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ protege la fauna marina del Caribe.",
-              "respuesta": "Corales del Rosario y San Bernardo"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentran caños de colores.",
-              "respuesta": "Serranía de la Macarena - Caño Cristales"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ tiene ecosistemas andinos y amazónicos.",
-              "respuesta": "Cordillera de los Picachos"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ protege la cuenca del río Magdalena.",
-              "respuesta": "Tinigua"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es famoso por sus cascadas y cuevas.",
-              "respuesta": "Cueva de los Guácharos"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentran las dunas de Taroa.",
-              "respuesta": "Macuira"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ protege la mayor parte de la isla de San Andrés.",
-              "respuesta": "Old Providence y McBean Lagoon"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ se encuentra en la Alta Guajira.",
-              "respuesta": "Bahía Portete"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ protege el ecosistema de los llanos y sabanas.",
-              "respuesta": "Tuparro"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ está en la región del Amazonas y protege una gran biodiversidad.",
-              "respuesta": "Nukak"
-            }
-        ],
-        "nivel2":  [
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es Patrimonio de la Humanidad por sus pinturas rupestres.",
-              "respuesta": "Chiribiquete"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentra la formación montañosa más alta del Caribe.",
-              "respuesta": "Sierra Nevada de Santa Marta"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ protege la biodiversidad del piedemonte llanero.",
-              "respuesta": "Tinigua"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es una de las reservas de delfines rosados en Colombia.",
-              "respuesta": "Amacayacu"
-            },
-            {
-              "oracion": "La zona de los caños de colores pertenece al Parque Nacional Natural _div_blanco_.",
-              "respuesta": "Serranía de la Macarena"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentran los tepuyes, montañas con formas planas.",
-              "respuesta": "Chiribiquete"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es clave en la conservación del cóndor de los Andes.",
-              "respuesta": "El Cocuy"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ tiene una de las mayores extensiones de bosques de niebla.",
-              "respuesta": "Farallones de Cali"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentra la Laguna de Iguaque, considerada sagrada.",
-              "respuesta": "Iguaque"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ protege la flora y fauna de los ecosistemas del Caribe insular.",
-              "respuesta": "Old Providence y McBean Lagoon"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentra una de las más grandes reservas de manglares.",
-              "respuesta": "Sanquianga"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es un corredor biológico entre la Orinoquía y la Amazonía.",
-              "respuesta": "Tinigua"
-            },
-            {
-              "oracion": "La cascada más alta de Colombia está en el Parque Nacional Natural _div_blanco_.",
-              "respuesta": "Cueva de los Guácharos"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ protege el ecosistema marino-costero del Pacífico.",
-              "respuesta": "Utría"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ se refugian muchas especies de tortugas marinas.",
-              "respuesta": "Corales del Rosario y San Bernardo"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ resguarda comunidades indígenas como los Nukak Makú.",
-              "respuesta": "Nukak"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ está en el piedemonte amazónico y es considerado una \"casa del sol\".",
-              "respuesta": "Alto Fragua Indiwasi"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es hogar de los frailejones y los venados de páramo.",
-              "respuesta": "Sumapaz"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ se conservan las dunas de la Alta Guajira.",
-              "respuesta": "Macuira"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ está ubicado en el noroccidente de Colombia y protege especies endémicas.",
-              "respuesta": "Paramillo"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es un importante refugio para los manatíes.",
-              "respuesta": "Puerto Gaitán"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ habitan jaguares, tigrillos y pumas.",
-              "respuesta": "Los Katíos"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es una de las zonas más biodiversas del mundo, ubicado en el Pacífico.",
-              "respuesta": "Gorgona"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ protege el ecosistema del piedemonte andino-amazónico.",
-              "respuesta": "Cordillera de los Picachos"
-            },
-            {
-              "oracion": "En el Parque Nacional Natural _div_blanco_ se pueden encontrar las formaciones rocosas más antiguas del país.",
-              "respuesta": "Chiribiquete"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ está ubicado en la región amazónica y es clave para la conservación indígena.",
-              "respuesta": "Yaigojé Apaporis"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ tiene suelos arenosos y vegetación de sabana.",
-              "respuesta": "El Tuparro"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ protege especies en peligro como la danta de montaña.",
-              "respuesta": "Farallones de Cali"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es una reserva indígena y protege el agua de la Amazonía.",
-              "respuesta": "Yaigojé Apaporis"
-            },
-            {
-              "oracion": "El Parque Nacional Natural _div_blanco_ es una de las áreas protegidas más importantes del Valle del Cauca.",
-              "respuesta": "Munchique"
-            }
-        ]  
-    },
-    "hidrografia_colombia": {
-        "mapa": "../mapas/marron/hidrografia.png",
-        "nombre": "Hidrografía de Colombia",
-        "nivel1": [
-            {
-              "oracion": "El río más largo de Colombia es el _div_blanco_.",
-              "respuesta": "Magdalena"
-            },
-            {
-              "oracion": "El río Cauca es un afluente del río _div_blanco_.",
-              "respuesta": "Magdalena"
-            },
-            {
-              "oracion": "La vertiente del Caribe tiene ríos largos y de fácil _div_blanco_.",
-              "respuesta": "navegación"
-            },
-            {
-              "oracion": "El río Atrato es uno de los más _div_blanco_ de Colombia.",
-              "respuesta": "caudalosos"
-            },
-            {
-              "oracion": "La Sierra Nevada de Santa Marta origina varias _div_blanco_.",
-              "respuesta": "cuencas"
-            },
-            {
-              "oracion": "La vertiente del Pacífico tiene ríos con corrientes _div_blanco_.",
-              "respuesta": "rápidas"
-            },
-            {
-              "oracion": "El río San Juan desemboca en el océano _div_blanco_.",
-              "respuesta": "Pacífico"
-            },
-            {
-              "oracion": "El río Baudó se encuentra en el departamento del _div_blanco_.",
-              "respuesta": "Chocó"
-            },
-            {
-              "oracion": "La vertiente del Amazonas es la más _div_blanco_ de Colombia.",
-              "respuesta": "extensa"
-            },
-            {
-              "oracion": "En la Amazonía se encuentra el río _div_blanco_.",
-              "respuesta": "Caquetá"
-            },
-            {
-              "oracion": "El río Putumayo pertenece a la vertiente del _div_blanco_.",
-              "respuesta": "Amazonas"
-            },
-            {
-              "oracion": "El río Orinoco es compartido con el país de _div_blanco_.",
-              "respuesta": "Venezuela"
-            },
-            {
-              "oracion": "La vertiente del Orinoco incluye el río _div_blanco_.",
-              "respuesta": "Guaviare"
-            },
-            {
-              "oracion": "El río Meta es uno de los más importantes de la _div_blanco_.",
-              "respuesta": "Orinoquía"
-            },
-            {
-              "oracion": "El río Inírida desemboca en el río _div_blanco_.",
-              "respuesta": "Guaviare"
-            },
-            {
-              "oracion": "La vertiente del Catatumbo vierte sus aguas en el lago de _div_blanco_.",
-              "respuesta": "Maracaibo"
-            },
-            {
-              "oracion": "El río Zulia es un afluente del río _div_blanco_.",
-              "respuesta": "Catatumbo"
-            },
-            {
-              "oracion": "La cuenca del río Sinú pertenece a la vertiente del _div_blanco_.",
-              "respuesta": "Caribe"
-            },
-            {
-              "oracion": "El río Patía es el más largo de la vertiente del _div_blanco_.",
-              "respuesta": "Pacífico"
-            },
-            {
-              "oracion": "Un río que nace en la cordillera y desemboca en el Pacífico es el _div_blanco_.",
-              "respuesta": "Mira"
-            },
-            {
-              "oracion": "El río Arauca forma parte de la frontera con _div_blanco_.",
-              "respuesta": "Venezuela"
-            },
-            {
-              "oracion": "La región de la Orinoquía se caracteriza por sus _div_blanco_.",
-              "respuesta": "llanuras"
-            },
-            {
-              "oracion": "El río Vaupés se encuentra en la región de la _div_blanco_.",
-              "respuesta": "Amazonía"
-            },
-            {
-              "oracion": "La vertiente del Caribe es la de mayor cantidad de _div_blanco_.",
-              "respuesta": "población"
-            },
-            {
-              "oracion": "Los ríos de la vertiente del Pacífico transportan mucho _div_blanco_.",
-              "respuesta": "sedimento"
-            },
-            {
-              "oracion": "El río Tomo es un afluente del río _div_blanco_.",
-              "respuesta": "Orinoco"
-            },
-            {
-              "oracion": "La vertiente del Amazonas tiene ríos navegables y de aguas _div_blanco_.",
-              "respuesta": "tranquilas"
-            },
-            {
-              "oracion": "Los ríos del Pacífico desembocan en el océano _div_blanco_.",
-              "respuesta": "Pacífico"
-            },
-            {
-              "oracion": "El río Vichada es parte de la vertiente del _div_blanco_.",
-              "respuesta": "Orinoco"
-            },
-            {
-              "oracion": "El estudio de los cuerpos de agua se llama _div_blanco_.",
-              "respuesta": "hidrografía"
-            }
-        ],
-        "nivel2": [
-            {
-              "oracion": "El río Magdalena atraviesa Colombia de _div_blanco_ a _div_blanco_.",
-              "respuesta": ["sur, norte"]
-            },
-            {
-              "oracion": "El río Cauca es el segundo más _div_blanco_ de Colombia.",
-              "respuesta": "importante"
-            },
-            {
-              "oracion": "La vertiente del Caribe es la de mayor desarrollo _div_blanco_.",
-              "respuesta": "económico"
-            },
-            {
-              "oracion": "El río Atrato transporta gran cantidad de _div_blanco_.",
-              "respuesta": "agua"
-            },
-            {
-              "oracion": "La Sierra Nevada de Santa Marta origina cuencas como la del río _div_blanco_.",
-              "respuesta": "Ranchería"
-            },
-            {
-              "oracion": "Los ríos del Pacífico son cortos debido a la cercanía de la _div_blanco_.",
-              "respuesta": "cordillera"
-            },
-            {
-              "oracion": "El río Baudó tiene una cuenca de aproximadamente _div_blanco_ km².",
-              "respuesta": "8.000"
-            },
-            {
-              "oracion": "La vertiente del Amazonas tiene una extensión de _div_blanco_ km².",
-              "respuesta": "345.000"
-            },
-            {
-              "oracion": "El río Caquetá es uno de los principales afluentes del _div_blanco_.",
-              "respuesta": "Amazonas"
-            },
-            {
-              "oracion": "El río Putumayo tiene una cuenca de aproximadamente _div_blanco_ km².",
-              "respuesta": "54.000"
-            },
-            {
-              "oracion": "El río Orinoco es el cuarto más largo de _div_blanco_.",
-              "respuesta": "Sudamérica"
-            },
-            {
-              "oracion": "El río Guaviare es uno de los principales afluentes del _div_blanco_.",
-              "respuesta": "Orinoco"
-            },
-            {
-              "oracion": "La cuenca del río Meta abarca alrededor de _div_blanco_ km².",
-              "respuesta": "112.000"
-            },
-            {
-              "oracion": "El río Inírida desemboca en el río Guaviare, un importante afluente del _div_blanco_.",
-              "respuesta": "Orinoco"
-            },
-            {
-              "oracion": "El río Tomo tiene una cuenca de aproximadamente _div_blanco_ km².",
-              "respuesta": "20.000"
-            },
-            {
-              "oracion": "El río Vichada forma parte de la vertiente del _div_blanco_.",
-              "respuesta": "Orinoco"
-            },
-            {
-              "oracion": "El río Arauca es compartido entre Colombia y _div_blanco_.",
-              "respuesta": "Venezuela"
-            },
-            {
-              "oracion": "El río Catatumbo es famoso por su fenómeno del _div_blanco_.",
-              "respuesta": "relámpago"
-            },
-            {
-              "oracion": "La cuenca del río Zulia tiene una extensión de _div_blanco_ km².",
-              "respuesta": "4.800"
-            },
-            {
-              "oracion": "La vertiente del Caribe abarca aproximadamente _div_blanco_ km².",
-              "respuesta": "389.000"
-            },
-            {
-              "oracion": "El río Sinú nace en el departamento de _div_blanco_.",
-              "respuesta": "Córdoba"
-            },
-            {
-              "oracion": "El río Patía es el más largo de la vertiente del _div_blanco_.",
-              "respuesta": "Pacífico"
-            },
-            {
-              "oracion": "El río San Juan atraviesa una de las zonas más _div_blanco_ de Colombia.",
-              "respuesta": "selváticas"
-            },
-            {
-              "oracion": "El río Mira desemboca en el océano _div_blanco_.",
-              "respuesta": "Pacífico"
-            },
-            {
-              "oracion": "El río Guaviare tiene una cuenca de aproximadamente _div_blanco_ km².",
-              "respuesta": "140.000"
-            },
-            {
-              "oracion": "El río Vaupés es compartido con el país de _div_blanco_.",
-              "respuesta": "Brasil"
-            },
-            {
-              "oracion": "Los ríos de la vertiente del Pacífico suelen formar _div_blanco_ en su desembocadura.",
-              "respuesta": "deltas"
-            },
-            {
-              "oracion": "Los ríos del Amazonas ayudan a la regulación del _div_blanco_.",
-              "respuesta": "clima"
-            },
-            {
-              "oracion": "Los ríos de la vertiente del Caribe son utilizados para el transporte de _div_blanco_.",
-              "respuesta": "mercancías"
-            },
-            {
-              "oracion": "La cuenca del río Putumayo forma parte de la gran cuenca del río _div_blanco_.",
-              "respuesta": "Amazonas"
-            }
-        ]          
-    },
-    "etnias_de_colombia": {
-        "mapa": "../mapas/marron/etnias.png",
-        "nombre": "Etnias de Colombia",
-        "nivel1": [
-            {
-              "oracion": "Los indígenas Wayuu viven en _div_blanco_.",
-              "respuesta": "La Guajira"
-            },
-            {
-              "oracion": "Los indígenas habitan en _div_blanco_ naturales.",
-              "respuesta": "territorios"
-            },
-            {
-              "oracion": "El idioma de los indígenas Nasa es el _div_blanco_.",
-              "respuesta": "Nasa Yuwe"
-            },
-            {
-              "oracion": "La danza tradicional de los indígenas se llama _div_blanco_.",
-              "respuesta": "danza del sol"
-            },
-            {
-              "oracion": "Los indígenas usan el _div_blanco_ para comunicarse.",
-              "respuesta": "idioma"
-            },
-            {
-              "oracion": "El animal sagrado de los Muiscas es el _div_blanco_.",
-              "respuesta": "jaguar"
-            },
-            {
-              "oracion": "Los indígenas usan la planta de _div_blanco_ para medicina.",
-              "respuesta": "coca"
-            },
-            {
-              "oracion": "Los Kogui habitan en la _div_blanco_ Nevada.",
-              "respuesta": "Sierra"
-            },
-            {
-              "oracion": "La comunidad indígena protege la _div_blanco_.",
-              "respuesta": "naturaleza"
-            },
-            {
-              "oracion": "Los indígenas pescan con _div_blanco_.",
-              "respuesta": "redes"
-            },
-            {
-              "oracion": "El resguardo indígena es su _div_blanco_ legal.",
-              "respuesta": "territorio"
-            },
-            {
-              "oracion": "Los Muiscas eran expertos en el uso del _div_blanco_.",
-              "respuesta": "oro"
-            },
-            {
-              "oracion": "La _div_blanco_ es una bebida sagrada de los indígenas.",
-              "respuesta": "chicha"
-            },
-            {
-              "oracion": "El pueblo indígena más grande de Colombia es el _div_blanco_.",
-              "respuesta": "Wayuu"
-            },
-            {
-              "oracion": "Los indígenas usan _div_blanco_ para hacer mochilas.",
-              "respuesta": "hilo"
-            },
-            {
-              "oracion": "Los Emberá viven en la región del _div_blanco_.",
-              "respuesta": "Chocó"
-            },
-            {
-              "oracion": "El poporo es un símbolo de los indígenas _div_blanco_.",
-              "respuesta": "Muiscas"
-            },
-            {
-              "oracion": "La lengua de los indígenas Misak es el _div_blanco_.",
-              "respuesta": "Namtrik"
-            },
-            {
-              "oracion": "Los indígenas consideran sagrado el río _div_blanco_.",
-              "respuesta": "Amazonas"
-            },
-            {
-              "oracion": "Los indígenas construyen casas con _div_blanco_ y palma.",
-              "respuesta": "madera"
-            },
-            {
-              "oracion": "El medio de transporte de los indígenas en la selva es la _div_blanco_.",
-              "respuesta": "canoa"
-            },
-            {
-              "oracion": "Los indígenas practican el _div_blanco_ para intercambiar productos.",
-              "respuesta": "trueque"
-            },
-            {
-              "oracion": "La cosmovisión indígena respeta a la _div_blanco_.",
-              "respuesta": "naturaleza"
-            },
-            {
-              "oracion": "Los indígenas cultivan la planta del _div_blanco_.",
-              "respuesta": "maíz"
-            },
-            {
-              "oracion": "Los indígenas preparan el casabe con _div_blanco_.",
-              "respuesta": "yuca"
-            },
-            {
-              "oracion": "Los indígenas practican el tejido con _div_blanco_.",
-              "respuesta": "fibras naturales"
-            },
-            {
-              "oracion": "Los indígenas utilizan _div_blanco_ para pintar sus cuerpos.",
-              "respuesta": "achiote"
-            },
-            {
-              "oracion": "El cabildo es la autoridad de los _div_blanco_.",
-              "respuesta": "indígenas"
-            },
-            {
-              "oracion": "Los indígenas practican la pesca con _div_blanco_.",
-              "respuesta": "lanzas"
-            },
-            {
-              "oracion": "El jaguar es un símbolo de los indígenas de la _div_blanco_.",
-              "respuesta": "Amazonía"
-            }
-        ],
-        "nivel2": [
-            {
-              "oracion": "La Constitución de 1991 reconoce la diversidad _div_blanco_ de Colombia.",
-              "respuesta": "étnica"
-            },
-            {
-              "oracion": "Los pueblos indígenas luchan por la protección de sus _div_blanco_.",
-              "respuesta": "territorios"
-            },
-            {
-              "oracion": "La lengua de los indígenas Wayuu se llama _div_blanco_.",
-              "respuesta": "Wayuunaiki"
-            },
-            {
-              "oracion": "La organización política indígena es el _div_blanco_.",
-              "respuesta": "cabildo"
-            },
-            {
-              "oracion": "Los pueblos indígenas transmiten su historia de forma _div_blanco_.",
-              "respuesta": "oral"
-            },
-            {
-              "oracion": "La medicina tradicional indígena usa _div_blanco_ naturales.",
-              "respuesta": "plantas"
-            },
-            {
-              "oracion": "Los indígenas creen que la naturaleza tiene _div_blanco_.",
-              "respuesta": "espíritus"
-            },
-            {
-              "oracion": "Los indígenas practican la agricultura en las _div_blanco_.",
-              "respuesta": "chagras"
-            },
-            {
-              "oracion": "La bebida sagrada de los indígenas amazónicos es el _div_blanco_.",
-              "respuesta": "yagé"
-            },
-            {
-              "oracion": "Los indígenas protegen los bosques porque son su _div_blanco_.",
-              "respuesta": "hogar"
-            },
-            {
-              "oracion": "La Amazonía es habitada por comunidades _div_blanco_.",
-              "respuesta": "indígenas"
-            },
-            {
-              "oracion": "El poporo es un símbolo de la cultura _div_blanco_.",
-              "respuesta": "Muisca"
-            },
-            {
-              "oracion": "La Ley de Origen regula la vida de los pueblos _div_blanco_.",
-              "respuesta": "indígenas"
-            },
-            {
-              "oracion": "Los Emberá pintan su cuerpo con tintes de _div_blanco_.",
-              "respuesta": "jagua"
-            },
-            {
-              "oracion": "Los indígenas Misak son originarios del _div_blanco_.",
-              "respuesta": "Cauca"
-            },
-            {
-              "oracion": "Los indígenas pescan con redes y _div_blanco_.",
-              "respuesta": "arcos"
-            },
-            {
-              "oracion": "Los Muiscas desarrollaron la metalurgia del _div_blanco_.",
-              "respuesta": "oro"
-            },
-            {
-              "oracion": "La chicha es una bebida fermentada hecha de _div_blanco_.",
-              "respuesta": "maíz"
-            },
-            {
-              "oracion": "El mamo es el líder espiritual de los indígenas _div_blanco_.",
-              "respuesta": "Kogui"
-            },
-            {
-              "oracion": "Los indígenas practican el trueque como forma de _div_blanco_.",
-              "respuesta": "economía"
-            },
-            {
-              "oracion": "La consulta previa protege los derechos de los pueblos _div_blanco_.",
-              "respuesta": "indígenas"
-            },
-            {
-              "oracion": "Los indígenas consideran la selva como un ser _div_blanco_.",
-              "respuesta": "vivo"
-            },
-            {
-              "oracion": "El territorio de los Wayuu es compartido entre Colombia y _div_blanco_.",
-              "respuesta": "Venezuela"
-            },
-            {
-              "oracion": "La lucha de los indígenas incluye la defensa del _div_blanco_.",
-              "respuesta": "agua"
-            },
-            {
-              "oracion": "Los pueblos indígenas realizan ceremonias de _div_blanco_.",
-              "respuesta": "purificación"
-            },
-            {
-              "oracion": "La pérdida de lenguas indígenas se llama _div_blanco_.",
-              "respuesta": "extinción lingüística"
-            },
-            {
-              "oracion": "Los indígenas creen en la energía de la _div_blanco_.",
-              "respuesta": "Pachamama"
-            },
-            {
-              "oracion": "La música indígena usa instrumentos como la _div_blanco_.",
-              "respuesta": "maraca"
-            },
-            {
-              "oracion": "Los indígenas Mokaná habitan el departamento del _div_blanco_.",
-              "respuesta": "Atlántico"
-            },
-            {
-              "oracion": "El gobierno de los indígenas está representado por el _div_blanco_.",
-              "respuesta": "cabildo"
-            }
+      },
+      {
+        "oracion": "La Gran Colombia se creó el 17 de _div_blanco_ de 1819.",
+        "respuesta": "diciembre",
+        "opciones": [
+          "diciembre",
+          "julio",
+          "agosto",
+          "noviembre"
         ]
-    },
-    "relieve_de_colombia": {
-        "mapa": "../mapas/marron/relieve.png",
-        "nombre": "Relieve de Colombia",
-        "nivel1": [
-            {
-              "oracion": "¿Cuál es el sistema montañoso que forma parte de la Cordillera de los Andes en Colombia?",
-              "respuesta": "El Sistema Montañoso Andino"
-            },
-            {
-              "oracion": "¿Cuántas cordilleras forman parte del sistema andino colombiano? _div_blanco_",
-              "respuesta": "Tres cordilleras"
-            },
-            {
-              "oracion": "¿Cuál es la cordillera más baja de las tres? _div_blanco_",
-              "respuesta": "La Cordillera Occidental"
-            },
-            {
-              "oracion": "¿Dónde se encuentran los volcanes Chiles, Cumbal y Azufral? _div_blanco_",
-              "respuesta": "En la Cordillera Occidental"
-            },
-            {
-              "oracion": "¿Cuál cordillera se ubica entre la Occidental y la Oriental? _div_blanco_",
-              "respuesta": "La Cordillera Central"
-            },
-            {
-              "oracion": "¿Qué cordillera tiene los nevados del Ruiz, Santa Isabel y Tolima? _div_blanco_",
-              "respuesta": "La Cordillera Central"
-            },
-            {
-              "oracion": "¿Qué cordillera es la más ancha de las tres? _div_blanco_",
-              "respuesta": "La Cordillera Oriental"
-            },
-            {
-              "oracion": "¿Dónde se ubica el Altiplano Cundiboyacense? _div_blanco_",
-              "respuesta": "En la Cordillera Oriental"
-            },
-            {
-              "oracion": "¿En qué cordillera se encuentra Bogotá? _div_blanco_",
-              "respuesta": "En la Cordillera Oriental"
-            },
-            {
-              "oracion": "¿Dónde nace el río Magdalena? _div_blanco_",
-              "respuesta": "En el Macizo Colombiano"
-            },
-            {
-              "oracion": "¿Qué división geográfica marca el inicio de las tres cordilleras? _div_blanco_",
-              "respuesta": "El Nudo de los Pastos"
-            },
-            {
-              "oracion": "¿Qué cordillera termina en serranías como Ayapel y San Jerónimo? _div_blanco_",
-              "respuesta": "La Cordillera Occidental"
-            },
-            {
-              "oracion": "¿Qué sistemas montañosos están aislados de los Andes? _div_blanco_",
-              "respuesta": "Periférico"
-            },
-            {
-              "oracion": "¿Dónde está ubicada la Serranía de la Macuira? _div_blanco_",
-              "respuesta": "En La Guajira"
-            },
-            {
-              "oracion": "¿Cuál es la montaña más alta cerca al mar? _div_blanco_",
-              "respuesta": "La Sierra Nevada de Santa Marta"
-            },
-            {
-              "oracion": "¿Qué departamentos comparten la Sierra Nevada de Santa Marta? _div_blanco_",
-              "respuesta": "Magdalena, Cesar y La Guajira"
-            },
-            {
-              "oracion": "¿Dónde se encuentran los Llanos Orientales? _div_blanco_",
-              "respuesta": "En el oriente del país"
-            },
-            {
-              "oracion": "¿Qué llanura se encuentra en el suroccidente de Colombia? _div_blanco_",
-              "respuesta": "La Llanura del Pacífico"
-            },
-            {
-              "oracion": "¿Cuál es el valle que recorre todo el centro del país? _div_blanco_",
-              "respuesta": "El Valle del Magdalena"
-            },
-            {
-              "oracion": "¿Qué serranía está en el departamento del Meta? _div_blanco_",
-              "respuesta": "La Serranía de la Macarena"
-            },
-            {
-              "oracion": "¿Qué cordillera tiene mayor altura? _div_blanco_",
-              "respuesta": "La Cordillera Central"
-            },
-            {
-              "oracion": "¿Qué tipo de accidente geográfico son los valles interandinos? _div_blanco_",
-              "respuesta": "Depresiones entre montañas"
-            },
-            {
-              "oracion": "¿Qué serranía se encuentra en la frontera con Panamá? _div_blanco_",
-              "respuesta": "La Serranía del Darién"
-            },
-            {
-              "oracion": "¿Qué pico es el más alto de Colombia? _div_blanco_",
-              "respuesta": "El Pico Cristóbal Colón"
-            },
-            {
-              "oracion": "¿En qué región se encuentran los Montes de María? _div_blanco_",
-              "respuesta": "En la región Caribe"
-            },
-            {
-              "oracion": "¿Qué cordillera tiene 1.200 km de largo y está al oeste del país? _div_blanco_",
-              "respuesta": "La Cordillera Occidental"
-            },
-            {
-              "oracion": "¿Cuál es el punto más alto de la Serranía del Baudó? _div_blanco_",
-              "respuesta": "El Alto del Buey"
-            }        
+      },
+      {
+        "oracion": "El Congreso de _div_blanco_ aprobó la creación de la Gran Colombia.",
+        "respuesta": "Angostura",
+        "opciones": [
+          "Angostura",
+          "Bogotá",
+          "Cúcuta",
+          "Caracas"
+        ]
+      },
+      {
+        "oracion": "La capital de la Gran Colombia fue _div_blanco_.",
+        "respuesta": "Bogotá",
+        "opciones": [
+          "Bogotá",
+          "Quito",
+          "Caracas",
+          "Panamá"
+        ]
+      },
+      {
+        "oracion": "En la Gran Colombia había tres _div_blanco_ grandes.",
+        "respuesta": "países",
+        "opciones": [
+          "países",
+          "ciudades",
+          "regiones",
+          "provincias"
+        ]
+      },
+      {
+        "oracion": "_div_blanco_, Ecuador y Colombia fueron parte de la Gran Colombia.",
+        "respuesta": "Venezuela",
+        "opciones": [
+          "Venezuela",
+          "Perú",
+          "Chile",
+          "Bolivia"
+        ]
+      },
+      {
+        "oracion": "_div_blanco_ fue el primer vicepresidente de la Gran Colombia.",
+        "respuesta": "Francisco de Paula Santander",
+        "opciones": [
+          "Francisco de Paula Santander",
+          "Simón Bolívar",
+          "José Antonio Páez",
+          "Antonio José de Sucre"
+        ]
+      },
+      {
+        "oracion": "En 1830, la Gran Colombia se _div_blanco_.",
+        "respuesta": "separó",
+        "opciones": [
+          "separó",
+          "fortaleció",
+          "expandió",
+          "unió"
+        ]
+      },
+      {
+        "oracion": "_div_blanco_ es el país que se independizó de Colombia en 1903.",
+        "respuesta": "Panamá",
+        "opciones": [
+          "Panamá",
+          "Venezuela",
+          "Ecuador",
+          "Perú"
+        ]
+      },
+      {
+        "oracion": "La Batalla de _div_blanco_ en 1819 ayudó a liberar a la Nueva Granada.",
+        "respuesta": "Boyacá",
+        "opciones": [
+          "Boyacá",
+          "Carabobo",
+          "Junín",
+          "Pichincha"
+        ]
+      },
+      {
+        "oracion": "En 1821 se aprobó la Constitución de _div_blanco_.",
+        "respuesta": "Cúcuta",
+        "opciones": [
+          "Cúcuta",
+          "Bogotá",
+          "Angostura",
+          "Quito"
+        ]
+      },
+      {
+        "oracion": "_div_blanco_ fue un gran militar que ayudó a Bolívar en la independencia.",
+        "respuesta": "Antonio José de Sucre",
+        "opciones": [
+          "Antonio José de Sucre",
+          "Francisco de Miranda",
+          "José Antonio Páez",
+          "Manuel Piar"
+        ]
+      },
+      {
+        "oracion": "Nueva _div_blanco_ era el nombre de Colombia antes de la independencia.",
+        "respuesta": "Granada",
+        "opciones": [
+          "Granada",
+          "España",
+          "Cartagena",
+          "Santander"
+        ]
+      },
+      {
+        "oracion": "La moneda de la Gran Colombia era el _div_blanco_.",
+        "respuesta": "peso",
+        "opciones": [
+          "peso",
+          "real",
+          "dólar",
+          "bolívar"
+        ]
+      },
+      {
+        "oracion": "La batalla que hizo posible la independencia de Ecuador fue _div_blanco_.",
+        "respuesta": "Pichincha",
+        "opciones": [
+          "Pichincha",
+          "Boyacá",
+          "Ayacucho",
+          "Carabobo"
+        ]
+      },
+      {
+        "oracion": "_div_blanco_ se separó de la Gran Colombia en 1830.",
+        "respuesta": "Venezuela",
+        "opciones": [
+          "Venezuela",
+          "Panamá",
+          "Perú",
+          "Chile"
+        ]
+      },
+      {
+        "oracion": "Ecuador y _div_blanco_ también se separaron de la Gran Colombia en 1830.",
+        "respuesta": "Venezuela",
+        "opciones": [
+          "Venezuela",
+          "Panamá",
+          "Bolivia",
+          "Argentina"
+        ]
+      },
+      {
+        "oracion": "_div_blanco_ fue el último gobernante de la Gran Colombia.",
+        "respuesta": "Domingo Caicedo",
+        "opciones": [
+          "Domingo Caicedo",
+          "Santander",
+          "Sucre",
+          "Páez"
+        ]
+      },
+      {
+        "oracion": "El Congreso de Angostura se realizó en la ciudad de _div_blanco_.",
+        "respuesta": "Angostura",
+        "opciones": [
+          "Angostura",
+          "Caracas",
+          "Bogotá",
+          "Cartagena"
+        ]
+      },
+      {
+        "oracion": "Hoy la ciudad de Angostura se llama _div_blanco_.",
+        "respuesta": "Ciudad Bolívar",
+        "opciones": [
+          "Ciudad Bolívar",
+          "San Félix",
+          "Puerto Ordaz",
+          "Cumaná"
+        ]
+      },
+      {
+        "oracion": "Simón Bolívar soñaba con una América _div_blanco_.",
+        "respuesta": "unida",
+        "opciones": [
+          "unida",
+          "rica",
+          "católica",
+          "española"
+        ]
+      },
+      {
+        "oracion": "La Gran Colombia tuvo su constitución en el año _div_blanco_.",
+        "respuesta": "1821",
+        "opciones": [
+          "1821",
+          "1810",
+          "1830",
+          "1825"
+        ]
+      },
+      {
+        "oracion": "El Istmo de _div_blanco_ era parte de la Gran Colombia.",
+        "respuesta": "Panamá",
+        "opciones": [
+          "Panamá",
+          "Venezuela",
+          "Costa Rica",
+          "Nicaragua"
+        ]
+      },
+      {
+        "oracion": "La Gran Colombia tenía tres _div_blanco_ principales.",
+        "respuesta": "departamentos",
+        "opciones": [
+          "departamentos",
+          "naciones",
+          "capitales",
+          "provincias"
+        ]
+      },
+      {
+        "oracion": "La Batalla de _div_blanco_ fue clave para la independencia de Venezuela.",
+        "respuesta": "Carabobo",
+        "opciones": [
+          "Carabobo",
+          "Boyacá",
+          "Pichincha",
+          "Junín"
+        ]
+      },
+      {
+        "oracion": "La Batalla de _div_blanco_ fue importante para la independencia de Ecuador.",
+        "respuesta": "Pichincha",
+        "opciones": [
+          "Pichincha",
+          "Ayacucho",
+          "Carabobo",
+          "Boyacá"
+        ]
+      },
+      {
+        "oracion": "La Batalla de _div_blanco_ fue decisiva para la independencia del Perú.",
+        "respuesta": "Ayacucho",
+        "opciones": [
+          "Ayacucho",
+          "Junín",
+          "Pichincha",
+          "Boyacá"
+        ]
+      },
+      {
+        "oracion": "El Congreso de _div_blanco_ en 1829 intentó mantener la unión de la Gran Colombia.",
+        "respuesta": "Guayaquil",
+        "opciones": [
+          "Guayaquil",
+          "Bogotá",
+          "Caracas",
+          "Quito"
+        ]
+      },
+      {
+        "oracion": "Simón Bolívar fue llamado el _div_blanco_ de América.",
+        "respuesta": "Libertador",
+        "opciones": [
+          "Libertador",
+          "Presidente",
+          "Conquistador",
+          "Héroe"
+        ]
+      }
+    ],
+    "nivel2": [
+      {
+        "oracion": "La _div_blanco_ fue la unión política creada en 1819 por Simón Bolívar y sus aliados.",
+        "respuesta": "Gran Colombia",
+        "opciones": [
+          "Gran Colombia",
+          "Nueva Granada",
+          "Virreinato del Perú",
+          "Confederación Andina"
+        ]
+      },
+      {
+        "oracion": "La creación de la Gran Colombia fue aprobada en el _div_blanco_ en 1819.",
+        "respuesta": "Congreso de Angostura",
+        "opciones": [
+          "Congreso de Angostura",
+          "Congreso de Cúcuta",
+          "Asamblea de Caracas",
+          "Convención de Ocaña"
+        ]
+      },
+      {
+        "oracion": "La Gran Colombia estaba compuesta por los territorios de _div_blanco_, _div_blanco_ y _div_blanco_.",
+        "respuesta": "Colombia, Venezuela y Ecuador",
+        "opciones": [
+          "Colombia, Venezuela y Ecuador",
+          "Colombia, Perú y Bolivia",
+          "Venezuela, Perú y Ecuador",
+          "Colombia, Panamá y Chile"
+        ]
+      },
+      {
+        "oracion": "Simón Bolívar fue el _div_blanco_ de la Gran Colombia.",
+        "respuesta": "presidente",
+        "opciones": [
+          "presidente",
+          "ministro",
+          "vicepresidente",
+          "gobernador"
+        ]
+      },
+      {
+        "oracion": "El primer vicepresidente de la Gran Colombia fue _div_blanco_.",
+        "respuesta": "Francisco de Paula Santander",
+        "opciones": [
+          "Francisco de Paula Santander",
+          "Antonio José de Sucre",
+          "José Antonio Páez",
+          "Juan José Flores"
+        ]
+      },
+      {
+        "oracion": "La Constitución de la Gran Colombia se promulgó en _div_blanco_ en 1821.",
+        "respuesta": "Cúcuta",
+        "opciones": [
+          "Cúcuta",
+          "Caracas",
+          "Bogotá",
+          "Quito"
+        ]
+      },
+      {
+        "oracion": "La Gran Colombia se dividió en tres _div_blanco_ principales.",
+        "respuesta": "departamentos",
+        "opciones": [
+          "departamentos",
+          "provincias",
+          "territorios",
+          "colonias"
+        ]
+      },
+      {
+        "oracion": "El _div_blanco_ formaba parte de la Gran Colombia hasta su separación en 1903.",
+        "respuesta": "Istmo de Panamá",
+        "opciones": [
+          "Istmo de Panamá",
+          "Territorio de Amazonas",
+          "Región Andina",
+          "Guayana"
+        ]
+      },
+      {
+        "oracion": "_div_blanco_ fue el líder militar que dirigió la Batalla de Pichincha en 1822.",
+        "respuesta": "Antonio José de Sucre",
+        "opciones": [
+          "Antonio José de Sucre",
+          "Simón Bolívar",
+          "José de San Martín",
+          "Francisco de Miranda"
+        ]
+      },
+      {
+        "oracion": "La separación de la Gran Colombia comenzó en el año _div_blanco_.",
+        "respuesta": "1830",
+        "opciones": [
+          "1830",
+          "1819",
+          "1821",
+          "1825"
+        ]
+      },
+      {
+        "oracion": "En 1828, Bolívar asumió poderes _div_blanco_ tras la Convención de Ocaña.",
+        "respuesta": "dictatoriales",
+        "opciones": [
+          "dictatoriales",
+          "provisionales",
+          "parlamentarios",
+          "republicanos"
+        ]
+      },
+      {
+        "oracion": "La _div_blanco_, ocurrida en 1819, aseguró la independencia de la Nueva Granada.",
+        "respuesta": "Batalla de Boyacá",
+        "opciones": [
+          "Batalla de Boyacá",
+          "Batalla de Junín",
+          "Batalla de Ayacucho",
+          "Batalla de Carabobo"
+        ]
+      },
+      {
+        "oracion": "El Congreso de Angostura fue convocado por _div_blanco_ para establecer la nueva república.",
+        "respuesta": "Simón Bolívar",
+        "opciones": [
+          "Simón Bolívar",
+          "Antonio Nariño",
+          "Santander",
+          "José María Vargas"
+        ]
+      },
+      {
+        "oracion": "La ciudad que hoy se conoce como Ciudad Bolívar, en Venezuela, antes se llamaba _div_blanco_.",
+        "respuesta": "Angostura",
+        "opciones": [
+          "Angostura",
+          "Carabobo",
+          "Mérida",
+          "Barinas"
+        ]
+      },
+      {
+        "oracion": "La Gran Colombia enfrentó conflictos internos debido a diferencias entre _div_blanco_ y _div_blanco_.",
+        "respuesta": "Centralista y federalistas",
+        "opciones": [
+          "Centralista y federalistas",
+          "liberales y conservadores",
+          "criollos e indígenas",
+          "realistas y patriotas"
+        ]
+      },
+      {
+        "oracion": "En 1829, el _div_blanco_ intentó salvar la unión de la Gran Colombia sin éxito.",
+        "respuesta": "Congreso de Guayaquil",
+        "opciones": [
+          "Congreso de Guayaquil",
+          "Congreso de Lima",
+          "Congreso de Quito",
+          "Convención de Ocaña"
+        ]
+      },
+      {
+        "oracion": "_div_blanco_ lideró la separación de Ecuador en 1830.",
+        "respuesta": "Juan José Flores",
+        "opciones": [
+          "Juan José Flores",
+          "Antonio José de Sucre",
+          "Simón Bolívar",
+          "José Joaquín de Olmedo"
+        ]
+      },
+      {
+        "oracion": "En 1830, José Antonio Páez lideró la separación de _div_blanco_ de la Gran Colombia.",
+        "respuesta": "Venezuela",
+        "opciones": [
+          "Venezuela",
+          "Ecuador",
+          "Panamá",
+          "Colombia"
+        ]
+      },
+      {
+        "oracion": "La _div_blanco_ en 1821 fue decisiva para la independencia de Venezuela.",
+        "respuesta": "Batalla de Carabobo",
+        "opciones": [
+          "Batalla de Carabobo",
+          "Batalla de Junín",
+          "Batalla de Boyacá",
+          "Batalla de Ayacucho"
+        ]
+      },
+      {
+        "oracion": "La _div_blanco_ en 1824 aseguró la independencia del Perú.",
+        "respuesta": "Batalla de Ayacucho",
+        "opciones": [
+          "Batalla de Ayacucho",
+          "Batalla de Carabobo",
+          "Batalla de Pichincha",
+          "Batalla de Junín"
+        ]
+      },
+      {
+        "oracion": "La crisis política de la Gran Colombia se agravó tras el atentado contra Bolívar en el año _div_blanco_.",
+        "respuesta": "1828",
+        "opciones": [
+          "1828",
+          "1825",
+          "1821",
+          "1830"
+        ]
+      },
+      {
+        "oracion": "En el año _div_blanco_ murió Simón Bolívar en Santa Marta.",
+        "respuesta": "17 de diciembre de 1830",
+        "opciones": [
+          "17 de diciembre de 1830",
+          "20 de julio de 1830",
+          "7 de agosto de 1829",
+          "25 de diciembre de 1831"
+        ]
+      },
+      {
+        "oracion": "La moneda oficial de la Gran Colombia fue el _div_blanco_.",
+        "respuesta": "peso",
+        "opciones": [
+          "peso",
+          "real",
+          "sol",
+          "escudo"
+        ]
+      },
+      {
+        "oracion": "La _div_blanco_ en 1822 consolidó la independencia de Ecuador.",
+        "respuesta": "Batalla de Pichincha",
+        "opciones": [
+          "Batalla de Pichincha",
+          "Batalla de Boyacá",
+          "Batalla de Carabobo",
+          "Batalla de Ayacucho"
+        ]
+      },
+      {
+        "oracion": "Bolívar redactó la _div_blanco_ en la que renunciaba a la presidencia de la Gran Colombia en 1830.",
+        "respuesta": "Carta de Jamaica",
+        "opciones": [
+          "Carta de Jamaica",
+          "Manifiesto de Cartagena",
+          "Acta de renuncia",
+          "Proclama de Lima"
+        ]
+      },
+      {
+        "oracion": "La Convención de Ocaña de 1828 intentó reformar la Constitución de _div_blanco_.",
+        "respuesta": "Cúcuta",
+        "opciones": [
+          "Cúcuta",
+          "Quito",
+          "Caracas",
+          "Bogotá"
+        ]
+      },
+      {
+        "oracion": "En 1822, Bolívar y San Martín se reunieron en _div_blanco_ para discutir la independencia del Perú.",
+        "respuesta": "Guayaquil",
+        "opciones": [
+          "Guayaquil",
+          "Lima",
+          "Quito",
+          "Caracas"
+        ]
+      },
+      {
+        "oracion": "Domingo Caicedo asumió el poder de la Gran Colombia tras la renuncia de _div_blanco_.",
+        "respuesta": "Simón Bolívar",
+        "opciones": [
+          "Simón Bolívar",
+          "Santander",
+          "José Antonio Páez",
+          "Juan José Flores"
+        ]
+      },
+      {
+        "oracion": "Tras la disolución de la Gran Colombia, Colombia, Ecuador y Venezuela formaron naciones _div_blanco_.",
+        "respuesta": "independientes",
+        "opciones": [
+          "independientes",
+          "federadas",
+          "confederadas",
+          "revolucionarias"
+        ]
+      },
+      {
+        "oracion": "La Gran Colombia fue un modelo de unión política que influenció a otros países de _div_blanco_.",
+        "respuesta": "América Latina",
+        "opciones": [
+          "América Latina",
+          "Europa",
+          "Norteamérica",
+          "Asia"
+        ]
+      }
+    ]
+  },
+  "evolucion_bandera_colombia": {
+    "mapa": "../mapas/marron/bandera.png",
+    "nombre": "Evolución de la Bandera de Colombia",
+    "nivel1": [
+      {
+        "oracion": "El Nuevo Reino de Granada era parte del _div_blanco_.",
+        "opciones": [
+          "Imperio portugués",
+          "Imperio español",
+          "Imperio británico",
+          "Imperio francés"
         ],
-        "nivel2": [
-            {
-              "oracion": "¿Cuál es el sistema montañoso que forma parte de la Cordillera de los Andes en Colombia?",
-              "respuesta": "El Sistema Montañoso Andino"
-            },
-            {
-              "oracion": "¿Cuántas cordilleras forman parte del sistema andino colombiano? _div_blanco_",
-              "respuesta": "Tres cordilleras"
-            },
-            {
-              "oracion": "¿Cuál es la cordillera más baja de las tres? _div_blanco_",
-              "respuesta": "La Cordillera Occidental"
-            },
-            {
-              "oracion": "¿Dónde se encuentran los volcanes Chiles, Cumbal y Azufral? _div_blanco_",
-              "respuesta": "En la Cordillera Occidental"
-            },
-            {
-              "oracion": "¿Cuál cordillera se ubica entre la Occidental y la Oriental? _div_blanco_",
-              "respuesta": "La Cordillera Central"
-            },
-            {
-              "oracion": "¿Qué cordillera tiene los nevados del Ruiz, Santa Isabel y Tolima? _div_blanco_",
-              "respuesta": "La Cordillera Central"
-            },
-            {
-              "oracion": "¿Qué cordillera es la más ancha de las tres? _div_blanco_",
-              "respuesta": "La Cordillera Oriental"
-            },
-            {
-              "oracion": "¿Dónde se ubica el Altiplano Cundiboyacense? _div_blanco_",
-              "respuesta": "En la Cordillera Oriental"
-            },
-            {
-              "oracion": "¿En qué cordillera se encuentra Bogotá? _div_blanco_",
-              "respuesta": "En la Cordillera Oriental"
-            },
-            {
-              "oracion": "¿Dónde nace el río Magdalena? _div_blanco_",
-              "respuesta": "En el Macizo Colombiano"
-            },
-            {
-              "oracion": "¿Qué división geográfica marca el inicio de las tres cordilleras? _div_blanco_",
-              "respuesta": "El Nudo de los Pastos"
-            },
-            {
-              "oracion": "¿Qué cordillera termina en serranías como Ayapel y San Jerónimo? _div_blanco_",
-              "respuesta": "La Cordillera Occidental"
-            },
-            {
-              "oracion": "¿Qué sistemas montañosos están aislados de los Andes? _div_blanco_",
-              "respuesta": "Periférico"
-            },
-            {
-              "oracion": "¿Dónde está ubicada la Serranía de la Macuira? _div_blanco_",
-              "respuesta": "En La Guajira"
-            },
-            {
-              "oracion": "¿Cuál es la montaña más alta cerca al mar? _div_blanco_",
-              "respuesta": "La Sierra Nevada de Santa Marta"
-            },
-            {
-              "oracion": "¿Qué departamentos comparten la Sierra Nevada de Santa Marta? _div_blanco_",
-              "respuesta": "Magdalena, Cesar y La Guajira"
-            },
-            {
-              "oracion": "¿Dónde se encuentran los Llanos Orientales? _div_blanco_",
-              "respuesta": "En el oriente del país"
-            },
-            {
-              "oracion": "¿Qué llanura se encuentra en el suroccidente de Colombia? _div_blanco_",
-              "respuesta": "La Llanura del Pacífico"
-            },
-            {
-              "oracion": "¿Cuál es el valle que recorre todo el centro del país? _div_blanco_",
-              "respuesta": "El Valle del Magdalena"
-            },
-            {
-              "oracion": "¿Qué serranía está en el departamento del Meta? _div_blanco_",
-              "respuesta": "La Serranía de la Macarena"
-            },
-            {
-              "oracion": "¿Qué cordillera tiene mayor altura? _div_blanco_",
-              "respuesta": "La Cordillera Central"
-            },
-            {
-              "oracion": "¿Qué tipo de accidente geográfico son los valles interandinos? _div_blanco_",
-              "respuesta": "Depresiones entre montañas"
-            },
-            {
-              "oracion": "¿Qué serranía se encuentra en la frontera con Panamá? _div_blanco_",
-              "respuesta": "La Serranía del Darién"
-            },
-            {
-              "oracion": "¿Qué pico es el más alto de Colombia? _div_blanco_",
-              "respuesta": "El Pico Cristóbal Colón"
-            },
-            {
-              "oracion": "¿En qué región se encuentran los Montes de María? _div_blanco_",
-              "respuesta": "En la región Caribe"
-            },
-            {
-              "oracion": "¿Qué cordillera tiene 1.200 km de largo y está al oeste del país? _div_blanco_",
-              "respuesta": "La Cordillera Occidental"
-            },
-            {
-              "oracion": "¿Cuál es el punto más alto de la Serranía del Baudó? _div_blanco_",
-              "respuesta": "El Alto del Buey"
-            }        
-        ]           
-    },
-    "clima_de_colombia": {
-        "mapa": "../mapas/marron/clima.png",
-        "nombre": "Clima de Colombia",
-        "nivel1": [
-            {
-              "oracion": "Colombia tiene _div_blanco_ regiones climáticas principales.",
-              "respuesta": "seis"
-            },
-            {
-              "oracion": "La región _div_blanco_ está en el norte y es muy calurosa.",
-              "respuesta": "Caribe"
-            },
-            {
-              "oracion": "La región _div_blanco_ tiene muchas montañas y clima templado.",
-              "respuesta": "Andina"
-            },
-            {
-              "oracion": "La región _div_blanco_ tiene lluvias casi todo el año.",
-              "respuesta": "Pacífica"
-            },
-            {
-              "oracion": "La región _div_blanco_ tiene sabanas y clima tropical.",
-              "respuesta": "Orinoquía"
-            },
-            {
-              "oracion": "La región _div_blanco_ está cubierta por selvas y es muy húmeda.",
-              "respuesta": "Amazonía"
-            },
-            {
-              "oracion": "La región _div_blanco_ está compuesta por islas.",
-              "respuesta": "Insular"
-            },
-            {
-              "oracion": "En la región Caribe está el departamento de _div_blanco_.",
-              "respuesta": "La Guajira"
-            },
-            {
-              "oracion": "En la región Andina está el departamento de _div_blanco_.",
-              "respuesta": "Boyacá"
-            },
-            {
-              "oracion": "El departamento del _div_blanco_ pertenece a la región Pacífica.",
-              "respuesta": "Chocó"
-            },
-            {
-              "oracion": "La Amazonía tiene un clima _div_blanco_ y húmedo.",
-              "respuesta": "tropical"
-            },
-            {
-              "oracion": "San Andrés y Providencia están en la región _div_blanco_.",
-              "respuesta": "Insular"
-            },
-            {
-              "oracion": "El clima de la región Pacífica es muy _div_blanco_.",
-              "respuesta": "lluvioso"
-            },
-            {
-              "oracion": "La región Orinoquía tiene clima de _div_blanco_.",
-              "respuesta": "sabana"
-            },
-            {
-              "oracion": "En la región Andina llueve pero también hace _div_blanco_.",
-              "respuesta": "frío"
-            },
-            {
-              "oracion": "El mapa climático muestra cómo es el _div_blanco_ en cada región.",
-              "respuesta": "clima"
-            },
-            {
-              "oracion": "El departamento del _div_blanco_ está en la región Andina.",
-              "respuesta": "Antioquia"
-            },
-            {
-              "oracion": "En la región Amazónica hay muchas _div_blanco_.",
-              "respuesta": "selvas"
-            },
-            {
-              "oracion": "El clima del Caribe es cálido y a veces _div_blanco_.",
-              "respuesta": "seco"
-            },
-            {
-              "oracion": "La región con más islas es la _div_blanco_.",
-              "respuesta": "Insular"
-            },
-            {
-              "oracion": "En el Pacífico, casi siempre está _div_blanco_.",
-              "respuesta": "lloviendo"
-            },
-            {
-              "oracion": "El departamento de _div_blanco_ está en la Orinoquía.",
-              "respuesta": "Meta"
-            },
-            {
-              "oracion": "En la región Andina hay montañas y _div_blanco_.",
-              "respuesta": "valles"
-            },
-            {
-              "oracion": "En la región Caribe hay desiertos y _div_blanco_.",
-              "respuesta": "playas"
-            },
-            {
-              "oracion": "La región que tiene climas muy variados es la _div_blanco_.",
-              "respuesta": "Andina"
-            },
-            {
-              "oracion": "El clima depende del lugar y de su _div_blanco_.",
-              "respuesta": "altura"
-            },
-            {
-              "oracion": "En la región Insular soplan muchos _div_blanco_ del mar.",
-              "respuesta": "vientos"
-            },
-            {
-              "oracion": "La región donde hay muchos ríos y selva es la _div_blanco_.",
-              "respuesta": "Amazonía"
-            },
-            {
-              "oracion": "En la región Andina viven muchas personas porque el clima es _div_blanco_.",
-              "respuesta": "agradable"
-            },
-            {
-              "oracion": "En el mapa climático podemos ver zonas húmedas y zonas _div_blanco_.",
-              "respuesta": "secas"
-            }
+        "respuesta": "Imperio español"
+      },
+      {
+        "oracion": "La capital del Nuevo Reino de Granada era _div_blanco_.",
+        "opciones": [
+          "Cartagena",
+          "Santa Fe de Bogotá",
+          "Quito",
+          "Lima"
         ],
-        "nivel2": [
-            {
-              "oracion": "Colombia tiene una gran _div_blanco_ climática debido a su geografía.",
-              "respuesta": "diversidad"
-            },
-            {
-              "oracion": "La región Caribe tiene un clima _div_blanco_ y semiárido.",
-              "respuesta": "cálido"
-            },
-            {
-              "oracion": "La región Andina presenta climas templados y de _div_blanco_.",
-              "respuesta": "montaña"
-            },
-            {
-              "oracion": "En la región Pacífica, la _div_blanco_ anual es muy alta.",
-              "respuesta": "precipitación"
-            },
-            {
-              "oracion": "El clima de la Amazonía es _div_blanco_ y húmedo.",
-              "respuesta": "ecuatorial"
-            },
-            {
-              "oracion": "El clima de la región Orinoquía se caracteriza por estaciones _div_blanco_ y lluviosas.",
-              "respuesta": "secas"
-            },
-            {
-              "oracion": "El clima de la región Insular es de tipo _div_blanco_ marítimo.",
-              "respuesta": "tropical"
-            },
-            {
-              "oracion": "Las condiciones climáticas se ven influenciadas por la _div_blanco_ del terreno.",
-              "respuesta": "altitud"
-            },
-            {
-              "oracion": "La región Andina contiene la mayor parte de la _div_blanco_ del país.",
-              "respuesta": "población"
-            },
-            {
-              "oracion": "La zona del Caribe incluye los departamentos de La Guajira, Bolívar y _div_blanco_.",
-              "respuesta": "Cesar"
-            },
-            {
-              "oracion": "Las lluvias constantes del Pacífico generan gran _div_blanco_ vegetal.",
-              "respuesta": "biodiversidad"
-            },
-            {
-              "oracion": "La región Amazonía cubre gran parte del sur del país con bosques de _div_blanco_.",
-              "respuesta": "selva"
-            },
-            {
-              "oracion": "El viento alisio tiene gran influencia en el clima de la región _div_blanco_.",
-              "respuesta": "Insular"
-            },
-            {
-              "oracion": "En la Orinoquía predomina un paisaje de sabana y clima _div_blanco_.",
-              "respuesta": "tropical"
-            },
-            {
-              "oracion": "La región Andina presenta climas más fríos en las _div_blanco_.",
-              "respuesta": "alturas"
-            },
-            {
-              "oracion": "En la región Pacífica, el clima cálido y húmedo se debe a la cercanía con el _div_blanco_.",
-              "respuesta": "océano"
-            },
-            {
-              "oracion": "San Andrés y Providencia tienen un clima cálido con vientos _div_blanco_.",
-              "respuesta": "alisios"
-            },
-            {
-              "oracion": "La región más lluviosa del país es la región _div_blanco_.",
-              "respuesta": "Pacífica"
-            },
-            {
-              "oracion": "En el Caribe se observan climas áridos como en el desierto de la _div_blanco_.",
-              "respuesta": "Guajira"
-            },
-            {
-              "oracion": "La temperatura disminuye a medida que aumenta la _div_blanco_.",
-              "respuesta": "altitud"
-            },
-            {
-              "oracion": "La variedad de climas en Colombia se representa en el mapa _div_blanco_.",
-              "respuesta": "climático"
-            },
-            {
-              "oracion": "La región Insular está expuesta a huracanes y otros fenómenos _div_blanco_.",
-              "respuesta": "climáticos"
-            },
-            {
-              "oracion": "En la Orinoquía se desarrollan muchas actividades de tipo _div_blanco_.",
-              "respuesta": "ganadero"
-            },
-            {
-              "oracion": "En la región Amazonía se presentan lluvias _div_blanco_ durante todo el año.",
-              "respuesta": "constantes"
-            },
-            {
-              "oracion": "La biodiversidad de Colombia está relacionada con su variada _div_blanco_.",
-              "respuesta": "climatología"
-            },
-            {
-              "oracion": "Los departamentos de Nariño y Cauca tienen climas de montaña y también de tipo _div_blanco_.",
-              "respuesta": "húmedo"
-            },
-            {
-              "oracion": "Las condiciones climáticas de Colombia favorecen la agricultura y la _div_blanco_.",
-              "respuesta": "ganadería"
-            },
-            {
-              "oracion": "La región con mayor humedad relativa del país es la _div_blanco_.",
-              "respuesta": "Pacífica"
-            },
-            {
-              "oracion": "Los departamentos de Caquetá y Putumayo están ubicados en la región _div_blanco_.",
-              "respuesta": "Amazonía"
-            },
-            {
-              "oracion": "En los mapas climáticos se identifican los tipos de clima y su _div_blanco_ geográfica.",
-              "respuesta": "distribución"
-            }
-        ]          
-    }
+        "respuesta": "Santa Fe de Bogotá"
+      },
+      {
+        "oracion": "La Gran Colombia se creó en el año _div_blanco_.",
+        "opciones": [
+          "1821",
+          "1810",
+          "1819",
+          "1830"
+        ],
+        "respuesta": "1819"
+      },
+      {
+        "oracion": "La bandera de Colombia tiene tres colores: _div_blanco_.",
+        "opciones": [
+          "Verde, blanco y rojo",
+          "Amarillo, azul y rojo",
+          "Azul, blanco y rojo",
+          "Amarillo, verde y rojo"
+        ],
+        "respuesta": "Amarillo, azul y rojo"
+      },
+      {
+        "oracion": "El color amarillo representa la _div_blanco_ del suelo colombiano.",
+        "opciones": [
+          "Fertilidad",
+          "Riqueza",
+          "Esperanza",
+          "Paz"
+        ],
+        "respuesta": "Riqueza"
+      },
+      {
+        "oracion": "El color azul representa el _div_blanco_ que cubre la Patria.",
+        "opciones": [
+          "Mar",
+          "Río",
+          "Cielo",
+          "Montañas"
+        ],
+        "respuesta": "Cielo"
+      },
+      {
+        "oracion": "El color rojo representa la _div_blanco_ derramada por los patriotas.",
+        "opciones": [
+          "Fuerza",
+          "Sangre",
+          "Pasión",
+          "Libertad"
+        ],
+        "respuesta": "Sangre"
+      },
+      {
+        "oracion": "La provincia de _div_blanco_ se independizó en 1810.",
+        "opciones": [
+          "Bogotá",
+          "Cartagena",
+          "Medellín",
+          "Cali"
+        ],
+        "respuesta": "Cartagena"
+      },
+      {
+        "oracion": "La bandera de la Gran Colombia fue diseñada por _div_blanco_.",
+        "opciones": [
+          "Simón Bolívar",
+          "Francisco de Miranda",
+          "Antonio Nariño",
+          "José de San Martín"
+        ],
+        "respuesta": "Francisco de Miranda"
+      },
+      {
+        "oracion": "La Gran Colombia estaba formada por Colombia, Venezuela, Ecuador y _div_blanco_.",
+        "opciones": [
+          "Perú",
+          "Panamá",
+          "Chile",
+          "Bolivia"
+        ],
+        "respuesta": "Panamá"
+      },
+      {
+        "oracion": "En 1834, el país se llamó República de la _div_blanco_.",
+        "opciones": [
+          "Gran Colombia",
+          "Nueva Granada",
+          "Colombia",
+          "Confederación Granadina"
+        ],
+        "respuesta": "Nueva Granada"
+      },
+      {
+        "oracion": "La Confederación Granadina existió entre 1858 y _div_blanco_.",
+        "opciones": [
+          "1859",
+          "1861",
+          "1870",
+          "1848"
+        ],
+        "respuesta": "1861"
+      },
+      {
+        "oracion": "El nombre del país cambió a Estados Unidos de Colombia en _div_blanco_.",
+        "opciones": [
+          "1858",
+          "1861",
+          "1876",
+          "1830"
+        ],
+        "respuesta": "1861"
+      },
+      {
+        "oracion": "La bandera de Colombia tiene _div_blanco_ franjas.",
+        "opciones": [
+          "Cuatro",
+          "Dos",
+          "Tres",
+          "Cinco"
+        ],
+        "respuesta": "Tres"
+      },
+      {
+        "oracion": "La franja más grande de la bandera es de color _div_blanco_.",
+        "opciones": [
+          "Rojo",
+          "Azul",
+          "Amarillo",
+          "Blanco"
+        ],
+        "respuesta": "Amarillo"
+      },
+      {
+        "oracion": "En 1861, el país tomó el nombre de República de _div_blanco_.",
+        "opciones": [
+          "Gran Colombia",
+          "Colombia",
+          "Nueva Granada",
+          "Panamá"
+        ],
+        "respuesta": "Colombia"
+      },
+      {
+        "oracion": "La bandera se divide en tres colores de forma _div_blanco_.",
+        "opciones": [
+          "Vertical",
+          "Diagonal",
+          "Horizontal",
+          "Circular"
+        ],
+        "respuesta": "Horizontal"
+      },
+      {
+        "oracion": "El primer diseño de la bandera tricolor fue en el año _div_blanco_.",
+        "opciones": [
+          "1801",
+          "1810",
+          "1799",
+          "1821"
+        ],
+        "respuesta": "1801"
+      },
+      {
+        "oracion": "La actual bandera de Colombia fue adoptada en el año _div_blanco_.",
+        "opciones": [
+          "1861",
+          "1900",
+          "1819",
+          "1886"
+        ],
+        "respuesta": "1861"
+      },
+      {
+        "oracion": "El juramento a la bandera se encuentra en el decreto _div_blanco_ de 1948.",
+        "opciones": [
+          "2388",
+          "2387",
+          "2400",
+          "2500"
+        ],
+        "respuesta": "2388"
+      },
+      {
+        "oracion": "El creador de la bandera de Colombia era de nacionalidad _div_blanco_.",
+        "opciones": [
+          "Colombiana",
+          "Venezolana",
+          "Ecuatoriana",
+          "Peruana"
+        ],
+        "respuesta": "Venezolana"
+      },
+      {
+        "oracion": "La bandera de la Gran Colombia tenía los mismos colores que la de _div_blanco_.",
+        "opciones": [
+          "Venezuela",
+          "Colombia",
+          "Ecuador",
+          "Panamá"
+        ],
+        "respuesta": "Colombia"
+      },
+      {
+        "oracion": "El azul de la bandera también representa los _div_blanco_ que bañan el territorio colombiano.",
+        "opciones": [
+          "Ríos y océanos",
+          "Montañas",
+          "Bosques",
+          "Desiertos"
+        ],
+        "respuesta": "Ríos y océanos"
+      },
+      {
+        "oracion": "La Constitución de 1858 estableció la Confederación _div_blanco_.",
+        "opciones": [
+          "Granadina",
+          "Gran Colombia",
+          "Bolivariana",
+          "Andina"
+        ],
+        "respuesta": "Granadina"
+      },
+      {
+        "oracion": "La Gran Colombia se disolvió en el año _div_blanco_.",
+        "opciones": [
+          "1821",
+          "1830",
+          "1840",
+          "1850"
+        ],
+        "respuesta": "1830"
+      },
+      {
+        "oracion": "En 1863, la Constitución estableció el sistema _div_blanco_ en Colombia.",
+        "opciones": [
+          "Centralista",
+          "Federalista",
+          "Monárquico",
+          "Republicano"
+        ],
+        "respuesta": "Federalista"
+      },
+      {
+        "oracion": "El rojo de la bandera también simboliza el _div_blanco_, poder y progreso.",
+        "opciones": [
+          "Amor",
+          "Valor",
+          "Coraje",
+          "Patriotismo"
+        ],
+        "respuesta": "Amor"
+      },
+      {
+        "oracion": "El Virreinato de la Nueva Granada existió antes de la independencia de _div_blanco_.",
+        "opciones": [
+          "Ecuador",
+          "Colombia",
+          "Venezuela",
+          "Perú"
+        ],
+        "respuesta": "Colombia"
+      },
+      {
+        "oracion": "La bandera de la Confederación Granadina tenía un _div_blanco_ en el centro.",
+        "opciones": [
+          "Escudo",
+          "Sol",
+          "Estrella",
+          "Cruz"
+        ],
+        "respuesta": "Escudo"
+      },
+      {
+        "oracion": "La bandera de Colombia fue reglamentada por decretos en 1924 y _div_blanco_.",
+        "opciones": [
+          "1934",
+          "1940",
+          "1910",
+          "1950"
+        ],
+        "respuesta": "1934"
+      }
+    ],
+    "nivel2": [
+      {
+        "oracion": "¿En qué año se estableció el Nuevo Reino de Granada? _div_blanco_",
+        "opciones": [
+          "1538",
+          "1492",
+          "1600",
+          "1717"
+        ],
+        "respuesta": "1538"
+      },
+      {
+        "oracion": "¿Qué rey de España creó el Virreinato de Nueva Granada en 1717? _div_blanco_",
+        "opciones": [
+          "Felipe V",
+          "Carlos III",
+          "Fernando VII",
+          "Isabel II"
+        ],
+        "respuesta": "Felipe V"
+      },
+      {
+        "oracion": "¿Quién ondeó por primera vez la bandera tricolor en 1806? _div_blanco_",
+        "opciones": [
+          "Simón Bolívar",
+          "Francisco de Miranda",
+          "Antonio Nariño",
+          "José de San Martín"
+        ],
+        "respuesta": "Francisco de Miranda"
+      },
+      {
+        "oracion": "¿Qué batalla selló la independencia de la Gran Colombia? _div_blanco_",
+        "opciones": [
+          "Batalla de Carabobo",
+          "Batalla de Boyacá",
+          "Batalla de Pichincha",
+          "Batalla de Ayacucho"
+        ],
+        "respuesta": "Batalla de Boyacá"
+      },
+      {
+        "oracion": "¿En qué fecha se creó oficialmente la Gran Colombia? _div_blanco_",
+        "opciones": [
+          "17 de diciembre de 1819",
+          "20 de julio de 1810",
+          "7 de agosto de 1819",
+          "12 de octubre de 1492"
+        ],
+        "respuesta": "17 de diciembre de 1819"
+      },
+      {
+        "oracion": "¿Cuál fue el primer país en independizarse de la Gran Colombia? _div_blanco_",
+        "opciones": [
+          "Ecuador",
+          "Panamá",
+          "Venezuela",
+          "Colombia"
+        ],
+        "respuesta": "Venezuela"
+      },
+      {
+        "oracion": "¿Qué país se separó de Colombia en 1903? _div_blanco_",
+        "opciones": [
+          "Panamá",
+          "Ecuador",
+          "Venezuela",
+          "Perú"
+        ],
+        "respuesta": "Panamá"
+      },
+      {
+        "oracion": "¿Cómo se llamaba Colombia entre 1858 y 1861? _div_blanco_",
+        "opciones": [
+          "Confederación Granadina",
+          "Gran Colombia",
+          "República de la Nueva Granada",
+          "Estados Unidos de Colombia"
+        ],
+        "respuesta": "Confederación Granadina"
+      },
+      {
+        "oracion": "¿En qué año se adoptó el nombre de Estados Unidos de Colombia? _div_blanco_",
+        "opciones": [
+          "1861",
+          "1858",
+          "1886",
+          "1830"
+        ],
+        "respuesta": "1861"
+      },
+      {
+        "oracion": "¿Qué presidente lideró la transición a la República de Colombia en 1861? _div_blanco_",
+        "opciones": [
+          "Tomás Cipriano de Mosquera",
+          "Simón Bolívar",
+          "Francisco de Paula Santander",
+          "Antonio Nariño"
+        ],
+        "respuesta": "Tomás Cipriano de Mosquera"
+      },
+      {
+        "oracion": "¿En qué documento se oficializó el uso de la bandera actual? _div_blanco_",
+        "opciones": [
+          "Decreto 861 de 1924",
+          "Constitución de 1886",
+          "Ley 99 de 1936",
+          "Decreto 62 de 1934"
+        ],
+        "respuesta": "Decreto 861 de 1924"
+      },
+      {
+        "oracion": "¿Qué significaba el escudo en la bandera de la Confederación Granadina? _div_blanco_",
+        "opciones": [
+          "Unidad regional",
+          "Símbolos nacionales y federales",
+          "Victoria militar",
+          "Religión católica"
+        ],
+        "respuesta": "Símbolos nacionales y federales"
+      },
+      {
+        "oracion": "¿Por qué se abandonó el modelo federal de los Estados Unidos de Colombia? _div_blanco_",
+        "opciones": [
+          "Inestabilidad política y conflictos internos",
+          "Presión extranjera",
+          "Falta de recursos",
+          "Cambio cultural"
+        ],
+        "respuesta": "Inestabilidad política y conflictos internos"
+      },
+      {
+        "oracion": "¿Cuál fue la principal razón de la disolución de la Gran Colombia? _div_blanco_",
+        "opciones": [
+          "Intervención extranjera",
+          "Diferencias políticas y regionales",
+          "Crisis económica",
+          "Pérdida de territorios"
+        ],
+        "respuesta": "Diferencias políticas y regionales"
+      },
+      {
+        "oracion": "¿Qué constitución estableció oficialmente la bandera tricolor en 1834? _div_blanco_",
+        "opciones": [
+          "Constitución de la República de la Nueva Granada",
+          "Constitución de 1886",
+          "Constitución de 1863",
+          "Constitución de 1858"
+        ],
+        "respuesta": "Constitución de la República de la Nueva Granada"
+      },
+      {
+        "oracion": "¿Cuál fue el nombre oficial de Colombia en la Constitución de 1863? _div_blanco_",
+        "opciones": [
+          "Gran Colombia",
+          "Estados Unidos de Colombia",
+          "República de la Nueva Granada",
+          "Confederación Granadina"
+        ],
+        "respuesta": "Estados Unidos de Colombia"
+      },
+      {
+        "oracion": "¿Qué característica especial tenía la bandera de la República de la Nueva Granada? _div_blanco_",
+        "opciones": [
+          "Escudo en el centro",
+          "Tres franjas horizontales",
+          "Color verde predominante",
+          "Una estrella blanca"
+        ],
+        "respuesta": "Escudo en el centro"
+      },
+      {
+        "oracion": "¿Quién fue el último presidente de la Gran Colombia? _div_blanco_",
+        "opciones": [
+          "Domingo Caycedo - interino",
+          "Simón Bolívar",
+          "Antonio Nariño",
+          "Francisco de Paula Santander"
+        ],
+        "respuesta": "Domingo Caycedo - interino"
+      },
+      {
+        "oracion": "¿Qué documento estableció la Confederación Granadina en 1858? _div_blanco_",
+        "opciones": [
+          "Constitución de 1858",
+          "Constitución de 1863",
+          "Ley de independencia",
+          "Decreto 861 de 1924"
+        ],
+        "respuesta": "Constitución de 1858"
+      },
+      {
+        "oracion": "¿Qué guerra civil interna afectó a los Estados Unidos de Colombia entre 1899 y 1902? _div_blanco_",
+        "opciones": [
+          "Guerra de los Mil Días",
+          "Guerra de Independencia",
+          "Guerra Civil Colombiana",
+          "Revolución de 1900"
+        ],
+        "respuesta": "Guerra de los Mil Días"
+      },
+      {
+        "oracion": "¿Qué nombre recibió la bandera en 1819? _div_blanco_",
+        "opciones": [
+          "Bandera de la Gran Colombia",
+          "Bandera de Colombia",
+          "Bandera tricolor",
+          "Bandera nacional"
+        ],
+        "respuesta": "Bandera de la Gran Colombia"
+      },
+      {
+        "oracion": "¿Qué presidente promulgó la Constitución de 1863? _div_blanco_",
+        "opciones": [
+          "Tomás Cipriano de Mosquera",
+          "Simón Bolívar",
+          "Francisco de Paula Santander",
+          "Rafael Núñez"
+        ],
+        "respuesta": "Tomás Cipriano de Mosquera"
+      },
+      {
+        "oracion": "¿Qué diferencia existía entre la bandera de los Estados Unidos de Colombia y la actual? _div_blanco_",
+        "opciones": [
+          "Tenía un escudo en el centro",
+          "Tenía cuatro franjas",
+          "Los colores eran diferentes",
+          "Era vertical"
+        ],
+        "respuesta": "Tenía un escudo en el centro"
+      },
+      {
+        "oracion": "¿En qué año se ratificó la disposición actual de la bandera? _div_blanco_",
+        "opciones": [
+          "26 de noviembre de 1861",
+          "20 de julio de 1810",
+          "7 de agosto de 1819",
+          "17 de diciembre de 1819"
+        ],
+        "respuesta": "26 de noviembre de 1861"
+      },
+      {
+        "oracion": "¿Qué documento reglamentó el uso de la bandera en 1934? _div_blanco_",
+        "opciones": [
+          "Decreto 62 del 11 de enero de 1934",
+          "Decreto 861 de 1924",
+          "Ley 99 de 1936",
+          "Constitución de 1886"
+        ],
+        "respuesta": "Decreto 62 del 11 de enero de 1934"
+      },
+      {
+        "oracion": "¿Cuál fue el motivo del cambio de nombre a República de Colombia en 1886? _div_blanco_",
+        "opciones": [
+          "Regreso al centralismo",
+          "Independencia de Panamá",
+          "Fin de la Guerra de los Mil Días",
+          "Reforma educativa"
+        ],
+        "respuesta": "Regreso al centralismo"
+      },
+      {
+        "oracion": "¿En qué año se creó el Virreinato de Nueva Granada? _div_blanco_",
+        "opciones": [
+          "1717",
+          "1538",
+          "1810",
+          "1861"
+        ],
+        "respuesta": "1717"
+      },
+      {
+        "oracion": "¿Qué colores tiene la bandera de Colombia? _div_blanco_",
+        "opciones": [
+          "Amarillo, azul y rojo",
+          "Verde, blanco y rojo",
+          "Azul, blanco y rojo",
+          "Negro, amarillo y rojo"
+        ],
+        "respuesta": "Amarillo, azul y rojo"
+      },
+      {
+        "oracion": "¿Cómo se llama el símbolo en el centro de algunas banderas históricas de Colombia? _div_blanco_",
+        "opciones": [
+          "Escudo de armas",
+          "Estrella",
+          "Sol",
+          "Cruz"
+        ],
+        "respuesta": "Escudo de armas"
+      },
+      {
+        "oracion": "¿Qué significa el amarillo en la bandera de Colombia? _div_blanco_",
+        "opciones": [
+          "Riqueza, soberanía, luz y justicia",
+          "Paz, esperanza, unidad",
+          "Fuerza, coraje, sangre",
+          "Libertad, independencia, valor"
+        ],
+        "respuesta": "Riqueza, soberanía, luz y justicia"
+      }
+    ]
+  },
+  "parques_nacionales": {
+    "mapa": "../mapas/marron/parques.png",
+    "nombre": "Parques Nacionales de Colombia",
+    "nivel1": [
+      {
+        "oracion": "Es el más grande de Colombia. _div_blanco_",
+        "opciones": [
+          "Chiribiquete",
+          "Serranía de la Macarena",
+          "El Cocuy",
+          "Sumapaz"
+        ],
+        "respuesta": "Chiribiquete"
+      },
+      {
+        "oracion": "Podemos encontrar flamencos rosados. _div_blanco_",
+        "opciones": [
+          "Los Flamencos",
+          "Sanquianga",
+          "Tinigua",
+          "Macuira"
+        ],
+        "respuesta": "Los Flamencos"
+      },
+      {
+        "oracion": "Es el páramo más grande del mundo. _div_blanco_",
+        "opciones": [
+          "Sumapaz",
+          "Chingaza",
+          "El Cocuy",
+          "Iguaque"
+        ],
+        "respuesta": "Sumapaz"
+      },
+      {
+        "oracion": "Habita el oso de anteojos. _div_blanco_",
+        "opciones": [
+          "Chingaza",
+          "Munchique",
+          "Cueva de los Guácharos",
+          "Nukak"
+        ],
+        "respuesta": "Chingaza"
+      },
+      {
+        "oracion": "Protege los ecosistemas de los Llanos Orientales. _div_blanco_",
+        "opciones": [
+          "El Tuparro",
+          "Tinigua",
+          "Yaigojé Apaporis",
+          "Bahía Portete"
+        ],
+        "respuesta": "El Tuparro"
+      },
+      {
+        "oracion": "Es famoso por sus montañas de colores. _div_blanco_",
+        "opciones": [
+          "Serranía de la Macarena",
+          "Macuira",
+          "Chiribiquete",
+          "Old Providence y McBean Lagoon"
+        ],
+        "respuesta": "Serranía de la Macarena"
+      },
+      {
+        "oracion": "Se pueden encontrar delfines rosados. _div_blanco_",
+        "opciones": [
+          "Amacayacu",
+          "Utría",
+          "Sanquianga",
+          "Los Katíos"
+        ],
+        "respuesta": "Amacayacu"
+      },
+      {
+        "oracion": "Es conocido por la flora y fauna del Pacífico. _div_blanco_",
+        "opciones": [
+          "Utría",
+          "Sanquianga",
+          "Los Katíos",
+          "Uramba Bahía Málaga"
+        ],
+        "respuesta": "Utría"
+      },
+      {
+        "oracion": "Protege la selva del Chocó y la Amazonía. _div_blanco_",
+        "opciones": [
+          "Los Katíos",
+          "Chiribiquete",
+          "Nukak",
+          "Yaigojé Apaporis"
+        ],
+        "respuesta": "Los Katíos"
+      },
+      {
+        "oracion": "La Sierra Nevada de Santa Marta está protegida por el Parque Nacional Natural _div_blanco_",
+        "opciones": [
+          "Sierra Nevada de Santa Marta",
+          "El Cocuy",
+          "Cueva de los Guácharos",
+          "Munchique"
+        ],
+        "respuesta": "Sierra Nevada de Santa Marta"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ tiene arrecifes de coral en el Caribe.",
+        "opciones": [
+          "Old Providence y McBean Lagoon",
+          "Corales del Rosario y San Bernardo",
+          "Macuira",
+          "Bahía Portete"
+        ],
+        "respuesta": "Old Providence y McBean Lagoon"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es famoso por la migración de ballenas jorobadas.",
+        "opciones": [
+          "Uramba Bahía Málaga",
+          "Sanquianga",
+          "Los Katíos",
+          "Bahía Portete"
+        ],
+        "respuesta": "Uramba Bahía Málaga"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ podemos encontrar manatíes.",
+        "opciones": [
+          "Puerto Gaitán",
+          "Tinigua",
+          "Tuparro",
+          "Cueva de los Guácharos"
+        ],
+        "respuesta": "Puerto Gaitán"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ protege los bosques secos del Caribe.",
+        "opciones": [
+          "Macuira",
+          "Bahía Portete",
+          "Old Providence y McBean Lagoon",
+          "Sanquianga"
+        ],
+        "respuesta": "Macuira"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ se encuentra en la región amazónica y protege comunidades indígenas.",
+        "opciones": [
+          "Yaigojé Apaporis",
+          "Nukak",
+          "Amacayacu",
+          "Chiribiquete"
+        ],
+        "respuesta": "Yaigojé Apaporis"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es el hogar del cóndor de los Andes.",
+        "opciones": [
+          "El Cocuy",
+          "Iguaque",
+          "Cueva de los Guácharos",
+          "Serranía de la Macarena"
+        ],
+        "respuesta": "El Cocuy"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentra la Laguna de Iguaque.",
+        "opciones": [
+          "Iguaque",
+          "Chingaza",
+          "Sumapaz",
+          "Munchique"
+        ],
+        "respuesta": "Iguaque"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es conocido por su diversidad de orquídeas.",
+        "opciones": [
+          "Munchique",
+          "Utría",
+          "Sanquianga",
+          "Los Katíos"
+        ],
+        "respuesta": "Munchique"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ protege los manglares del Pacífico.",
+        "opciones": [
+          "Sanquianga",
+          "Utría",
+          "Los Katíos",
+          "Old Providence y McBean Lagoon"
+        ],
+        "respuesta": "Sanquianga"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentran pictografías indígenas.",
+        "opciones": [
+          "Chiribiquete",
+          "Sierra Nevada de Santa Marta",
+          "Bahía Portete",
+          "Tinigua"
+        ],
+        "respuesta": "Chiribiquete"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ protege la fauna marina del Caribe.",
+        "opciones": [
+          "Corales del Rosario y San Bernardo",
+          "Old Providence y McBean Lagoon",
+          "Uramba Bahía Málaga",
+          "Macuira"
+        ],
+        "respuesta": "Corales del Rosario y San Bernardo"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentran caños de colores.",
+        "opciones": [
+          "Serranía de la Macarena - Caño Cristales",
+          "Munchique",
+          "Tinigua",
+          "Chingaza"
+        ],
+        "respuesta": "Serranía de la Macarena - Caño Cristales"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ tiene ecosistemas andinos y amazónicos.",
+        "opciones": [
+          "Cordillera de los Picachos",
+          "El Cocuy",
+          "Yaigojé Apaporis",
+          "Nukak"
+        ],
+        "respuesta": "Cordillera de los Picachos"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ protege la cuenca del río Magdalena.",
+        "opciones": [
+          "Tinigua",
+          "Tuparro",
+          "Bahía Portete",
+          "Puerto Gaitán"
+        ],
+        "respuesta": "Tinigua"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es famoso por sus cascadas y cuevas.",
+        "opciones": [
+          "Cueva de los Guácharos",
+          "Iguaque",
+          "El Cocuy",
+          "Sumapaz"
+        ],
+        "respuesta": "Cueva de los Guácharos"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentran las dunas de Taroa.",
+        "opciones": [
+          "Macuira",
+          "Bahía Portete",
+          "Sanquianga",
+          "Old Providence y McBean Lagoon"
+        ],
+        "respuesta": "Macuira"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ protege la mayor parte de la isla de San Andrés.",
+        "opciones": [
+          "Old Providence y McBean Lagoon",
+          "Bahía Portete",
+          "Corales del Rosario y San Bernardo",
+          "Sierra Nevada de Santa Marta"
+        ],
+        "respuesta": "Old Providence y McBean Lagoon"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ se encuentra en la Alta Guajira.",
+        "opciones": [
+          "Bahía Portete",
+          "Macuira",
+          "Tinigua",
+          "Sanquianga"
+        ],
+        "respuesta": "Bahía Portete"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ protege el ecosistema de los llanos y sabanas.",
+        "opciones": [
+          "Tuparro",
+          "Tinigua",
+          "Yaigojé Apaporis",
+          "Nukak"
+        ],
+        "respuesta": "Tuparro"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ está en la región del Amazonas y protege una gran biodiversidad.",
+        "opciones": [
+          "Nukak",
+          "Chiribiquete",
+          "Amacayacu",
+          "Yaigojé Apaporis"
+        ],
+        "respuesta": "Nukak"
+      }
+    ],
+    "nivel2": [
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es Patrimonio de la Humanidad por sus pinturas rupestres.",
+        "opciones": [
+          "Chiribiquete",
+          "Sierra Nevada de Santa Marta",
+          "Paramillo",
+          "Nukak"
+        ],
+        "respuesta": "Chiribiquete"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentra la formación montañosa más alta del Caribe.",
+        "opciones": [
+          "Sierra Nevada de Santa Marta",
+          "El Cocuy",
+          "Farallones de Cali",
+          "Cueva de los Guácharos"
+        ],
+        "respuesta": "Sierra Nevada de Santa Marta"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ protege la biodiversidad del piedemonte llanero.",
+        "opciones": [
+          "Tinigua",
+          "El Tuparro",
+          "Puerto Gaitán",
+          "Yaigojé Apaporis"
+        ],
+        "respuesta": "Tinigua"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es una de las reservas de delfines rosados en Colombia.",
+        "opciones": [
+          "Amacayacu",
+          "Sanquianga",
+          "Utría",
+          "Los Katíos"
+        ],
+        "respuesta": "Amacayacu"
+      },
+      {
+        "oracion": "La zona de los caños de colores pertenece al Parque Nacional Natural _div_blanco_.",
+        "opciones": [
+          "Serranía de la Macarena",
+          "Munchique",
+          "Chiribiquete",
+          "Paramillo"
+        ],
+        "respuesta": "Serranía de la Macarena"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentran los tepuyes, montañas con formas planas.",
+        "opciones": [
+          "Chiribiquete",
+          "Tinigua",
+          "El Cocuy",
+          "Sumapaz"
+        ],
+        "respuesta": "Chiribiquete"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es clave en la conservación del cóndor de los Andes.",
+        "opciones": [
+          "El Cocuy",
+          "Iguaque",
+          "Farallones de Cali",
+          "Munchique"
+        ],
+        "respuesta": "El Cocuy"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ tiene una de las mayores extensiones de bosques de niebla.",
+        "opciones": [
+          "Farallones de Cali",
+          "Sumapaz",
+          "Chingaza",
+          "Sierra Nevada de Santa Marta"
+        ],
+        "respuesta": "Farallones de Cali"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentra la Laguna de Iguaque, considerada sagrada.",
+        "opciones": [
+          "Iguaque",
+          "Cueva de los Guácharos",
+          "Chingaza",
+          "Munchique"
+        ],
+        "respuesta": "Iguaque"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ protege la flora y fauna de los ecosistemas del Caribe insular.",
+        "opciones": [
+          "Old Providence y McBean Lagoon",
+          "Corales del Rosario y San Bernardo",
+          "Bahía Portete",
+          "Macuira"
+        ],
+        "respuesta": "Old Providence y McBean Lagoon"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ se encuentra una de las más grandes reservas de manglares.",
+        "opciones": [
+          "Sanquianga",
+          "Utría",
+          "Los Katíos",
+          "Old Providence y McBean Lagoon"
+        ],
+        "respuesta": "Sanquianga"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es un corredor biológico entre la Orinoquía y la Amazonía.",
+        "opciones": [
+          "Tinigua",
+          "El Tuparro",
+          "Yaigojé Apaporis",
+          "Nukak"
+        ],
+        "respuesta": "Tinigua"
+      },
+      {
+        "oracion": "La cascada más alta de Colombia está en el Parque Nacional Natural _div_blanco_.",
+        "opciones": [
+          "Cueva de los Guácharos",
+          "El Cocuy",
+          "Sierra Nevada de Santa Marta",
+          "Sumapaz"
+        ],
+        "respuesta": "Cueva de los Guácharos"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ protege el ecosistema marino-costero del Pacífico.",
+        "opciones": [
+          "Utría",
+          "Sanquianga",
+          "Los Katíos",
+          "Corales del Rosario y San Bernardo"
+        ],
+        "respuesta": "Utría"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ se refugian muchas especies de tortugas marinas.",
+        "opciones": [
+          "Corales del Rosario y San Bernardo",
+          "Old Providence y McBean Lagoon",
+          "Gorgona",
+          "Sanquianga"
+        ],
+        "respuesta": "Corales del Rosario y San Bernardo"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ resguarda comunidades indígenas como los Nukak Makú.",
+        "opciones": [
+          "Nukak",
+          "Yaigojé Apaporis",
+          "Chiribiquete",
+          "Amacayacu"
+        ],
+        "respuesta": "Nukak"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ está en el piedemonte amazónico y es considerado una \"casa del sol\".",
+        "opciones": [
+          "Alto Fragua Indiwasi",
+          "Yaigojé Apaporis",
+          "Nukak",
+          "Tinigua"
+        ],
+        "respuesta": "Alto Fragua Indiwasi"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es hogar de los frailejones y los venados de páramo.",
+        "opciones": [
+          "Sumapaz",
+          "El Cocuy",
+          "Iguaque",
+          "Chingaza"
+        ],
+        "respuesta": "Sumapaz"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ se conservan las dunas de la Alta Guajira.",
+        "opciones": [
+          "Macuira",
+          "Bahía Portete",
+          "Paramillo",
+          "Sanquianga"
+        ],
+        "respuesta": "Macuira"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ está ubicado en el noroccidente de Colombia y protege especies endémicas.",
+        "opciones": [
+          "Paramillo",
+          "Los Katíos",
+          "Serranía de la Macarena",
+          "Tinigua"
+        ],
+        "respuesta": "Paramillo"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es un importante refugio para los manatíes.",
+        "opciones": [
+          "Puerto Gaitán",
+          "Tinigua",
+          "El Tuparro",
+          "Cueva de los Guácharos"
+        ],
+        "respuesta": "Puerto Gaitán"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ habitan jaguares, tigrillos y pumas.",
+        "opciones": [
+          "Los Katíos",
+          "Nukak",
+          "Chiribiquete",
+          "Amacayacu"
+        ],
+        "respuesta": "Los Katíos"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es una de las zonas más biodiversas del mundo, ubicado en el Pacífico.",
+        "opciones": [
+          "Gorgona",
+          "Utría",
+          "Sanquianga",
+          "Los Katíos"
+        ],
+        "respuesta": "Gorgona"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ protege el ecosistema del piedemonte andino-amazónico.",
+        "opciones": [
+          "Cordillera de los Picachos",
+          "Tinigua",
+          "Yaigojé Apaporis",
+          "Paramillo"
+        ],
+        "respuesta": "Cordillera de los Picachos"
+      },
+      {
+        "oracion": "En el Parque Nacional Natural _div_blanco_ se pueden encontrar las formaciones rocosas más antiguas del país.",
+        "opciones": [
+          "Chiribiquete",
+          "Paramillo",
+          "Sierra Nevada de Santa Marta",
+          "El Cocuy"
+        ],
+        "respuesta": "Chiribiquete"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ está ubicado en la región amazónica y es clave para la conservación indígena.",
+        "opciones": [
+          "Yaigojé Apaporis",
+          "Nukak",
+          "Amacayacu",
+          "Chiribiquete"
+        ],
+        "respuesta": "Yaigojé Apaporis"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ tiene suelos arenosos y vegetación de sabana.",
+        "opciones": [
+          "El Tuparro",
+          "Tinigua",
+          "Paramillo",
+          "Bahía Portete"
+        ],
+        "respuesta": "El Tuparro"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ protege especies en peligro como la danta de montaña.",
+        "opciones": [
+          "Farallones de Cali",
+          "El Cocuy",
+          "Sumapaz",
+          "Chingaza"
+        ],
+        "respuesta": "Farallones de Cali"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es una reserva indígena y protege el agua de la Amazonía.",
+        "opciones": [
+          "Yaigojé Apaporis",
+          "Nukak",
+          "Amacayacu",
+          "Tinigua"
+        ],
+        "respuesta": "Yaigojé Apaporis"
+      },
+      {
+        "oracion": "El Parque Nacional Natural _div_blanco_ es una de las áreas protegidas más importantes del Valle del Cauca.",
+        "opciones": [
+          "Munchique",
+          "Farallones de Cali",
+          "Paramillo",
+          "Serranía de la Macarena"
+        ],
+        "respuesta": "Munchique"
+      }
+    ]
+  },
+  "hidrografia_colombia": {
+    "mapa": "../mapas/marron/hidrografia.png",
+    "nombre": "Hidrografía de Colombia",
+    "nivel1": [
+      {
+        "oracion": "El río más largo de Colombia es el _div_blanco_.",
+        "respuesta": "Magdalena",
+        "opciones": [
+          "Magdalena",
+          "Cauca",
+          "Putumayo",
+          "Atrato"
+        ]
+      },
+      {
+        "oracion": "El río Cauca es un afluente del río _div_blanco_.",
+        "respuesta": "Magdalena",
+        "opciones": [
+          "Magdalena",
+          "Orinoco",
+          "Guaviare",
+          "Vaupés"
+        ]
+      },
+      {
+        "oracion": "La vertiente del Caribe tiene ríos largos y de fácil _div_blanco_.",
+        "respuesta": "navegación",
+        "opciones": [
+          "navegación",
+          "evaporación",
+          "contaminación",
+          "sequía"
+        ]
+      },
+      {
+        "oracion": "El río Atrato es uno de los más _div_blanco_ de Colombia.",
+        "respuesta": "caudalosos",
+        "opciones": [
+          "caudalosos",
+          "cortos",
+          "angostos",
+          "secos"
+        ]
+      },
+      {
+        "oracion": "La Sierra Nevada de Santa Marta origina varias _div_blanco_.",
+        "respuesta": "cuencas",
+        "opciones": [
+          "cuencas",
+          "cordilleras",
+          "mesetas",
+          "ciudades"
+        ]
+      },
+      {
+        "oracion": "La vertiente del Pacífico tiene ríos con corrientes _div_blanco_.",
+        "respuesta": "rápidas",
+        "opciones": [
+          "rápidas",
+          "tranquilas",
+          "turbias",
+          "lentas"
+        ]
+      },
+      {
+        "oracion": "El río San Juan desemboca en el océano _div_blanco_.",
+        "respuesta": "Pacífico",
+        "opciones": [
+          "Pacífico",
+          "Atlántico",
+          "Índico",
+          "Caribe"
+        ]
+      },
+      {
+        "oracion": "El río Baudó se encuentra en el departamento del _div_blanco_.",
+        "respuesta": "Chocó",
+        "opciones": [
+          "Chocó",
+          "Antioquia",
+          "Córdoba",
+          "Nariño"
+        ]
+      },
+      {
+        "oracion": "La vertiente del Amazonas es la más _div_blanco_ de Colombia.",
+        "respuesta": "extensa",
+        "opciones": [
+          "extensa",
+          "seca",
+          "profunda",
+          "pequeña"
+        ]
+      },
+      {
+        "oracion": "En la Amazonía se encuentra el río _div_blanco_.",
+        "respuesta": "Caquetá",
+        "opciones": [
+          "Caquetá",
+          "Sinú",
+          "Atrato",
+          "Cauca"
+        ]
+      },
+      {
+        "oracion": "El río Putumayo pertenece a la vertiente del _div_blanco_.",
+        "respuesta": "Amazonas",
+        "opciones": [
+          "Amazonas",
+          "Orinoco",
+          "Caribe",
+          "Pacífico"
+        ]
+      },
+      {
+        "oracion": "El río Orinoco es compartido con el país de _div_blanco_.",
+        "respuesta": "Venezuela",
+        "opciones": [
+          "Venezuela",
+          "Brasil",
+          "Ecuador",
+          "Perú"
+        ]
+      },
+      {
+        "oracion": "La vertiente del Orinoco incluye el río _div_blanco_.",
+        "respuesta": "Guaviare",
+        "opciones": [
+          "Guaviare",
+          "Caquetá",
+          "San Juan",
+          "Baudó"
+        ]
+      },
+      {
+        "oracion": "El río Meta es uno de los más importantes de la _div_blanco_.",
+        "respuesta": "Orinoquía",
+        "opciones": [
+          "Orinoquía",
+          "Amazonía",
+          "Caribe",
+          "Pacífico"
+        ]
+      },
+      {
+        "oracion": "El río Inírida desemboca en el río _div_blanco_.",
+        "respuesta": "Guaviare",
+        "opciones": [
+          "Guaviare",
+          "Meta",
+          "Caquetá",
+          "Putumayo"
+        ]
+      },
+      {
+        "oracion": "La vertiente del Catatumbo vierte sus aguas en el lago de _div_blanco_.",
+        "respuesta": "Maracaibo",
+        "opciones": [
+          "Maracaibo",
+          "Titicaca",
+          "Magdalena",
+          "Valencia"
+        ]
+      },
+      {
+        "oracion": "El río Zulia es un afluente del río _div_blanco_.",
+        "respuesta": "Catatumbo",
+        "opciones": [
+          "Catatumbo",
+          "Meta",
+          "Atrato",
+          "Cauca"
+        ]
+      },
+      {
+        "oracion": "La cuenca del río Sinú pertenece a la vertiente del _div_blanco_.",
+        "respuesta": "Caribe",
+        "opciones": [
+          "Caribe",
+          "Orinoquía",
+          "Pacífico",
+          "Amazonas"
+        ]
+      },
+      {
+        "oracion": "El río Patía es el más largo de la vertiente del _div_blanco_.",
+        "respuesta": "Pacífico",
+        "opciones": [
+          "Pacífico",
+          "Caribe",
+          "Orinoquía",
+          "Catatumbo"
+        ]
+      },
+      {
+        "oracion": "Un río que nace en la cordillera y desemboca en el Pacífico es el _div_blanco_.",
+        "respuesta": "Mira",
+        "opciones": [
+          "Mira",
+          "Meta",
+          "Magdalena",
+          "Putumayo"
+        ]
+      },
+      {
+        "oracion": "El río Arauca forma parte de la frontera con _div_blanco_.",
+        "respuesta": "Venezuela",
+        "opciones": [
+          "Venezuela",
+          "Brasil",
+          "Ecuador",
+          "Perú"
+        ]
+      },
+      {
+        "oracion": "La región de la Orinoquía se caracteriza por sus _div_blanco_.",
+        "respuesta": "llanuras",
+        "opciones": [
+          "llanuras",
+          "montañas",
+          "selvas",
+          "desiertos"
+        ]
+      },
+      {
+        "oracion": "El río Vaupés se encuentra en la región de la _div_blanco_.",
+        "respuesta": "Amazonía",
+        "opciones": [
+          "Amazonía",
+          "Orinoquía",
+          "Pacífico",
+          "Caribe"
+        ]
+      },
+      {
+        "oracion": "La vertiente del Caribe es la de mayor cantidad de _div_blanco_.",
+        "respuesta": "población",
+        "opciones": [
+          "población",
+          "minerales",
+          "selvas",
+          "ríos"
+        ]
+      },
+      {
+        "oracion": "Los ríos de la vertiente del Pacífico transportan mucho _div_blanco_.",
+        "respuesta": "sedimento",
+        "opciones": [
+          "sedimento",
+          "plástico",
+          "oxígeno",
+          "nitrógeno"
+        ]
+      },
+      {
+        "oracion": "El río Tomo es un afluente del río _div_blanco_.",
+        "respuesta": "Orinoco",
+        "opciones": [
+          "Orinoco",
+          "Guaviare",
+          "Putumayo",
+          "Cauca"
+        ]
+      },
+      {
+        "oracion": "La vertiente del Amazonas tiene ríos navegables y de aguas _div_blanco_.",
+        "respuesta": "tranquilas",
+        "opciones": [
+          "tranquilas",
+          "heladas",
+          "tóxicas",
+          "turbulentas"
+        ]
+      },
+      {
+        "oracion": "Los ríos del Pacífico desembocan en el océano _div_blanco_.",
+        "respuesta": "Pacífico",
+        "opciones": [
+          "Pacífico",
+          "Atlántico",
+          "Índico",
+          "Caribe"
+        ]
+      },
+      {
+        "oracion": "El río Vichada es parte de la vertiente del _div_blanco_.",
+        "respuesta": "Orinoco",
+        "opciones": [
+          "Orinoco",
+          "Amazonas",
+          "Pacífico",
+          "Caribe"
+        ]
+      },
+      {
+        "oracion": "El estudio de los cuerpos de agua se llama _div_blanco_.",
+        "respuesta": "hidrografía",
+        "opciones": [
+          "hidrografía",
+          "cartografía",
+          "geología",
+          "biología"
+        ]
+      }
+    ],
+    "nivel2": [
+      {
+        "oracion": "El río Magdalena atraviesa Colombia de _div_blanco_ a _div_blanco_.",
+        "respuesta": "sur, norte",
+        "opciones": [
+          "sur, norte",
+          "oeste, este",
+          "norte, sur",
+          "este, oeste"
+        ]
+      },
+      {
+        "oracion": "El río Cauca es el segundo más _div_blanco_ de Colombia.",
+        "respuesta": "importante",
+        "opciones": [
+          "importante",
+          "caudaloso",
+          "profundo",
+          "ancho"
+        ]
+      },
+      {
+        "oracion": "La vertiente del Caribe es la de mayor desarrollo _div_blanco_.",
+        "respuesta": "económico",
+        "opciones": [
+          "económico",
+          "forestal",
+          "agrícola",
+          "industrial"
+        ]
+      },
+      {
+        "oracion": "El río Atrato transporta gran cantidad de _div_blanco_.",
+        "respuesta": "agua",
+        "opciones": [
+          "agua",
+          "piedras",
+          "arena",
+          "peces"
+        ]
+      },
+      {
+        "oracion": "La Sierra Nevada de Santa Marta origina cuencas como la del río _div_blanco_.",
+        "respuesta": "Ranchería",
+        "opciones": [
+          "Ranchería",
+          "Cauca",
+          "Guaviare",
+          "Putumayo"
+        ]
+      },
+      {
+        "oracion": "Los ríos del Pacífico son cortos debido a la cercanía de la _div_blanco_.",
+        "respuesta": "cordillera",
+        "opciones": [
+          "cordillera",
+          "costa",
+          "llanura",
+          "meseta"
+        ]
+      },
+      {
+        "oracion": "El río Baudó tiene una cuenca de aproximadamente _div_blanco_ km².",
+        "respuesta": "8.000",
+        "opciones": [
+          "8.000",
+          "20.000",
+          "12.500",
+          "15.000"
+        ]
+      },
+      {
+        "oracion": "La vertiente del Amazonas tiene una extensión de _div_blanco_ km².",
+        "respuesta": "345.000",
+        "opciones": [
+          "345.000",
+          "120.000",
+          "500.000",
+          "250.000"
+        ]
+      },
+      {
+        "oracion": "El río Caquetá es uno de los principales afluentes del _div_blanco_.",
+        "respuesta": "Amazonas",
+        "opciones": [
+          "Amazonas",
+          "Orinoco",
+          "Magdalena",
+          "Guaviare"
+        ]
+      },
+      {
+        "oracion": "El río Putumayo tiene una cuenca de aproximadamente _div_blanco_ km².",
+        "respuesta": "54.000",
+        "opciones": [
+          "54.000",
+          "100.000",
+          "72.000",
+          "43.000"
+        ]
+      },
+      {
+        "oracion": "El río Orinoco es el cuarto más largo de _div_blanco_.",
+        "respuesta": "Sudamérica",
+        "opciones": [
+          "Sudamérica",
+          "Colombia",
+          "Centroamérica",
+          "América del Sur"
+        ]
+      },
+      {
+        "oracion": "El río Guaviare es uno de los principales afluentes del _div_blanco_.",
+        "respuesta": "Orinoco",
+        "opciones": [
+          "Orinoco",
+          "Amazonas",
+          "Cauca",
+          "Magdalena"
+        ]
+      },
+      {
+        "oracion": "La cuenca del río Meta abarca alrededor de _div_blanco_ km².",
+        "respuesta": "112.000",
+        "opciones": [
+          "112.000",
+          "90.000",
+          "150.000",
+          "80.000"
+        ]
+      },
+      {
+        "oracion": "El río Inírida desemboca en el río Guaviare, un importante afluente del _div_blanco_.",
+        "respuesta": "Orinoco",
+        "opciones": [
+          "Orinoco",
+          "Amazonas",
+          "Meta",
+          "Caquetá"
+        ]
+      },
+      {
+        "oracion": "El río Tomo tiene una cuenca de aproximadamente _div_blanco_ km².",
+        "respuesta": "20.000",
+        "opciones": [
+          "20.000",
+          "10.000",
+          "30.000",
+          "15.000"
+        ]
+      },
+      {
+        "oracion": "El río Vichada forma parte de la vertiente del _div_blanco_.",
+        "respuesta": "Orinoco",
+        "opciones": [
+          "Orinoco",
+          "Amazonas",
+          "Caribe",
+          "Pacífico"
+        ]
+      },
+      {
+        "oracion": "El río Arauca es compartido entre Colombia y _div_blanco_.",
+        "respuesta": "Venezuela",
+        "opciones": [
+          "Venezuela",
+          "Brasil",
+          "Ecuador",
+          "Perú"
+        ]
+      },
+      {
+        "oracion": "El río Catatumbo es famoso por su fenómeno del _div_blanco_.",
+        "respuesta": "relámpago",
+        "opciones": [
+          "relámpago",
+          "remolino",
+          "desbordamiento",
+          "temblor"
+        ]
+      },
+      {
+        "oracion": "La cuenca del río Zulia tiene una extensión de _div_blanco_ km².",
+        "respuesta": "4.800",
+        "opciones": [
+          "4.800",
+          "7.000",
+          "3.200",
+          "6.400"
+        ]
+      },
+      {
+        "oracion": "La vertiente del Caribe abarca aproximadamente _div_blanco_ km².",
+        "respuesta": "389.000",
+        "opciones": [
+          "389.000",
+          "250.000",
+          "500.000",
+          "320.000"
+        ]
+      },
+      {
+        "oracion": "El río Sinú nace en el departamento de _div_blanco_.",
+        "respuesta": "Córdoba",
+        "opciones": [
+          "Córdoba",
+          "Antioquia",
+          "Chocó",
+          "Nariño"
+        ]
+      },
+      {
+        "oracion": "El río Patía es el más largo de la vertiente del _div_blanco_.",
+        "respuesta": "Pacífico",
+        "opciones": [
+          "Pacífico",
+          "Orinoquía",
+          "Caribe",
+          "Amazonas"
+        ]
+      },
+      {
+        "oracion": "El río San Juan atraviesa una de las zonas más _div_blanco_ de Colombia.",
+        "respuesta": "selváticas",
+        "opciones": [
+          "selváticas",
+          "áridas",
+          "desérticas",
+          "llanas"
+        ]
+      },
+      {
+        "oracion": "El río Mira desemboca en el océano _div_blanco_.",
+        "respuesta": "Pacífico",
+        "opciones": [
+          "Pacífico",
+          "Atlántico",
+          "Índico",
+          "Caribe"
+        ]
+      },
+      {
+        "oracion": "El río Guaviare tiene una cuenca de aproximadamente _div_blanco_ km².",
+        "respuesta": "140.000",
+        "opciones": [
+          "140.000",
+          "110.000",
+          "95.000",
+          "160.000"
+        ]
+      },
+      {
+        "oracion": "El río Vaupés es compartido con el país de _div_blanco_.",
+        "respuesta": "Brasil",
+        "opciones": [
+          "Brasil",
+          "Ecuador",
+          "Perú",
+          "Venezuela"
+        ]
+      },
+      {
+        "oracion": "Los ríos de la vertiente del Pacífico suelen formar _div_blanco_ en su desembocadura.",
+        "respuesta": "deltas",
+        "opciones": [
+          "deltas",
+          "bahías",
+          "islotes",
+          "cuevas"
+        ]
+      },
+      {
+        "oracion": "Los ríos del Amazonas ayudan a la regulación del _div_blanco_.",
+        "respuesta": "clima",
+        "opciones": [
+          "clima",
+          "suelo",
+          "tráfico",
+          "comercio"
+        ]
+      },
+      {
+        "oracion": "Los ríos de la vertiente del Caribe son utilizados para el transporte de _div_blanco_.",
+        "respuesta": "mercancías",
+        "opciones": [
+          "mercancías",
+          "turistas",
+          "residuos",
+          "combustible"
+        ]
+      },
+      {
+        "oracion": "La cuenca del río Putumayo forma parte de la gran cuenca del río _div_blanco_.",
+        "respuesta": "Amazonas",
+        "opciones": [
+          "Amazonas",
+          "Orinoco",
+          "Magdalena",
+          "Cauca"
+        ]
+      }
+    ]
+  },
+  "etnias_de_colombia": {
+    "mapa": "../mapas/marron/etnias.png",
+    "nombre": "Etnias de Colombia",
+    "nivel1": [
+      {
+        "oracion": "Los indígenas Wayuu viven en _div_blanco_.",
+        "respuesta": "La Guajira",
+        "opciones": [
+          "La Guajira",
+          "Amazonas",
+          "Chocó",
+          "Antioquia"
+        ]
+      },
+      {
+        "oracion": "Los indígenas habitan en _div_blanco_ naturales.",
+        "respuesta": "territorios",
+        "opciones": [
+          "territorios",
+          "parques",
+          "aldeas",
+          "tierras"
+        ]
+      },
+      {
+        "oracion": "El idioma de los indígenas Nasa es el _div_blanco_.",
+        "respuesta": "Nasa Yuwe",
+        "opciones": [
+          "Nasa Yuwe",
+          "Namtrik",
+          "Wayuunaiki",
+          "Inga"
+        ]
+      },
+      {
+        "oracion": "La danza tradicional de los indígenas se llama _div_blanco_.",
+        "respuesta": "danza del sol",
+        "opciones": [
+          "danza del sol",
+          "baile del fuego",
+          "danza del jaguar",
+          "rito del agua"
+        ]
+      },
+      {
+        "oracion": "Los indígenas usan el _div_blanco_ para comunicarse.",
+        "respuesta": "idioma",
+        "opciones": [
+          "idioma",
+          "tambor",
+          "dibujo",
+          "silbido"
+        ]
+      },
+      {
+        "oracion": "El animal sagrado de los Muiscas es el _div_blanco_.",
+        "respuesta": "jaguar",
+        "opciones": [
+          "jaguar",
+          "águila",
+          "serpiente",
+          "zorro"
+        ]
+      },
+      {
+        "oracion": "Los indígenas usan la planta de _div_blanco_ para medicina.",
+        "respuesta": "coca",
+        "opciones": [
+          "coca",
+          "maíz",
+          "yuca",
+          "achira"
+        ]
+      },
+      {
+        "oracion": "Los Kogui habitan en la _div_blanco_ Nevada.",
+        "respuesta": "Sierra",
+        "opciones": [
+          "Sierra",
+          "Cordillera",
+          "Altiplanicie",
+          "Selva"
+        ]
+      },
+      {
+        "oracion": "La comunidad indígena protege la _div_blanco_.",
+        "respuesta": "naturaleza",
+        "opciones": [
+          "naturaleza",
+          "ciudad",
+          "tecnología",
+          "arquitectura"
+        ]
+      },
+      {
+        "oracion": "Los indígenas pescan con _div_blanco_.",
+        "respuesta": "redes",
+        "opciones": [
+          "redes",
+          "arcos",
+          "botellas",
+          "anzuelos"
+        ]
+      },
+      {
+        "oracion": "El resguardo indígena es su _div_blanco_ legal.",
+        "respuesta": "territorio",
+        "opciones": [
+          "territorio",
+          "hogar",
+          "parcela",
+          "ciudad"
+        ]
+      },
+      {
+        "oracion": "Los Muiscas eran expertos en el uso del _div_blanco_.",
+        "respuesta": "oro",
+        "opciones": [
+          "oro",
+          "algodón",
+          "barro",
+          "piedra"
+        ]
+      },
+      {
+        "oracion": "La _div_blanco_ es una bebida sagrada de los indígenas.",
+        "respuesta": "chicha",
+        "opciones": [
+          "chicha",
+          "aguapanela",
+          "masato",
+          "café"
+        ]
+      },
+      {
+        "oracion": "El pueblo indígena más grande de Colombia es el _div_blanco_.",
+        "respuesta": "Wayuu",
+        "opciones": [
+          "Wayuu",
+          "Kogui",
+          "Emberá",
+          "Muiscas"
+        ]
+      },
+      {
+        "oracion": "Los indígenas usan _div_blanco_ para hacer mochilas.",
+        "respuesta": "hilo",
+        "opciones": [
+          "hilo",
+          "pasto",
+          "piedra",
+          "cuero"
+        ]
+      },
+      {
+        "oracion": "Los Emberá viven en la región del _div_blanco_.",
+        "respuesta": "Chocó",
+        "opciones": [
+          "Chocó",
+          "Guajira",
+          "Cauca",
+          "Amazonas"
+        ]
+      },
+      {
+        "oracion": "El poporo es un símbolo de los indígenas _div_blanco_.",
+        "respuesta": "Muiscas",
+        "opciones": [
+          "Muiscas",
+          "Kogui",
+          "Inga",
+          "Misak"
+        ]
+      },
+      {
+        "oracion": "La lengua de los indígenas Misak es el _div_blanco_.",
+        "respuesta": "Namtrik",
+        "opciones": [
+          "Namtrik",
+          "Nasa Yuwe",
+          "Inga",
+          "Wayuunaiki"
+        ]
+      },
+      {
+        "oracion": "Los indígenas consideran sagrado el río _div_blanco_.",
+        "respuesta": "Amazonas",
+        "opciones": [
+          "Amazonas",
+          "Magdalena",
+          "Putumayo",
+          "Cauca"
+        ]
+      },
+      {
+        "oracion": "Los indígenas construyen casas con _div_blanco_ y palma.",
+        "respuesta": "madera",
+        "opciones": [
+          "madera",
+          "barro",
+          "paja",
+          "caña"
+        ]
+      },
+      {
+        "oracion": "El medio de transporte de los indígenas en la selva es la _div_blanco_.",
+        "respuesta": "canoa",
+        "opciones": [
+          "canoa",
+          "balsa",
+          "carreta",
+          "camino"
+        ]
+      },
+      {
+        "oracion": "Los indígenas practican el _div_blanco_ para intercambiar productos.",
+        "respuesta": "trueque",
+        "opciones": [
+          "trueque",
+          "mercadeo",
+          "negocio",
+          "venta"
+        ]
+      },
+      {
+        "oracion": "La cosmovisión indígena respeta a la _div_blanco_.",
+        "respuesta": "naturaleza",
+        "opciones": [
+          "naturaleza",
+          "familia",
+          "fiesta",
+          "ciudad"
+        ]
+      },
+      {
+        "oracion": "Los indígenas cultivan la planta del _div_blanco_.",
+        "respuesta": "maíz",
+        "opciones": [
+          "maíz",
+          "arroz",
+          "trigo",
+          "frijol"
+        ]
+      },
+      {
+        "oracion": "Los indígenas preparan el casabe con _div_blanco_.",
+        "respuesta": "yuca",
+        "opciones": [
+          "yuca",
+          "maíz",
+          "papa",
+          "ñame"
+        ]
+      },
+      {
+        "oracion": "Los indígenas practican el tejido con _div_blanco_.",
+        "respuesta": "fibras naturales",
+        "opciones": [
+          "fibras naturales",
+          "hilo plástico",
+          "cuero",
+          "paja"
+        ]
+      },
+      {
+        "oracion": "Los indígenas utilizan _div_blanco_ para pintar sus cuerpos.",
+        "respuesta": "achiote",
+        "opciones": [
+          "achiote",
+          "barro",
+          "humo",
+          "maíz"
+        ]
+      },
+      {
+        "oracion": "El cabildo es la autoridad de los _div_blanco_.",
+        "respuesta": "indígenas",
+        "opciones": [
+          "indígenas",
+          "campesinos",
+          "maestros",
+          "alcaldes"
+        ]
+      },
+      {
+        "oracion": "Los indígenas practican la pesca con _div_blanco_.",
+        "respuesta": "lanzas",
+        "opciones": [
+          "lanzas",
+          "palos",
+          "machetes",
+          "anzuelos"
+        ]
+      },
+      {
+        "oracion": "El jaguar es un símbolo de los indígenas de la _div_blanco_.",
+        "respuesta": "Amazonía",
+        "opciones": [
+          "Amazonía",
+          "Andes",
+          "Guajira",
+          "Sierra"
+        ]
+      }
+    ],
+    "nivel2": [
+      {
+        "oracion": "La Constitución de 1991 reconoce la diversidad _div_blanco_ de Colombia.",
+        "respuesta": "étnica",
+        "opciones": [
+          "étnica",
+          "climática",
+          "musical",
+          "geográfica"
+        ]
+      },
+      {
+        "oracion": "Los pueblos indígenas luchan por la protección de sus _div_blanco_.",
+        "respuesta": "territorios",
+        "opciones": [
+          "territorios",
+          "costumbres",
+          "fronteras",
+          "hogares"
+        ]
+      },
+      {
+        "oracion": "La lengua de los indígenas Wayuu se llama _div_blanco_.",
+        "respuesta": "Wayuunaiki",
+        "opciones": [
+          "Wayuunaiki",
+          "Inga",
+          "Nasa Yuwe",
+          "Namtrik"
+        ]
+      },
+      {
+        "oracion": "La organización política indígena es el _div_blanco_.",
+        "respuesta": "cabildo",
+        "opciones": [
+          "cabildo",
+          "senado",
+          "consejo",
+          "asamblea"
+        ]
+      },
+      {
+        "oracion": "Los pueblos indígenas transmiten su historia de forma _div_blanco_.",
+        "respuesta": "oral",
+        "opciones": [
+          "oral",
+          "escrita",
+          "pictórica",
+          "digital"
+        ]
+      },
+      {
+        "oracion": "La medicina tradicional indígena usa _div_blanco_ naturales.",
+        "respuesta": "plantas",
+        "opciones": [
+          "plantas",
+          "minerales",
+          "insectos",
+          "piedras"
+        ]
+      },
+      {
+        "oracion": "Los indígenas creen que la naturaleza tiene _div_blanco_.",
+        "respuesta": "espíritus",
+        "opciones": [
+          "espíritus",
+          "colores",
+          "ruidos",
+          "recursos"
+        ]
+      },
+      {
+        "oracion": "Los indígenas practican la agricultura en las _div_blanco_.",
+        "respuesta": "chagras",
+        "opciones": [
+          "chagras",
+          "laderas",
+          "terrazas",
+          "alturas"
+        ]
+      },
+      {
+        "oracion": "La bebida sagrada de los indígenas amazónicos es el _div_blanco_.",
+        "respuesta": "yagé",
+        "opciones": [
+          "yagé",
+          "chicha",
+          "guarapo",
+          "aguardiente"
+        ]
+      },
+      {
+        "oracion": "Los indígenas protegen los bosques porque son su _div_blanco_.",
+        "respuesta": "hogar",
+        "opciones": [
+          "hogar",
+          "cultivo",
+          "comercio",
+          "escuela"
+        ]
+      },
+      {
+        "oracion": "La Amazonía es habitada por comunidades _div_blanco_.",
+        "respuesta": "indígenas",
+        "opciones": [
+          "indígenas",
+          "afrodescendientes",
+          "mestizas",
+          "campesinas"
+        ]
+      },
+      {
+        "oracion": "El poporo es un símbolo de la cultura _div_blanco_.",
+        "respuesta": "Muisca",
+        "opciones": [
+          "Muisca",
+          "Kogui",
+          "Wayuu",
+          "Emberá"
+        ]
+      },
+      {
+        "oracion": "La Ley de Origen regula la vida de los pueblos _div_blanco_.",
+        "respuesta": "indígenas",
+        "opciones": [
+          "indígenas",
+          "rurales",
+          "urbanos",
+          "costeros"
+        ]
+      },
+      {
+        "oracion": "Los Emberá pintan su cuerpo con tintes de _div_blanco_.",
+        "respuesta": "jagua",
+        "opciones": [
+          "jagua",
+          "achiote",
+          "barro",
+          "cacao"
+        ]
+      },
+      {
+        "oracion": "Los indígenas Misak son originarios del _div_blanco_.",
+        "respuesta": "Cauca",
+        "opciones": [
+          "Cauca",
+          "Chocó",
+          "Amazonas",
+          "Nariño"
+        ]
+      },
+      {
+        "oracion": "Los indígenas pescan con redes y _div_blanco_.",
+        "respuesta": "arcos",
+        "opciones": [
+          "arcos",
+          "palos",
+          "lanzas",
+          "trampas"
+        ]
+      },
+      {
+        "oracion": "Los Muiscas desarrollaron la metalurgia del _div_blanco_.",
+        "respuesta": "oro",
+        "opciones": [
+          "oro",
+          "plata",
+          "cobre",
+          "hierro"
+        ]
+      },
+      {
+        "oracion": "La chicha es una bebida fermentada hecha de _div_blanco_.",
+        "respuesta": "maíz",
+        "opciones": [
+          "maíz",
+          "yuca",
+          "trigo",
+          "papa"
+        ]
+      },
+      {
+        "oracion": "El mamo es el líder espiritual de los indígenas _div_blanco_.",
+        "respuesta": "Kogui",
+        "opciones": [
+          "Kogui",
+          "Muisca",
+          "Emberá",
+          "Wayuu"
+        ]
+      },
+      {
+        "oracion": "Los indígenas practican el trueque como forma de _div_blanco_.",
+        "respuesta": "economía",
+        "opciones": [
+          "economía",
+          "política",
+          "cultura",
+          "enseñanza"
+        ]
+      },
+      {
+        "oracion": "La consulta previa protege los derechos de los pueblos _div_blanco_.",
+        "respuesta": "indígenas",
+        "opciones": [
+          "indígenas",
+          "costeños",
+          "montañeses",
+          "artesanos"
+        ]
+      },
+      {
+        "oracion": "Los indígenas consideran la selva como un ser _div_blanco_.",
+        "respuesta": "vivo",
+        "opciones": [
+          "vivo",
+          "misterioso",
+          "sagrado",
+          "oculto"
+        ]
+      },
+      {
+        "oracion": "El territorio de los Wayuu es compartido entre Colombia y _div_blanco_.",
+        "respuesta": "Venezuela",
+        "opciones": [
+          "Venezuela",
+          "Ecuador",
+          "Brasil",
+          "Panamá"
+        ]
+      },
+      {
+        "oracion": "La lucha de los indígenas incluye la defensa del _div_blanco_.",
+        "respuesta": "agua",
+        "opciones": [
+          "agua",
+          "sol",
+          "viento",
+          "oro"
+        ]
+      },
+      {
+        "oracion": "Los pueblos indígenas realizan ceremonias de _div_blanco_.",
+        "respuesta": "purificación",
+        "opciones": [
+          "purificación",
+          "danza",
+          "lluvia",
+          "agradecimiento"
+        ]
+      },
+      {
+        "oracion": "La pérdida de lenguas indígenas se llama _div_blanco_.",
+        "respuesta": "extinción lingüística",
+        "opciones": [
+          "extinción lingüística",
+          "olvido cultural",
+          "mutismo social",
+          "cambio generacional"
+        ]
+      },
+      {
+        "oracion": "Los indígenas creen en la energía de la _div_blanco_.",
+        "respuesta": "Pachamama",
+        "opciones": [
+          "Pachamama",
+          "Selva",
+          "Madre Tierra",
+          "Naturaleza"
+        ]
+      },
+      {
+        "oracion": "La música indígena usa instrumentos como la _div_blanco_.",
+        "respuesta": "maraca",
+        "opciones": [
+          "maraca",
+          "flauta",
+          "tambor",
+          "ocarina"
+        ]
+      },
+      {
+        "oracion": "Los indígenas Mokaná habitan el departamento del _div_blanco_.",
+        "respuesta": "Atlántico",
+        "opciones": [
+          "Atlántico",
+          "La Guajira",
+          "Córdoba",
+          "Magdalena"
+        ]
+      },
+      {
+        "oracion": "El gobierno de los indígenas está representado por el _div_blanco_.",
+        "respuesta": "cabildo",
+        "opciones": [
+          "cabildo",
+          "cacique",
+          "asamblea",
+          "líder"
+        ]
+      }
+    ]
+  },
+  "relieve_de_colombia": {
+    "mapa": "../mapas/marron/relieve.png",
+    "nombre": "Relieve de Colombia",
+    "nivel1": [
+      {
+        "oracion": "¿Cuál es el sistema montañoso que forma parte de la Cordillera de los Andes en Colombia?",
+        "respuesta": "El Sistema Montañoso Andino",
+        "opciones": [
+          "El Sistema Montañoso Andino",
+          "El Sistema Costero",
+          "El Sistema Llanero",
+          "El Sistema Amazónico"
+        ]
+      },
+      {
+        "oracion": "¿Cuántas cordilleras forman parte del sistema andino colombiano? _div_blanco_",
+        "respuesta": "Tres cordilleras",
+        "opciones": [
+          "Tres cordilleras",
+          "Dos cordilleras",
+          "Cuatro cordilleras",
+          "Cinco cordilleras"
+        ]
+      },
+      {
+        "oracion": "¿Cuál es la cordillera más baja de las tres? _div_blanco_",
+        "respuesta": "La Cordillera Occidental",
+        "opciones": [
+          "La Cordillera Occidental",
+          "La Cordillera Central",
+          "La Cordillera Oriental",
+          "La Sierra Nevada"
+        ]
+      },
+      {
+        "oracion": "¿Dónde se encuentran los volcanes Chiles, Cumbal y Azufral? _div_blanco_",
+        "respuesta": "En la Cordillera Occidental",
+        "opciones": [
+          "En la Cordillera Occidental",
+          "En la Cordillera Oriental",
+          "En la Cordillera Central",
+          "En la Sierra Nevada"
+        ]
+      },
+      {
+        "oracion": "¿Cuál cordillera se ubica entre la Occidental y la Oriental? _div_blanco_",
+        "respuesta": "La Cordillera Central",
+        "opciones": [
+          "La Cordillera Central",
+          "La Cordillera Occidental",
+          "La Cordillera Oriental",
+          "La Cordillera del Sur"
+        ]
+      },
+      {
+        "oracion": "¿Qué cordillera tiene los nevados del Ruiz, Santa Isabel y Tolima? _div_blanco_",
+        "respuesta": "La Cordillera Central",
+        "opciones": [
+          "La Cordillera Central",
+          "La Cordillera Oriental",
+          "La Cordillera Occidental",
+          "La Sierra Nevada"
+        ]
+      },
+      {
+        "oracion": "¿Qué cordillera es la más ancha de las tres? _div_blanco_",
+        "respuesta": "La Cordillera Oriental",
+        "opciones": [
+          "La Cordillera Oriental",
+          "La Cordillera Occidental",
+          "La Cordillera Central",
+          "La Cordillera Andina"
+        ]
+      },
+      {
+        "oracion": "¿Dónde se ubica el Altiplano Cundiboyacense? _div_blanco_",
+        "respuesta": "En la Cordillera Oriental",
+        "opciones": [
+          "En la Cordillera Oriental",
+          "En la Cordillera Occidental",
+          "En la Cordillera Central",
+          "En el Valle del Magdalena"
+        ]
+      },
+      {
+        "oracion": "¿En qué cordillera se encuentra Bogotá? _div_blanco_",
+        "respuesta": "En la Cordillera Oriental",
+        "opciones": [
+          "En la Cordillera Oriental",
+          "En la Cordillera Central",
+          "En la Cordillera Occidental",
+          "En la Sierra Nevada"
+        ]
+      },
+      {
+        "oracion": "¿Dónde nace el río Magdalena? _div_blanco_",
+        "respuesta": "En el Macizo Colombiano",
+        "opciones": [
+          "En el Macizo Colombiano",
+          "En la Cordillera Oriental",
+          "En la Sierra Nevada",
+          "En la Serranía del Darién"
+        ]
+      },
+      {
+        "oracion": "¿Qué división geográfica marca el inicio de las tres cordilleras? _div_blanco_",
+        "respuesta": "El Nudo de los Pastos",
+        "opciones": [
+          "El Nudo de los Pastos",
+          "El Nudo de Paramillo",
+          "El Nudo de Sumapaz",
+          "El Nudo del Sur"
+        ]
+      },
+      {
+        "oracion": "¿Qué cordillera termina en serranías como Ayapel y San Jerónimo? _div_blanco_",
+        "respuesta": "La Cordillera Occidental",
+        "opciones": [
+          "La Cordillera Occidental",
+          "La Cordillera Oriental",
+          "La Cordillera Central",
+          "La Serranía del Baudó"
+        ]
+      },
+      {
+        "oracion": "¿Qué sistemas montañosos están aislados de los Andes? _div_blanco_",
+        "respuesta": "Periférico",
+        "opciones": [
+          "Periférico",
+          "Andino",
+          "Atlántico",
+          "Occidental"
+        ]
+      },
+      {
+        "oracion": "¿Dónde está ubicada la Serranía de la Macuira? _div_blanco_",
+        "respuesta": "En La Guajira",
+        "opciones": [
+          "En La Guajira",
+          "En el Amazonas",
+          "En el Meta",
+          "En Antioquia"
+        ]
+      },
+      {
+        "oracion": "¿Cuál es la montaña más alta cerca al mar? _div_blanco_",
+        "respuesta": "La Sierra Nevada de Santa Marta",
+        "opciones": [
+          "La Sierra Nevada de Santa Marta",
+          "El Alto del Buey",
+          "La Serranía del Baudó",
+          "El Macizo Colombiano"
+        ]
+      },
+      {
+        "oracion": "¿Qué departamentos comparten la Sierra Nevada de Santa Marta? _div_blanco_",
+        "respuesta": "Magdalena, Cesar y La Guajira",
+        "opciones": [
+          "Magdalena, Cesar y La Guajira",
+          "Cesar, Meta y Bolívar",
+          "Antioquia, Cesar y Magdalena",
+          "Guaviare, Vaupés y Meta"
+        ]
+      },
+      {
+        "oracion": "¿Dónde se encuentran los Llanos Orientales? _div_blanco_",
+        "respuesta": "En el oriente del país",
+        "opciones": [
+          "En el oriente del país",
+          "En el occidente del país",
+          "En el sur del país",
+          "En el centro del país"
+        ]
+      },
+      {
+        "oracion": "¿Qué llanura se encuentra en el suroccidente de Colombia? _div_blanco_",
+        "respuesta": "La Llanura del Pacífico",
+        "opciones": [
+          "La Llanura del Pacífico",
+          "La Llanura del Caribe",
+          "La Llanura Amazónica",
+          "La Llanura Oriental"
+        ]
+      },
+      {
+        "oracion": "¿Cuál es el valle que recorre todo el centro del país? _div_blanco_",
+        "respuesta": "El Valle del Magdalena",
+        "opciones": [
+          "El Valle del Magdalena",
+          "El Valle del Cauca",
+          "El Valle de Atrato",
+          "El Altiplano Central"
+        ]
+      },
+      {
+        "oracion": "¿Qué serranía está en el departamento del Meta? _div_blanco_",
+        "respuesta": "La Serranía de la Macarena",
+        "opciones": [
+          "La Serranía de la Macarena",
+          "La Serranía del Darién",
+          "La Serranía de San Lucas",
+          "La Serranía de Ayapel"
+        ]
+      },
+      {
+        "oracion": "¿Qué cordillera tiene mayor altura? _div_blanco_",
+        "respuesta": "La Cordillera Central",
+        "opciones": [
+          "La Cordillera Central",
+          "La Cordillera Oriental",
+          "La Cordillera Occidental",
+          "La Sierra Nevada"
+        ]
+      },
+      {
+        "oracion": "¿Qué tipo de accidente geográfico son los valles interandinos? _div_blanco_",
+        "respuesta": "Depresiones entre montañas",
+        "opciones": [
+          "Depresiones entre montañas",
+          "Mesetas elevadas",
+          "Picos volcánicos",
+          "Serranías costeras"
+        ]
+      },
+      {
+        "oracion": "¿Qué serranía se encuentra en la frontera con Panamá? _div_blanco_",
+        "respuesta": "La Serranía del Darién",
+        "opciones": [
+          "La Serranía del Darién",
+          "La Serranía de San Lucas",
+          "La Serranía de Perijá",
+          "La Serranía del Baudó"
+        ]
+      },
+      {
+        "oracion": "¿Qué pico es el más alto de Colombia? _div_blanco_",
+        "respuesta": "El Pico Cristóbal Colón",
+        "opciones": [
+          "El Pico Cristóbal Colón",
+          "El Nevado del Ruiz",
+          "El Alto del Buey",
+          "El Volcán Puracé"
+        ]
+      },
+      {
+        "oracion": "¿En qué región se encuentran los Montes de María? _div_blanco_",
+        "respuesta": "En la región Caribe",
+        "opciones": [
+          "En la región Caribe",
+          "En la región Andina",
+          "En la región Pacífica",
+          "En la región Amazónica"
+        ]
+      },
+      {
+        "oracion": "¿Qué cordillera tiene 1.200 km de largo y está al oeste del país? _div_blanco_",
+        "respuesta": "La Cordillera Occidental",
+        "opciones": [
+          "La Cordillera Occidental",
+          "La Cordillera Central",
+          "La Cordillera Oriental",
+          "La Sierra Nevada"
+        ]
+      },
+      {
+        "oracion": "¿Cuál es el punto más alto de la Serranía del Baudó? _div_blanco_",
+        "respuesta": "El Alto del Buey",
+        "opciones": [
+          "El Alto del Buey",
+          "El Pico Cristóbal Colón",
+          "El Nudo de los Pastos",
+          "El Cerro Tatamá"
+        ]
+      }
+    ],
+    "nivel2": [
+      {
+        "oracion": "¿Cuál es el sistema montañoso que forma parte de la Cordillera de los Andes en Colombia?",
+        "respuesta": "El Sistema Montañoso Andino",
+        "opciones": [
+          "El Sistema Montañoso Andino",
+          "El Sistema Costero",
+          "El Sistema Llanero",
+          "El Sistema Insular"
+        ]
+      },
+      {
+        "oracion": "¿Cuántas cordilleras forman parte del sistema andino colombiano? _div_blanco_",
+        "respuesta": "Tres cordilleras",
+        "opciones": [
+          "Tres cordilleras",
+          "Dos cordilleras",
+          "Cuatro cordilleras",
+          "Cinco cordilleras"
+        ]
+      },
+      {
+        "oracion": "¿Cuál es la cordillera más baja de las tres? _div_blanco_",
+        "respuesta": "La Cordillera Occidental",
+        "opciones": [
+          "La Cordillera Occidental",
+          "La Cordillera Central",
+          "La Cordillera Oriental",
+          "La Cordillera del Sur"
+        ]
+      },
+      {
+        "oracion": "¿Dónde se encuentran los volcanes Chiles, Cumbal y Azufral? _div_blanco_",
+        "respuesta": "En la Cordillera Occidental",
+        "opciones": [
+          "En la Cordillera Occidental",
+          "En la Cordillera Central",
+          "En la Cordillera Oriental",
+          "En la Sierra Nevada de Santa Marta"
+        ]
+      },
+      {
+        "oracion": "¿Cuál cordillera se ubica entre la Occidental y la Oriental? _div_blanco_",
+        "respuesta": "La Cordillera Central",
+        "opciones": [
+          "La Cordillera Central",
+          "La Cordillera Occidental",
+          "La Cordillera Oriental",
+          "La Cordillera Insular"
+        ]
+      },
+      {
+        "oracion": "¿Qué cordillera tiene los nevados del Ruiz, Santa Isabel y Tolima? _div_blanco_",
+        "respuesta": "La Cordillera Central",
+        "opciones": [
+          "La Cordillera Central",
+          "La Cordillera Oriental",
+          "La Cordillera Occidental",
+          "La Cordillera de los Andes"
+        ]
+      },
+      {
+        "oracion": "¿Qué cordillera es la más ancha de las tres? _div_blanco_",
+        "respuesta": "La Cordillera Oriental",
+        "opciones": [
+          "La Cordillera Oriental",
+          "La Cordillera Occidental",
+          "La Cordillera Central",
+          "La Cordillera del Sur"
+        ]
+      },
+      {
+        "oracion": "¿Dónde se ubica el Altiplano Cundiboyacense? _div_blanco_",
+        "respuesta": "En la Cordillera Oriental",
+        "opciones": [
+          "En la Cordillera Oriental",
+          "En la Cordillera Occidental",
+          "En la Cordillera Central",
+          "En el Valle del Cauca"
+        ]
+      },
+      {
+        "oracion": "¿En qué cordillera se encuentra Bogotá? _div_blanco_",
+        "respuesta": "En la Cordillera Oriental",
+        "opciones": [
+          "En la Cordillera Oriental",
+          "En la Cordillera Central",
+          "En la Cordillera Occidental",
+          "En la Sierra Nevada"
+        ]
+      },
+      {
+        "oracion": "¿Dónde nace el río Magdalena? _div_blanco_",
+        "respuesta": "En el Macizo Colombiano",
+        "opciones": [
+          "En el Macizo Colombiano",
+          "En la Cordillera Oriental",
+          "En la Sierra Nevada",
+          "En la Cordillera Central"
+        ]
+      },
+      {
+        "oracion": "¿Qué división geográfica marca el inicio de las tres cordilleras? _div_blanco_",
+        "respuesta": "El Nudo de los Pastos",
+        "opciones": [
+          "El Nudo de los Pastos",
+          "El Nudo de Paramillo",
+          "El Nudo del Sur",
+          "El Macizo Colombiano"
+        ]
+      },
+      {
+        "oracion": "¿Qué cordillera termina en serranías como Ayapel y San Jerónimo? _div_blanco_",
+        "respuesta": "La Cordillera Occidental",
+        "opciones": [
+          "La Cordillera Occidental",
+          "La Cordillera Oriental",
+          "La Cordillera Central",
+          "La Serranía del Baudó"
+        ]
+      },
+      {
+        "oracion": "¿Qué sistemas montañosos están aislados de los Andes? _div_blanco_",
+        "respuesta": "Periférico",
+        "opciones": [
+          "Periférico",
+          "Andino",
+          "Interno",
+          "Costero"
+        ]
+      },
+      {
+        "oracion": "¿Dónde está ubicada la Serranía de la Macuira? _div_blanco_",
+        "respuesta": "En La Guajira",
+        "opciones": [
+          "En La Guajira",
+          "En el Amazonas",
+          "En el Meta",
+          "En el Cauca"
+        ]
+      },
+      {
+        "oracion": "¿Cuál es la montaña más alta cerca al mar? _div_blanco_",
+        "respuesta": "La Sierra Nevada de Santa Marta",
+        "opciones": [
+          "La Sierra Nevada de Santa Marta",
+          "El Macizo Colombiano",
+          "El Alto del Buey",
+          "La Serranía de San Lucas"
+        ]
+      },
+      {
+        "oracion": "¿Qué departamentos comparten la Sierra Nevada de Santa Marta? _div_blanco_",
+        "respuesta": "Magdalena, Cesar y La Guajira",
+        "opciones": [
+          "Magdalena, Cesar y La Guajira",
+          "Cesar, Meta y Huila",
+          "La Guajira, Bolívar y Magdalena",
+          "Magdalena, Antioquia y Córdoba"
+        ]
+      },
+      {
+        "oracion": "¿Dónde se encuentran los Llanos Orientales? _div_blanco_",
+        "respuesta": "En el oriente del país",
+        "opciones": [
+          "En el oriente del país",
+          "En el norte del país",
+          "En el occidente del país",
+          "En el sur del país"
+        ]
+      },
+      {
+        "oracion": "¿Qué llanura se encuentra en el suroccidente de Colombia? _div_blanco_",
+        "respuesta": "La Llanura del Pacífico",
+        "opciones": [
+          "La Llanura del Pacífico",
+          "La Llanura del Caribe",
+          "La Llanura Amazónica",
+          "La Llanura del Magdalena"
+        ]
+      },
+      {
+        "oracion": "¿Cuál es el valle que recorre todo el centro del país? _div_blanco_",
+        "respuesta": "El Valle del Magdalena",
+        "opciones": [
+          "El Valle del Magdalena",
+          "El Valle del Cauca",
+          "El Altiplano Central",
+          "El Valle del Atrato"
+        ]
+      },
+      {
+        "oracion": "¿Qué serranía está en el departamento del Meta? _div_blanco_",
+        "respuesta": "La Serranía de la Macarena",
+        "opciones": [
+          "La Serranía de la Macarena",
+          "La Serranía del Darién",
+          "La Serranía del Perijá",
+          "La Serranía del Baudó"
+        ]
+      },
+      {
+        "oracion": "¿Qué cordillera tiene mayor altura? _div_blanco_",
+        "respuesta": "La Cordillera Central",
+        "opciones": [
+          "La Cordillera Central",
+          "La Cordillera Oriental",
+          "La Cordillera Occidental",
+          "La Cordillera del Sur"
+        ]
+      },
+      {
+        "oracion": "¿Qué tipo de accidente geográfico son los valles interandinos? _div_blanco_",
+        "respuesta": "Depresiones entre montañas",
+        "opciones": [
+          "Depresiones entre montañas",
+          "Montañas aisladas",
+          "Llanuras elevadas",
+          "Mesetas costeras"
+        ]
+      },
+      {
+        "oracion": "¿Qué serranía se encuentra en la frontera con Panamá? _div_blanco_",
+        "respuesta": "La Serranía del Darién",
+        "opciones": [
+          "La Serranía del Darién",
+          "La Serranía de la Macuira",
+          "La Serranía del Perijá",
+          "La Serranía del Baudó"
+        ]
+      },
+      {
+        "oracion": "¿Qué pico es el más alto de Colombia? _div_blanco_",
+        "respuesta": "El Pico Cristóbal Colón",
+        "opciones": [
+          "El Pico Cristóbal Colón",
+          "El Alto del Buey",
+          "El Nevado del Ruiz",
+          "El Cerro Tatamá"
+        ]
+      },
+      {
+        "oracion": "¿En qué región se encuentran los Montes de María? _div_blanco_",
+        "respuesta": "En la región Caribe",
+        "opciones": [
+          "En la región Caribe",
+          "En la región Andina",
+          "En la región Amazónica",
+          "En la región Pacífica"
+        ]
+      },
+      {
+        "oracion": "¿Qué cordillera tiene 1.200 km de largo y está al oeste del país? _div_blanco_",
+        "respuesta": "La Cordillera Occidental",
+        "opciones": [
+          "La Cordillera Occidental",
+          "La Cordillera Central",
+          "La Cordillera Oriental",
+          "La Sierra Nevada"
+        ]
+      },
+      {
+        "oracion": "¿Cuál es el punto más alto de la Serranía del Baudó? _div_blanco_",
+        "respuesta": "El Alto del Buey",
+        "opciones": [
+          "El Alto del Buey",
+          "El Pico Cristóbal Colón",
+          "El Nudo de los Pastos",
+          "El Alto del Guamo"
+        ]
+      }
+    ]
+  },
+  "clima_de_colombia": {
+    "mapa": "../mapas/marron/clima.png",
+    "nombre": "Clima de Colombia",
+    "nivel1": [
+      {
+        "oracion": "Colombia tiene _div_blanco_ regiones climáticas principales.",
+        "respuesta": "seis",
+        "opciones": [
+          "seis",
+          "cinco",
+          "cuatro",
+          "siete"
+        ]
+      },
+      {
+        "oracion": "La región _div_blanco_ está en el norte y es muy calurosa.",
+        "respuesta": "Caribe",
+        "opciones": [
+          "Caribe",
+          "Andina",
+          "Pacífica",
+          "Insular"
+        ]
+      },
+      {
+        "oracion": "La región _div_blanco_ tiene muchas montañas y clima templado.",
+        "respuesta": "Andina",
+        "opciones": [
+          "Andina",
+          "Caribe",
+          "Amazonía",
+          "Insular"
+        ]
+      },
+      {
+        "oracion": "La región _div_blanco_ tiene lluvias casi todo el año.",
+        "respuesta": "Pacífica",
+        "opciones": [
+          "Pacífica",
+          "Caribe",
+          "Insular",
+          "Orinoquía"
+        ]
+      },
+      {
+        "oracion": "La región _div_blanco_ tiene sabanas y clima tropical.",
+        "respuesta": "Orinoquía",
+        "opciones": [
+          "Orinoquía",
+          "Andina",
+          "Pacífica",
+          "Caribe"
+        ]
+      },
+      {
+        "oracion": "La región _div_blanco_ está cubierta por selvas y es muy húmeda.",
+        "respuesta": "Amazonía",
+        "opciones": [
+          "Amazonía",
+          "Pacífica",
+          "Insular",
+          "Andina"
+        ]
+      },
+      {
+        "oracion": "La región _div_blanco_ está compuesta por islas.",
+        "respuesta": "Insular",
+        "opciones": [
+          "Insular",
+          "Caribe",
+          "Amazonía",
+          "Orinoquía"
+        ]
+      },
+      {
+        "oracion": "En la región Caribe está el departamento de _div_blanco_.",
+        "respuesta": "La Guajira",
+        "opciones": [
+          "La Guajira",
+          "Meta",
+          "Antioquia",
+          "Boyacá"
+        ]
+      },
+      {
+        "oracion": "En la región Andina está el departamento de _div_blanco_.",
+        "respuesta": "Boyacá",
+        "opciones": [
+          "Boyacá",
+          "Chocó",
+          "La Guajira",
+          "Vaupés"
+        ]
+      },
+      {
+        "oracion": "El departamento del _div_blanco_ pertenece a la región Pacífica.",
+        "respuesta": "Chocó",
+        "opciones": [
+          "Chocó",
+          "Meta",
+          "Boyacá",
+          "Amazonas"
+        ]
+      },
+      {
+        "oracion": "La Amazonía tiene un clima _div_blanco_ y húmedo.",
+        "respuesta": "tropical",
+        "opciones": [
+          "tropical",
+          "seco",
+          "templado",
+          "frío"
+        ]
+      },
+      {
+        "oracion": "San Andrés y Providencia están en la región _div_blanco_.",
+        "respuesta": "Insular",
+        "opciones": [
+          "Insular",
+          "Caribe",
+          "Andina",
+          "Pacífica"
+        ]
+      },
+      {
+        "oracion": "El clima de la región Pacífica es muy _div_blanco_.",
+        "respuesta": "lluvioso",
+        "opciones": [
+          "lluvioso",
+          "seco",
+          "frío",
+          "tropical"
+        ]
+      },
+      {
+        "oracion": "La región Orinoquía tiene clima de _div_blanco_.",
+        "respuesta": "sabana",
+        "opciones": [
+          "sabana",
+          "desierto",
+          "montaña",
+          "selva"
+        ]
+      },
+      {
+        "oracion": "En la región Andina llueve pero también hace _div_blanco_.",
+        "respuesta": "frío",
+        "opciones": [
+          "frío",
+          "calor",
+          "brisa",
+          "viento"
+        ]
+      },
+      {
+        "oracion": "El mapa climático muestra cómo es el _div_blanco_ en cada región.",
+        "respuesta": "clima",
+        "opciones": [
+          "clima",
+          "relieve",
+          "territorio",
+          "suelo"
+        ]
+      },
+      {
+        "oracion": "El departamento del _div_blanco_ está en la región Andina.",
+        "respuesta": "Antioquia",
+        "opciones": [
+          "Antioquia",
+          "Chocó",
+          "Guaviare",
+          "Córdoba"
+        ]
+      },
+      {
+        "oracion": "En la región Amazónica hay muchas _div_blanco_.",
+        "respuesta": "selvas",
+        "opciones": [
+          "selvas",
+          "montañas",
+          "playas",
+          "sabana"
+        ]
+      },
+      {
+        "oracion": "El clima del Caribe es cálido y a veces _div_blanco_.",
+        "respuesta": "seco",
+        "opciones": [
+          "seco",
+          "frío",
+          "nevado",
+          "lluvioso"
+        ]
+      },
+      {
+        "oracion": "La región con más islas es la _div_blanco_.",
+        "respuesta": "Insular",
+        "opciones": [
+          "Insular",
+          "Caribe",
+          "Pacífica",
+          "Amazonía"
+        ]
+      },
+      {
+        "oracion": "En el Pacífico, casi siempre está _div_blanco_.",
+        "respuesta": "lloviendo",
+        "opciones": [
+          "lloviendo",
+          "nevando",
+          "soleado",
+          "nublado"
+        ]
+      },
+      {
+        "oracion": "El departamento de _div_blanco_ está en la Orinoquía.",
+        "respuesta": "Meta",
+        "opciones": [
+          "Meta",
+          "Caldas",
+          "Atlántico",
+          "Huila"
+        ]
+      },
+      {
+        "oracion": "En la región Andina hay montañas y _div_blanco_.",
+        "respuesta": "valles",
+        "opciones": [
+          "valles",
+          "selvas",
+          "playas",
+          "ríos"
+        ]
+      },
+      {
+        "oracion": "En la región Caribe hay desiertos y _div_blanco_.",
+        "respuesta": "playas",
+        "opciones": [
+          "playas",
+          "montañas",
+          "valles",
+          "llanuras"
+        ]
+      },
+      {
+        "oracion": "La región que tiene climas muy variados es la _div_blanco_.",
+        "respuesta": "Andina",
+        "opciones": [
+          "Andina",
+          "Amazonía",
+          "Insular",
+          "Caribe"
+        ]
+      },
+      {
+        "oracion": "El clima depende del lugar y de su _div_blanco_.",
+        "respuesta": "altura",
+        "opciones": [
+          "altura",
+          "nombre",
+          "color",
+          "departamento"
+        ]
+      },
+      {
+        "oracion": "En la región Insular soplan muchos _div_blanco_ del mar.",
+        "respuesta": "vientos",
+        "opciones": [
+          "vientos",
+          "relámpagos",
+          "ríos",
+          "terremotos"
+        ]
+      },
+      {
+        "oracion": "La región donde hay muchos ríos y selva es la _div_blanco_.",
+        "respuesta": "Amazonía",
+        "opciones": [
+          "Amazonía",
+          "Andina",
+          "Caribe",
+          "Insular"
+        ]
+      },
+      {
+        "oracion": "En la región Andina viven muchas personas porque el clima es _div_blanco_.",
+        "respuesta": "agradable",
+        "opciones": [
+          "agradable",
+          "seco",
+          "extremo",
+          "caluroso"
+        ]
+      },
+      {
+        "oracion": "En el mapa climático podemos ver zonas húmedas y zonas _div_blanco_.",
+        "respuesta": "secas",
+        "opciones": [
+          "secas",
+          "verdes",
+          "altas",
+          "nevadas"
+        ]
+      }
+    ],
+    "nivel2": [
+      {
+        "oracion": "Colombia tiene una gran _div_blanco_ climática debido a su geografía.",
+        "respuesta": "diversidad",
+        "opciones": [
+          "diversidad",
+          "uniformidad",
+          "homogeneidad",
+          "constancia"
+        ]
+      },
+      {
+        "oracion": "La región Caribe tiene un clima _div_blanco_ y semiárido.",
+        "respuesta": "cálido",
+        "opciones": [
+          "cálido",
+          "frío",
+          "templado",
+          "húmedo"
+        ]
+      },
+      {
+        "oracion": "La región Andina presenta climas templados y de _div_blanco_.",
+        "respuesta": "montaña",
+        "opciones": [
+          "montaña",
+          "llanura",
+          "desierto",
+          "selva"
+        ]
+      },
+      {
+        "oracion": "En la región Pacífica, la _div_blanco_ anual es muy alta.",
+        "respuesta": "precipitación",
+        "opciones": [
+          "precipitación",
+          "temperatura",
+          "altitud",
+          "vegetación"
+        ]
+      },
+      {
+        "oracion": "El clima de la Amazonía es _div_blanco_ y húmedo.",
+        "respuesta": "ecuatorial",
+        "opciones": [
+          "ecuatorial",
+          "árido",
+          "templado",
+          "frío"
+        ]
+      },
+      {
+        "oracion": "El clima de la región Orinoquía se caracteriza por estaciones _div_blanco_ y lluviosas.",
+        "respuesta": "secas",
+        "opciones": [
+          "secas",
+          "frías",
+          "nevadas",
+          "calurosas"
+        ]
+      },
+      {
+        "oracion": "El clima de la región Insular es de tipo _div_blanco_ marítimo.",
+        "respuesta": "tropical",
+        "opciones": [
+          "tropical",
+          "templado",
+          "frío",
+          "desértico"
+        ]
+      },
+      {
+        "oracion": "Las condiciones climáticas se ven influenciadas por la _div_blanco_ del terreno.",
+        "respuesta": "altitud",
+        "opciones": [
+          "altitud",
+          "latitud",
+          "longitud",
+          "temperatura"
+        ]
+      },
+      {
+        "oracion": "La región Andina contiene la mayor parte de la _div_blanco_ del país.",
+        "respuesta": "población",
+        "opciones": [
+          "población",
+          "vegetación",
+          "desierto",
+          "ríos"
+        ]
+      },
+      {
+        "oracion": "La zona del Caribe incluye los departamentos de La Guajira, Bolívar y _div_blanco_.",
+        "respuesta": "Cesar",
+        "opciones": [
+          "Cesar",
+          "Meta",
+          "Caquetá",
+          "Nariño"
+        ]
+      },
+      {
+        "oracion": "Las lluvias constantes del Pacífico generan gran _div_blanco_ vegetal.",
+        "respuesta": "biodiversidad",
+        "opciones": [
+          "biodiversidad",
+          "aridez",
+          "desierto",
+          "sequía"
+        ]
+      },
+      {
+        "oracion": "La región Amazonía cubre gran parte del sur del país con bosques de _div_blanco_.",
+        "respuesta": "selva",
+        "opciones": [
+          "selva",
+          "desierto",
+          "pradera",
+          "sabana"
+        ]
+      },
+      {
+        "oracion": "El viento alisio tiene gran influencia en el clima de la región _div_blanco_.",
+        "respuesta": "Insular",
+        "opciones": [
+          "Insular",
+          "Andina",
+          "Caribe",
+          "Orinoquía"
+        ]
+      },
+      {
+        "oracion": "En la Orinoquía predomina un paisaje de sabana y clima _div_blanco_.",
+        "respuesta": "tropical",
+        "opciones": [
+          "tropical",
+          "frío",
+          "árido",
+          "templado"
+        ]
+      },
+      {
+        "oracion": "La región Andina presenta climas más fríos en las _div_blanco_.",
+        "respuesta": "alturas",
+        "opciones": [
+          "alturas",
+          "planicies",
+          "playas",
+          "selvas"
+        ]
+      },
+      {
+        "oracion": "En la región Pacífica, el clima cálido y húmedo se debe a la cercanía con el _div_blanco_.",
+        "respuesta": "océano",
+        "opciones": [
+          "océano",
+          "desierto",
+          "montaña",
+          "río"
+        ]
+      },
+      {
+        "oracion": "San Andrés y Providencia tienen un clima cálido con vientos _div_blanco_.",
+        "respuesta": "alisios",
+        "opciones": [
+          "alisios",
+          "fríos",
+          "secos",
+          "templados"
+        ]
+      },
+      {
+        "oracion": "La región más lluviosa del país es la región _div_blanco_.",
+        "respuesta": "Pacífica",
+        "opciones": [
+          "Pacífica",
+          "Caribe",
+          "Andina",
+          "Amazonía"
+        ]
+      },
+      {
+        "oracion": "En el Caribe se observan climas áridos como en el desierto de la _div_blanco_.",
+        "respuesta": "Guajira",
+        "opciones": [
+          "Guajira",
+          "Amazonía",
+          "Pacífica",
+          "Orinoquía"
+        ]
+      },
+      {
+        "oracion": "La temperatura disminuye a medida que aumenta la _div_blanco_.",
+        "respuesta": "altitud",
+        "opciones": [
+          "altitud",
+          "temperatura",
+          "humedad",
+          "latitud"
+        ]
+      },
+      {
+        "oracion": "La variedad de climas en Colombia se representa en el mapa _div_blanco_.",
+        "respuesta": "climático",
+        "opciones": [
+          "climático",
+          "físico",
+          "político",
+          "económico"
+        ]
+      },
+      {
+        "oracion": "La región Insular está expuesta a huracanes y otros fenómenos _div_blanco_.",
+        "respuesta": "climáticos",
+        "opciones": [
+          "climáticos",
+          "geológicos",
+          "políticos",
+          "económicos"
+        ]
+      },
+      {
+        "oracion": "En la Orinoquía se desarrollan muchas actividades de tipo _div_blanco_.",
+        "respuesta": "ganadero",
+        "opciones": [
+          "ganadero",
+          "industrial",
+          "pesquero",
+          "minero"
+        ]
+      },
+      {
+        "oracion": "En la región Amazonía se presentan lluvias _div_blanco_ durante todo el año.",
+        "respuesta": "constantes",
+        "opciones": [
+          "constantes",
+          "estacionales",
+          "ocasionales",
+          "escasas"
+        ]
+      },
+      {
+        "oracion": "La biodiversidad de Colombia está relacionada con su variada _div_blanco_.",
+        "respuesta": "climatología",
+        "opciones": [
+          "climatología",
+          "población",
+          "geografía",
+          "historia"
+        ]
+      },
+      {
+        "oracion": "Los departamentos de Nariño y Cauca tienen climas de montaña y también de tipo _div_blanco_.",
+        "respuesta": "húmedo",
+        "opciones": [
+          "húmedo",
+          "árido",
+          "frío",
+          "seco"
+        ]
+      },
+      {
+        "oracion": "Las condiciones climáticas de Colombia favorecen la agricultura y la _div_blanco_.",
+        "respuesta": "ganadería",
+        "opciones": [
+          "ganadería",
+          "minería",
+          "industria",
+          "pesca"
+        ]
+      },
+      {
+        "oracion": "La región con mayor humedad relativa del país es la _div_blanco_.",
+        "respuesta": "Pacífica",
+        "opciones": [
+          "Pacífica",
+          "Caribe",
+          "Andina",
+          "Orinoquía"
+        ]
+      },
+      {
+        "oracion": "Los departamentos de Caquetá y Putumayo están ubicados en la región _div_blanco_.",
+        "respuesta": "Amazonía",
+        "opciones": [
+          "Amazonía",
+          "Andina",
+          "Caribe",
+          "Insular"
+        ]
+      },
+      {
+        "oracion": "En los mapas climáticos se identifican los tipos de clima y su _div_blanco_ geográfica.",
+        "respuesta": "distribución",
+        "opciones": [
+          "distribución",
+          "variación",
+          "temperatura",
+          "altitud"
+        ]
+      }
+    ]
+  }
 }

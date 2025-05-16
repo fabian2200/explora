@@ -10,5 +10,9 @@ function seleccionarTipoMapa(tipo) {
         window.location.href = 'climatico.html';
     } else if (tipo == 'parques_naturales') {
         window.location.href = 'parques_naturales.html';
+    } else if (tipo == 'volcanes') {
+        window.location.href = 'volcanes.html';
+    } else if (tipo == 'etnias') {
+        window.location.href = 'etnias.html';
     }
 }

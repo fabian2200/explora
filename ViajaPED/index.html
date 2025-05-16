@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Épocas Históricas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.6.3.slim.min.js"></script>
+    <script src="jquery.page_zoom.min.js"></script>
+
+</head>
+
+<body>
+    <div id="background" style="display: none;" class="background-container">
+
+    </div>
+    <div id="tooltip" class="tooltip">
+  
+  </div>
+    <div class="header-container">
+        <div class="header-title">
+            <h1 id="header-title">Viaja y explora el tiempo</h1>
+        </div>
+        <div class="header-button">
+        </div>
+    </div>
+    <div class="container">
+        <!-- Sección de eras -->
+        <div class="eras-section" id="eras-section">
+            <div class="eras-circle">
+                <div class="era-item" data-era="prehistoria">
+                    <img src="img/epocaPrehistoria.png" alt="Prehistoria">
+                    <h3 class="era-title">Prehistoria</h3>
+                </div>
+                <div class="era-item" data-era="antigua">
+                    <img src="img/epocaAntigua.png" alt="Edad Antigua">
+                    <h3 class="era-title">Edad Antigua</h3>
+                </div>
+                <div class="era-item" data-era="media">
+                    <img src="img/epocaMedia.png" alt="Edad Media">
+                    <h3 class="era-title">Edad Media</h3>
+                </div>
+                <div class="era-item" data-era="moderna">
+                    <img src="img/epocaModerna.png" alt="Edad Moderna">
+                    <h3 class="era-title">Edad Moderna</h3>
+                </div>
+                <div class="era-item" data-era="contemporanea">
+                    <img src="img/epocaContemporanea.png" alt="Edad Contemporánea">
+                    <h3 class="era-title">Edad Contemporánea</h3>
+                </div>
+            </div>
+        </div>
+        <div class="machine-container">
+            <img src="img/maquina.png" alt="Máquina del tiempo" class="machine">
+        </div>
+        <!-- Contenedor del túnel del tiempo -->
+        <div class="time-tunnel-container">
+            <div class="time-tunnel">
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>
+                <div class="tunnel-circle"></div>                
+            </div>  
+        </div>
+
+        <!-- Sección de detalles de la era (ahora en un div separado) -->
+        <div id="era-details-section" style="display: none;" class="era-details-section">
+
+        </div>
+       
+    </div>
+
+
+    
+</div>
+    
+    <!-- Modal para mostrar detalles de elementos -->
+    <div id="element-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-content"></div>
+            <!-- agregar botones para aumentar la funete del contenido-->
+            <div class="container-btn">
+                <div class="btn-aumentar"></div>
+                <div class="btn-disminuir"></div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        window.parent.document.body.style.zoom = .85;
+
+    </script>
+</body>
+
+</html>

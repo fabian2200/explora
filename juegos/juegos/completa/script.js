@@ -135,8 +135,7 @@ function mostrarPregunta() {
     opcionesContainer.innerHTML = '';
     
     // Generar opciones falsas basadas en otras preguntas
-    const opcionesFalsas = generarOpcionesFalsas();
-    const todasLasOpciones = [pregunta.respuesta, ...opcionesFalsas];
+    const todasLasOpciones = pregunta.opciones;
     const opcionesMezcladas = mezclarOpciones(todasLasOpciones);
     
     opcionesMezcladas.forEach(opcion => {
@@ -163,24 +162,6 @@ function mostrarPregunta() {
         clearInterval(temporizadorCambio);
         temporizadorCambio = null;
     }
-}
-
-function generarOpcionesFalsas() {
-    // Obtener 3 opciones falsas de la misma categoría y nivel
-    const todasLasPreguntas = [];
-    
-    // Recolectar solo las respuestas de la categoría y nivel actual
-    if (datosJuego[categoriaActual][nivelActual]) {
-        datosJuego[categoriaActual][nivelActual].forEach(pregunta => {
-            if (pregunta.respuesta !== preguntasActuales[preguntaActualIndex].respuesta) {
-                todasLasPreguntas.push(pregunta.respuesta);
-            }
-        });
-    }
-    
-    // Mezclar y seleccionar 3 opciones falsas
-    const opcionesMezcladas = [...todasLasPreguntas].sort(() => Math.random() - 0.5);
-    return opcionesMezcladas.slice(0, 3);
 }
 
 function mezclarOpciones(opciones) {
