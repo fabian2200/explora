@@ -31,7 +31,7 @@ function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, ni
 
 
     const modalHtml = `
-        <div class="modal fade" id="modal_guardar_resultado" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal fade" id="modal_guardar_resultado" tabindex="-1" aria-labelledby="miModalLabel" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content" style="overflow: hidden; border-radius: 20px;">
                     <div class="modal-body" style="padding: 0px;">
@@ -42,11 +42,11 @@ function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, ni
                                 <div class="row" style="margin: 0px;">
                                     <div class="col-lg-6" style="padding: 0px; padding-right: 10px;">
                                         <h5 style="font-weight: bold;" class="text-primary">Ingresa tu nombre: </h5>
-                                        <input class="form-control" type="text" id="nombre_jugador" placeholder="Nombre">
+                                        <input oninput="validar_guardar_resultado('nombre_jugador')" class="form-control" type="text" id="nombre_jugador" placeholder="Nombre">
                                     </div>
                                     <div class="col-lg-6" style="padding: 0px; padding-left: 10px;">
                                         <h5 style="font-weight: bold;" class="text-primary">Grado: </h5>
-                                        <select class="form-control" id="grado_jugador">
+                                        <select onchange="validar_guardar_resultado('grado_jugador')" class="form-control" id="grado_jugador">
                                             <option value="">Selecciona tu grado</option>
                                             <option value="1">1° Grado</option>
                                             <option value="2">2° Grado</option>
@@ -64,7 +64,7 @@ function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, ni
                                 </div>
                                 <br>
                                 <h5 style="font-weight: bold;" class="text-primary">Selecciona tu avatar: </h5>
-                                <div class="row" style="margin: 0px; margin-top: 10px; max-height: 170px; overflow-y: auto;">
+                                <div class="row" id="div_avatar" style="margin: 0px; margin-top: 10px; max-height: 170px; overflow-y: auto;">
                                     ${div_avatar}
                                 </div>
                                 <br>
@@ -76,7 +76,7 @@ function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, ni
                                 <br>
                                 <div style="display: flex; justify-content: center; align-items: center;">
                                     <button type="button" onclick="guardar_resultado_base_datos()" style="width: 160px;" class="btn btn-primary" id="btnGuardar">Guardar <i class="fas fa-save"></i></button>
-                                    <button type="button" style="width: 160px; margin-left: 20px;" class="btn btn-danger" data-bs-dismiss="modal">Cerrar <i class="fas fa-times"></i></button>
+                                    <button type="button" style="width: 160px; margin-left: 20px;" class="btn btn-danger" onclick="cerrar_modal_guardar_resultado()">Cerrar <i class="fas fa-times"></i></button>
                                 </div>
                             </div>
                             <div class="col-lg-5" style="padding: 20px;">
@@ -100,11 +100,11 @@ function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, ni
     setTimeout(() => {
         seleccionar_avatar(avatar_seleccionado);
     }, 500);
+}
 
-    // Cuando se cierra el modal, elimínalo del DOM
-    $('#modal_guardar_resultado').on('hidden.bs.modal', function () {
-        $(this).remove();
-    });
+function cerrar_modal_guardar_resultado(){
+    $('#modal_guardar_resultado').modal('hide');
+    $('#modal_guardar_resultado').remove();
 }
 
 function seleccionar_avatar(id) {
@@ -120,6 +120,10 @@ function seleccionar_avatar(id) {
 }
 
 function guardar_resultado_base_datos() {
+
+    $('#nombre_jugador').removeClass('is-invalid');
+    $('#grado_jugador').removeClass('is-invalid');
+
     var url = '../../php/guardar_resultado.php';
 
     var nombre_jugador = document.getElementById('nombre_jugador').value;
@@ -127,29 +131,12 @@ function guardar_resultado_base_datos() {
     var avatar_jugador = document.querySelector('.avatar_container.active').id;
 
     if (nombre_jugador == '') {
-        swal.fire({
-            title: '¡Error!',
-            html: '<h2 class="error_guardar">Debes ingresar un nombre</h2>',
-            icon: 'error'
-        });
+       $('#nombre_jugador').addClass('is-invalid');
         return;
     }
 
     if (grado_jugador == '') {
-        swal.fire({
-            title: '¡Error!',
-            html: '<h2 class="error_guardar">Debes seleccionar un grado</h2>',
-            icon: 'error'
-        });
-        return;
-    }
-
-    if (avatar_jugador == '') {
-        swal.fire({
-            title: '¡Error!',
-            html: '<h2 class="error_guardar">Debes seleccionar un avatar</h2>',
-            icon: 'error'
-        });
+        $('#grado_jugador').addClass('is-invalid');
         return;
     }
 
@@ -174,21 +161,21 @@ function guardar_resultado_base_datos() {
         success: function (response) {
             response = JSON.parse(response);
             if (response.status == 'success') {
-                swal.fire({
-                    html: '<i class="fas fa-check-circle icon_alert"></i> <br> <h2 class="error_guardar">' + response.mensaje + '</h2>',
-                });
-
+              
                 $('#btnGuardar').attr('disabled', true);
                 $('#btnGuardar').html('<i class="fas fa-check-circle"></i> Guardado');
+                $('#btnGuardar').addClass('btn-success');
+                $('#btnGuardar').removeClass('btn-primary');
 
+                $('#nombre_jugador').attr('disabled', true);
+                $('#grado_jugador').attr('disabled', true);
+                $('#div_avatar').css('pointer-events', 'none');
+                $('#div_avatar').css('opacity', '0.5');
+                
                 setTimeout(() => {
                     consultar_ranking();
                 }, 1000);
             } else {
-                swal.fire({
-                    html: '<i class="fas fa-times-circle icon_alert_error"></i> <br> <h2 class="error_guardar">' + response.mensaje + '</h2>',
-                });
-
                 $('#btnGuardar').attr('disabled', false);
                 $('#btnGuardar').html('Guardar <i class="fas fa-save"></i>');
             }
@@ -267,4 +254,8 @@ function mapear_ranking(response) {
         `;
         ranking_container.appendChild(ranking_item);
     }
+}
+
+function validar_guardar_resultado(id){
+    $('#'+id).removeClass('is-invalid');
 }

@@ -57,55 +57,60 @@ function mostrarBanderas() {
         }
         numeroPregunta++;
     }else{
-        var ruta_audio = '';
-        if((respondidas_correctas / respondidas) >= 0.6) {
-            ruta_audio = '../sounds/victory.mp3';
-            Swal.fire({
-                icon: 'success',
-                title: '¡Felicidades!',
-                html: 'Has respondido correctamente correctamente ' + respondidas_correctas + ' de ' + respondidas + ' preguntas.',
-                showConfirmButton: true,
-                confirmButtonText: 'Jugar de nuevo',
-                showCancelButton: true,
-                cancelButtonText: 'Salir',
-                allowOutsideClick: false,
-                allowEscapeKey: false,
-                cancelButtonColor: '#d33',
-                confirmButtonColor: '#3085d6',
-            }).then((result) => {
-                if(result.isConfirmed) {
-                    location.reload();
-                }else{
-                    location.href = '../../index.html';
-                }
-            });
-        }else{
-            ruta_audio = '../sounds/game_over.mp3';
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                html: 'Has respondido correctamente correctamente ' + respondidas_correctas + ' de ' + respondidas + ' preguntas, animo, puedes intentarlo de nuevo.',
-                showConfirmButton: true,
-                confirmButtonText: 'Intentar de nuevo',
-                showCancelButton: true,
-                cancelButtonText: 'Salir',
-                allowOutsideClick: false,
-                allowEscapeKey: false,
-                cancelButtonColor: '#d33',
-                confirmButtonColor: '#3085d6',
-            }).then((result) => {
-                if(result.isConfirmed) {
-                    location.reload();
-                }else{
-                    location.href = '../../index.html';
-                }
-            });
-        }
-    }
+        clearInterval(intervalo_contador_juego);
+        guardar_resultado("bandera_color", respondidas_correctas, contador_juego, "Normal");
 
-    setTimeout(function() {
-        reproducir_audio(ruta_audio);
-    }, 300);
+        var ruta_audio = '';
+        setTimeout(function() {
+            if((respondidas_correctas / respondidas) >= 0.6) {
+                ruta_audio = '../sounds/victory.mp3';
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Felicidades!',
+                    html: 'Has respondido correctamente correctamente ' + respondidas_correctas + ' de ' + respondidas + ' preguntas.',
+                    showConfirmButton: true,
+                    confirmButtonText: 'Jugar de nuevo',
+                    showCancelButton: true,
+                    cancelButtonText: 'Salir',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    cancelButtonColor: '#d33',
+                    confirmButtonColor: '#3085d6',
+                }).then((result) => {
+                    if(result.isConfirmed) {
+                        location.reload();
+                    }else{
+                        location.href = '../../index.html';
+                    }
+                });
+            }else{
+                ruta_audio = '../sounds/game_over.mp3';
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    html: 'Has respondido correctamente correctamente ' + respondidas_correctas + ' de ' + respondidas + ' preguntas, animo, puedes intentarlo de nuevo.',
+                    showConfirmButton: true,
+                    confirmButtonText: 'Intentar de nuevo',
+                    showCancelButton: true,
+                    cancelButtonText: 'Salir',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    cancelButtonColor: '#d33',
+                    confirmButtonColor: '#3085d6',
+                }).then((result) => {
+                    if(result.isConfirmed) {
+                        location.reload();
+                    }else{
+                        location.href = '../../index.html';
+                    }
+                });
+            }
+        }, 300);
+
+        setTimeout(function() {
+            reproducir_audio(ruta_audio);
+        }, 400);
+    }
 }
 
 function desordenarBanderas(array) {
@@ -224,6 +229,7 @@ function iniciarJuego(tipo) {
     if(tipo == 'pinta') {
         $('#contenedor_juego1').show();
         $('#contenedor_juego2').hide();
+        iniciar_contador_juego();
         cargarBanderas();
         cargarColores();
         $("body").css('cursor', 'url(assets/pincel.cur) 16 16, auto');
@@ -234,6 +240,7 @@ function iniciarJuego(tipo) {
     }else{
         $('#contenedor_juego1').hide();
         $('#contenedor_juego2').show();
+        iniciar_contador_juego();
         cargarBanderasAdivinar();
         iniciarTimer();
     }
@@ -355,53 +362,59 @@ function seleccionarBandaAdivinar(bandera, div) {
 
     if(respondidas_correctas_adivina + respondidas_incorrectas_adivina == 10) {
         clearInterval(intervaloTimer);
-        if(respondidas_correctas_adivina >= 6) {
-            ruta_audio = '../sounds/victory.mp3';   
-            Swal.fire({
-                icon: 'success',
-                title: '¡Felicidades!',
-                text: 'Has respondido correctamente ' + respondidas_correctas_adivina + ' de ' + (respondidas_correctas_adivina + respondidas_incorrectas_adivina) + ' preguntas.',
-                showConfirmButton: true,
-                confirmButtonText: 'Jugar de nuevo',
-                showCancelButton: true,
-                cancelButtonText: 'Salir',
-                allowOutsideClick: false,
-                allowEscapeKey: false,
-                cancelButtonColor: '#d33',
-                confirmButtonColor: '#3085d6',
-            }).then((result) => {
-                if(result.isConfirmed) {
-                    location.reload();
-                }else{
-                    location.href = '../../index.html';
-                }
-            });
-        }else{
-            ruta_audio = '../sounds/game_over.mp3';
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Has respondido correctamente ' + respondidas_correctas_adivina + ' de ' + (respondidas_correctas_adivina + respondidas_incorrectas_adivina) + ' preguntas, animo, puedes intentarlo de nuevo.',
-                showConfirmButton: true,
-                confirmButtonText: 'Intentar de nuevo',
-                showCancelButton: true,
-                cancelButtonText: 'Salir',
-                allowOutsideClick: false,
-                allowEscapeKey: false,
-                cancelButtonColor: '#d33',
-                confirmButtonColor: '#3085d6',
-            }).then((result) => {
-                if(result.isConfirmed) {
-                    location.reload();
-                }else{
-                    location.href = '../../index.html';
-                }
-            }); 
-        }
+
+        clearInterval(intervalo_contador_juego);
+        guardar_resultado("adivina_bandera", respondidas_correctas_adivina, contador_juego, "Normal");
+
+        setTimeout(function() {
+            if(respondidas_correctas_adivina >= 6) {
+                ruta_audio = '../sounds/victory.mp3';   
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Felicidades!',
+                    text: 'Has respondido correctamente ' + respondidas_correctas_adivina + ' de ' + (respondidas_correctas_adivina + respondidas_incorrectas_adivina) + ' preguntas.',
+                    showConfirmButton: true,
+                    confirmButtonText: 'Jugar de nuevo',
+                    showCancelButton: true,
+                    cancelButtonText: 'Salir',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    cancelButtonColor: '#d33',
+                    confirmButtonColor: '#3085d6',
+                }).then((result) => {
+                    if(result.isConfirmed) {
+                        location.reload();
+                    }else{
+                        location.href = '../../index.html';
+                    }
+                });
+            }else{
+                ruta_audio = '../sounds/game_over.mp3';
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Has respondido correctamente ' + respondidas_correctas_adivina + ' de ' + (respondidas_correctas_adivina + respondidas_incorrectas_adivina) + ' preguntas, animo, puedes intentarlo de nuevo.',
+                    showConfirmButton: true,
+                    confirmButtonText: 'Intentar de nuevo',
+                    showCancelButton: true,
+                    cancelButtonText: 'Salir',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    cancelButtonColor: '#d33',
+                    confirmButtonColor: '#3085d6',
+                }).then((result) => {
+                    if(result.isConfirmed) {
+                        location.reload();
+                    }else{
+                        location.href = '../../index.html';
+                    }
+                }); 
+            }
+        }, 300);
 
         setTimeout(function() {
             reproducir_audio(ruta_audio);
-        }, 300);
+        }, 400);
     }else{
         setTimeout(function() {
             MapearBanderas();
@@ -424,4 +437,13 @@ function reproducir_audio(ruta){
     audio.src = ruta;
     audio.volume = 0.29;
     audio.play();
+}
+
+var contador_juego = 0;
+var intervalo_contador_juego = null;
+function iniciar_contador_juego(){
+    intervalo_contador_juego = setInterval(() => {
+        contador_juego++;
+        console.log(contador_juego);
+    }, 1000);
 }
