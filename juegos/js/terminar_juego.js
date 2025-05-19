@@ -105,6 +105,7 @@ function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, ni
 function cerrar_modal_guardar_resultado(){
     $('#modal_guardar_resultado').modal('hide');
     $('#modal_guardar_resultado').remove();
+    $('.modal-backdrop').remove();
 }
 
 function seleccionar_avatar(id) {
