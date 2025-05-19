@@ -40,7 +40,7 @@ var numero_palabra = 1;
 
 // Escoger palabra al azar
 function generaPalabra() {
-  rand = parseInt((Math.random() * 19).toFixed(0));
+  rand = numero_palabra - 1;
 
   palabra = palabras[rand][0].toUpperCase();
   palabra = palabra.split('').map( letra => acentos[letra] || letra).join('').toString();

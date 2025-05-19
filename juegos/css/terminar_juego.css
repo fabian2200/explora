@@ -1,0 +1,151 @@
+.avatar_container{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.avatar_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar_container:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.avatar_container.active{
+    border: 4px solid #48ff00;
+}
+
+
+.container-stats{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.container-stats h5{
+    margin: 0px;
+}
+
+.error_guardar {
+    color: #fffbfb;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 3rem;
+    word-break: break-word;
+    font-family: 'DS-Digital' !important;
+    font-weight: bold;
+}
+
+.icon_alert{
+    font-size: 7rem;
+    margin: 3rem;
+    color: #68e168;
+}
+
+.icon_alert_error{
+    font-size: 7rem;
+    margin: 3rem;
+    color: #e16868;
+}
+
+
+#ranking_container{
+    width: 100%;
+    height: 90%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ranking_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 27px;
+    padding: 8px;
+    padding-left: 68px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.info_ranking{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ranking_item_avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    left: -2px;
+    top: 3px;
+}
+
+.ranking_item_avatar img{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.item_coronita{
+    width: 154% !important;
+    height: 161% !important;
+    z-index: 1 !important;
+    position: absolute !important;
+    top: -16.7px !important;
+    left: -12.2px !important;
+}
+
+.ranking_item_nombre{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fffbfb;
+    width: 52%;
+}
+
+.ranking_item_puntos{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fffbfb;
+}
+
+.ranking_item_tiempo i, .ranking_item_puntos i {
+    color: #fffbfb;
+    font-size: 1.1rem;
+}
+
+.ranking_item_tiempo{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fffbfb;
+}
+
+
+.clase_border_avatar{
+    border: 10px solid #9100ff;
+    width: 65px !important;
+    height: 65px !important;
+    top: -6px !important;
+    background-color: #9100ff !important;
+    left: -9px !important;
+}

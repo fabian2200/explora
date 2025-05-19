@@ -6,7 +6,7 @@ const mapDataArray = [
         "*_____*______________*_______*",
         "*_****_********_*****_**_*****",
         "*_*_________*____________*___*",
-        "*_*_*******_*_************___*",
+        "*_*_*******_*_*****_******___*",
         "*___________*______________***",
         "****_*****_******_**_**_******",
         "*_______**__________**___*___*",
@@ -18,7 +18,7 @@ const mapDataArray = [
         "*_*_*___*______*____**_______*",
         "*_*_**_*****__*****_******___*",
         "*_*______**___**____**_**__***",
-        "*_********_______*___________*",
+        "*_******_*_______*___________*",
         "W__________****_____****_____W",
         "******************************"
     ],
@@ -27,7 +27,7 @@ const mapDataArray = [
         "W____*__________*______*_____W",
         "*____*___****___*__**___****_*",
         "*__***_____**___*__**________*",
-        "*____*__******__**_**_****___*",
+        "*_______******__**_**_****___*",
         "*___**__*______*____*____*___*",
         "**_****_*_****_*_****_*__**__*",
         "*_______*______________*_____*",
@@ -47,6 +47,29 @@ const mapDataArray = [
     ],
     [
         "******************************",
+        "W_____*___________***________W",
+        "*_****_*_**_*****_***__*****_*",
+        "*__________*__________*_____ *",
+        "*_*****_***_*********__****_**",
+        "*__*__________*_______**_____*",
+        "*__*___*****__*___******_**__*",
+        "*______*_________*________*__*",
+        "*****_**_*****_****_******__*",
+        "*_____**_______**_____*_____ *",
+        "*___****___o___**__**_*___**_*",
+        "*______*_______***_***____**_*",
+        "**_***_**_****__**_*____***__*",
+        "*___*_____*__*_____*____**__**",
+        "*_*_*____*__**___*___**___*__*",
+        "*_*_*____*______***____*_____*",
+        "*_*_****_****__*****__******_*",
+        "*_*_______**____**______**___*",
+        "*_******________*______**____*",
+        "W_________*****____**_____*__W",
+        "******************************"
+    ],    
+    [
+        "******************************",
         "W_________****_____________*_W",
         "*_*****___****___*****____**_*",
         "*_____*______________*_______*",
@@ -64,13 +87,13 @@ const mapDataArray = [
         "*_*_*___*______*____**_______*",
         "*_*_**_*****__*****_******___*",
         "*_*______**___**____**_**__***",
-        "*_********_______*___________*",
+        "*_******_*_______*___________*",
         "W__________****_____****_____W",
         "******************************"
     ]
 ];
 
-var mapData = mapDataArray[Math.floor(Math.random() * mapDataArray.length)];
+var mapData = mapDataArray[Math.floor(Math.random() * ((mapDataArray.length -1) - 0 + 1) + 0)];
 var mapaLose = Array(21).fill().map((_, i) => i === 0 || i === 20 ? "******************************" : "*                            *");
 
 const $table = $("#mapa");
@@ -115,6 +138,7 @@ function generarMapaLose(tipo) {
             var div = $('<div class="texto_final"></div>');
             div.append($('<h1>¡Lo siento!</h1>'));
             div.append($('<h2 id="texto_final_text">'+texto_final+'</h2>'));
+            div.append($('<br><button style="font-size: 24px; font-weight: bold; width: auto;" class="btn btn-warning" onclick="location.reload()">Volver a intentarlo <i class="fas fa-undo-alt"></i></button>'));
             $table.append(div);
             
             setTimeout(() => {
@@ -351,10 +375,12 @@ function playPause() {
     if ($play.hasClass('play')) {
         $play.removeClass('play').addClass('pausa');
         iniciarTimer();
+        iniciar_contador_juego();
         intervaloDragones = setInterval(moverDragones, 1500);
     } else {
         $play.removeClass('pausa').addClass('play');
         pauseTimer();
+        detener_contador_juego();
         clearInterval(intervaloDragones);
     }
 }
@@ -363,7 +389,7 @@ function iniciarTimer() {
     juego_iniciado = true;
     const $timer = $('#timer_text');
 
-    intervalo_colision = setInterval(verificar_naves_colision, 500);
+    intervalo_colision = setInterval(verificar_naves_colision, 800);
 
     intervaloTimer = setInterval(() => {
         if (segundos === 0) {
@@ -471,8 +497,15 @@ function seleccionarCategoria(categoria) {
     $('#miModal').modal('show');
 }
 
-
+var nivel_seleccionado = "";
 function seleccionar_nivel(nivel) {
+
+    if(nivel == 1){
+        nivel_seleccionado = "Principiante";
+    }else if(nivel == 2){
+        nivel_seleccionado = "Experto";
+    }
+
     preguntas_array = preguntas["nivel_"+nivel];
     preguntas_array = desordenar_opciones(preguntas_array);
     
@@ -586,7 +619,7 @@ function mostrar_finalJuego() {
     var opciones = ['Si, Jugar', 'No, salir'];
     
     var html_opciones = '';
-    html_opciones += `<div class="col-md-6"><button style="font-size: 25px; font-weight: bold;" class="btn btn-warning" onclick="replay()">${opciones[0]}</button></div>`;
+    html_opciones += `<div class="col-md-6"><button style="font-size: 25px; font-weight: bold;" class="btn btn-warning" onclick="location.reload()">${opciones[0]}</button></div>`;
     html_opciones += `<div class="col-md-6"><button style="font-size: 25px; font-weight: bold;" class="btn btn-dark" onclick="location.href='../../index.html'">${opciones[1]}</button></div>`;
     
     $opciones_container.html(html_opciones);
@@ -605,6 +638,11 @@ function mostrar_finalJuego() {
         ruta_audio = '../sounds/game_over.mp3';
         pregunta_text += 'Lo sentimos no has alcanzado el objetivo <br> ¿deseas volver a intentarlo?';
     }
+
+    setTimeout(() => {
+        contador_juego = contador_juego - 4;
+        guardar_resultado("laberinto", preguntas_correctas, contador_juego, nivel_seleccionado);
+    }, 4000);
 
     $pregunta.html('');
     $pregunta.append(pregunta_text);
@@ -682,4 +720,17 @@ function reproducir_audio(ruta){
     audio.src = ruta;
     audio.volume = 0.29;
     audio.play();
+}
+
+
+var contador_juego = 0;
+var intervalo_contador_juego = null;
+function iniciar_contador_juego(){
+    intervalo_contador_juego = setInterval(() => {
+        contador_juego++;
+    }, 1000);
+}
+
+function detener_contador_juego(){
+    clearInterval(intervalo_contador_juego);
 }

@@ -1,0 +1,270 @@
+var nombre_juego_query = '';
+var nombre_jugador_query = '';
+var grado_jugador_query = '';
+var avatar_jugador_query = '';
+var preguntas_correctas_query = '';
+var tiempo_query = '';
+var nivel_query = '';
+
+var avatar_seleccionado = 1;
+
+function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, nivel) {
+
+    nombre_juego_query = nombre_juego;
+    preguntas_correctas_query = preguntas_correctas;
+    tiempo_query = contador_juego;
+    nivel_query = nivel;
+
+    consultar_ranking();
+
+    var tiempo_en_minutos = Math.floor(contador_juego / 60);
+    var tiempo_en_segundos = contador_juego % 60;
+
+    var div_avatar = '';
+    for (var i = 1; i <= 35; i++) {
+        div_avatar += `<div class="col-lg-2" style="padding: 10px;">
+            <div class="avatar_container" onclick="seleccionar_avatar(${i})" id="avatar_${i}">
+                <img src="../../images/avatars/${i}.png" alt="Avatar ${i}" class="img-fluid">
+            </div>
+        </div>`;
+    }
+
+
+    const modalHtml = `
+        <div class="modal fade" id="modal_guardar_resultado" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content" style="overflow: hidden; border-radius: 20px;">
+                    <div class="modal-body" style="padding: 0px;">
+                        <div class="row" style="margin: 0px;">
+                            <div class="col-lg-7" style="padding: 20px; background-color: #e0f2ff;">
+                                <h2 class="text-primary" style="text-align: center; font-weight: bold;">GUARDA TU RESULTADO</h2>
+                                <br>
+                                <div class="row" style="margin: 0px;">
+                                    <div class="col-lg-6" style="padding: 0px; padding-right: 10px;">
+                                        <h5 style="font-weight: bold;" class="text-primary">Ingresa tu nombre: </h5>
+                                        <input class="form-control" type="text" id="nombre_jugador" placeholder="Nombre">
+                                    </div>
+                                    <div class="col-lg-6" style="padding: 0px; padding-left: 10px;">
+                                        <h5 style="font-weight: bold;" class="text-primary">Grado: </h5>
+                                        <select class="form-control" id="grado_jugador">
+                                            <option value="">Selecciona tu grado</option>
+                                            <option value="1">1° Grado</option>
+                                            <option value="2">2° Grado</option>
+                                            <option value="3">3° Grado</option>
+                                            <option value="4">4° Grado</option>
+                                            <option value="5">5° Grado</option>
+                                            <option value="6">6° Grado</option>
+                                            <option value="7">7° Grado</option>
+                                            <option value="8">8° Grado</option>
+                                            <option value="9">9° Grado</option>
+                                            <option value="10">10° Grado</option>
+                                            <option value="11">11° Grado</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+                                <h5 style="font-weight: bold;" class="text-primary">Selecciona tu avatar: </h5>
+                                <div class="row" style="margin: 0px; margin-top: 10px; max-height: 170px; overflow-y: auto;">
+                                    ${div_avatar}
+                                </div>
+                                <br>
+                                <div class="container-stats">
+                                    <h5 style="font-weight: bold;" class="text-primary"><i class="fas fa-check-circle"></i> <span class="text-dark">${preguntas_correctas} Puntos</span></h5>
+                                    <h5 style="font-weight: bold;" class="text-primary"><i class="fas fa-clock"></i> <span class="text-dark">${tiempo_en_minutos} Mts ${tiempo_en_segundos} Seg</span></h5>
+                                    <h5 style="font-weight: bold;" class="text-primary"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span class="text-dark">${nivel}</span></h5>
+                                </div>
+                                <br>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <button type="button" onclick="guardar_resultado_base_datos()" style="width: 160px;" class="btn btn-primary" id="btnGuardar">Guardar <i class="fas fa-save"></i></button>
+                                    <button type="button" style="width: 160px; margin-left: 20px;" class="btn btn-danger" data-bs-dismiss="modal">Cerrar <i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5" style="padding: 20px;">
+                                <h2 class="text-primary" style="text-align: center; font-weight: bold;">RANKING</h2>
+                                <div id="ranking_container"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>`;
+
+    // Agrega el modal al body
+    $('body').append(modalHtml);
+
+    // Inicializa el modal
+    const modal = new bootstrap.Modal(document.getElementById('modal_guardar_resultado'));
+    modal.show();
+
+    setTimeout(() => {
+        seleccionar_avatar(avatar_seleccionado);
+    }, 500);
+
+    // Cuando se cierra el modal, elimínalo del DOM
+    $('#modal_guardar_resultado').on('hidden.bs.modal', function () {
+        $(this).remove();
+    });
+}
+
+function seleccionar_avatar(id) {
+    var avatar_seleccionado_container = document.querySelector('.avatar_container.active');
+    if (avatar_seleccionado_container) {
+        avatar_seleccionado_container.classList.remove('active');
+    }
+
+    var avatar_seleccionado_html = document.getElementById('avatar_' + id);
+    avatar_seleccionado_html.classList.add('active');
+
+    avatar_seleccionado = id;
+}
+
+function guardar_resultado_base_datos() {
+    var url = '../../php/guardar_resultado.php';
+
+    var nombre_jugador = document.getElementById('nombre_jugador').value;
+    var grado_jugador = document.getElementById('grado_jugador').value;
+    var avatar_jugador = document.querySelector('.avatar_container.active').id;
+
+    if (nombre_jugador == '') {
+        swal.fire({
+            title: '¡Error!',
+            html: '<h2 class="error_guardar">Debes ingresar un nombre</h2>',
+            icon: 'error'
+        });
+        return;
+    }
+
+    if (grado_jugador == '') {
+        swal.fire({
+            title: '¡Error!',
+            html: '<h2 class="error_guardar">Debes seleccionar un grado</h2>',
+            icon: 'error'
+        });
+        return;
+    }
+
+    if (avatar_jugador == '') {
+        swal.fire({
+            title: '¡Error!',
+            html: '<h2 class="error_guardar">Debes seleccionar un avatar</h2>',
+            icon: 'error'
+        });
+        return;
+    }
+
+    var data = {
+        nombre_juego_query: nombre_juego_query,
+        nombre_jugador_query: nombre_jugador,
+        grado_jugador_query: grado_jugador,
+        avatar_jugador_query: avatar_seleccionado + '.png',
+        preguntas_correctas_query: preguntas_correctas_query,
+        tiempo_query: tiempo_query,
+        nivel_query: nivel_query
+    }
+
+    $.ajax({
+        url: url,
+        type: 'POST',
+        data: data,
+        beforeSend: function () {
+            $('#btnGuardar').attr('disabled', true);
+            $('#btnGuardar').html('<i class="fas fa-spinner fa-spin"></i> Guardando...');
+        },
+        success: function (response) {
+            response = JSON.parse(response);
+            if (response.status == 'success') {
+                swal.fire({
+                    html: '<i class="fas fa-check-circle icon_alert"></i> <br> <h2 class="error_guardar">' + response.mensaje + '</h2>',
+                });
+
+                $('#btnGuardar').attr('disabled', true);
+                $('#btnGuardar').html('<i class="fas fa-check-circle"></i> Guardado');
+
+                setTimeout(() => {
+                    consultar_ranking();
+                }, 1000);
+            } else {
+                swal.fire({
+                    html: '<i class="fas fa-times-circle icon_alert_error"></i> <br> <h2 class="error_guardar">' + response.mensaje + '</h2>',
+                });
+
+                $('#btnGuardar').attr('disabled', false);
+                $('#btnGuardar').html('Guardar <i class="fas fa-save"></i>');
+            }
+        }
+    });
+}
+
+
+function consultar_ranking() {
+    var url = '../../php/consultar_ranking.php';
+    var data = {
+        nombre_juego: nombre_juego_query,
+        nivel: nivel_query
+    }
+
+    $.ajax({
+        url: url,
+        type: 'POST',
+        data: data,
+        success: function (response) {
+            response = JSON.parse(response);
+            mapear_ranking(response);
+        }
+    });
+}
+
+var colores_ranking = ['#3d006b', '#3d006b', '#3d006b', '#9100ff', '#9100ff', '#9100ff'];
+
+function mapear_ranking(response) {
+    var ranking_container = document.getElementById('ranking_container');
+    ranking_container.innerHTML = '';
+
+    for (var i = 0; i < response.length; i++) {
+
+        var tiempo_minutos = Math.floor(response[i].tiempo / 60);
+        var tiempo_segundos = response[i].tiempo % 60;
+
+        if(tiempo_segundos   < 10){
+            tiempo_segundos = "0" + tiempo_segundos;
+        }
+
+        var ranking_item = document.createElement('div');
+        ranking_item.classList.add('ranking_item');
+        ranking_item.style.backgroundColor = colores_ranking[i];
+        
+        if(i < response.length - 1){
+            ranking_item.style.marginBottom = "33px";
+        }
+
+        var coronita = "";
+        var border_avatar_ranking = "";
+
+        if(i == 0 || i == 1 || i == 2){
+            coronita = "<img class='item_coronita' src='../../images/avatars/lugar"+(i+1)+".png' alt='Coronita'>";
+        }else{
+            border_avatar_ranking = "clase_border_avatar";
+        }
+
+        ranking_item.innerHTML = `
+            <div class="ranking_item_avatar ${border_avatar_ranking}">
+                ${coronita}
+                <img src="../../images/avatars/${response[i].avatar}" alt="Avatar ${response[i].avatar}">
+            </div>
+            <div class="info_ranking">
+                <div class="ranking_item_nombre">
+                    <p style="margin-bottom: -3px;">${response[i].jugador}</p>
+                    <p style="margin-bottom: -3px; font-size: 0.7rem;">${response[i].grado}° Grado</p>
+                </div>
+                <div class="ranking_item_puntos">
+                    <i class="fas fa-star"></i> ${response[i].puntaje}
+                </div>
+                <div class="ranking_item_tiempo">
+                    <i class="fas fa-clock"></i> ${tiempo_minutos}:${tiempo_segundos} Mts
+                </div>
+            </div>
+        `;
+        ranking_container.appendChild(ranking_item);
+    }
+}
