@@ -231,12 +231,11 @@
           $('.puzzleSquare').addClass('complete');
 
           $('#principal').fadeToggle(500);
+          $('#final').css('display', 'flex');
           setTimeout(()=>{
-            $('#final').fadeToggle(1000);
+            $('#final').css('opacity', '1');
           }, 500)
           
-          document.getElementById("final").style.backgroundImage = "url(../assets/images/victoria.gif)";
-          document.getElementById("texto_final").innerText = "Felicitaciones, has encontrado todas las palabras"
           let audio = new Audio('../sounds/victory.mp3');
           audio.play();
           terminar_juego();
@@ -357,7 +356,7 @@
             allowOutsideClick: false,
           }).then((result) => {
             if (result.isConfirmed) {
-              window.location.reload();
+              window.location.reload(0);
             }else{
                 window.location.href = '../../index.html';
               }

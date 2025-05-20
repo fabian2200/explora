@@ -136,13 +136,13 @@ function compruebaFin() {
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }
-    btnInicio.onclick = function() { location.reload() };
+    btnInicio.onclick = function() { window.location.reload(1) };
   }else if( cont == 0 ) {
     mensaje_final(0);
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }
-    btnInicio.onclick = function () { location.reload() };
+    btnInicio.onclick = function () { window.location.reload(1) };
   }
 }
 

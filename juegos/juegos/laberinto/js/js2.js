@@ -138,7 +138,7 @@ function generarMapaLose(tipo) {
             var div = $('<div class="texto_final"></div>');
             div.append($('<h1>¡Lo siento!</h1>'));
             div.append($('<h2 id="texto_final_text">'+texto_final+'</h2>'));
-            div.append($('<br><button style="font-size: 24px; font-weight: bold; width: auto;" class="btn btn-warning" onclick="location.reload()">Volver a intentarlo <i class="fas fa-undo-alt"></i></button>'));
+            div.append($('<br><button style="font-size: 24px; font-weight: bold; width: auto;" class="btn btn-warning" onclick="window.location.reload(1)">Volver a intentarlo <i class="fas fa-undo-alt"></i></button>'));
             $table.append(div);
             
             setTimeout(() => {
@@ -619,7 +619,7 @@ function mostrar_finalJuego() {
     var opciones = ['Si, Jugar', 'No, salir'];
     
     var html_opciones = '';
-    html_opciones += `<div class="col-md-6"><button style="font-size: 25px; font-weight: bold;" class="btn btn-warning" onclick="location.reload()">${opciones[0]}</button></div>`;
+    html_opciones += `<div class="col-md-6"><button style="font-size: 25px; font-weight: bold;" class="btn btn-warning" onclick="window.location.reload(1)">${opciones[0]}</button></div>`;
     html_opciones += `<div class="col-md-6"><button style="font-size: 25px; font-weight: bold;" class="btn btn-dark" onclick="location.href='../../index.html'">${opciones[1]}</button></div>`;
     
     $opciones_container.html(html_opciones);

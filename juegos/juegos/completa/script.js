@@ -44,7 +44,7 @@ btnVolver.addEventListener('click', () => {
 });
 
 btnActualizar.addEventListener('click', () => {
-    location.reload();
+    window.location.reload(1);
 });
 
 function cargarCategorias() {

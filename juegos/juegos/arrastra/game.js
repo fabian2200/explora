@@ -222,7 +222,7 @@ setInterval(createCloud, 3000); // Nueva nube cada 3 segundos
 
 
 function resetGame() {
-    location.reload();
+    window.location.reload(1);
 }
 
 

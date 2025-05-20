@@ -142,7 +142,7 @@ $(document).ready(function(){
     
 
     $('#btn_reiniciar').click(function(){
-        location.reload();
+        window.location.reload(1);
     });
 
     var intervalo;

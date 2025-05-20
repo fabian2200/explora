@@ -78,7 +78,7 @@ function mostrarBanderas() {
                     confirmButtonColor: '#3085d6',
                 }).then((result) => {
                     if(result.isConfirmed) {
-                        location.reload();
+                        window.location.reload(1);
                     }else{
                         location.href = '../../index.html';
                     }
@@ -99,7 +99,7 @@ function mostrarBanderas() {
                     confirmButtonColor: '#3085d6',
                 }).then((result) => {
                     if(result.isConfirmed) {
-                        location.reload();
+                        window.location.reload(1);
                     }else{
                         location.href = '../../index.html';
                     }
@@ -325,7 +325,7 @@ function iniciarTimer() {
                 confirmButtonColor: '#3085d6',
             }).then((result) => {
                 if(result.isConfirmed) {
-                    location.reload();
+                    window.location.reload(1);
                 }else{
                     location.href = '../../index.html';
                 }
@@ -381,7 +381,7 @@ function seleccionarBandaAdivinar(bandera, div) {
                     confirmButtonColor: '#3085d6',
                 }).then((result) => {
                     if(result.isConfirmed) {
-                        location.reload();
+                        window.location.reload(1);
                     }else{
                         location.href = '../../index.html';
                     }
@@ -402,7 +402,7 @@ function seleccionarBandaAdivinar(bandera, div) {
                     confirmButtonColor: '#3085d6',
                 }).then((result) => {
                     if(result.isConfirmed) {
-                        location.reload();
+                        window.location.reload(1);
                     }else{
                         location.href = '../../index.html';
                     }

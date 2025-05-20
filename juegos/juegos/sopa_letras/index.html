@@ -120,9 +120,11 @@
 
   </div>
 
-  <div style="display: none; text-align: center;" id="final" class="final">
-    <h1 style="font-size: 25pt; padding-top: 294pt; padding-bottom: 0px;" class="borde2" id="texto_final"></h1>
-    <hr>
+  <div style="text-align: center; display: none; justify-content: center; align-items: center; flex-direction: column; opacity: 0; transition: opacity 0.5s ease-in-out;" id="final" class="final">
+    <img src="../assets/images/victoria.gif" style="width: 600px;">
+    <br>
+    <h1 style="font-size: 25pt; padding-bottom: 0px;" class="borde2" id="texto_final">Felicitaciones, has encontrado todas las palabras</h1>
+    <br>
     <div class="row">
       <div class="col-12" style="padding-bottom: 0pt; margin-top: 0px;">
         <h1 style="font-size: 25pt; padding: 12px;" class="borde2">¿Quieres jugar nuevamente?</h1>
@@ -140,6 +142,7 @@
       <div class="col-3"></div>
     </div>
   </div>
+
   <div id="principal" class="container" style="overflow: hidden;">
     <div class="row text-center">
       <div style="margin-top: 20px; width: 100%;">
@@ -381,7 +384,7 @@
             allowOutsideClick: false,
           }).then((result) => {
             if (result.isConfirmed) {
-              window.location.reload();
+              window.location.reload(1);
             } else {
               window.location.href = '../../index.html';
             }
