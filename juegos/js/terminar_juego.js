@@ -35,17 +35,17 @@ function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, ni
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content" style="overflow: hidden; border-radius: 20px;">
                     <div class="modal-body" style="padding: 0px;">
-                        <div class="row" style="margin: 0px;">
-                            <div class="col-lg-7" style="padding: 20px; background-color: #e0f2ff;">
-                                <h2 class="text-primary" style="text-align: center; font-weight: bold;">GUARDA TU RESULTADO</h2>
+                        <div class="row" style="margin: 0px; background: linear-gradient(90deg, rgba(224, 242, 255, 1) 57%, rgba(229, 204, 255, 1) 55%, rgba(229, 204, 255, 1) 2%, rgba(229, 204, 255, 1) 100%);">
+                            <div class="col-lg-7" style="padding: 20px; padding-right: 60px;">
+                                <h2 class="text-primary" style="text-align: center;">GUARDA TU RESULTADO</h2>
                                 <br>
                                 <div class="row" style="margin: 0px;">
                                     <div class="col-lg-6" style="padding: 0px; padding-right: 10px;">
-                                        <h5 style="font-weight: bold;" class="text-primary">Ingresa tu nombre: </h5>
+                                        <h5 class="text-primary">Ingresa tu nombre: </h5>
                                         <input oninput="validar_guardar_resultado('nombre_jugador')" class="form-control" type="text" id="nombre_jugador" placeholder="Nombre">
                                     </div>
                                     <div class="col-lg-6" style="padding: 0px; padding-left: 10px;">
-                                        <h5 style="font-weight: bold;" class="text-primary">Grado: </h5>
+                                        <h5 class="text-primary">Grado: </h5>
                                         <select onchange="validar_guardar_resultado('grado_jugador')" class="form-control" id="grado_jugador">
                                             <option value="">Selecciona tu grado</option>
                                             <option value="1">1° Grado</option>
@@ -63,24 +63,24 @@ function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, ni
                                     </div>
                                 </div>
                                 <br>
-                                <h5 style="font-weight: bold;" class="text-primary">Selecciona tu avatar: </h5>
+                                <h5 class="text-primary">Selecciona tu avatar: </h5>
                                 <div class="row" id="div_avatar" style="margin: 0px; margin-top: 10px; max-height: 170px; overflow-y: auto;">
                                     ${div_avatar}
                                 </div>
                                 <br>
                                 <div class="container-stats">
-                                    <h5 style="font-weight: bold;" class="text-primary"><i class="fas fa-check-circle"></i> <span class="text-dark">${preguntas_correctas} Puntos</span></h5>
-                                    <h5 style="font-weight: bold;" class="text-primary"><i class="fas fa-clock"></i> <span class="text-dark">${tiempo_en_minutos} Mts ${tiempo_en_segundos} Seg</span></h5>
-                                    <h5 style="font-weight: bold;" class="text-primary"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span class="text-dark">${nivel}</span></h5>
+                                    <h5 class="text-primary"><i class="fas fa-check-circle"></i> <span class="text-dark">${preguntas_correctas} Puntos</span></h5>
+                                    <h5 class="text-primary"><i class="fas fa-clock"></i> <span class="text-dark">${tiempo_en_minutos} Mts ${tiempo_en_segundos} Seg</span></h5>
+                                    <h5 class="text-primary"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span class="text-dark">${nivel}</span></h5>
                                 </div>
                                 <br>
                                 <div style="display: flex; justify-content: center; align-items: center;">
                                     <button type="button" onclick="guardar_resultado_base_datos()" style="width: 160px;" class="btn btn-primary" id="btnGuardar">Guardar <i class="fas fa-save"></i></button>
-                                    <button type="button" style="width: 160px; margin-left: 20px;" class="btn btn-danger" onclick="cerrar_modal_guardar_resultado()">Cerrar <i class="fas fa-times"></i></button>
+                                    <button type="button" style="width: 160px; margin-left: 20px;" class="btn btn-danger" onclick="cerrar_modal_guardar_resultado()">Cerrar <i class="fas fa-times-circle"></i></button>
                                 </div>
                             </div>
-                            <div class="col-lg-5" style="padding: 20px;">
-                                <h2 class="text-primary" style="text-align: center; font-weight: bold;">RANKING</h2>
+                            <div class="col-lg-5" style="padding: 20px 10px 20px 10px;">
+                                <h2 class="text-primary" style="text-align: center; color: #732bbf !important;">RANKING</h2>
                                 <div id="ranking_container"></div>
                             </div>
                         </div>

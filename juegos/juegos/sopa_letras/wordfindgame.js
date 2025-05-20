@@ -239,6 +239,7 @@
           document.getElementById("texto_final").innerText = "Felicitaciones, has encontrado todas las palabras"
           let audio = new Audio('../sounds/victory.mp3');
           audio.play();
+          terminar_juego();
         }
       }
 
@@ -341,6 +342,27 @@
             $('.' + word).addClass('wordFound');
           }
         }
+
+        clearInterval(intervalo_contador_juego);
+        clearInterval(intervalo);
+
+        setTimeout(() => {
+          Swal.fire({
+            html: '<img src="../assets/images/derrota.gif" style="width: 400px;"> <br> <h2 style="font-size: 2.2rem;">Te diste por vencido, no te preocupes, puedes intentarlo de nuevo</h2>',
+            confirmButtonText: 'Intentar de nuevo',
+            cancelButtonText: 'Salir',
+            showCancelButton: true,
+            confirmButtonColor: '#422612',
+            cancelButtonColor: '#8a5025',
+            allowOutsideClick: false,
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.reload();
+            }else{
+                window.location.href = '../../index.html';
+              }
+          });
+        }, 1500);
 
       }
     };

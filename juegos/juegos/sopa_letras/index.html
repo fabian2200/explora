@@ -15,6 +15,7 @@
   <script src="../assets/bootstrap/sweetalert.js"></script>
   <link rel="stylesheet" href="../../librerias/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../css/pantalla_completa.css">
+  <link rel="stylesheet" href="../../css/terminar_juego.css">
   <title>Sopa de letras</title>
   <style>
     .ocultar {
@@ -160,7 +161,7 @@
                 <div class="col-3" style="display: flex; justify-content: flex-start; align-items: center; flex-direction: column;">
 
                   <h2 id="contador" style="font-size: 40pt; color: rgb(255, 255, 255); -webkit-text-stroke: 1px #47260f;">00:00</h2>
-                  
+
                   <div class="opciones text-center">
                     <h3 style="font-size: 19pt; color: rgb(255, 255, 255); -webkit-text-stroke: 1px #47260f;">Opciones
                     </h3>
@@ -201,7 +202,7 @@
               </div>
             </div>
             <div class="col-lg-6" style="display: flex; justify-content: center; align-items: center;">
-              <div class="nivel-container" onclick="selectNivel(1)">
+              <div class="nivel-container" onclick="selectNivel(5)">
                 <img src="img/nivel2.png" class="nivel-imagen" alt="">
                 <p>Experto</p>
               </div>
@@ -214,6 +215,7 @@
 
 
   <script src="../../js/pantalla_completa.js"></script>
+  <script src="../../js/terminar_juego.js"></script>
 
   <script>
     var words = [];
@@ -337,10 +339,17 @@
       $('#nivelModal').modal('show');
     }
 
+    var nivel_seleccionado = 0;
     function selectNivel(tiempo) {
       $('#nivelModal').modal('hide');
+      clearInterval(intervalo);
       iniciar_juego();
       iniciarContador(tiempo);
+      if (tiempo == 10) {
+        nivel_seleccionado = "Principiante";
+      } else {
+        nivel_seleccionado = "Experto";
+      }
     }
 
 
@@ -363,9 +372,7 @@
           clearInterval(intervalo);
 
           Swal.fire({
-            title: '¡Opps, se ha acabado el tiempo!',
-            text: '¿Quieres volver a intentarlo?',
-            icon: 'error',
+            html: '<img src="../assets/images/derrota.gif" style="width: 400px;"> <br> <h2 style="font-size: 2.2rem; text-align: center; line-height: 45px;">¡Opps, se ha acabado el tiempo! <br> ¿Quieres volver a intentarlo?</h2>',
             confirmButtonText: 'Si, jugar',
             confirmButtonColor: '#34230d',
             cancelButtonText: 'No, salir',
@@ -374,7 +381,7 @@
             allowOutsideClick: false,
           }).then((result) => {
             if (result.isConfirmed) {
-              resetGame();
+              window.location.reload();
             } else {
               window.location.href = '../../index.html';
             }
@@ -383,14 +390,16 @@
       }, 1000);
     }
 
+    let audio = document.createElement('audio');
     function iniciar_juego() {
       var categoria = categorias[tipo_de_juego];
       var palabras = randomValueGenerator(categoria.palabras);
 
-      let audio2 = new Audio("../sounds/fondo_sopa_letras.mp3");
-      audio2.play();
-      audio2.loop = true;
-      audio2.volume = 0.2;
+      audio.pause();
+      audio.src = "../sounds/fondo_sopa_letras.mp3";
+      audio.play();
+      audio.loop = true;
+      audio.volume = 0.2;
 
       setTimeout(() => {
         swal.close();
@@ -401,6 +410,7 @@
 
         $('#Juegos').show();
         gamePuzzle = wordfindgame.create(words, '#juego', '#Palabras');
+        iniciar_contador_juego();
       }, 1000)
     }
 
@@ -421,6 +431,25 @@
     };
 
     $('#solve').click(function () { wordfindgame.solve(gamePuzzle, words); });
+
+
+    var contador_juego = 0;
+    var intervalo_contador_juego = null;
+    function iniciar_contador_juego() {
+      intervalo_contador_juego = setInterval(() => {
+        contador_juego++;
+      }, 1000);
+    }
+
+    function detener_contador_juego() {
+      clearInterval(intervalo_contador_juego);
+    }
+
+    function terminar_juego() {
+      clearInterval(intervalo_contador_juego);
+      clearInterval(intervalo);
+      guardar_resultado("Sopa de letras", 10, contador_juego, nivel_seleccionado);
+    }
 
   </script>
 
