@@ -58,7 +58,7 @@ function mostrarBanderas() {
         numeroPregunta++;
     }else{
         clearInterval(intervalo_contador_juego);
-        guardar_resultado("bandera_color", respondidas_correctas, contador_juego, "Normal");
+        guardar_resultado("bandera_color", respondidas_correctas, contador_juego, "Normal", "Categoría Única");
 
         var ruta_audio = '';
         setTimeout(function() {
@@ -362,7 +362,7 @@ function seleccionarBandaAdivinar(bandera, div) {
         clearInterval(intervaloTimer);
 
         clearInterval(intervalo_contador_juego);
-        guardar_resultado("adivina_bandera", respondidas_correctas_adivina, contador_juego, "Normal");
+        guardar_resultado("adivina_bandera", respondidas_correctas_adivina, contador_juego, "Normal", "Categoría Única");
 
         setTimeout(function() {
             if(respondidas_correctas_adivina >= 6) {

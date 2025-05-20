@@ -10,8 +10,9 @@ $avatar_jugador = $_POST['avatar_jugador_query'];
 $preguntas_correctas = $_POST['preguntas_correctas_query'];
 $tiempo = $_POST['tiempo_query'];
 $nivel = $_POST['nivel_query'];
+$categoria = $_POST['categoria_query'];
 
-$sql = "INSERT INTO resultado_juegos (nombre_juego, jugador, grado, avatar, puntaje, tiempo, nivel) VALUES ('$nombre_juego', '$nombre_jugador', '$grado_jugador', '$avatar_jugador', '$preguntas_correctas', '$tiempo', '$nivel')";
+$sql = "INSERT INTO resultado_juegos (nombre_juego, jugador, grado, avatar, puntaje, tiempo, nivel, categoria) VALUES ('$nombre_juego', '$nombre_jugador', '$grado_jugador', '$avatar_jugador', '$preguntas_correctas', '$tiempo', '$nivel', '$categoria')";
 
 $resultado = $conexion->query($sql);
 

@@ -35,15 +35,27 @@ gameData.categories.forEach(category => {
     categoriesGrid.appendChild(categoryCard);
 });
 
+var categoria_query = '';
 function selectCategory(category) {
     gameData.currentCategory = category;
+    categoria_query = category.name;
     categoryTitle.textContent = category.name;
     nivelModal.show();
 }
 
+
+var nivel_seleccionado = 0;
 function selectNivel(nivel) {
+
+    if (nivel == 4) {
+        nivel_seleccionado = "Principiante";
+    } else {
+        nivel_seleccionado = "Experto";
+    }
+
     nivelModal.hide();
     iniciarContador(nivel);
+    iniciar_contador_juego();
     initializeGame();
 }
 
@@ -173,6 +185,10 @@ gameArea.addEventListener('drop', (e) => {
                             window.location.href = '../../index.html';
                         }
                     });
+                }, 700);
+
+                setTimeout(() => {
+                    terminar_juego();
                 }, 700);
             }
         } else {
@@ -317,27 +333,23 @@ function reproducir_audio(ruta) {
     audio.play();
 }
 
-var minuto_inicial = 5;
-var segundo_inicial = 0;
-
+var intervalo = null;
 function iniciarContador(minutos) {
     let tiempo = minutos * 60;
 
-    const intervalo = setInterval(() => {
+    intervalo = setInterval(() => {
         const min = String(Math.floor(tiempo / 60)).padStart(2, '0');
         const seg = String(tiempo % 60).padStart(2, '0');
         var tiempo_actual = `${min}:${seg}`;
         document.getElementById('contador').innerHTML = tiempo_actual;
         tiempo--;
-        
+
         if (tiempo < 0) {
             reproducir_audio('../sounds/game_over.mp3');
             clearInterval(intervalo);
 
             Swal.fire({
-                title: '¡Opps, se ha acabado el tiempo!',
-                text: '¿Quieres volver a intentarlo?',
-                icon: 'error',
+                html: '<img src="../assets/images/derrota.gif" style="width: 400px;"> <br> <h2 style="font-size: 1.8rem;">¡Opps, se ha acabado el tiempo! <br> ¿Quieres volver a intentarlo?</h2>',
                 confirmButtonText: 'Si, jugar',
                 confirmButtonColor: '#34230d',
                 cancelButtonText: 'No, salir',
@@ -353,4 +365,22 @@ function iniciarContador(minutos) {
             });
         }
     }, 1000);
+}
+
+var contador_juego = 0;
+var intervalo_contador_juego = null;
+function iniciar_contador_juego() {
+    intervalo_contador_juego = setInterval(() => {
+        contador_juego++;
+    }, 1000);
+}
+
+function detener_contador_juego() {
+    clearInterval(intervalo_contador_juego);
+}
+
+function terminar_juego() {
+    clearInterval(intervalo_contador_juego);
+    clearInterval(intervalo);
+    guardar_resultado("Arrastra y suelta", 8, contador_juego, nivel_seleccionado, categoria_query);
 }

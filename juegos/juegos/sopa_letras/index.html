@@ -394,8 +394,10 @@
     }
 
     let audio = document.createElement('audio');
+    var categoria_query = '';
     function iniciar_juego() {
       var categoria = categorias[tipo_de_juego];
+      categoria_query = categoria.nombre;
       var palabras = randomValueGenerator(categoria.palabras);
 
       audio.pause();
@@ -451,7 +453,7 @@
     function terminar_juego() {
       clearInterval(intervalo_contador_juego);
       clearInterval(intervalo);
-      guardar_resultado("Sopa de letras", 10, contador_juego, nivel_seleccionado);
+      guardar_resultado("Sopa de letras", 10, contador_juego, nivel_seleccionado, categoria_query);
     }
 
   </script>

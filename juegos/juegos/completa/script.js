@@ -92,16 +92,25 @@ function cargarNiveles() {
     });
 }
 
+var categoria_query = '';
 function seleccionarCategoria(categoria) {
     categoriaActual = categoria;
+    categoria_query = datosJuego[categoria].nombre;
     seccionCategorias.classList.add('oculto');
     seccionNiveles.classList.remove('oculto');
     cargarNiveles();
 }
 
+var nivel_query = '';
 function seleccionarNivel(nivel) {
     nivelActual = nivel;
+    if(nivel == 'nivel1'){
+        nivel_query = 'Principiante';
+    } else {
+        nivel_query = 'Experto';
+    }
     seccionNiveles.classList.add('oculto');
+    iniciar_contador_juego();
     iniciarJuego();
 }
 
@@ -197,6 +206,7 @@ function soltarOpcion(e) {
     verificarRespuesta(opcionArrastrada, espacioRespuesta);
 }
 
+
 function verificarRespuesta(respuesta, espacioRespuesta) {
     const pregunta = preguntasActuales[preguntaActualIndex];
     const esCorrecta = respuesta === pregunta.respuesta;
@@ -256,7 +266,11 @@ function siguientePregunta() {
         mostrarPregunta();
         actualizarContadorPreguntas();
     } else {
+        detener_contador_juego();
         finalizarJuego();
+        setTimeout(() => {
+            guardar_resultado("Completa la oración", puntuacion, contador_juego, nivel_query, categoria_query);
+        }, 1000);
     }
 }
 
@@ -308,4 +322,16 @@ function reproducir_audio(ruta){
     audio.src = ruta;
     audio.volume = 0.29;
     audio.play();
+}
+
+var contador_juego = 0;
+var intervalo_contador_juego = null;
+function iniciar_contador_juego(){
+    intervalo_contador_juego = setInterval(() => {
+        contador_juego++;
+    }, 1000);
+}
+
+function detener_contador_juego(){
+    clearInterval(intervalo_contador_juego);
 }

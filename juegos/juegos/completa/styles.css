@@ -464,6 +464,7 @@ h1, h2 {
     color: #411200;
     -webkit-text-stroke: 0.07rem #ffff;
     transition: all 0.3s ease-in-out;
+    width: 380px;
 }
 
 #btn-reiniciar:hover {
@@ -472,4 +473,17 @@ h1, h2 {
 
 #btn-reiniciar:active {
     transform: scale(0.95);
+}
+
+#btn-volver-final {
+    background-image: url(images/reiniciar.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: auto;
+    height: 100px;
+    color: #411200;
+    -webkit-text-stroke: 0.07rem #ffff;
+    transition: all 0.3s ease-in-out;
+    width: 380px;
 }

@@ -4,8 +4,9 @@
 
     $nombre_juego = $_POST['nombre_juego'];
     $nivel = $_POST['nivel'];
+    $categoria = $_POST['categoria'];
 
-    $sql = "SELECT * FROM resultado_juegos WHERE nombre_juego = '$nombre_juego' AND nivel = '$nivel' ORDER BY puntaje DESC, tiempo ASC LIMIT 5";
+    $sql = "SELECT * FROM resultado_juegos WHERE nombre_juego = '$nombre_juego' AND nivel = '$nivel' AND categoria = '$categoria' ORDER BY puntaje DESC, tiempo ASC LIMIT 5";
 
     $resultado = $conexion->query($sql);
 

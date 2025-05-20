@@ -5,15 +5,17 @@ var avatar_jugador_query = '';
 var preguntas_correctas_query = '';
 var tiempo_query = '';
 var nivel_query = '';
+var categoria_query = '';
 
 var avatar_seleccionado = 1;
 
-function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, nivel) {
+function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, nivel, categoria) {
 
     nombre_juego_query = nombre_juego;
     preguntas_correctas_query = preguntas_correctas;
     tiempo_query = contador_juego;
     nivel_query = nivel;
+    categoria_query = categoria;
 
     consultar_ranking();
 
@@ -79,8 +81,9 @@ function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, ni
                                     <button type="button" style="width: 160px; margin-left: 20px;" class="btn btn-danger" onclick="cerrar_modal_guardar_resultado()">Cerrar <i class="fas fa-times-circle"></i></button>
                                 </div>
                             </div>
-                            <div class="col-lg-5" style="padding: 20px 10px 20px 10px;">
+                            <div class="col-lg-5" style="padding: 15px 10px 25px 5px;">
                                 <h2 class="text-primary" style="text-align: center; color: #732bbf !important;">RANKING</h2>
+                                <h5 class="text-primary" style="text-align: center; color: #732bbf !important;">${categoria}</h5>
                                 <div id="ranking_container"></div>
                             </div>
                         </div>
@@ -148,7 +151,8 @@ function guardar_resultado_base_datos() {
         avatar_jugador_query: avatar_seleccionado + '.png',
         preguntas_correctas_query: preguntas_correctas_query,
         tiempo_query: tiempo_query,
-        nivel_query: nivel_query
+        nivel_query: nivel_query,
+        categoria_query: categoria_query
     }
 
     $.ajax({
@@ -189,7 +193,8 @@ function consultar_ranking() {
     var url = '../../php/consultar_ranking.php';
     var data = {
         nombre_juego: nombre_juego_query,
-        nivel: nivel_query
+        nivel: nivel_query,
+        categoria: categoria_query
     }
 
     $.ajax({

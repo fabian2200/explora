@@ -326,7 +326,7 @@
         ]
       },
       {
-        "oracion": "La Gran Colombia estaba compuesta por los territorios de _div_blanco_, _div_blanco_ y _div_blanco_.",
+        "oracion": "La Gran Colombia estaba compuesta por los territorios de _div_blanco_.",
         "respuesta": "Colombia, Venezuela y Ecuador",
         "opciones": [
           "Colombia, Venezuela y Ecuador",
@@ -446,7 +446,7 @@
         ]
       },
       {
-        "oracion": "La Gran Colombia enfrentó conflictos internos debido a diferencias entre _div_blanco_ y _div_blanco_.",
+        "oracion": "La Gran Colombia enfrentó conflictos internos debido a diferencias entre _div_blanco_.",
         "respuesta": "Centralista y federalistas",
         "opciones": [
           "Centralista y federalistas",
@@ -2130,7 +2130,7 @@
     ],
     "nivel2": [
       {
-        "oracion": "El río Magdalena atraviesa Colombia de _div_blanco_ a _div_blanco_.",
+        "oracion": "El río Magdalena atraviesa Colombia de _div_blanco_.",
         "respuesta": "sur, norte",
         "opciones": [
           "sur, norte",
@@ -3044,7 +3044,7 @@
     "nombre": "Relieve de Colombia",
     "nivel1": [
       {
-        "oracion": "¿Cuál es el sistema montañoso que forma parte de la Cordillera de los Andes en Colombia?",
+        "oracion": "¿Cuál es el sistema montañoso que forma parte de la Cordillera de los Andes en Colombia? _div_blanco_.",
         "respuesta": "El Sistema Montañoso Andino",
         "opciones": [
           "El Sistema Montañoso Andino",
@@ -3316,7 +3316,7 @@
     ],
     "nivel2": [
       {
-        "oracion": "¿Cuál es el sistema montañoso que forma parte de la Cordillera de los Andes en Colombia?",
+        "oracion": "¿Cuál es el sistema montañoso que forma parte de la Cordillera de los Andes en Colombia? _div_blanco_.",
         "respuesta": "El Sistema Montañoso Andino",
         "opciones": [
           "El Sistema Montañoso Andino",

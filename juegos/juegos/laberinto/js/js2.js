@@ -491,9 +491,11 @@ function cargarCategorias() {
     preguntas = datosJuego;
 }
 
+var categoria_query = '';
 function seleccionarCategoria(categoria) {
     $('#miModal2').modal('hide');
     preguntas = datosJuego[categoria];
+    categoria_query = datosJuego[categoria].nombre;
     $('#miModal').modal('show');
 }
 
@@ -641,7 +643,7 @@ function mostrar_finalJuego() {
 
     setTimeout(() => {
         contador_juego = contador_juego - 4;
-        guardar_resultado("laberinto", preguntas_correctas, contador_juego, nivel_seleccionado);
+        guardar_resultado("laberinto", preguntas_correctas, contador_juego, nivel_seleccionado, categoria_query);
     }, 4000);
 
     $pregunta.html('');
