@@ -532,7 +532,7 @@
 						input.val('');
 						input.keyup();
 					}).appendTo(form);
-					var input = $('<input>').attr({'type': 'text', 'spellcheck': 'false', 'placeholder': 'Search...'}).addClass('mapplic-search-input').keyup(function() {
+					var input = $('<input>').attr({'type': 'text', 'spellcheck': 'false', 'placeholder': 'Buscar...'}).addClass('mapplic-search-input').keyup(function() {
 						var keyword = $(this).val();
 						s.search(keyword);
 					}).prependTo(form);

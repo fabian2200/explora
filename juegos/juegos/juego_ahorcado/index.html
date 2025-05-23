@@ -5,11 +5,15 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="estilo-ahoracado.css">
   <link rel="stylesheet" href="../../librerias/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="../../librerias/bootstrap-5.3/css/bootstrap.css">
+
+  <link rel="stylesheet" href="../../librerias/bootstrap-5.3/css/bootstrap.min.css">
   <script src="../../librerias/bootstrap-5.3/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/bootstrap/jquery.min.js"></script>
+  <script type="text/javascript" src="../assets/bootstrap/jquery.min.js"></script>
+
   <script src="../assets/bootstrap/sweetalert.js"></script>
   <link rel="stylesheet" href="../../css/pantalla_completa.css">
+  <link rel="stylesheet" href="../../css/terminar_juego.css">
+
   <title>Adivina la Palabra</title>
 </head>
 
@@ -31,25 +35,28 @@
 
   </div>
 
-  <div style="display: none; text-align: center;" id="final" class="final">
-    <h1 style="font-size: 25pt; padding-top: 294pt; padding-bottom: 0px;" class="borde2" id="texto_final"></h1>
-    <hr>
+  <div style="text-align: center; display: none; justify-content: center; align-items: center; flex-direction: column; opacity: 0; transition: opacity 0.5s ease-in-out;" id="final" class="final">
+    <img src="../assets/images/victoria.gif" id="imagen_final" style="width: 560px; height: auto;">
+    <br>
+    <h1 style="font-size: 25pt; padding-bottom: 0px;" class="borde2" id="texto_final"></h1>
     <div class="row">
       <div class="col-12" style="padding-bottom: 0pt; margin-top: 0px;">
         <h1 style="font-size: 25pt; padding: 12px;" class="borde2">¿Quieres jugar nuevamente?</h1>
       </div>
       <div class="col-3"></div>
       <div class="col-3 text-center">
-        <button style="width: 80%;border-radius: 20pt; font-size: 23px;" onclick="window.location.reload(1)"
-          class="btn btn-success">Si, jugar</button>
+        <button style="width: 80%;border-radius: 20pt; font-size: 23px; -webkit-text-stroke: 1px #1a3b0c;"
+          onclick="window.location.reload(1)" class="btn btn-success">Si, jugar</button>
       </div>
       <div class="col-3 text-center">
-        <a style="width: 80%; border-radius: 20pt; font-size: 23px;" href="../../index.html" class="btn btn-danger">No,
-          salir</a>
+        <button style="width: 80%; border-radius: 20pt; font-size: 23px; -webkit-text-stroke: 1px #4d0d0d;"
+          onclick="location.href='../../index.html'" class="btn btn-danger">No,
+          salir</button>
       </div>
       <div class="col-3"></div>
     </div>
   </div>
+
   <div id="principal" style="width: 1200px;" class="main-container">
     <br>
     <div class="row">
@@ -105,6 +112,8 @@
     </div>
     <h3 id="acierto"></h3>
   </div>
+
+  <script src="../../js/terminar_juego.js"></script>
   <script src="../../js/pantalla_completa.js"></script>
   <script src="ahorcado.js"></script>
 </body>

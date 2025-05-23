@@ -4,7 +4,7 @@
     <head>
         <!-- Meta -->
         <meta charset="utf-8">
-        <title>Hidrología de Colombia</title>
+        <title>Hidrografía de Colombia</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
         <meta name="description" content="Vector Europe map with clickable states and pins, an example of using Mapplic, a premium custom interactive map plugin to display custom image or vector (SVG) maps.">
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -20,6 +20,9 @@
         <link rel="stylesheet" href="css/utilidad.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="shortcut icon" href="juegos/images/Isotipo.png">
+
+        <script src="driver/driver.js.iife.js"></script>
+        <link rel="stylesheet" href="driver/driver.css"/>
 
         <style>
             .mapplic-clickable:not(g):hover, g.mapplic-clickable:hover > * {
@@ -302,42 +305,57 @@
         </div>
 
         <div id="circularMenu" class="circular-menu">
-            <a class="floating-btn custom-button button-orange" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+            <a class="floating-btn custom-button button-orange" id="btn_menu_circular" onclick="document.getElementById('circularMenu').classList.toggle('active');">
                 <i class="fa fa-plus"></i>
             </a>
             
             <menu class="items-wrapper">
-                <a href="#" class="menu-item itemm1" data-toggle="modal" data-target="#modalOpcionesAtlas">
+                <a id="btn_menu_opciones_atlas" href="#" class="menu-item itemm1" data-toggle="modal" data-target="#modalOpcionesAtlas">
                 </a>
-                <a href="juegos/index.html" target="_blank" class="menu-item itemm2">
+                <a id="btn_menu_juegos" href="juegos/index.html" target="_blank" class="menu-item itemm2">
                 </a>
-                <a href="#" class="menu-item itemm3" type="button" onclick="verTest()">
+                <a id="btn_menu_test" href="#" class="menu-item itemm3" type="button" onclick="verTest()">
                 </a>
-                <a href="#" class="menu-item itemm4" onclick="mostrarChat()">
+                <a id="btn_menu_chat" href="#" class="menu-item itemm4" onclick="mostrarChat()">
                 </a>
-                <a href="lineaTiempo/index.html" target="_blank" class="menu-item itemm5">
+                <a id="btn_menu_linea_tiempo" href="lineaTiempo/index.html" target="_blank" class="menu-item itemm5">
                 </a>
-                <a href="ViajaPED/index.html" target="_blank" class="menu-item itemm6">
+                <a id="btn_menu_viaja_ped" href="ViajaPED/index.html" target="_blank" class="menu-item itemm6">
                 </a>
             </menu>
         </div>
 
         <div id="menuAccesibilidad" style="z-index: 9999999;" class="menu-accesibilidad">
-            <button class="btn-accesibilidad" onclick="toggleMenuAccesibilidad()">
+            <button class="btn-accesibilidad" id="btn_menu_accesibilidad" onclick="toggleMenuAccesibilidad()">
                 <i class="fa fa-universal-access"></i>
             </button>
             <div class="contenido-accesibilidad">
                 <h4>Accesibilidad</h4>
                 <div class="opciones-accesibilidad">
-                    <button onclick="aumentarFuente()" class="btn-opcion">
-                        <i class="fa fa-text-height"></i> Aumentar texto
-                    </button>
-                    <button onclick="disminuirFuente()" class="btn-opcion">
-                        <i class="fa fa-text-height"></i> Disminuir texto
-                    </button>
-                    <button onclick="toggleDislexia()" class="btn-opcion">
-                        <i class="fa fa-book"></i> Modo dislexia
-                    </button>
+                    <div class="row" style="margin: 0px;">
+                        <div class="col-6" style="padding-left: 10px; padding-right: 10px;">
+                            <button onclick="aumentarFuente()" id="btn_aumentar_fuente" class="btn-opcion">
+                                <i class="fa fa-text-height"></i> Aumentar texto
+                            </button>
+                        </div>
+                        <div class="col-6" style="padding-left: 10px; padding-right: 10px;">
+                            <button onclick="disminuirFuente()" id="btn_disminuir_fuente" class="btn-opcion">
+                                <i class="fa fa-text-height"></i> Disminuir texto
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0px;">
+                        <div class="col-6" style="padding-left: 10px; padding-right: 10px;">
+                            <button onclick="toggleDislexia()" id="btn_modo_dislexia" class="btn-opcion">
+                                <i class="fa fa-book"></i> Modo dislexia
+                            </button>
+                        </div>
+                        <div class="col-6" style="padding-left: 10px; padding-right: 10px;">
+                            <button onclick="iniciarTour('hidrografia')" id="btn_tutorial" class="btn-opcion">
+                                <i class="fa fa-question-circle"></i> Tutorial de uso
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -550,6 +568,8 @@
                 document.body.classList.toggle('modo-dislexia');
             }
         </script>
+
+        <script src="driver/tutorial.js"></script>
     </body>
 
 </html>

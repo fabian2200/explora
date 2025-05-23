@@ -244,15 +244,19 @@
 /* Estilos para el menú de accesibilidad */
 .menu-accesibilidad {
     position: fixed;
-    right: -250px;
-    top: 20%;
+    right: -300px;
+    top: 17%;
     transform: translateY(-50%);
     background: #d7d7d7;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px 0 0 10px;
     box-shadow: -2px 0 10px rgba(0,0,0,0.1);
     transition: right 0.3s ease;
     z-index: 1000;
+}
+
+#btn_menu_accesibilidad:focus-visible, #btn_menu_accesibilidad:focus {
+    outline: none !important;
 }
 
 .menu-accesibilidad.activo {
@@ -261,7 +265,7 @@
 
 .btn-accesibilidad {
     position: absolute;
-    left: -40px;
+    left: -36px;
     top: 50%;
     transform: translateY(-50%);
     background: #4CAF50;
@@ -278,7 +282,7 @@
 }
 
 .contenido-accesibilidad {
-    width: 200px;
+    width: 280px;
 }
 
 .contenido-accesibilidad h4 {
