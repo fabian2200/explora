@@ -11,9 +11,12 @@
 }
 
 #puzzle-board {
-    width: 740px;
+    width: 700px;
     height: 540px;
     position: relative;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #pieces-container {
@@ -29,7 +32,7 @@
     width: 830px;
     height: 600px;
     position: relative;
-    background-image: url(fondo_tablero.png);
+    background-image: url(img/fondo_tablero.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +46,7 @@
     position: absolute;
     cursor: move;
     border: 1px solid #000;
-    background-size: 740px 540px;
+    background-size: 700px 540px;
     transition: transform 0.2s;
 }
 
@@ -76,7 +79,7 @@
 .controls {
     height: 70vh;
     width: 85vh;
-    background-image: url(nivel.png);
+    background-image: url(img/nivel.png);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,9 +88,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     padding: 10vh;
-    color: #873e22
+    color: #623214
 }
 
 
@@ -112,19 +115,20 @@
 }
 
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(fondo.png);
+    background-image: url(img/fondo.png);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
-#btn_ayuda,#btn_reiniciar{
+#btn_ayuda,
+#btn_reiniciar {
     transition: transform 0.2s;
     width: 45px;
     height: 45px;
@@ -138,7 +142,7 @@ body{
 }
 
 
-.opciones{
+.opciones {
     position: absolute;
     top: 34%;
     right: -20px;
@@ -158,11 +162,51 @@ body{
     font-size: .8rem !important;
 }
 
-#btn_ayuda:hover,#btn_reiniciar:hover{
+#btn_ayuda:hover,
+#btn_reiniciar:hover {
     transform: scale(1.14);
     background-color: #814924;
 }
 
-#btn_reiniciar:focus,#btn_ayuda:focus{
-   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+#btn_reiniciar:focus,
+#btn_ayuda:focus {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+.contenedor_categoria {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-image: url(img/item.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor_categoria:hover {
+    transform: scale(1.05);
+}
+
+.imagen_categoria {
+    width: 25%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.contenedor_principal_categorias {
+    width: 60%;
+    height: 85vh;
+    padding-left: 9%;
+    padding-top: 7%;
+    padding-right: 8%;
 }

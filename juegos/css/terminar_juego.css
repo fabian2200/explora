@@ -81,6 +81,19 @@
     padding-left: 68px;
     padding-right: 20px;
     position: relative;
+    background-color: #3d006b;
+}
+
+.ranking_item_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 27px;
+    padding: 8px;
+    padding-left: 68px;
+    padding-right: 20px;
+    position: relative;
+    background-color: #9100ff;
 }
 
 .info_ranking{
@@ -96,7 +109,7 @@
     border-radius: 50%;
     position: absolute;
     left: -2px;
-    top: 3px;
+    top: 4.5px;
 }
 
 .ranking_item_avatar img{

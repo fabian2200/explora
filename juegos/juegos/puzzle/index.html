@@ -1,22 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rompecabezas Interactivo</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../../librerias/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="../../librerias/bootstrap-5.3/css/bootstrap.min.css">
+    <script src="../../librerias/bootstrap-5.3/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../assets/bootstrap/jquery.min.js"></script>
+
+    <script src="../assets/bootstrap/sweetalert.js"></script>
+    <link rel="stylesheet" href="../../css/pantalla_completa.css">
+    <link rel="stylesheet" href="../../css/terminar_juego.css">
+
+    <script src="popper.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+    <style>
+        .swal2-container.swal2-center>.swal2-popup {
+            grid-column: 2;
+            grid-row: 2;
+            align-self: center;
+            justify-self: center;
+            background-color: #9d6a41 !important;
+            border: 5px solid #4b331a !important;
+            border-radius: 25px !important;
+        }
+
+        .swal2-title {
+            position: relative;
+            max-width: 100%;
+            margin: 0;
+            padding: 0em 0em 0px 0;
+            color: #ffffff !important;
+            font-size: 3.75em;
+            font-weight: normal;
+            text-align: center;
+            text-transform: none;
+            word-wrap: break-word;
+        }
+
+        .swal2-html-container {
+            z-index: 1;
+            justify-content: center;
+            margin: 1em 1.6em .3em;
+            padding: 0;
+            overflow: auto;
+            color: #ffffff;
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: normal;
+            text-align: center;
+            word-wrap: break-word;
+            word-break: break-word;
+        }
+
+        #modal_guardar_resultado .modal-content{
+            border: 4px solid #fbd1bc !important;
+        }
+
+        #row_guardar_resultado {
+            background: linear-gradient(90deg, #fbd1bc 57%, #fbd1bc 55%, #9d6a41 2%, #9d6a41 100%) !important;
+        }
+
+        #row_guardar_resultado .col-lg-7 input, #row_guardar_resultado .col-lg-7 select, #row_guardar_resultado .col-lg-7 span {
+            color: #8d6b50 !important;
+        }
+
+        #row_guardar_resultado .col-lg-7 input::placeholder {
+            color: #8d6b50 !important;
+        }
+        
+        .text-color {
+            color: #fbd1bc !important;
+        }
+
+        .text-color-claro {
+            color: #9d6a41 !important;
+        }
+
+        .ranking_item{
+            background-color: #472810 !important;
+        }
+
+        .ranking_item_2{
+            background-color: #7b5537 !important;
+        }
+
+        .clase_border_avatar {
+            border: 10px solid #7b5537;
+            background-color: #7b5537 !important;
+        }
+    </style>
+
 </head>
+
 <body style="margin: 0; padding: 0;">
     <div class="container" style="padding: 0px !important;">
-        
+
         <div class="puzzle-container">
             <div class="contenedor_puzzle">
                 <div id="puzzle-board"></div>
@@ -35,45 +121,57 @@
         <button id="btn_reiniciar" class="rounded-circle btn btn-primary"><i class="fas fa-undo"></i></button>
     </div>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false"
+        data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content" style="border: none; background-color: transparent;">
                 <div class="modal-body" style="display: flex; justify-content: center; align-items: center;">
                     <div class="controls">
-                        <h3>Rompecabezas Interactivo</h3>
-                        <br>
-                        <h5>Selecciona el nivel de dificultad</h5>
+                        <h3>Selecciona el nivel de dificultad</h3>
                         <br>
                         <div class="row" style="width: 100%;">
-                            <div class="col-md-4" id="nivel1">
-                                <div class="card_nivel" style="background-image: url(1.png);">
-                                    
+                            <div class="col-md-4" id="nivel1" onclick="seleccionar_nivel(4)">
+                                <div class="card_nivel" style="background-image: url(img/1.png);">
+
                                 </div>
                             </div>
-                            <div class="col-md-4" id="nivel2">
-                                <div class="card_nivel" style="background-image: url(2.png);">
-                                    
+                            <div class="col-md-4" id="nivel2" onclick="seleccionar_nivel(6)">
+                                <div class="card_nivel" style="background-image: url(img/2.png);">
+
                                 </div>
                             </div>
-                            <div class="col-md-4" id="nivel3">
-                                <div class="card_nivel" style="background-image: url(3.png);">
-                                    
+                            <div class="col-md-4" id="nivel3" onclick="seleccionar_nivel(8)">
+                                <div class="card_nivel" style="background-image: url(img/3.png);">
+
                                 </div>
                             </div>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        $(document).ready(function(){
-            $('#myModal').modal('show');
-        });
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false"
+        data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content" style="border: none; background-color: transparent;">
+                <div class="modal-body" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="contenedor_principal_categorias controls">
+                        <h3>Selecciona una categoría</h3>
+                        <br>
+                        <div class="row" style="width: 100%;" id="categorias">
 
-       
-    </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/terminar_juego.js"></script>
+    <script src="../../js/pantalla_completa.js"></script>
     <script src="script.js"></script>
 </body>
-</html> 
+
+</html>

@@ -92,7 +92,46 @@
             color: #fff;
             font-size: 1.3em;
             -webkit-text-stroke: 0.03rem #34230d;
-        }   
+        }
+
+        #modal_guardar_resultado .modal-content {
+            border: 4px solid #fbd1bc !important;
+        }
+
+        #row_guardar_resultado {
+            background: linear-gradient(90deg, #fbd1bc 57%, #fbd1bc 55%, #9d6a41 2%, #9d6a41 100%) !important;
+        }
+
+        #row_guardar_resultado .col-lg-7 input,
+        #row_guardar_resultado .col-lg-7 select,
+        #row_guardar_resultado .col-lg-7 span {
+            color: #8d6b50 !important;
+        }
+
+        #row_guardar_resultado .col-lg-7 input::placeholder {
+            color: #8d6b50 !important;
+        }
+
+        .text-color {
+            color: #fbd1bc !important;
+        }
+
+        .text-color-claro {
+            color: #80502b !important;
+        }
+
+        .ranking_item {
+            background-color: #472810 !important;
+        }
+
+        .ranking_item_2 {
+            background-color: #7b5537 !important;
+        }
+
+        .clase_border_avatar {
+            border: 10px solid #7b5537;
+            background-color: #7b5537 !important;
+        }
     </style>
 </head>
 
@@ -126,7 +165,7 @@
                     </h3>
                 </div>
                 <div class="modal-body">
-                    <div class="row" >
+                    <div class="row">
                         <div class="col-lg-6" style="display: flex; justify-content: center; align-items: center;">
                             <div class="nivel-container" onclick="selectNivel(4)">
                                 <img src="img/nivel1.png" class="nivel-imagen" alt="">
@@ -160,9 +199,10 @@
                     <img src="img/flotante2.png" class="flotante2" alt="">
                 </div>
 
-                <div id="contenedorGameArea" style="border: 3px solid #d7edff; overflow: hidden; border-radius: 10px; position: relative;  width: 555px; height: 585px;">
+                <div id="contenedorGameArea"
+                    style="border: 3px solid #d7edff; overflow: hidden; border-radius: 10px; position: relative;  width: 555px; height: 585px;">
                     <h2 class="contador" id="contador">00:00</h2>
-                    
+
                     <div class="game-area" id="gameArea">
 
                     </div>

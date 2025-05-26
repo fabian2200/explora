@@ -1,0 +1,26 @@
+{
+    "mapa_politico": {
+        "id": "mapa",
+        "mapa": "../mapas/marron/politico.png",
+        "nombre": "Mapa de Colombia",
+        "imagenes": 10
+    },
+    "etnias": {
+        "id": "etnias",
+        "mapa": "../mapas/marron/etnias.png",
+        "nombre": "Etnias de Colombia",
+        "imagenes": 40
+    },
+    "geografia": {
+        "id": "geografia",
+        "mapa": "../mapas/marron/relieve.png",
+        "nombre": "Geografía de Colombia",
+        "imagenes": 41
+    },
+    "fauna_flora": {
+        "id": "fauna_flora",
+        "mapa": "../mapas/marron/fauna_flora.png",
+        "nombre": "Fauna y Flora de Colombia",
+        "imagenes": 35
+    }
+}
