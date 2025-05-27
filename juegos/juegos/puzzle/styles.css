@@ -128,7 +128,8 @@ body {
 }
 
 #btn_ayuda,
-#btn_reiniciar {
+#btn_reiniciar,
+#btn_salir {
     transition: transform 0.2s;
     width: 45px;
     height: 45px;
@@ -144,10 +145,10 @@ body {
 
 .opciones {
     position: absolute;
-    top: 34%;
+    top: 27%;
     right: -20px;
     width: 120px;
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -163,7 +164,8 @@ body {
 }
 
 #btn_ayuda:hover,
-#btn_reiniciar:hover {
+#btn_reiniciar:hover,
+#btn_salir:hover {
     transform: scale(1.14);
     background-color: #814924;
 }
