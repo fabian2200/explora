@@ -94,7 +94,7 @@ function mostrarDescripcion(data){
 
     $.each(data.etnografia.lista, function(index, etnia) {
         navEtnias += `<li class="nav-item">
-                        <a style="font-size: 10px;  height: 100%; display: flex; align-items: center; justify-content: center;" href="#etnia${etnia.id}" data-toggle="pill" aria-selected="false"
+                        <a style="border: 2px solid #62aeff; font-size: 11pt;  height: 100%; display: flex; align-items: center; justify-content: center;" href="#etnia${etnia.id}" data-toggle="pill" aria-selected="false"
                             class="nav-link rounded-0 ${active}">
                             <span class="d-none d-md-block">${etnia.nombre}</span>
                         </a>
@@ -123,7 +123,7 @@ function mostrarDescripcion(data){
     
     $.each(data.faunaFlora.lista_fauna, function(index, fauna) {
         navFauna += `<li class="nav-item">
-                        <a style="font-size: 10px;  height: 100%; display: flex; align-items: center; justify-content: center;" href="#flora${fauna.id}" data-toggle="tab" aria-expanded="false"
+                        <a style="border: 2px solid #62aeff; font-size: 11pt;  height: 100%; display: flex; align-items: center; justify-content: center;" href="#flora${fauna.id}" data-toggle="tab" aria-expanded="false"
                             class="nav-link ${active_fauna}">
                             <span class="d-none d-md-block">${fauna.nombre}</span>
                         </a>
@@ -152,7 +152,7 @@ function mostrarDescripcion(data){
     
     $.each(data.faunaFlora.lista_flora, function(index, flora) {
         navFlora += `<li class="nav-item">
-                        <a style="font-size: 10px; height: 100%; display: flex; align-items: center; justify-content: center;" href="#flora${flora.id}" data-toggle="tab" aria-expanded="false"
+                        <a style="border: 2px solid #62aeff; font-size: 11pt; height: 100%; display: flex; align-items: center; justify-content: center;" href="#flora${flora.id}" data-toggle="tab" aria-expanded="false"
                             class="nav-link ${active_flora}">
                             <span class="d-none d-md-block">${flora.nombre}</span>
                         </a>
@@ -214,7 +214,7 @@ function mostrarDescripcion(data){
     
     $.each(data.festividades, function(index, festividad) {
         navFestividades += `<li class="nav-item">
-                        <a style="font-size: 10px; height: 100%; display: flex; align-items: center; justify-content: center;" href="#festividad${festividad.id}" data-toggle="tab" aria-expanded="false"
+                        <a style="border: 2px solid #62aeff; font-size: 11pt; height: 100%; display: flex; align-items: center; justify-content: center;" href="#festividad${festividad.id}" data-toggle="tab" aria-expanded="false"
                             class="nav-link ${active_festividades}">
                             <span class="d-none d-md-block">${festividad.nombre}</span>
                         </a>
@@ -241,7 +241,7 @@ function mostrarDescripcion(data){
     
     $.each(data.sitios, function(index, sitio) {
         navSitios += `<li class="nav-item">
-                        <a style="font-size: 10px;  height: 100%; display: flex; align-items: center; justify-content: center;" href="#sitio${sitio.id}" data-toggle="tab" aria-expanded="false"
+                        <a style="border: 2px solid #62aeff; font-size: 11pt;  height: 100%; display: flex; align-items: center; justify-content: center;" href="#sitio${sitio.id}" data-toggle="tab" aria-expanded="false"
                             class="nav-link ${active_sitios}">
                             <span class="d-none d-md-block">${sitio.nombre}</span>
                         </a>
@@ -268,7 +268,7 @@ function mostrarDescripcion(data){
     
     $.each(data.personajes, function(index, personaje) {
         navPersonajes += `<li class="nav-item">
-                        <a style="font-size: 10px;  height: 100%; display: flex; align-items: center; justify-content: center;" href="#persona${personaje.id}" data-toggle="tab" aria-expanded="false"
+                        <a style="border: 2px solid #62aeff; font-size: 11pt;  height: 100%; display: flex; align-items: center; justify-content: center;" href="#persona${personaje.id}" data-toggle="tab" aria-expanded="false"
                             class="nav-link ${active_personajes}">
                             <span class="d-none d-md-block">${personaje.nombre}</span>
                         </a>

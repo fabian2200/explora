@@ -523,7 +523,13 @@ a.mapplic-zoomout-button {
     overflow: hidden;
     text-overflow: ellipsis;
     box-sizing: border-box;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4)
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+	transition: all 0.5s ease;
+}
+
+.mapplic-list-category > a:hover {
+	background-color: #ffffff !important;
+	color: #0762ff !important;
 }
 
 .mapplic-list-category ol {

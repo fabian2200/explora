@@ -101,7 +101,7 @@ function guardar_resultado(nombre_juego, preguntas_correctas, contador_juego, ni
     modal.show();
 
     setTimeout(() => {
-        seleccionar_avatar(avatar_seleccionado);
+        verificar_usuario_logueado();
     }, 500);
 }
 
@@ -152,7 +152,8 @@ function guardar_resultado_base_datos() {
         preguntas_correctas_query: preguntas_correctas_query,
         tiempo_query: tiempo_query,
         nivel_query: nivel_query,
-        categoria_query: categoria_query
+        categoria_query: categoria_query,
+        id_usuario_logueado: id_usuario_logueado
     }
 
     $.ajax({
@@ -188,7 +189,6 @@ function guardar_resultado_base_datos() {
     });
 }
 
-
 function consultar_ranking() {
     var url = '../../php/consultar_ranking.php';
     var data = {
@@ -209,7 +209,6 @@ function consultar_ranking() {
 }
 
 var colores_ranking = ['#3d006b', '#3d006b', '#3d006b', '#9100ff', '#9100ff', '#9100ff'];
-
 function mapear_ranking(response) {
     var ranking_container = document.getElementById('ranking_container');
     ranking_container.innerHTML = '';
@@ -244,6 +243,18 @@ function mapear_ranking(response) {
             border_avatar_ranking = "clase_border_avatar";
         }
 
+        var nombre = response[i].jugador.split(' ');
+        var nombre_ranking = nombre[0];
+        if(nombre.length == 1){
+            nombre_ranking = nombre_ranking;
+        }else if(nombre.length == 2){
+            nombre_ranking += " " + nombre[1];
+        }else if(nombre.length == 3){
+            nombre_ranking += " " + nombre[2];
+        }else if(nombre.length == 4){
+            nombre_ranking += " " + nombre[2];
+        }
+
         ranking_item.innerHTML = `
             <div class="ranking_item_avatar ${border_avatar_ranking}">
                 ${coronita}
@@ -251,7 +262,7 @@ function mapear_ranking(response) {
             </div>
             <div class="info_ranking">
                 <div class="ranking_item_nombre">
-                    <p style="margin-bottom: -3px;">${response[i].jugador}</p>
+                    <p style="margin-bottom: -3px;">${nombre_ranking}</p>
                     <p style="margin-bottom: -3px; font-size: 0.7rem;">${response[i].grado}° Grado</p>
                 </div>
                 <div class="ranking_item_puntos">
@@ -268,4 +279,24 @@ function mapear_ranking(response) {
 
 function validar_guardar_resultado(id){
     $('#'+id).removeClass('is-invalid');
+}
+
+
+var logueado = false;
+var id_usuario_logueado = '';
+function verificar_usuario_logueado(){
+    var usuario = localStorage.getItem('usuario');
+    if(usuario){
+        $('#nombre_jugador').val(localStorage.getItem('nombre')).attr('disabled', true);
+        $('#grado_jugador').val(localStorage.getItem('grado')).attr('disabled', true);
+        $('#div_avatar').css('pointer-events', 'none');
+        $('#div_avatar').css('opacity', '0.5');
+        seleccionar_avatar(localStorage.getItem('avatar'));
+        logueado = true;
+        id_usuario_logueado = localStorage.getItem('id_usuario');
+    }else{
+        logueado = false;
+        seleccionar_avatar(1);
+        id_usuario_logueado = '0';
+    }
 }

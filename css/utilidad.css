@@ -244,7 +244,7 @@
 /* Estilos para el menú de accesibilidad */
 .menu-accesibilidad {
     position: fixed;
-    right: -300px;
+    right: -400px;
     top: 17%;
     transform: translateY(-50%);
     background: #d7d7d7;
@@ -268,7 +268,7 @@
     left: -36px;
     top: 50%;
     transform: translateY(-50%);
-    background: #4CAF50;
+    background: #007bff;
     color: white;
     border: none;
     padding: 10px;
@@ -278,11 +278,11 @@
 }
 
 .btn-accesibilidad:hover {
-    background: #45a049;
+    background: #023974;
 }
 
 .contenido-accesibilidad {
-    width: 280px;
+    width: 380px;
 }
 
 .contenido-accesibilidad h4 {
@@ -307,6 +307,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 100%;
 }
 
 .btn-opcion:hover {
@@ -333,4 +334,64 @@
 /* Clase para texto pequeño */
 .texto-pequeño {
     font-size: 0.8em;
+}
+
+#btn_iniciar_sesion {
+ background-color: #309caf;
+ color: #ffff;
+}
+
+#btn_iniciar_sesion:hover {
+ background-color: #216672;
+}
+
+#btn_registrar {
+ background-color: #36913e;
+ color: #ffff;
+}
+
+#btn_registrar:hover {
+ background-color: #245a29;
+}
+
+#btn_cerrar_sesion {
+ background-color: #bd3737;
+ color: #ffff;
+}
+
+#btn_cerrar_sesion:hover {
+ background-color: #490f0f;
+}   
+
+#btn_perfil {
+ background-color: #30af56;
+ color: #ffff;
+}   
+
+#btn_perfil:hover {
+ background-color: #114614;
+}   
+
+.avatar_container{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.avatar_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar_container:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.avatar_container.active{
+    border: 4px solid #48ff00;
 }

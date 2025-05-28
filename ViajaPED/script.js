@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function getRandomPosition() {
     // Generar una posición aleatoria dentro del contenedor
     const randomX = Math.random() * (containerRect.width - 80); // 80 es el ancho de la máquina
-    const randomY = Math.random() * (containerRect.height - 80); // 80 es el alto de la máquina
+    const randomY = Math.random() * (containerRect.height - 150); // 80 es el alto de la máquina
 
     return {
       x: randomX,
