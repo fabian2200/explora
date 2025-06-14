@@ -54,7 +54,8 @@ body {
     color: white;
     padding: 2rem;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    margin-top: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
     animation: floatTitle 3s ease-in-out infinite;
 }
 
@@ -95,12 +96,13 @@ body {
     text-align: center;
     padding: 2rem;
     width: 100%;
-    max-width: 1400px;
+    height: 100vh;
     position: relative;
-    min-height: 80vh;
     display: flex;
-    flex-direction: initial;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .header-button {
@@ -139,6 +141,7 @@ body {
     stroke: #ffffff;
     stroke-width: 2px;
     fill-opacity: 0.8;
+    fill: rgba(255, 255, 255, 0.384); 
 }
 
 h1 {
@@ -165,12 +168,17 @@ h1 {
 /* Sección de eras */
 .eras-section {
     position: relative;
-    top: 50px;
     width: 100%;
-    margin-bottom: 2rem;
+    height: 100%;
+    margin: 0;
+    margin-top: 6rem;
     transition: opacity 0.4s ease, visibility 0.4s ease;
     opacity: 1;
     visibility: visible;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .eras-section.hidden {
@@ -184,19 +192,22 @@ h1 {
     height: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 2.5rem;
+    padding: 2rem;
 }
 
 .era-item {
     position: relative;
     width: 300px;
     height: 300px;
-    margin: 20px;
+    margin: 0;
     animation: float 3s ease-in-out infinite;
     cursor: pointer;
     z-index: 2;
+    flex-shrink: 0;
 }
 
 .era-item img {
@@ -251,32 +262,44 @@ h1 {
 
 /* Estilos para la máquina */
 .machine-container {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     pointer-events: none;
     z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .machine {
-    position: absolute;
+    position: relative;
     transform-origin: center;
-    animation: machineFloat 1s ease-in-out infinite;
+    animation: machineFloat 4s ease-in-out infinite;
     z-index: 10;
     scale: 0.3;
-    width: 400px;
-    height: auto;
+    top: 0;
+    left: 0;
+    transform: none;
 }
 
 @keyframes machineFloat {
-    0%, 100% {
-        transform: translateY(0) rotate(0deg);
-
-    }    
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-20px) translateX(10px) rotate(2deg);
+    }
     50% {
-        transform: translateY(-15px) rotate(5deg);
+        transform: translateY(0) translateX(0) rotate(0deg);
+    }
+    75% {
+        transform: translateY(20px) translateX(-10px) rotate(-2deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0) rotate(0deg);
     }
 }
 
@@ -595,7 +618,7 @@ h1 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.85);
-    overflow: hidden;
+    overflow: auto;
 }
 
 .container-btn{
@@ -625,7 +648,6 @@ h1 {
     border-radius: 20px;
     animation: fadeIn 1s ease-in-out;
     height: 80vh;
-    overflow: hidden;
 }
 
 @keyframes fadeIn {
@@ -809,4 +831,223 @@ h1 {
 .btn-aumentar:hover, .btn-disminuir:hover {
     background-color: #ffffff;
     transform: scale(1.1);
+}
+
+/* Media Queries para Responsive Design */
+
+/* Pantallas extra grandes (TV, monitores grandes) */
+@media screen and (min-width: 1401px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .era-item {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Pantallas grandes (escritorios) */
+@media screen and (max-width: 1400px) {
+    .container {
+        max-width: 1200px;
+        padding: 1.5rem;
+    }
+    
+    .era-item {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .header-title h1 {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .eras-circle {
+        gap: 2.5rem;
+    }
+    .eras-section {
+        margin-top: 5rem;
+    }
+}
+
+/* Pantallas medianas (tablets horizontales) */
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+        padding: 1rem;
+    }
+    
+    .era-item {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .header-title h1 {
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 30px;
+    }
+    
+    .eras-circle {
+        gap: 2.5rem;
+    }
+    .eras-section {
+        margin-top: 4rem;
+    }
+}
+
+/* Tablets verticales */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+    
+    .eras-circle {
+        gap: 2.5rem;
+    }
+    
+    .era-item {
+        width: 220px;
+        height: 220px;
+        margin: 15px;
+    }
+    
+    .header-title h1 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .header-button {
+        width: 100px;
+        height: 80px;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .modal-content {
+        padding: 20px;
+    }
+    
+    #modal-title {
+        font-size: 28px;
+    }
+    .eras-section {
+        margin-top: 3rem;
+    }
+}
+
+/* Móviles grandes */
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0.5rem;
+    }
+    
+    .era-item {
+        width: 180px;
+        height: 180px;
+        margin: 10px;
+    }
+    
+    .header-title h1 {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .header-button {
+        width: 80px;
+        height: 60px;
+        top: 15px;
+        right: 15px;
+    }
+    
+    .modal-content {
+        padding: 15px;
+    }
+    
+    #modal-title {
+        font-size: 24px;
+    }
+    
+    #modal-content {
+        font-size: 16px;
+    }
+    
+    .eras-circle {
+        gap: 2.5rem;
+    }
+    .eras-section {
+        margin-top: 2.5rem;
+    }
+}
+
+/* Móviles pequeños */
+@media screen and (max-width: 375px) {
+    .era-item {
+        width: 150px;
+        height: 150px;
+        margin: 8px;
+    }
+    
+    .header-title h1 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .header-button {
+        width: 60px;
+        height: 45px;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .modal-content {
+        padding: 10px;
+    }
+    
+    #modal-title {
+        font-size: 20px;
+    }
+    
+    #modal-content {
+        font-size: 14px;
+    }
+    
+    .eras-circle {
+        gap: 2.5rem;
+    }
+    .eras-section {
+        margin-top: 2rem;
+    }
+}
+
+/* Ajustes para orientación horizontal en móviles */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .header-title h1 {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    
+    .era-item {
+        width: 120px;
+        height: 120px;
+        margin: 5px;
+    }
+    
+    .container {
+        min-height: 60vh;
+    }
+}
+
+/* Ajustes para pantallas de alta densidad (retina) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .era-item img {
+        image-rendering: -webkit-optimize-contrast;
+    }
 }

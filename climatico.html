@@ -111,16 +111,16 @@
                 border-radius: 10px;
                 padding: 10px;
                 margin-bottom: 10px;
-                width: 20%;
+                width: 30%;
                 position: absolute;
-                top: 20px;
+                top: 20%;
                 z-index: 1000;
-                font-size: 10px !important;
+                font-size: 13px !important;
                 transition: right 2.3s ease-in-out;
             }
 
             .dato_interes_body p{
-                font-size: 10px ;
+                font-size: 13px ;
                 line-height: 1.2 ;
                 margin-bottom: 5px ;
             }
@@ -152,7 +152,7 @@
         <div id="dato_interes" class="dato_interes">
             <img src="img/pensando.gif" width="200px" id="pensando_gif" alt="">
             <div class="dato_interes_header">
-                <h4>Dato de interes</h4>
+                <h2>Dato de interes</h2>
                 <i onclick="mostrarCerrarDatoInteres()" class="btn_cerrar_dato_interes fa-solid fa-circle-xmark"></i>
             </div>
             <div class="dato_interes_body">
@@ -518,10 +518,10 @@
 
             function mostrarCerrarDatoInteres(){
                 var datoInteres = document.getElementById("dato_interes");
-                if(datoInteres.style.right == "20px"){
+                if(datoInteres.style.right == "20%"){
                     datoInteres.style.right = "-800px";
                 }else{
-                    datoInteres.style.right = "20px";
+                    datoInteres.style.right = "20%";
                 }
             }
 
@@ -619,14 +619,6 @@
                 }, 500)
             }
 
-            document.getElementById('boton_comenzar').addEventListener('click', function() {
-                const owl = this.querySelector('.owl');
-                owl.classList.add('flying');
-                
-                setTimeout(() => {
-                    owl.classList.remove('flying');
-                }, 2000);
-            });
 
             // Funciones para el menú de accesibilidad
             function toggleMenuAccesibilidad() {
@@ -634,21 +626,21 @@
                 menu.classList.toggle('activo');
             }
 
-            let tamañoTextoActual = 12; // Tamaño base del texto
+            let tamanoTextoActual = 16; // Tamaño base del texto
 
             function aumentarFuente() {
-                tamañoTextoActual += 3;
-                const elementos = document.querySelectorAll('body *');
+                tamanoTextoActual += 3;
+                const elementos = document.querySelectorAll('body h1, body h2, body h3, body h4, body h5, body h6, body p, body label, body input, body span, body strong, body li');
                 elementos.forEach(elemento => {
-                    elemento.style.fontSize = `${tamañoTextoActual}px`;
+                    elemento.style.fontSize = `${tamanoTextoActual}px`;
                 });
             }
 
             function disminuirFuente() {
-                tamañoTextoActual -= 3;
-                const elementos = document.querySelectorAll('body *');
+                tamanoTextoActual -= 3;
+                const elementos = document.querySelectorAll('body h1, body h2, body h3, body h4, body h5, body h6, body p, body label, body input, body span, body strong, body li');
                 elementos.forEach(elemento => {
-                    elemento.style.fontSize = `${tamañoTextoActual}px`;
+                    elemento.style.fontSize = `${tamanoTextoActual}px`;
                 });
             }
 
@@ -658,5 +650,6 @@
         </script>
 
         <script src="driver/tutorial.js"></script>
+        <script src="mapplic/js/iniciarSesion.js"></script>
     </body>
 </html>

@@ -28,13 +28,13 @@
 }
 
 .top_menu .buttons {
-  margin: 3px 0 0 20px;
+  margin: -5px 0 0 20px;
   position: absolute;
 }
 
 .top_menu .buttons .button {
-  width: 24px;
-  height: 16px;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
   display: inline-block;
   margin-right: 10px;

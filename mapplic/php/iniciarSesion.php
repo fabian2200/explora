@@ -1,26 +1,36 @@
 <?php
 
-    include "conexion.php";
+include "conexion_pedigital.php";
 
-    $usuario = $_POST['usuario'];
-    $contrasena = $_POST['contrasena'];
-    $contrasena = md5($contrasena);
+$usuario = $_POST['usuario'];
+$contrasena = $_POST['contrasena'];
 
-    $sql = "SELECT * FROM usuarios_explora WHERE usuario = '$usuario'";
-    $resultado = mysqli_query($conexion, $sql);
+$sql = "SELECT * FROM users WHERE login_usuario = ?";
+$stmt = $conexion->prepare($sql);
+$stmt->bind_param("s", $usuario);
+$stmt->execute();
+$resultado = $stmt->get_result();
 
-    if (mysqli_num_rows($resultado) > 0) {
-        $fila = mysqli_fetch_assoc($resultado);
+if ($resultado->num_rows > 0) {
+    $fila = $resultado->fetch_assoc();
 
-        if ($fila['contrasena'] == $contrasena) {
-            echo json_encode(['success' => true, 'mensaje' => 'Inicio de sesión exitoso', 'usuario_objeto' => $fila]);
-        } else {
-            echo json_encode(['success' => false, 'mensaje' => 'Contraseña incorrecta']);
-        }
+    // Verifica la contraseña usando password_verify
+    if (password_verify($contrasena, $fila['pasword_usuario'])) {
+        echo json_encode([
+            'success' => true,
+            'mensaje' => 'Inicio de sesión exitoso',
+            'usuario_objeto' => $fila
+        ]);
     } else {
-        echo json_encode(['success' => false, 'mensaje' => 'Usuario no encontrado']);
+        echo json_encode([
+            'success' => false,
+            'mensaje' => 'Contraseña incorrecta'
+        ]);
     }
-
-    
-    
+} else {
+    echo json_encode([
+        'success' => false,
+        'mensaje' => 'Usuario no encontrado'
+    ]);
+}
 ?>

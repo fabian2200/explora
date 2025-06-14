@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/map.css">
+    <link rel="stylesheet" type="text/css" href="mapplic/mapplic.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="mapplic/menu.css">
+    <link rel="stylesheet" href="mapplic/quiz.css">
+    <link rel="stylesheet" href="sweetalert/sweetalert2.min.css">
+    <script src="sweetalert/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="shortcut icon" href="juegos/images/Isotipo.png">
+    <link rel="stylesheet" href="miPerfil/style.css">
+</head>
+
+<body >
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Menú lateral -->
+            <div class="col-md-3 pt-4" style="background-color: #007bff; height: 100vh;">
+                <div class="text-center">
+                    <img src="img/logo.png" alt="logo" style="width: 200px; height: auto;">
+                </div>
+                <div class="nav flex-column nav-pills" id="menu-perfil" role="tablist">
+                    <a class="nav-link active" id="link-datos" href="#" onclick="mostrarSeccion('datos', this)"> 
+                        <i class="fas fa-user"></i> Mis Datos
+                    </a>
+                    <a class="nav-link" id="link-historial" href="#" onclick="mostrarSeccion('historial', this)"> 
+                        <i class="fas fa-history"></i> Mi Historial
+                    </a>
+                    <hr>
+                    <a style="color: white; background-color: #dd6118 !important; border: 3px solid #974514 !important;" class="nav-link" id="link-cerrar-sesion" href="#" onclick="cerrarSesion()"> 
+                        <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contenido principal -->
+            <div class="col-md-9 py-4">
+                <!-- Sección Mis Datos -->
+                <div id="datos" style=" display: flex; flex-direction: column; height: 100%; justify-content: space-evenly; padding-left: 100px; padding-right: 100px;">
+                    <form  class="card p-4 shadow-lg rounded-lg bg-white border-0 rounded">
+                        <!-- Avatar -->
+                        <div class="mb-3 text-center">
+                            <img  src="" alt="Avatar" id="avatar-preview" class="avatar-preview mb-2"> <br>
+                            <button type="button" class="btn btn-primary" onclick="mostrarModalAvatar()"> <i class="fas fa-pencil-alt"></i> Cambiar Avatar</button>        
+                        </div>
+
+                        <!-- Nombre -->
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input disabled type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                        </div>
+
+                        <!-- Usuario -->
+                        <div class="form-group">
+                            <label for="usuario">Usuario</label>
+                            <input disabled type="text" class="form-control" id="usuario" placeholder="Nombre de usuario">
+                        </div>
+
+
+                        <!-- Grado -->
+                        <div class="form-group">
+                            <label for="grado">Grado</label>
+                            <select disabled class="form-control" id="grado">
+                                <option selected disabled>Selecciona tu grado</option>
+                                <option value="1">1°</option>
+                                <option value="2">2°</option>
+                                <option value="3">3°</option>
+                                <option value="4">4°</option>
+                                <option value="5">5°</option>
+                                <option value="6">6°</option>
+                                <option value="7">7°</option>
+                                <option value="8">8°</option>
+                                <option value="9">9°</option>
+                                <option value="10">10°</option>
+                                <option value="11">11°</option>
+                            </select>
+                        </div>
+
+                        <div class="d-flex justify-content-center" style="gap: 20px; margin-top: 20px;">
+                            <button id="btn-guardar" onclick="guardarCambios()" style="width: 40%;" type="button" class="btn btn-success"> 
+                                <i class="fas fa-save"></i> 
+                                Guardar Cambios
+                            </button>
+                            <button style="width: 40%;" type="button" onclick="location.href='juegos/index.html'" class="btn btn-danger"> <i class="fas fa-arrow-left"></i> Volver</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Sección Mi Historial -->
+                <div id="historial" class="card p-5 shadow-lg rounded-lg bg-white border-0 rounded" style="display: none; height: 100%; overflow-y: auto;">
+                    <h2 style="color: #007bff; font-weight: bold;">Mi Historial</h2>
+                    <p>Historial de juegos jugados, puntajes, etc.</p>
+                    <hr>
+                    <table class="table table-bordered table-historial">
+                        <thead>
+                            <tr>
+                                <th>Juego</th>
+                                <th>Categoría</th>
+                                <th>Nivel</th>
+                                <th>Puntaje</th>
+                                <th>Tiempo</th>
+                                <th>Fecha</th>
+                                <th>Hora</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historial-body">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-avatar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cambiar Avatar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="avatars-preview" class="row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="miPerfil/script.js"></script>
+    <script>
+        function cerrarSesion() {
+
+            swal.fire({
+                title: '¿Estás seguro de cerrar sesión?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si, cerrar sesión',
+                cancelButtonText: 'No, cancelar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    localStorage.removeItem('usuario');
+                    localStorage.removeItem('nombre');
+                    localStorage.removeItem('grado');
+                    localStorage.removeItem('avatar');
+                    localStorage.removeItem('id_usuario');
+
+                    window.location.href = 'index.html';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

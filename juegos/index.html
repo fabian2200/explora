@@ -14,6 +14,33 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/clouds.css">
     <link rel="shortcut icon" href="images/Isotipo.png" type="image/x-icon">
+    <script src="../sweetalert/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <style>
+        .avatar_container{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .avatar_container img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .avatar_container:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .avatar_container.active{
+            border: 4px solid #48ff00;
+        }
+    </style>
 </head>
 <body class="bg-light">
     <!-- Contenedor de nubes -->
@@ -37,9 +64,21 @@
                 <img src="images/logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
                 Juegos Educativos Explora
             </a>
-            <a href="../index.html" class="btn btn-outline-primary btn-back">
-                <i class="fas fa-arrow-left"></i> Volver
-            </a>
+            <div class="d-flex justify-content-end gap-3">
+               
+                <a href="../miPerfil.html" style="display: none;" id="btn-perfil" class="btn btn-outline-warning">
+                    <i class="fas fa-user"></i> Mi Perfil
+                </a>
+                <a href="#" type="button" onclick="cerrarSesion()" id="btn-cerrar" style="display: none;" class="btn btn-outline-primary">
+                     <i class="fas fa-sign-out-alt"></i> Salir
+                </a>
+                <a href="#" onclick="mostrarModalIniciarSesion(2)" type="button" id="btn-iniciar" style="display: none;" class="btn btn-outline-warning">
+                    <i class="fas fa-sign-out-alt"></i> Iniciar sesión
+                </a>
+                <a href="../index.html" class="btn btn-outline-danger">
+                    <i class="fas fa-arrow-left"></i> Volver
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -252,5 +291,12 @@
     <script src="librerias/aos/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="js/clouds.js"></script>
+    <script src="../mapplic/js/iniciarSesion.js"></script>
+    <script>
+        setTimeout(() => {
+            verificarSesion();
+        }, 1000);
+    </script>
+    
 </body>
 </html> 

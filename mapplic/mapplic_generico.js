@@ -538,7 +538,7 @@
 
 			this.addLocation = function(data) {
 				if(data.show == "true"){
-					var item = $('<li></li>').addClass('mapplic-list-location').addClass('mapplic-list-shown');
+					var item = $('<li></li>').addClass('mapplic-list-location').addClass('mapplic-list-shown').attr('link-id', data.id);
 					var link = $('<a></a>').attr('href', '#').click(function(e) {
 						e.preventDefault();
 						showLocation(data.id, 800);
@@ -552,7 +552,7 @@
 					}).appendTo(item);
 
 					if (data.thumbnail) $('<img>').attr('src', data.thumbnail).addClass('mapplic-list-thumbnail').appendTo(link);
-					$('<h4></h4>').text(data.title).appendTo(link)
+					$('<h4></h4>').text(data.title).css('text-transform', 'uppercase').appendTo(link)
 					$('<span></span>').html(data.about).appendTo(link);
 					var category = $('.mapplic-list-category[data-category="' + data.category + '"]');
 
@@ -688,10 +688,15 @@
 			}
 
 			this.goFull = function() {
-				if (this.element.requestFullscreen) this.element.requestFullscreen();
-				else if(this.element.mozRequestFullScreen) this.element.mozRequestFullScreen();
-				else if(this.element.webkitRequestFullscreen) this.element.webkitRequestFullscreen();
-				else if(this.element.msRequestFullscreen) this.element.msRequestFullscreen();
+				if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.webkitRequestFullscreen) {
+                    document.documentElement.webkitRequestFullscreen();
+                } else if (document.documentElement.msRequestFullscreen) {
+                    document.documentElement.msRequestFullscreen();
+                }
 			}
 
 			this.exitFull = function() {
@@ -1180,7 +1185,7 @@
 		}
 
 		var showLocation = function(id, duration, check) {
-			
+			marcarLink(id);
 			$.each(self.data.levels, function(index, layer) {
 				if (layer.id == id) {
 					setTimeout(()=>{
@@ -1224,6 +1229,14 @@
 			});
 			
 		};
+
+		var marcarLink = function(link_id) {
+			$('.mapplic-list-location').each(function () {
+				$(this).children().first().removeClass('mapplic-list-location-selected');
+			});
+
+			$('.mapplic-list-location[link-id="' + link_id + '"]').children().first().addClass('mapplic-list-location-selected');
+		}
 
 		var normalizeX = function(x) {
 			var minX = self.container.width() - self.contentWidth * self.scale;

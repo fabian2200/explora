@@ -229,6 +229,7 @@ function iniciarJuego(tipo) {
     if(tipo == 'pinta') {
         $('#contenedor_juego1').show();
         $('#contenedor_juego2').hide();
+        $('body').css('background-image', 'none');
         iniciar_contador_juego();
         cargarBanderas();
         cargarColores();
@@ -240,6 +241,7 @@ function iniciarJuego(tipo) {
     }else{
         $('#contenedor_juego1').hide();
         $('#contenedor_juego2').show();
+        $('body').css('background-image', 'none');
         iniciar_contador_juego();
         cargarBanderasAdivinar();
         iniciarTimer();

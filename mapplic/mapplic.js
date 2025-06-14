@@ -568,7 +568,7 @@
 			}
 
 			this.addLocation = function(data) {
-				var item = $('<li></li>').addClass('mapplic-list-location').addClass('mapplic-list-shown');
+				var item = $('<li></li>').addClass('mapplic-list-location').addClass('mapplic-list-shown').attr('link-id', data.id);
 				var link = $('<a></a>').attr('href', '#').click(function(e) {
 					e.preventDefault();
 					if(data.category != "departamentos"){
@@ -720,10 +720,15 @@
 			}
 
 			this.goFull = function() {
-				if (this.element.requestFullscreen) this.element.requestFullscreen();
-				else if(this.element.mozRequestFullScreen) this.element.mozRequestFullScreen();
-				else if(this.element.webkitRequestFullscreen) this.element.webkitRequestFullscreen();
-				else if(this.element.msRequestFullscreen) this.element.msRequestFullscreen();
+				if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.webkitRequestFullscreen) {
+                    document.documentElement.webkitRequestFullscreen();
+                } else if (document.documentElement.msRequestFullscreen) {
+                    document.documentElement.msRequestFullscreen();
+                }
 			}
 
 			this.exitFull = function() {
@@ -1240,7 +1245,7 @@
 		}
 
 		var showLocation = function(id, duration, check, id_departamento_padre) {
-			console.trace();
+			marcarLink(id);
 			if(id_departamento_padre){
 				var dep = self.colombia.find(item => item.id_departamento == id_departamento_padre);
 				setTimeout(()=>{
@@ -1282,9 +1287,16 @@
 						return false;
 					}
 				});
-			});
-			
+			});	
 		};
+
+		var marcarLink = function(link_id) {
+			$('.mapplic-list-location').each(function () {
+				$(this).children().first().removeClass('mapplic-list-location-selected');
+			});
+
+			$('.mapplic-list-location[link-id="' + link_id + '"]').children().first().addClass('mapplic-list-location-selected');
+		}
 
 		var normalizeX = function(x) {
 			var minX = self.container.width() - self.contentWidth * self.scale;

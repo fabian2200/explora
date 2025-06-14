@@ -123,7 +123,7 @@ function mostrarDescripcion(data){
     
     $.each(data.faunaFlora.lista_fauna, function(index, fauna) {
         navFauna += `<li class="nav-item">
-                        <a style="border: 2px solid #62aeff; font-size: 11pt;  height: 100%; display: flex; align-items: center; justify-content: center;" href="#flora${fauna.id}" data-toggle="tab" aria-expanded="false"
+                        <a style="border: 2px solid #62aeff; font-size: 11pt;  height: 100%; display: flex; align-items: center; justify-content: center;" href="#fauna${fauna.id}" data-toggle="tab" aria-expanded="false"
                             class="nav-link ${active_fauna}">
                             <span class="d-none d-md-block">${fauna.nombre}</span>
                         </a>
@@ -135,7 +135,7 @@ function mostrarDescripcion(data){
     let contNavFauna = '';
     
     $.each(data.faunaFlora.lista_fauna, function(index, fauna) {
-        contNavFauna += `<div class="tab-pane fade ${active_fauna}" id="flora${fauna.id}">
+        contNavFauna += `<div class="tab-pane fade ${active_fauna}" id="fauna${fauna.id}">
                             ${fauna.contenido}
                         </div>`;
         active_fauna = '';

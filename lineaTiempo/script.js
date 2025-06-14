@@ -96,7 +96,7 @@ function abrirModal(periodoIndex, eventoIndex) {
                 alt="${evento.titulo}" 
             class="modal-imagen"
             onerror="handleImageError(this)">
-        <div class="modal-parallax-bg" style="background-image: url(${evento.imagen})"></div>
+        <div class="modal-parallax-bg"></div>
         <div class="modal-info">
             <div class="modal-date">${evento.fecha} - ${periodo}</div>
             <h2>${evento.titulo}</h2>

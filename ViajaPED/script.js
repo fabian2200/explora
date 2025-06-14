@@ -1,4 +1,85 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Crear y mostrar el modal de pantalla completa
+  const fullscreenModal = document.createElement('div');
+  fullscreenModal.id = 'fullscreen-modal';
+  fullscreenModal.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  `;
+
+  const modalContent = document.createElement('div');
+  modalContent.style.cssText = `
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+    color: #2c1810;
+  `;
+
+  const title = document.createElement('h2');
+  title.textContent = '¡Bienvenido a ViajaPED!';
+  title.style.marginBottom = '1rem';
+
+  const message = document.createElement('p');
+  message.textContent = 'Para una mejor experiencia, te recomendamos activar el modo pantalla completa.';
+  message.style.marginBottom = '1.5rem';
+
+  const button = document.createElement('button');
+  button.textContent = 'Activar Pantalla Completa';
+  button.style.cssText = `
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  `;
+
+  button.addEventListener('click', () => {
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    } else if (document.documentElement.webkitRequestFullscreen) {
+      document.documentElement.webkitRequestFullscreen();
+    } else if (document.documentElement.msRequestFullscreen) {
+      document.documentElement.msRequestFullscreen();
+    }
+    fullscreenModal.style.display = 'none';
+  });
+
+  modalContent.appendChild(title);
+  modalContent.appendChild(message);
+  modalContent.appendChild(button);
+  fullscreenModal.appendChild(modalContent);
+  document.body.appendChild(fullscreenModal);
+
+  // Función para verificar el estado de pantalla completa
+  function checkFullscreenState() {
+    if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+      fullscreenModal.style.display = 'none';
+    } else {
+      fullscreenModal.style.display = 'flex';
+    }
+  }
+
+  // Verificar estado inicial
+  checkFullscreenState();
+
+  // Escuchar cambios en el estado de pantalla completa
+  document.addEventListener('fullscreenchange', checkFullscreenState);
+  document.addEventListener('webkitfullscreenchange', checkFullscreenState);
+  document.addEventListener('mozfullscreenchange', checkFullscreenState);
+  document.addEventListener('MSFullscreenChange', checkFullscreenState);
+
   const eraItems = document.querySelectorAll(".era-item");
   const machine = document.querySelector(".machine");
   const container = document.querySelector(".container");
@@ -273,7 +354,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function getRandomPosition() {
     // Generar una posición aleatoria dentro del contenedor
     const randomX = Math.random() * (containerRect.width - 80); // 80 es el ancho de la máquina
-    const randomY = Math.random() * (containerRect.height - 150); // 80 es el alto de la máquina
+    const randomY = Math.random() * (containerRect.height - 80); // 80 es el alto de la máquina
 
     return {
       x: randomX,

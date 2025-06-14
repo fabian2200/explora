@@ -243,7 +243,7 @@ function mapear_ranking(response) {
             border_avatar_ranking = "clase_border_avatar";
         }
 
-        var nombre = response[i].jugador.split(' ');
+        var nombre = response[i].jugador.trim().split(/\s+/);
         var nombre_ranking = nombre[0];
         if(nombre.length == 1){
             nombre_ranking = nombre_ranking;

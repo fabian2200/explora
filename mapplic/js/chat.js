@@ -25,8 +25,16 @@ function mostrarChat(){
         document.getElementById("chat").style.right = "0px";
         setTimeout(()=>{
             sendMessage('Hola, ¿En que puedo ayudarte hoy?', 'left');
+            document.getElementById("chat").style.zIndex = "1000";
         }, 800)
     }, 100)
+}
+
+function minimizarChat(){
+    document.getElementById("chat").style.right = "-40%";
+    setTimeout(()=>{
+        document.getElementById("chat").style.display = "none";
+    }, 700)
 }
 
 function cerrarChat(){

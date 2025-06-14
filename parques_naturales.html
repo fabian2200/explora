@@ -578,36 +578,27 @@
                 }, 500)
             }
 
-            document.getElementById('boton_comenzar').addEventListener('click', function() {
-                const owl = this.querySelector('.owl');
-                owl.classList.add('flying');
-                
-                setTimeout(() => {
-                    owl.classList.remove('flying');
-                }, 2000);
-            });
-
             // Funciones para el menú de accesibilidad
             function toggleMenuAccesibilidad() {
                 const menu = document.getElementById('menuAccesibilidad');
                 menu.classList.toggle('activo');
             }
 
-            let tamañoTextoActual = 16; // Tamaño base del texto
+            let tamanoTextoActual = 16; // Tamaño base del texto
 
             function aumentarFuente() {
-                tamañoTextoActual += 3;
-                const elementos = document.querySelectorAll('body *');
+                tamanoTextoActual += 3;
+                const elementos = document.querySelectorAll('body h1, body h2, body h3, body h4, body h5, body h6, body p, body label, body input, body span, body strong, body li');
                 elementos.forEach(elemento => {
-                    elemento.style.fontSize = `${tamañoTextoActual}px`;
+                    elemento.style.fontSize = `${tamanoTextoActual}px`;
                 });
             }
 
             function disminuirFuente() {
-                tamañoTextoActual -= 3;
-                const elementos = document.querySelectorAll('body *');
+                tamanoTextoActual -= 3;
+                const elementos = document.querySelectorAll('body h1, body h2, body h3, body h4, body h5, body h6, body p, body label, body input, body span, body strong, body li');
                 elementos.forEach(elemento => {
-                    elemento.style.fontSize = `${tamañoTextoActual}px`;
+                    elemento.style.fontSize = `${tamanoTextoActual}px`;
                 });
             }
 
@@ -617,5 +608,6 @@
         </script>
 
         <script src="driver/tutorial.js"></script>
+        <script src="mapplic/js/iniciarSesion.js"></script>
     </body>
 </html>
